@@ -1,0 +1,34 @@
+// gradle에서 kotlin을 컴파일하기 위해 필요한 buildscript
+// refs: https://plugins.gradle.org/plugin/org.jetbrains.kotlin.jvm
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.32"
+    }
+}
+
+group = 'udong-map'
+version = '1.0-SNAPSHOT'
+
+subprojects {
+    repositories {
+        jcenter()
+    }
+
+    // subprojects에 대해서는 plugins DSL이 먹지 않아서 레거시 방법인 apply plugin:을 사용해야 한다.
+    // refs: https://stackoverflow.com/questions/32352816/what-the-difference-in-applying-gradle-plugin#answer-32353244
+    apply plugin: 'kotlin' // apply plugin: "org.jetbrains.kotlin.jvm"과 동일한 효과인가? 바꿔도 동일하게 동작한다.
+    apply plugin: 'application'
+
+    compileKotlin {
+        kotlinOptions.jvmTarget = '1.8'
+    }
+
+    application {
+        mainClassName = 'MainKt'
+    }
+}

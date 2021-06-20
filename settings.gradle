@@ -1,0 +1,6 @@
+rootProject.name = 'our-map'
+
+file('subprojects').eachDir { dir ->
+    include dir.name
+    project(":${dir.name}").projectDir = dir
+}
