@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+import "common.proto";
+
+option java_multiple_files = true;
+option java_package = "ourmap.protocol";
+option java_outer_classname = "SignUpProto";
+
+// 회원가입을 할 때 호출하는 API.
+
+message SignUpParams {
+    string name = 1;
+    StringValue instagram_id = 2;
+    string password = 3;
+}
+
+message SignUpResult {
+    // 빈 response body를 내려준다.
+    // 대신 Header의 X-OURMAP-ACCESS-KEY에 access token을 내려준다. (회원가입하면 자동 로그인)
+    // 클라이언트는 이 토큰을 Bearer auth의 토큰으로 사용하면 된다.
+}
