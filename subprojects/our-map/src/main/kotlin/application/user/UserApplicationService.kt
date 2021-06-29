@@ -8,11 +8,13 @@ class UserApplicationService(
 ) {
     fun signUp(
         nickname: String,
+        email: String,
         password: String,
         instagramId: String?
     ): User {
         return userService.createUser(
             nickname = nickname,
+            email = email,
             password = password,
             instagramId = instagramId
         )

@@ -9,9 +9,10 @@ option java_outer_classname = "SignUpProto";
 // 회원가입을 할 때 호출하는 API.
 
 message SignUpParams {
-    string name = 1;
-    StringValue instagram_id = 2;
-    string password = 3;
+    string nickname = 1;
+    string email = 2;
+    StringValue instagram_id = 3;
+    string password = 4;
 }
 
 message SignUpResult {
