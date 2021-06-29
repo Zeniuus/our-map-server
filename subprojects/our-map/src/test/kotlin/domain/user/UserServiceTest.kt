@@ -9,13 +9,9 @@ import org.junit.Before
 import org.junit.Test
 import org.koin.dsl.koinApplication
 
-class UserServiceTest {
-    private val koinApplication = koinApplication {
-        modules(userDomainModule)
-    }
-
-    private val userService = koinApplication.koin.get<UserService>()
-    private val userRepository = koinApplication.koin.get<UserRepository>()
+class UserServiceTest : UserDomainTestBase() {
+    private val userService = koin.get<UserService>()
+    private val userRepository = koin.get<UserRepository>()
 
     @Before
     fun setUp() {
