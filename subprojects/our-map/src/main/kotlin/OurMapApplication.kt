@@ -1,7 +1,7 @@
 import application.user.userApplicationModule
 import domain.user.userDomainModule
-import io.ktor.application.install
 import io.ktor.application.Application
+import io.ktor.application.install
 import io.ktor.features.ContentNegotiation
 import io.ktor.http.ContentType
 import io.ktor.routing.routing

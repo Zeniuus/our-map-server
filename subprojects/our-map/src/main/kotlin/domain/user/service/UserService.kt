@@ -25,12 +25,14 @@ class UserService(
             throw DomainException("${params.email}은 이미 사용 중인 이메일입니다.")
         }
 
-        return userRepository.add(User(
-            id = EntityIdRandomGenerator.generate(),
-            email = params.email,
-            nickname = params.nickname,
-            encryptedPassword = Bcrypt.encrypt(params.password),
-            instagramId = params.instagramId
-        ))
+        return userRepository.add(
+            User(
+                id = EntityIdRandomGenerator.generate(),
+                email = params.email,
+                nickname = params.nickname,
+                encryptedPassword = Bcrypt.encrypt(params.password),
+                instagramId = params.instagramId
+            )
+        )
     }
 }
