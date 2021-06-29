@@ -9,26 +9,28 @@ import domain.util.EntityIdRandomGenerator
 class UserService(
     private val userRepository: UserRepository
 ) {
-    fun createUser(
-        nickname: String,
-        email: String,
-        password: String,
-        instagramId: String?
-    ): User {
-        if (userRepository.findByNickname(nickname) != null) {
-            throw DomainException("${nickname}은 이미 사용 중인 닉네임입니다.")
+    data class CreateUserParams(
+        val nickname: String,
+        val email: String,
+        val password: String,
+        val instagramId: String?
+    )
+
+    fun createUser(params: CreateUserParams): User {
+        if (userRepository.findByNickname(params.nickname) != null) {
+            throw DomainException("${params.nickname}은 이미 사용 중인 닉네임입니다.")
         }
 
-        if (userRepository.findByEmail(email) != null) {
-            throw DomainException("${email}은 이미 사용 중인 이메일입니다.")
+        if (userRepository.findByEmail(params.email) != null) {
+            throw DomainException("${params.email}은 이미 사용 중인 이메일입니다.")
         }
 
         return userRepository.add(User(
             id = EntityIdRandomGenerator.generate(),
-            email = email,
-            nickname = nickname,
-            encryptedPassword = Bcrypt.encrypt(password),
-            instagramId = instagramId
+            email = params.email,
+            nickname = params.nickname,
+            encryptedPassword = Bcrypt.encrypt(params.password),
+            instagramId = params.instagramId
         ))
     }
 }

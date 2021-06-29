@@ -15,10 +15,12 @@ class UserApplicationService(
         instagramId: String?
     ): LoginResult {
         val user = userService.createUser(
-            nickname = nickname,
-            email = email,
-            password = password,
-            instagramId = instagramId
+            UserService.CreateUserParams(
+                nickname = nickname,
+                email = email,
+                password = password,
+                instagramId = instagramId,
+            )
         )
         val accessToken = userAuthService.issueAccessToken(user)
         return LoginResult(user, accessToken)

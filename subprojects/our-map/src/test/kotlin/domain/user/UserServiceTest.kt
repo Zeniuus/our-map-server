@@ -24,10 +24,12 @@ class UserServiceTest : UserDomainTestBase() {
         val email = "jsh56son@gmail.com"
         val password = "password"
         val userId = userService.createUser(
-            nickname = nickname,
-            email = email,
-            password = password,
-            instagramId = null,
+            UserService.CreateUserParams(
+                nickname = nickname,
+                email = email,
+                password = password,
+                instagramId = null,
+            )
         ).id
 
         val user = userRepository.findById(userId)!!
@@ -40,10 +42,12 @@ class UserServiceTest : UserDomainTestBase() {
     fun `중복된 닉네임은 허용하지 않는다`() {
         repeat(2) {
             userService.createUser(
-                nickname = "nickname",
-                email = "jsh56son$it@gmail.com",
-                password = "password$it",
-                instagramId = null,
+                UserService.CreateUserParams(
+                    nickname = "nickname",
+                    email = "jsh56son$it@gmail.com",
+                    password = "password$it",
+                    instagramId = null,
+                )
             )
         }
     }
@@ -52,10 +56,12 @@ class UserServiceTest : UserDomainTestBase() {
     fun `중복된 이메일은 허용하지 않는다`() {
         repeat(2) {
             userService.createUser(
-                nickname = "nickname$it",
-                email = "jsh56son@gmail.com",
-                password = "password$it",
-                instagramId = null,
+                UserService.CreateUserParams(
+                    nickname = "nickname$it",
+                    email = "jsh56son@gmail.com",
+                    password = "password$it",
+                    instagramId = null,
+                )
             )
         }
     }
