@@ -8,6 +8,8 @@ import io.ktor.response.respond
 import io.ktor.routing.Route
 import io.ktor.routing.post
 import org.koin.core.context.GlobalContext
+import ourmap.protocol.LoginParams
+import ourmap.protocol.LoginResult
 import ourmap.protocol.SignUpParams
 import ourmap.protocol.SignUpResult
 
@@ -17,7 +19,7 @@ fun Route.userRoutes() {
 
     post("/signUp") {
         val params = call.receive<SignUpParams>()
-        val user = userApplicationService.signUp(
+        val loginResult = userApplicationService.signUp(
             nickname = params.nickname,
             email = params.email,
             password = params.password,
@@ -28,8 +30,18 @@ fun Route.userRoutes() {
             }
         )
 
-        SignUpResult.newBuilder()
-        call.response.header("X-OURMAP-ACCESS-KEY", "access-key") // TODO: real access key
+        call.response.header("X-OURMAP-ACCESS-KEY", loginResult.accessToken)
         call.respond(SignUpResult.getDefaultInstance())
+    }
+
+    post("/login") {
+        val params = call.receive<LoginParams>()
+        val loginResult = userApplicationService.login(
+            email = params.email,
+            password = params.password
+        )
+
+        call.response.header("X-OURMAP-ACCESS-KEY", loginResult.accessToken)
+        call.respond(LoginResult.getDefaultInstance())
     }
 }

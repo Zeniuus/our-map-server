@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "common.proto";
+
+option java_multiple_files = true;
+option java_package = "ourmap.protocol";
+option java_outer_classname = "LoginProto";
+
+// 로그인을 할 때 호출되는 API.
+
+message LoginParams {
+    string email = 1;
+    string password = 2;
+}
+
+message LoginResult {
+    // 빈 response body를 내려준다.
+    // 대신 Header의 X-OURMAP-ACCESS-KEY에 access token을 내려준다.
+    // 클라이언트는 이 토큰을 Bearer auth의 토큰으로 사용하면 된다.
+}

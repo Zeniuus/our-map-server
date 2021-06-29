@@ -7,4 +7,5 @@ interface UserRepository {
     fun removeAll()
     fun findById(id: String): User?
     fun findByNickname(nickname: String): User?
+    fun findByEmail(email: String): User?
 }
