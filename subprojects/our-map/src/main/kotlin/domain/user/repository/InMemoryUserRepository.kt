@@ -1,28 +1,14 @@
 package domain.user.repository
 
+import domain.InMemoryEntityRepositoryBase
 import domain.user.entity.User
 
-class InMemoryUserRepository : UserRepository {
-    private val usersById = mutableMapOf<String, User>()
-
-    override fun add(user: User): User {
-        usersById[user.id] = user
-        return user
-    }
-
-    override fun removeAll() {
-        usersById.clear()
-    }
-
-    override fun findById(id: String): User? {
-        return usersById[id]
-    }
-
+class InMemoryUserRepository : InMemoryEntityRepositoryBase<User, String>(), UserRepository {
     override fun findByNickname(nickname: String): User? {
-        return usersById.values.find { it.nickname == nickname }
+        return entities.find { it.nickname == nickname }
     }
 
     override fun findByEmail(email: String): User? {
-        return usersById.values.find { it.email == email }
+        return entities.find { it.email == email }
     }
 }
