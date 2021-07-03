@@ -1,12 +1,13 @@
 import domain.user.entity.User
 import domain.user.service.UserService
 import domain.user.userDomainModule
-import org.koin.dsl.koinApplication
 
 class TestDataGenerator {
-    private val koin = koinApplication {
-        modules(userDomainModule)
-    }.koin
+    private val koin = OurMapIoCFactory.createScopedContainer {
+        modules(
+            userDomainModule,
+        )
+    }
 
     private val userService = koin.get<UserService>()
 

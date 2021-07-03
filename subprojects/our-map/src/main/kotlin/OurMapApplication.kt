@@ -5,7 +5,6 @@ import io.ktor.application.install
 import io.ktor.features.ContentNegotiation
 import io.ktor.http.ContentType
 import io.ktor.routing.routing
-import org.koin.core.context.startKoin
 import route.ProtobufJsonContentConverter
 import route.user.userRoutes
 
@@ -15,7 +14,7 @@ import route.user.userRoutes
 fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 
 fun Application.ourMapModule(testing: Boolean = false) {
-    startKoin {
+    OurMapIoCFactory.configGlobally {
         modules(
             userDomainModule,
             userApplicationModule,
