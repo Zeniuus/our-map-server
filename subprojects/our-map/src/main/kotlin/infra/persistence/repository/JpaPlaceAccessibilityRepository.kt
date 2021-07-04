@@ -5,7 +5,8 @@ import domain.placeAccessibility.repository.PlaceAccessibilityRepository
 
 class JpaPlaceAccessibilityRepository(
     private val entityManagerHolder: GlobalEntityManagerHolder,
-) : JpaEntityRepositoryBase<PlaceAccessibility>(PlaceAccessibility::class.java, entityManagerHolder), PlaceAccessibilityRepository {
+) : JpaEntityRepositoryBase<PlaceAccessibility, String>(PlaceAccessibility::class.java, entityManagerHolder),
+    PlaceAccessibilityRepository {
     override fun findByPlaceIds(placeIds: Collection<String>): List<PlaceAccessibility> {
         val em = entityManagerHolder.get()
         val query = em.createQuery("""

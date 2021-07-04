@@ -2,10 +2,10 @@ package infra.persistence.repository
 
 import domain.EntityRepository
 
-open class JpaEntityRepositoryBase<ENTITY : Any>(
+open class JpaEntityRepositoryBase<ENTITY : Any, ID>(
     private val clazz: Class<ENTITY>,
     private val entityManagerHolder: GlobalEntityManagerHolder,
-) : EntityRepository<ENTITY, String> {
+) : EntityRepository<ENTITY, ID> {
     override fun add(entity: ENTITY): ENTITY {
         val em = entityManagerHolder.get()
         em.persist(entity)
@@ -19,7 +19,7 @@ open class JpaEntityRepositoryBase<ENTITY : Any>(
             .executeUpdate()
     }
 
-    override fun findById(id: String): ENTITY? {
+    override fun findById(id: ID): ENTITY? {
         val em = entityManagerHolder.get()
         return em.find(clazz, id)
     }

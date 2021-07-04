@@ -6,7 +6,8 @@ import java.sql.SQLException
 
 class JpaUserRepository(
     private val entityManagerHolder: GlobalEntityManagerHolder
-) : JpaEntityRepositoryBase<User>(User::class.java, entityManagerHolder), UserRepository {
+) : JpaEntityRepositoryBase<User, String>(User::class.java, entityManagerHolder),
+    UserRepository {
     override fun findByNickname(nickname: String): User? {
         val em = entityManagerHolder.get()
         val query = em.createQuery("""

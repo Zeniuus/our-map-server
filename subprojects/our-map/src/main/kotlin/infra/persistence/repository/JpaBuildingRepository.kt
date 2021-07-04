@@ -5,4 +5,5 @@ import domain.place.repository.BuildingRepository
 
 class JpaBuildingRepository(
     entityManagerHolder: GlobalEntityManagerHolder,
-) : JpaEntityRepositoryBase<Building>(Building::class.java, entityManagerHolder), BuildingRepository
+) : JpaEntityRepositoryBase<Building, String>(Building::class.java, entityManagerHolder),
+    BuildingRepository

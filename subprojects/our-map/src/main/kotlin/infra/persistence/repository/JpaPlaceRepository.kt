@@ -5,7 +5,8 @@ import domain.place.repository.PlaceRepository
 
 class JpaPlaceRepository(
     private val entityManagerHolder: GlobalEntityManagerHolder,
-) : JpaEntityRepositoryBase<Place>(Place::class.java, entityManagerHolder), PlaceRepository {
+) : JpaEntityRepositoryBase<Place, String>(Place::class.java, entityManagerHolder),
+    PlaceRepository {
     override fun findByNameContains(searchText: String): List<Place> {
         val em = entityManagerHolder.get()
         val query = em.createQuery("""
