@@ -6,7 +6,7 @@ import java.sql.SQLException
 
 class JpaUserRepository(
     private val entityManagerHolder: GlobalEntityManagerHolder
-) : UserRepository {
+) : JpaEntityRepositoryBase<User>(User::class.java, entityManagerHolder), UserRepository {
     override fun findByNickname(nickname: String): User? {
         val em = entityManagerHolder.get()
         val query = em.createQuery("""
@@ -35,23 +35,5 @@ class JpaUserRepository(
             throw SQLException("query result contains more than one row.")
         }
         return users.firstOrNull()
-    }
-
-    override fun add(entity: User): User {
-        val em = entityManagerHolder.get()
-        em.persist(entity)
-        return entity
-    }
-
-    override fun removeAll() {
-        val em = entityManagerHolder.get()
-        em
-            .createQuery("DELETE FROM User")
-            .executeUpdate()
-    }
-
-    override fun findById(id: String): User? {
-        val em = entityManagerHolder.get()
-        return em.find(User::class.java, id)
     }
 }
