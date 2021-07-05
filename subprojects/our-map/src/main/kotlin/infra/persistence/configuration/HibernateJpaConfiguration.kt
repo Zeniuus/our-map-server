@@ -1,5 +1,7 @@
 package infra.persistence.configuration
 
+import domain.place.entity.Building
+import domain.place.entity.Place
 import domain.user.entity.User
 import org.hibernate.dialect.MySQL57Dialect
 import org.hibernate.jpa.HibernatePersistenceProvider
@@ -61,7 +63,12 @@ object HibernateJpaConfiguration {
         }
 
         override fun getManagedClassNames(): MutableList<String> {
-            return mutableListOf(User::class.qualifiedName!!) // TODO
+            // TODO: 자동으로 등록
+            return mutableListOf(
+                User::class.qualifiedName!!,
+                Place::class.qualifiedName!!,
+                Building::class.qualifiedName!!,
+            )
         }
 
         override fun excludeUnlistedClasses(): Boolean {

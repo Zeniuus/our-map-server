@@ -12,9 +12,9 @@ class JpaPlaceRepository(
         val query = em.createQuery("""
             SELECT p
             FROM Place p
-            WHERE p.name LIKE '%:searchText%'
+            WHERE p.name LIKE :searchText
         """.trimIndent(), Place::class.java)
-        query.setParameter("searchText", searchText)
+        query.setParameter("searchText", "%$searchText%")
         return query.resultList
     }
 }
