@@ -19,7 +19,7 @@ data class BuildingAccessibility(
     val hasObsticleToElevator: Boolean,
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    val starInfo: BuildingStairInfo,
-    @Column(length = 36, nullable = false)
-    val userId: String,
+    val stairInfo: BuildingStairInfo,
+    @Column(length = 36, nullable = true)
+    val userId: String?,
 )

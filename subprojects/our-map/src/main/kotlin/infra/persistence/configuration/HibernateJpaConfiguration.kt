@@ -2,6 +2,8 @@ package infra.persistence.configuration
 
 import domain.place.entity.Building
 import domain.place.entity.Place
+import domain.placeAccessibility.entity.BuildingAccessibility
+import domain.placeAccessibility.entity.PlaceAccessibility
 import domain.user.entity.User
 import org.hibernate.dialect.MySQL57Dialect
 import org.hibernate.jpa.HibernatePersistenceProvider
@@ -68,6 +70,8 @@ object HibernateJpaConfiguration {
                 User::class.qualifiedName!!,
                 Place::class.qualifiedName!!,
                 Building::class.qualifiedName!!,
+                PlaceAccessibility::class.qualifiedName!!,
+                BuildingAccessibility::class.qualifiedName!!,
             )
         }
 
