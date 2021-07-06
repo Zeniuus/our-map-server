@@ -8,10 +8,10 @@ import io.ktor.response.respond
 import io.ktor.routing.Route
 import io.ktor.routing.post
 import org.koin.core.context.GlobalContext
-import ourmap.protocol.LoginParams
-import ourmap.protocol.LoginResult
-import ourmap.protocol.SignUpParams
-import ourmap.protocol.SignUpResult
+import ourMap.protocol.LoginParams
+import ourMap.protocol.LoginResult
+import ourMap.protocol.SignUpParams
+import ourMap.protocol.SignUpResult
 
 fun Route.userRoutes() {
     val koin = GlobalContext.getKoinApplicationOrNull()!!.koin

@@ -3,7 +3,7 @@ syntax = "proto3";
 import "common.proto";
 
 option java_multiple_files = true;
-option java_package = "ourmap.protocol";
+option java_package = "ourMap.protocol";
 option java_outer_classname = "LoginProto";
 
 // 로그인을 할 때 호출되는 API.

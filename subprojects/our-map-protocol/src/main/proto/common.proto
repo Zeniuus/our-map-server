@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option java_package = "ourmap.protocol";
+option java_package = "ourMap.protocol";
 
 message StringValue {
     string value = 1;
