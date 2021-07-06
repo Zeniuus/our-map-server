@@ -3,12 +3,11 @@ package infra.persistence.repository
 import domain.placeAccessibility.entity.PlaceAccessibility
 import domain.placeAccessibility.repository.PlaceAccessibilityRepository
 
-class JpaPlaceAccessibilityRepository(
-    private val entityManagerHolder: GlobalEntityManagerHolder,
-) : JpaEntityRepositoryBase<PlaceAccessibility, String>(PlaceAccessibility::class.java, entityManagerHolder),
+class JpaPlaceAccessibilityRepository :
+    JpaEntityRepositoryBase<PlaceAccessibility, String>(PlaceAccessibility::class.java),
     PlaceAccessibilityRepository {
     override fun findByPlaceIds(placeIds: Collection<String>): List<PlaceAccessibility> {
-        val em = entityManagerHolder.get()
+        val em = OurMapTransactionManager.getEntityManager()
         val query = em.createQuery("""
             SELECT pa
             FROM PlaceAccessibility pa

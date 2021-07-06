@@ -6,6 +6,7 @@ import domain.placeAccessibility.entity.BuildingAccessibility
 import domain.placeAccessibility.entity.PlaceAccessibility
 import domain.placeAccessibility.service.SearchPlaceAccessibilityService
 import domain.util.Location
+import infra.persistence.repository.transactional
 
 class PlaceApplicationService(
     private val searchPlaceService: SearchPlaceService,
@@ -17,10 +18,10 @@ class PlaceApplicationService(
         val buildingAccessibility: BuildingAccessibility?,
     )
 
-    fun searchPlaces(searchText: String, location: Location): List<SearchPlaceResult> {
+    fun searchPlaces(searchText: String, location: Location): List<SearchPlaceResult> = transactional {
         val places = searchPlaceService.searchPlaces(searchText, location)
         val accessibilitySearchResult = searchPlaceAccessibilityService.search(places)
-        return places.map { place ->
+        places.map { place ->
             val (placeAccessibility, buildingAccessibility) = accessibilitySearchResult.getAccessibility(place)
             SearchPlaceResult(
                 place = place,

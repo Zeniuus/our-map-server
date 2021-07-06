@@ -4,12 +4,11 @@ import domain.user.entity.User
 import domain.user.repository.UserRepository
 import java.sql.SQLException
 
-class JpaUserRepository(
-    private val entityManagerHolder: GlobalEntityManagerHolder
-) : JpaEntityRepositoryBase<User, String>(User::class.java, entityManagerHolder),
+class JpaUserRepository :
+    JpaEntityRepositoryBase<User, String>(User::class.java),
     UserRepository {
     override fun findByNickname(nickname: String): User? {
-        val em = entityManagerHolder.get()
+        val em = OurMapTransactionManager.getEntityManager()
         val query = em.createQuery("""
             SELECT u
             FROM User u
@@ -24,7 +23,7 @@ class JpaUserRepository(
     }
 
     override fun findByEmail(email: String): User? {
-        val em = entityManagerHolder.get()
+        val em = OurMapTransactionManager.getEntityManager()
         val query = em.createQuery("""
             SELECT u
             FROM User u
