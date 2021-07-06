@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+import "model.proto";
+
+option java_multiple_files = true;
+option java_package = "ourMap.protocol";
+option java_outer_classname = "SearchPlacesProto";
+
+// 장소를 검색하기 위한 API.
+
+message SearchPlacesParams {
+    string search_text = 1;
+    Location current_location = 2; // 현재 위치.
+}
+
+message SearchPlacesResult {
+    message Item {
+        Place place = 1;
+        BuildingAccessibility building_accessibility = 2; // 정보가 아직 채워지지 않았으면 null
+        PlaceAccessibility place_accessibility = 3; // 정보가 아직 채워지지 않았으면 null
+    }
+
+    repeated Item items = 1;
+}

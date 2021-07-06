@@ -1,4 +1,7 @@
+import application.place.placeApplicationModule
 import application.user.userApplicationModule
+import domain.place.placeDomainModule
+import domain.placeAccessibility.placeAccessibilityDomainModule
 import domain.user.userDomainModule
 import io.ktor.application.Application
 import io.ktor.application.install
@@ -6,6 +9,7 @@ import io.ktor.features.ContentNegotiation
 import io.ktor.http.ContentType
 import io.ktor.routing.routing
 import route.ProtobufJsonContentConverter
+import route.place.placeRoutes
 import route.user.userRoutes
 
 // TODO: embeddedServer로 서버를 띄우려고 하면 install(ContentNegotiation) { ... } 이 두 번 불려서
@@ -18,6 +22,10 @@ fun Application.ourMapModule(testing: Boolean = false) {
         modules(
             userDomainModule,
             userApplicationModule,
+
+            placeDomainModule,
+            placeAccessibilityDomainModule,
+            placeApplicationModule
         )
     }
 
@@ -27,5 +35,6 @@ fun Application.ourMapModule(testing: Boolean = false) {
 
     routing {
         userRoutes()
+        placeRoutes()
     }
 }

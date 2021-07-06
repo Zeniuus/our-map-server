@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+option java_package = "ourMap.protocol";
+
+message Location {
+    double lng = 1;
+    double lat = 2;
+}
+
+message Place {
+    string id = 1;
+    string name = 2; // 장소의 human-readable한 이름.
+    string address = 3; // 장소의 human-readable한 주소.
+    int32 like_count = 4;
+}
+
+message Building {
+    string id = 1;
+    string address = 2; // 건물의 human-readable한 주소.
+}
+
+// 장소의 접근성 정보.
+message PlaceAccessibility {
+    string id = 1;
+    bool is_first_floor = 2;
+    bool has_stair = 3;
+    bool is_wheelchair_accessible = 4;
+    int32 like_count = 5; // 이 정보가 도움이 돼요를 받은 횟수.
+}
+
+// 건물의 접근성 정보.
+message BuildingAccessibility {
+    enum StairInfo {
+        NONE = 0;
+        LESS_THAN_FIVE = 1;
+        OVER_TEN = 2;
+    }
+    string id = 1;
+    bool has_elevator = 2;
+    bool has_obstacle_to_elevator = 3;
+    StairInfo stair_info = 4;
+}
