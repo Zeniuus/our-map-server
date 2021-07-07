@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+import "model.proto";
+
+option java_multiple_files = true;
+option java_package = "ourMap.protocol";
+option java_outer_classname = "RegisterAccessibilityProto";
+
+// 건물 & 장소 정보를 등록하기 위한 API.
+// 이미 건물 or 장소 정보가 등록되었으면 400 에러가 떨어진다.
+
+message RegisterAccessibilityParams {
+    message RegisterPlaceAccessibilityParams {
+        string place_id = 1;
+        bool is_first_floor = 2;
+        bool has_stair = 3;
+        bool is_wheelchair_accessible = 4;
+    }
+    message RegisterBuildingAccessibilityParams {
+        string building_id = 1;
+        bool has_elevator = 2;
+        bool has_obstacle_to_elevator = 3;
+        BuildingAccessibility.StairInfo stair_info = 4;
+    }
+
+
+    RegisterBuildingAccessibilityParams building_accessibility_params = 1; // 최초 등록 시에만 올려준다.
+    RegisterPlaceAccessibilityParams place_accessibility_params = 2; // 항상 올려준다.
+}
+
+message RegisterAccessibilityResult {
+    BuildingAccessibility building_accessibility = 1;
+    PlaceAccessibility place_accessibility = 2;
+}
