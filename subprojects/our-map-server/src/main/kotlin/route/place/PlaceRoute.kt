@@ -36,12 +36,12 @@ fun Route.placeRoutes() {
                         .setPlace(PlaceConverter.toProto(result.place))
                         .also {
                             if (result.placeAccessibility != null) {
-                                it.placeAccessibility = PlaceAccessibilityConverter.toProto(result.placeAccessibility)
+                                it.placeAccessibility = PlaceAccessibilityConverter.toProto(result.placeAccessibility!!)
                             }
                         }
                         .also {
                             if (result.buildingAccessibility != null) {
-                                it.buildingAccessibility = BuildingAccessibilityConverter.toProto(result.buildingAccessibility)
+                                it.buildingAccessibility = BuildingAccessibilityConverter.toProto(result.buildingAccessibility!!)
                             }
                         }
                         .build()

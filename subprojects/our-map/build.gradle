@@ -3,24 +3,11 @@ plugins {
     id "org.jetbrains.kotlin.plugin.jpa" version "$kotlinVersion"
 }
 
-repositories {
-    // geotools
-    maven { url 'https://repo.osgeo.org/repository/release/' }
-    mavenCentral()
-}
-
 dependencies {
-    compile project(":our-map-protocol")
-
     compile "io.insert-koin:koin-core:3.1.0"
     testCompile "io.insert-koin:koin-test:3.1.0"
 
     // TODO: compile vs. implementation?
-    implementation "io.ktor:ktor-server-core:1.6.0"
-    implementation "io.ktor:ktor-server-netty:1.6.0"
-    implementation "ch.qos.logback:logback-classic:1.2.3"
-
-    implementation 'com.google.protobuf:protobuf-java-util:3.17.2'
 
     implementation 'org.hibernate:hibernate-core:5.4.32.Final'
     implementation 'com.zaxxer:HikariCP:4.0.3'

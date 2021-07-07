@@ -16,6 +16,8 @@ version = '1.0-SNAPSHOT'
 
 subprojects {
     repositories {
+        // geotools
+        maven { url 'https://repo.osgeo.org/repository/release/' }
         jcenter()
     }
 
