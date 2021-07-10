@@ -7,19 +7,20 @@ import domain.util.Bcrypt
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
+import org.koin.test.inject
 
 class UserServiceTest : UserDomainTestBase() {
     private val testDataGenerator = TestDataGenerator()
 
-    private val userRepository = koin.get<UserRepository>()
+    private val userRepository by inject<UserRepository>()
 
     @Before
-    fun setUp() {
+    fun setUp() = transactionManager.doInTransaction {
         userRepository.removeAll()
     }
 
     @Test
-    fun `정상적인 경우`() {
+    fun `정상적인 경우`() = transactionManager.doInTransaction {
         val nickname = "nickname"
         val email = "jsh56son@gmail.com"
         val password = "password"
@@ -39,7 +40,7 @@ class UserServiceTest : UserDomainTestBase() {
     }
 
     @Test(expected = DomainException::class)
-    fun `중복된 닉네임은 허용하지 않는다`() {
+    fun `중복된 닉네임은 허용하지 않는다`() = transactionManager.doInTransaction {
         repeat(2) {
             testDataGenerator.createUser(
                 nickname = "nickname",
@@ -49,7 +50,7 @@ class UserServiceTest : UserDomainTestBase() {
     }
 
     @Test(expected = DomainException::class)
-    fun `중복된 이메일은 허용하지 않는다`() {
+    fun `중복된 이메일은 허용하지 않는다`() = transactionManager.doInTransaction {
         repeat(2) {
             testDataGenerator.createUser(
                 nickname = "nickname$it",

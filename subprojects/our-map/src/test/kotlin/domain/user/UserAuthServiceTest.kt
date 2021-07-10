@@ -7,20 +7,21 @@ import domain.user.service.UserAuthService
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
+import org.koin.test.inject
 
 class UserAuthServiceTest : UserDomainTestBase() {
     private val testDataGenerator = TestDataGenerator()
 
-    private val userRepository = koin.get<UserRepository>()
-    private val userAuthService = koin.get<UserAuthService>()
+    private val userRepository by inject<UserRepository>()
+    private val userAuthService by inject<UserAuthService>()
 
     @Before
-    fun setUp() {
+    fun setUp() = transactionManager.doInTransaction {
         userRepository.removeAll()
     }
 
     @Test
-    fun `정상적인 경우`() {
+    fun `정상적인 경우`() = transactionManager.doInTransaction {
         val email = "jsh56son@gmail.com"
         val password = "password"
         val createdUser = testDataGenerator.createUser(
@@ -33,7 +34,7 @@ class UserAuthServiceTest : UserDomainTestBase() {
     }
 
     @Test
-    fun `이메일이 잘못되면 로그인에 실패한다`() {
+    fun `이메일이 잘못되면 로그인에 실패한다`() = transactionManager.doInTransaction {
         val email = "jsh56son@gmail.com"
         val password = "password"
         testDataGenerator.createUser(
@@ -50,7 +51,7 @@ class UserAuthServiceTest : UserDomainTestBase() {
     }
 
     @Test
-    fun `비밀번호가 잘못되면 로그인에 실패한다`() {
+    fun `비밀번호가 잘못되면 로그인에 실패한다`() = transactionManager.doInTransaction {
         val email = "jsh56son@gmail.com"
         val password = "password"
         testDataGenerator.createUser(

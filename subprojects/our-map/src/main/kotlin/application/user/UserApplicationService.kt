@@ -1,11 +1,12 @@
 package application.user
 
+import application.TransactionManager
 import domain.user.entity.User
 import domain.user.service.UserAuthService
 import domain.user.service.UserService
-import infra.persistence.repository.transactional
 
 class UserApplicationService(
+    private val transactionManager: TransactionManager,
     private val userService: UserService,
     private val userAuthService: UserAuthService,
 ) {
@@ -14,7 +15,7 @@ class UserApplicationService(
         email: String,
         password: String,
         instagramId: String?
-    ): LoginResult = transactional {
+    ): LoginResult = transactionManager.doInTransaction {
         val user = userService.createUser(
             UserService.CreateUserParams(
                 nickname = nickname,
@@ -30,7 +31,7 @@ class UserApplicationService(
     fun login(
         email: String,
         password: String
-    ): LoginResult = transactional {
+    ): LoginResult = transactionManager.doInTransaction {
         val user = userAuthService.authenticate(email, password)
         val accessToken = userAuthService.issueAccessToken(user)
         LoginResult(user, accessToken)

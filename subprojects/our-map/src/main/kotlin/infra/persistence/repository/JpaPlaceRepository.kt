@@ -2,12 +2,13 @@ package infra.persistence.repository
 
 import domain.place.entity.Place
 import domain.place.repository.PlaceRepository
+import infra.persistence.transaction.EntityManagerHolder
 
 class JpaPlaceRepository :
     JpaEntityRepositoryBase<Place, String>(Place::class.java),
     PlaceRepository {
     override fun findByNameContains(searchText: String): List<Place> {
-        val em = OurMapTransactionManager.getEntityManager()
+        val em = EntityManagerHolder.get()!!
         val query = em.createQuery("""
             SELECT p
             FROM Place p

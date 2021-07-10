@@ -2,12 +2,13 @@ package infra.persistence.repository
 
 import domain.placeAccessibility.entity.BuildingAccessibility
 import domain.placeAccessibility.repository.BuildingAccessibilityRepository
+import infra.persistence.transaction.EntityManagerHolder
 
-class JpaBuildingAccessibililtyRepository :
+class JpaBuildingAccessibilityRepository :
     JpaEntityRepositoryBase<BuildingAccessibility, String>(BuildingAccessibility::class.java),
     BuildingAccessibilityRepository {
     override fun findByBuildingIds(buildingIds: Collection<String>): List<BuildingAccessibility> {
-        val em = OurMapTransactionManager.getEntityManager()
+        val em = EntityManagerHolder.get()!!
         val query = em.createQuery("""
             SELECT ba
             FROM BuildingAccessibility ba

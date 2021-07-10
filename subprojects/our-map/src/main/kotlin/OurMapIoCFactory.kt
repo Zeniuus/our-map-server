@@ -15,7 +15,7 @@ object OurMapIoCFactory {
         customConfigBlock()
     }.koin
 
-    private fun KoinApplication.installCommonConfig() {
+    fun KoinApplication.installCommonConfig() {
         modules(
             persistenceModule,
         )

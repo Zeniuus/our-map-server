@@ -15,16 +15,17 @@ import domain.util.EntityIdRandomGenerator
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
+import org.koin.test.inject
 
 class SearchPlaceAccessibilityServiceTest : PlaceAccessibilityDomainTestBase() {
-    private val placeRepository = koin.get<PlaceRepository>()
-    private val buildingRepository = koin.get<BuildingRepository>()
-    private val placeAccessibilityRepository = koin.get<PlaceAccessibilityRepository>()
-    private val buildingAccessibilityRepository = koin.get<BuildingAccessibilityRepository>()
-    private val searchPlaceAccessibilityService = koin.get<SearchPlaceAccessibilityService>()
+    private val placeRepository by inject<PlaceRepository>()
+    private val buildingRepository by inject<BuildingRepository>()
+    private val placeAccessibilityRepository by inject<PlaceAccessibilityRepository>()
+    private val buildingAccessibilityRepository by inject<BuildingAccessibilityRepository>()
+    private val searchPlaceAccessibilityService by inject<SearchPlaceAccessibilityService>()
 
     @Before
-    fun setUp() {
+    fun setUp() = transactionManager.doInTransaction {
         placeAccessibilityRepository.removeAll()
         buildingAccessibilityRepository.removeAll()
         placeRepository.removeAll()
@@ -32,7 +33,7 @@ class SearchPlaceAccessibilityServiceTest : PlaceAccessibilityDomainTestBase() {
     }
 
     @Test
-    fun `정상적인 경우`() {
+    fun `정상적인 경우`() = transactionManager.doInTransaction {
         val building = buildingRepository.add(Building(
             id = EntityIdRandomGenerator.generate(),
             name = "아크로서울포레스트 D타워",

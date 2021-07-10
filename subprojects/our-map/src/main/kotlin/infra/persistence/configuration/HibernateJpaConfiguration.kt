@@ -18,14 +18,20 @@ import javax.persistence.spi.PersistenceUnitTransactionType
 import javax.sql.DataSource
 
 object HibernateJpaConfiguration {
+
+    private var entityManagerFactory: EntityManagerFactory? = null
     /**
      * https://docs.jboss.org/hibernate/orm/5.4/userguide/html_single/Hibernate_User_Guide.html#bootstrap-jpa-compliant-EntityManagerFactory-example
      */
+    @JvmStatic
     fun createEntityManagerFactory(): EntityManagerFactory {
-        return HibernatePersistenceProvider().createContainerEntityManagerFactory(
-            getPersistenceUnitInfo(),
-            emptyMap<String, Any>()
-        )
+        if (entityManagerFactory == null) {
+            entityManagerFactory = HibernatePersistenceProvider().createContainerEntityManagerFactory(
+                getPersistenceUnitInfo(),
+                emptyMap<String, Any>()
+            )
+        }
+        return entityManagerFactory!!
     }
 
     /**
