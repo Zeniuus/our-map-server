@@ -35,7 +35,7 @@ class UserServiceTest : UserDomainTestBase() {
         val user = userRepository.findById(userId)!!
         Assert.assertEquals(nickname, user.nickname)
         Assert.assertEquals(email, user.email)
-        Assert.assertEquals(Bcrypt.encrypt(password), user.encryptedPassword)
+        Assert.assertTrue(Bcrypt.verify(password, user.encryptedPassword))
         Assert.assertEquals(instagramId, user.instagramId)
     }
 

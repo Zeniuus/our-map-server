@@ -17,6 +17,8 @@ dependencies {
     implementation('org.geotools:gt-referencing:23.0') {
         exclude(group: 'javax.media', module: 'jai_core') // jai_core 1.1.3이 다운이 안 된다.
     }
+
+    implementation 'at.favre.lib:bcrypt:0.9.0'
 }
 
 allOpen {

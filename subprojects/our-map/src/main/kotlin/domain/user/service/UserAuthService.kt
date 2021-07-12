@@ -10,7 +10,7 @@ class UserAuthService(
 ) {
     fun authenticate(email: String, password: String): User {
         val user = userRepository.findByEmail(email) ?: throw UserAuthenticationException(UserAuthenticationException.ErrorCode.USER_DOES_NOT_EXIST)
-        if (Bcrypt.encrypt(password) != user.encryptedPassword) {
+        if (!Bcrypt.verify(password, user.encryptedPassword)) {
             throw UserAuthenticationException(UserAuthenticationException.ErrorCode.WRONG_PASSWORD)
         }
         return user
