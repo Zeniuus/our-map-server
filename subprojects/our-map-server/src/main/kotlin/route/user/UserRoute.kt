@@ -3,7 +3,6 @@ package route.user
 import application.user.UserApplicationService
 import io.ktor.application.call
 import io.ktor.request.receive
-import io.ktor.response.header
 import io.ktor.response.respond
 import io.ktor.routing.Route
 import io.ktor.routing.post
@@ -12,10 +11,12 @@ import ourMap.protocol.LoginParams
 import ourMap.protocol.LoginResult
 import ourMap.protocol.SignUpParams
 import ourMap.protocol.SignUpResult
+import route.UserAuthenticator
 
 fun Route.userRoutes() {
     val koin = GlobalContext.getKoinApplicationOrNull()!!.koin
     val userApplicationService = koin.get<UserApplicationService>()
+    val userAuthenticator = koin.get<UserAuthenticator>()
 
     post("/signUp") {
         val params = call.receive<SignUpParams>()
@@ -30,7 +31,7 @@ fun Route.userRoutes() {
             }
         )
 
-        call.response.header("X-OURMAP-ACCESS-KEY", loginResult.accessToken)
+        userAuthenticator.setAuth(call.response, loginResult.accessToken)
         call.respond(SignUpResult.getDefaultInstance())
     }
 
@@ -41,7 +42,7 @@ fun Route.userRoutes() {
             password = params.password
         )
 
-        call.response.header("X-OURMAP-ACCESS-KEY", loginResult.accessToken)
+        userAuthenticator.setAuth(call.response, loginResult.accessToken)
         call.respond(LoginResult.getDefaultInstance())
     }
 }

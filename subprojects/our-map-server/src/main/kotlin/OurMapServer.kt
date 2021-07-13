@@ -9,7 +9,9 @@ import io.ktor.application.install
 import io.ktor.features.ContentNegotiation
 import io.ktor.http.ContentType
 import io.ktor.routing.routing
+import org.koin.dsl.module
 import route.ProtobufJsonContentConverter
+import route.UserAuthenticator
 import route.place.placeRoutes
 import route.placeAccessibility.placeAccessibilityRoute
 import route.user.userRoutes
@@ -30,6 +32,10 @@ fun Application.ourMapModule(testing: Boolean = false) {
 
             placeAccessibilityDomainModule,
             placeAccessibilityApplicationModule,
+
+            module {
+                single { UserAuthenticator(get()) }
+            }
         )
     }
 

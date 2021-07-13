@@ -10,6 +10,7 @@ import io.ktor.routing.post
 import org.koin.core.context.GlobalContext
 import ourMap.protocol.SearchPlacesParams
 import ourMap.protocol.SearchPlacesResult
+import route.UserAuthenticator
 import route.converter.BuildingAccessibilityConverter
 import route.converter.PlaceAccessibilityConverter
 import route.converter.PlaceConverter
@@ -17,9 +18,11 @@ import route.converter.PlaceConverter
 fun Route.placeRoutes() {
     val koin = GlobalContext.getKoinApplicationOrNull()!!.koin
     val placeApplicationService = koin.get<PlaceApplicationService>()
+    val userAuthenticator = koin.get<UserAuthenticator>()
 
     post("/searchPlaces") {
-        // TODO: 인증
+        userAuthenticator.checkAuth(call.request)
+
         val params = call.receive<SearchPlacesParams>()
         val results = placeApplicationService.searchPlaces(
             searchText = params.searchText,

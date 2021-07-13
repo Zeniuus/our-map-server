@@ -11,15 +11,18 @@ import io.ktor.routing.post
 import org.koin.core.context.GlobalContext
 import ourMap.protocol.RegisterAccessibilityParams
 import ourMap.protocol.RegisterAccessibilityResult
+import route.UserAuthenticator
 import route.converter.BuildingAccessibilityConverter
 import route.converter.PlaceAccessibilityConverter
 
 fun Route.placeAccessibilityRoute() {
     val koin = GlobalContext.getKoinApplicationOrNull()!!.koin
     val placeAccessibilityApplicationService = koin.get<PlaceAccessibilityApplicationService>()
+    val userAuthenticator = koin.get<UserAuthenticator>()
 
     post("/registerAccessibility") {
-        // TODO: 인증
+        val userId = userAuthenticator.checkAuth(call.request)
+
         val params = call.receive<RegisterAccessibilityParams>()
         val (placeAccessibility, buildingAccessibility) = placeAccessibilityApplicationService.register(
             createPlaceAccessibilityParams = PlaceAccessibilityService.CreateParams(
@@ -27,7 +30,7 @@ fun Route.placeAccessibilityRoute() {
                 isFirstFloor = params.placeAccessibilityParams.isFirstFloor,
                 hasStair = params.placeAccessibilityParams.hasStair,
                 isWheelchairAccessible = params.placeAccessibilityParams.isWheelchairAccessible,
-                userId = null, // TODO
+                userId = userId,
             ),
             createBuildingAccessibilityParams = if (params.hasBuildingAccessibilityParams()) {
                 BuildingAccessibilityService.CreateParams(
@@ -35,7 +38,7 @@ fun Route.placeAccessibilityRoute() {
                     hasElevator = params.buildingAccessibilityParams.hasElevator,
                     hasObstacleToElevator = params.buildingAccessibilityParams.hasObstacleToElevator,
                     stairInfo = BuildingAccessibilityConverter.fromProto(params.buildingAccessibilityParams.stairInfo),
-                    userId = null, // TODO
+                    userId = userId,
                 )
             } else {
                 null
