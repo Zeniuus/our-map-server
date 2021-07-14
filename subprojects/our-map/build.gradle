@@ -22,6 +22,8 @@ dependencies {
     implementation 'com.auth0:java-jwt:3.18.1'
 
     implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.11.0'
+
+    implementation 'org.liquibase:liquibase-core:4.4.0'
 }
 
 allOpen {

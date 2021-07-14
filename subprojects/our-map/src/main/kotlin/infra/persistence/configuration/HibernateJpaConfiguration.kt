@@ -55,7 +55,7 @@ object HibernateJpaConfiguration {
         }
 
         override fun getNonJtaDataSource(): DataSource {
-            return DatabaseConfiguration.getDataSource()
+            return DatabaseConfiguration.dataSource
         }
 
         override fun getMappingFileNames(): MutableList<String> {
@@ -102,7 +102,7 @@ object HibernateJpaConfiguration {
                 setProperty("hibernate.dialect", MySQL57Dialect::class.qualifiedName!!)
                 setProperty("hibernate.connection.provider_disables_autocommit", "true")
                 setProperty("hibernate.show_sql", "true")
-                setProperty("hibernate.hbm2ddl.auto", "create-drop") // TODO: 테스트를 위한 임시 코드; liquibase로 갈아타기
+//                setProperty("hibernate.hbm2ddl.auto", "create-drop") // TODO: 테스트를 위한 임시 코드; liquibase로 갈아타기
                 setProperty("hibernate.physical_naming_strategy", SnakeCasePhysicalNamingStrategy::class.qualifiedName!!)
             }
         }

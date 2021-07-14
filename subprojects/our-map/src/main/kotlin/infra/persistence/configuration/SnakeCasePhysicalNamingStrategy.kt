@@ -29,7 +29,7 @@ class SnakeCasePhysicalNamingStrategy : PhysicalNamingStrategy {
     }
 
     private fun convertToSnakeCase(identifier: Identifier): Identifier {
-        val regex = "([a-z])([A-Z])"
+        val regex = "([a-z])([A-Z])".toRegex()
         val replacement = "$1_$2"
         val newName = identifier.text
             .replace(regex, replacement)
