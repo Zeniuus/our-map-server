@@ -97,12 +97,10 @@ object HibernateJpaConfiguration {
          * https://docs.jboss.org/hibernate/orm/5.4/userguide/html_single/Hibernate_User_Guide.html#configurations
          */
         override fun getProperties(): Properties {
-            // TODO: 설정 파일로 빼기
             return Properties().apply {
                 setProperty("hibernate.dialect", MySQL57Dialect::class.qualifiedName!!)
                 setProperty("hibernate.connection.provider_disables_autocommit", "true")
                 setProperty("hibernate.show_sql", "true")
-//                setProperty("hibernate.hbm2ddl.auto", "create-drop") // TODO: 테스트를 위한 임시 코드; liquibase로 갈아타기
                 setProperty("hibernate.physical_naming_strategy", SnakeCasePhysicalNamingStrategy::class.qualifiedName!!)
             }
         }
