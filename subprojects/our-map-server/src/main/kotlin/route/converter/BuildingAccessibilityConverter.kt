@@ -8,7 +8,7 @@ object BuildingAccessibilityConverter {
     fun toProto(buildingAccessibility: BuildingAccessibility) = Model.BuildingAccessibility.newBuilder()
         .setId(buildingAccessibility.id)
         .setHasElevator(buildingAccessibility.hasElevator)
-        .setHasObstacleToElevator(buildingAccessibility.hasObsticleToElevator)
+        .setHasObstacleToElevator(buildingAccessibility.hasObstacleToElevator)
         .setStairInfo(toProto(buildingAccessibility.stairInfo))
         .build()
 

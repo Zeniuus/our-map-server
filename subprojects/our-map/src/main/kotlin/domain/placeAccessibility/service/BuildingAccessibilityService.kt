@@ -22,7 +22,7 @@ class BuildingAccessibilityService(
                 id = EntityIdRandomGenerator.generate(),
                 buildingId = params.buildingId,
                 hasElevator = params.hasElevator,
-                hasObsticleToElevator = params.hasObstacleToElevator,
+                hasObstacleToElevator = params.hasObstacleToElevator,
                 stairInfo = params.stairInfo,
                 userId = params.userId,
             )

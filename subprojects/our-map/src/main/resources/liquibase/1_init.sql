@@ -38,7 +38,7 @@ CREATE TABLE `building_accessibility` (
   `id` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
   `building_id` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
   `has_elevator` bit(1) NOT NULL,
-  `has_obsticle_to_elevator` bit(1) NOT NULL,
+  `has_obstacle_to_elevator` bit(1) NOT NULL,
   `stair_info` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `user_id` varchar(36) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),

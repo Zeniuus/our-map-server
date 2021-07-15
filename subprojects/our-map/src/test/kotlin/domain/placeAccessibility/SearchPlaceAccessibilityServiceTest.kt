@@ -65,7 +65,7 @@ class SearchPlaceAccessibilityServiceTest : PlaceAccessibilityDomainTestBase() {
             id = EntityIdRandomGenerator.generate(),
             buildingId = building.id,
             hasElevator = true,
-            hasObsticleToElevator = true,
+            hasObstacleToElevator = true,
             stairInfo = BuildingStairInfo.LESS_THAN_FIVE,
             userId = null
         ))
