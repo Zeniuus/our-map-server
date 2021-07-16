@@ -1,3 +1,8 @@
+plugins {
+    id 'application'
+    id 'com.palantir.docker' version '0.27.0'
+}
+
 dependencies {
     implementation project(':our-map')
     implementation project(':our-map-protocol')
@@ -7,5 +12,20 @@ dependencies {
     implementation "ch.qos.logback:logback-classic:1.2.3"
 
     implementation 'com.google.protobuf:protobuf-java-util:3.17.2'
-
 }
+
+application {
+    mainClassName = 'OurMapServerKt'
+}
+
+jar {
+    manifest {
+        attributes['Main-Class'] = 'OurMapServerKt'
+    }
+}
+docker {
+    name 'our-map-server:latest'
+    copySpec.from('build/install/our-map-server')
+}
+
+docker.dependsOn(installDist)
