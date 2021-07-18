@@ -1,3 +1,10 @@
 .idea/
 .gradle/
 build/
+
+.terraform
+.terraform.lock.hcl
+terraform.tfstate*
+plan.tfplan
+
+application.properties.deploy
