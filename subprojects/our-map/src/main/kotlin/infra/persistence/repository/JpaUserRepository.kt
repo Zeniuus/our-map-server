@@ -3,7 +3,6 @@ package infra.persistence.repository
 import domain.user.entity.User
 import domain.user.repository.UserRepository
 import infra.persistence.transaction.EntityManagerHolder
-import java.sql.SQLException
 
 class JpaUserRepository :
     JpaEntityRepositoryBase<User, String>(User::class.java),
@@ -16,10 +15,6 @@ class JpaUserRepository :
             WHERE u.nickname = :nickname
         """.trimIndent(), User::class.java)
         query.setParameter("nickname", nickname)
-        val users = query.resultList
-        if (users.size > 1) {
-            throw SQLException("query result contains more than one row.")
-        }
-        return users.firstOrNull()
+        return getSingularResultOrThrow(query.resultList)
     }
 }

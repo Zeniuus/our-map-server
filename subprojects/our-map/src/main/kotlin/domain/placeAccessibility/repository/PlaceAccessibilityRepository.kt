@@ -5,4 +5,5 @@ import domain.placeAccessibility.entity.PlaceAccessibility
 
 interface PlaceAccessibilityRepository : EntityRepository<PlaceAccessibility, String> {
     fun findByPlaceIds(placeIds: Collection<String>): List<PlaceAccessibility>
+    fun findByPlaceId(placeId: String): PlaceAccessibility?
 }

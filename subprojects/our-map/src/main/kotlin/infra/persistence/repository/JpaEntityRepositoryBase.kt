@@ -2,6 +2,7 @@ package infra.persistence.repository
 
 import domain.EntityRepository
 import infra.persistence.transaction.EntityManagerHolder
+import java.sql.SQLException
 
 open class JpaEntityRepositoryBase<ENTITY : Any, ID>(
     private val clazz: Class<ENTITY>,
@@ -22,5 +23,12 @@ open class JpaEntityRepositoryBase<ENTITY : Any, ID>(
     override fun findById(id: ID): ENTITY? {
         val em = EntityManagerHolder.get()!!
         return em.find(clazz, id)
+    }
+
+    protected fun getSingularResultOrThrow(queryResults: List<ENTITY>): ENTITY? {
+        if (queryResults.size > 1) {
+            throw SQLException("query result contains more than one row.")
+        }
+        return queryResults.firstOrNull()
     }
 }

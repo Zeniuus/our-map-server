@@ -17,4 +17,15 @@ class JpaBuildingAccessibilityRepository :
         query.setParameter("buildingIds", buildingIds)
         return query.resultList
     }
+
+    override fun findByBuildingId(buildingId: String): BuildingAccessibility? {
+        val em = EntityManagerHolder.get()!!
+        val query = em.createQuery("""
+            SELECT ba
+            FROM BuildingAccessibility ba
+            WHERE ba.buildingId = :buildingId
+        """.trimIndent(), BuildingAccessibility::class.java)
+        query.setParameter("buildingId", buildingId)
+        return getSingularResultOrThrow(query.resultList)
+    }
 }

@@ -17,4 +17,15 @@ class JpaPlaceAccessibilityRepository :
         query.setParameter("placeIds", placeIds)
         return query.resultList
     }
+
+    override fun findByPlaceId(placeId: String): PlaceAccessibility? {
+        val em = EntityManagerHolder.get()!!
+        val query = em.createQuery("""
+            SELECT pa
+            FROM PlaceAccessibility pa
+            WHERE pa.placeId = :placeId
+        """.trimIndent(), PlaceAccessibility::class.java)
+        query.setParameter("placeId", placeId)
+        return getSingularResultOrThrow(query.resultList)
+    }
 }
