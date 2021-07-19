@@ -22,7 +22,6 @@ fun Route.userRoutes() {
         val params = call.receive<SignUpParams>()
         val loginResult = userApplicationService.signUp(
             nickname = params.nickname,
-            email = params.email,
             password = params.password,
             instagramId = if (params.hasInstagramId()) {
                 params.instagramId.value
@@ -38,7 +37,7 @@ fun Route.userRoutes() {
     post("/login") {
         val params = call.receive<LoginParams>()
         val loginResult = userApplicationService.login(
-            email = params.email,
+            nickname = params.nickname,
             password = params.password
         )
 

@@ -11,8 +11,8 @@ class UserAuthService(
     private val jwt: JWT,
     private val userRepository: UserRepository
 ) {
-    fun authenticate(email: String, password: String): User {
-        val user = userRepository.findByEmail(email) ?: throw UserAuthenticationException(UserAuthenticationException.ErrorCode.USER_DOES_NOT_EXIST)
+    fun authenticate(nickname: String, password: String): User {
+        val user = userRepository.findByNickname(nickname) ?: throw UserAuthenticationException(UserAuthenticationException.ErrorCode.USER_DOES_NOT_EXIST)
         if (!Bcrypt.verify(password, user.encryptedPassword)) {
             throw UserAuthenticationException(UserAuthenticationException.ErrorCode.WRONG_PASSWORD)
         }

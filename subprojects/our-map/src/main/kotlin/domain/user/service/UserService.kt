@@ -11,24 +11,22 @@ class UserService(
 ) {
     data class CreateUserParams(
         val nickname: String,
-        val email: String,
         val password: String,
         val instagramId: String?
     )
 
     fun createUser(params: CreateUserParams): User {
-        if (userRepository.findByNickname(params.nickname) != null) {
-            throw DomainException("${params.nickname}은 이미 사용 중인 닉네임입니다.")
+        val normalizedNickname = params.nickname.trim()
+        if (normalizedNickname.length < 2) {
+            throw DomainException("최소 2자 이상의 닉네임을 설정해주세요.")
         }
-
-        if (userRepository.findByEmail(params.email) != null) {
-            throw DomainException("${params.email}은 이미 사용 중인 이메일입니다.")
+        if (userRepository.findByNickname(normalizedNickname) != null) {
+            throw DomainException("${params.nickname}은 이미 사용 중인 닉네임입니다.")
         }
 
         return userRepository.add(
             User(
                 id = EntityIdRandomGenerator.generate(),
-                email = params.email,
                 nickname = params.nickname,
                 encryptedPassword = Bcrypt.encrypt(params.password),
                 instagramId = params.instagramId

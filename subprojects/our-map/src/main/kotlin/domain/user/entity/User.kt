@@ -12,8 +12,6 @@ data class User(
     @Column(nullable = false, length = 32)
     var nickname: String,
     @Column(nullable = false, length = 64)
-    var email: String,
-    @Column(nullable = false, length = 64)
     var encryptedPassword: String,
     @Column(nullable = true, length = 32)
     var instagramId: String?

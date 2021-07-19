@@ -1,14 +1,23 @@
 package route.converter
 
 import domain.placeAccessibility.entity.PlaceAccessibility
+import domain.user.repository.UserRepository
+import ourMap.protocol.Common
 import ourMap.protocol.Model
 
-object PlaceAccessibilityConverter {
+class PlaceAccessibilityConverter(
+    private val userRepository: UserRepository,
+) {
     fun toProto(placeAccessibility: PlaceAccessibility) = Model.PlaceAccessibility.newBuilder()
         .setId(placeAccessibility.id)
         .setIsFirstFloor(placeAccessibility.isFirstFloor)
         .setHasStair(placeAccessibility.hasStair)
         .setIsWheelchairAccessible(placeAccessibility.isWheelchairAccessible)
-        .setLikeCount(0) // TODO
-        .build()
+        .also {
+            placeAccessibility.userId?.let { userId ->
+                val user = userRepository.findById(userId)!!
+                it.registeredUserName = Common.StringValue.newBuilder().setValue(user.nickname).build()
+            }
+        }
+        .build()!!
 }

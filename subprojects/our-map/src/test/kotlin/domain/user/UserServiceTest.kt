@@ -22,19 +22,16 @@ class UserServiceTest : UserDomainTestBase() {
     @Test
     fun `정상적인 경우`() = transactionManager.doInTransaction {
         val nickname = "nickname"
-        val email = "jsh56son@gmail.com"
         val password = "password"
         val instagramId = "instagramId"
         val userId = testDataGenerator.createUser(
             nickname = nickname,
-            email = email,
             password = password,
             instagramId = instagramId
         ).id
 
         val user = userRepository.findById(userId)!!
         Assert.assertEquals(nickname, user.nickname)
-        Assert.assertEquals(email, user.email)
         Assert.assertTrue(Bcrypt.verify(password, user.encryptedPassword))
         Assert.assertEquals(instagramId, user.instagramId)
     }
@@ -44,17 +41,6 @@ class UserServiceTest : UserDomainTestBase() {
         repeat(2) {
             testDataGenerator.createUser(
                 nickname = "nickname",
-                email = "jsh56son$it@gmail.com",
-            )
-        }
-    }
-
-    @Test(expected = DomainException::class)
-    fun `중복된 이메일은 허용하지 않는다`() = transactionManager.doInTransaction {
-        repeat(2) {
-            testDataGenerator.createUser(
-                nickname = "nickname$it",
-                email = "jsh56son@gmail.com",
             )
         }
     }

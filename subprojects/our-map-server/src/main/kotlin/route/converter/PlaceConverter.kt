@@ -7,7 +7,6 @@ object PlaceConverter {
     fun toProto(place: Place) = Model.Place.newBuilder()
         .setId(place.id)
         .setName(place.name)
-        .setAddress(place.building.toString())
-        .setLikeCount(0) // TODO
+        .setAddress(place.building.address.toString())
         .build()
 }

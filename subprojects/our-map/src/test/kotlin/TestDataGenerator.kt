@@ -13,16 +13,14 @@ class TestDataGenerator {
 
     fun createUser(
         nickname: String = "nickname",
-        email: String = "jsh56son@gmail.com",
         password: String = "password",
         instagramId: String? = null
     ): User {
         return userService.createUser(
             UserService.CreateUserParams(
-                nickname,
-                email,
-                password,
-                instagramId,
+                nickname = nickname,
+                password = password,
+                instagramId = instagramId,
             )
         )
     }

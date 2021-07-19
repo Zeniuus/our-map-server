@@ -15,10 +15,12 @@ import route.UserAuthenticator
 import route.converter.BuildingAccessibilityConverter
 import route.converter.PlaceAccessibilityConverter
 
-fun Route.placeAccessibilityRoute() {
+fun Route.placeAccessibilityRoutes() {
     val koin = GlobalContext.getKoinApplicationOrNull()!!.koin
     val placeAccessibilityApplicationService = koin.get<PlaceAccessibilityApplicationService>()
     val userAuthenticator = koin.get<UserAuthenticator>()
+    val placeAccessibilityConverter = koin.get<PlaceAccessibilityConverter>()
+    val buildingAccessibilityConverter = koin.get<BuildingAccessibilityConverter>()
 
     post("/registerAccessibility") {
         val userId = userAuthenticator.checkAuth(call.request)
@@ -47,10 +49,10 @@ fun Route.placeAccessibilityRoute() {
 
         call.respond(
             RegisterAccessibilityResult.newBuilder()
-                .setPlaceAccessibility(PlaceAccessibilityConverter.toProto(placeAccessibility))
+                .setPlaceAccessibility(placeAccessibilityConverter.toProto(placeAccessibility))
                 .also {
                     if (buildingAccessibility != null) {
-                        BuildingAccessibilityConverter.toProto(buildingAccessibility)
+                        buildingAccessibilityConverter.toProto(buildingAccessibility)
                     }
                 }
                 .build()

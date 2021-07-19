@@ -13,8 +13,9 @@ import io.ktor.routing.routing
 import org.koin.dsl.module
 import route.ProtobufJsonContentConverter
 import route.UserAuthenticator
+import route.converter.ourMapConverterModule
 import route.place.placeRoutes
-import route.placeAccessibility.placeAccessibilityRoute
+import route.placeAccessibility.placeAccessibilityRoutes
 import route.user.userRoutes
 
 // TODO: embeddedServer로 서버를 띄우려고 하면 install(ContentNegotiation) { ... } 이 두 번 불려서
@@ -37,6 +38,8 @@ fun Application.ourMapModule(testing: Boolean = false) {
             placeAccessibilityDomainModule,
             placeAccessibilityApplicationModule,
 
+            ourMapConverterModule,
+
             module {
                 single { UserAuthenticator(get()) }
             }
@@ -50,6 +53,6 @@ fun Application.ourMapModule(testing: Boolean = false) {
     routing {
         userRoutes()
         placeRoutes()
-        placeAccessibilityRoute()
+        placeAccessibilityRoutes()
     }
 }

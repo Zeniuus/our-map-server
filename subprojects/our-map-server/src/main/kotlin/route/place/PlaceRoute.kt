@@ -11,8 +11,7 @@ import org.koin.core.context.GlobalContext
 import ourMap.protocol.SearchPlacesParams
 import ourMap.protocol.SearchPlacesResult
 import route.UserAuthenticator
-import route.converter.BuildingAccessibilityConverter
-import route.converter.PlaceAccessibilityConverter
+import route.converter.BuildingConverter
 import route.converter.PlaceConverter
 
 fun Route.placeRoutes() {
@@ -30,6 +29,7 @@ fun Route.placeRoutes() {
                 lng = params.currentLocation.lng,
                 lat = params.currentLocation.lat,
             ),
+            // TODO: 거리 조건, 시군구 / 읍면동 조건 고려하기
         )
 
         call.respond(
@@ -37,16 +37,9 @@ fun Route.placeRoutes() {
                 .addAllItems(results.map { result ->
                     SearchPlacesResult.Item.newBuilder()
                         .setPlace(PlaceConverter.toProto(result.place))
-                        .also {
-                            if (result.placeAccessibility != null) {
-                                it.placeAccessibility = PlaceAccessibilityConverter.toProto(result.placeAccessibility!!)
-                            }
-                        }
-                        .also {
-                            if (result.buildingAccessibility != null) {
-                                it.buildingAccessibility = BuildingAccessibilityConverter.toProto(result.buildingAccessibility!!)
-                            }
-                        }
+                        .setBuilding(BuildingConverter.toProto(result.place.building))
+                        .setHasPlaceAccessibility(result.placeAccessibility != null)
+                        .setHasBuildingAccessibility(result.buildingAccessibility != null)
                         .build()
                 })
         )

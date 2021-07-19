@@ -1,8 +1,6 @@
 package infra.persistence.schema
 
 import infra.persistence.configuration.DatabaseConfiguration
-import infra.properties.OurMapProperties
-import liquibase.CatalogAndSchema
 import liquibase.Contexts
 import liquibase.LabelExpression
 import liquibase.Liquibase

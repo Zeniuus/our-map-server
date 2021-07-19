@@ -12,14 +12,12 @@ class UserApplicationService(
 ) {
     fun signUp(
         nickname: String,
-        email: String,
         password: String,
         instagramId: String?
     ): LoginResult = transactionManager.doInTransaction {
         val user = userService.createUser(
             UserService.CreateUserParams(
                 nickname = nickname,
-                email = email,
                 password = password,
                 instagramId = instagramId,
             )
@@ -29,10 +27,10 @@ class UserApplicationService(
     }
 
     fun login(
-        email: String,
+        nickname: String,
         password: String
     ): LoginResult = transactionManager.doInTransaction {
-        val user = userAuthService.authenticate(email, password)
+        val user = userAuthService.authenticate(nickname, password)
         val accessToken = userAuthService.issueAccessToken(user)
         LoginResult(user, accessToken)
     }

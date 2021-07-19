@@ -5,6 +5,10 @@
         xmlns:pro="http://www.liquibase.org/xml/ns/pro"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.2.xsd
       http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.2.xsd">
-    <include file="classpath://liquibase/1_init.sql" />
-    <include file="classpath://liquibase/2_golden_path.xml" />
+    <changeSet id="2" author="swann">
+        <dropColumn tableName="user" columnName="email" />
+        <createIndex tableName="user" indexName="idx_user_1" unique="true">
+            <column name="nickname" />
+        </createIndex>
+    </changeSet>
 </databaseChangeLog>
