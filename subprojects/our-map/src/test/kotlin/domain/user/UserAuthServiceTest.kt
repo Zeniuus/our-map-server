@@ -2,26 +2,18 @@ package domain.user
 
 import TestDataGenerator
 import domain.user.exception.UserAuthenticationException
-import domain.user.repository.UserRepository
 import domain.user.service.UserAuthService
 import org.junit.Assert
-import org.junit.Before
 import org.junit.Test
 import org.koin.test.inject
 
 class UserAuthServiceTest : UserDomainTestBase() {
     private val testDataGenerator = TestDataGenerator()
 
-    private val userRepository by inject<UserRepository>()
     private val userAuthService by inject<UserAuthService>()
 
-    @Before
-    fun setUp() = transactionManager.doInTransaction {
-        userRepository.removeAll()
-    }
-
     @Test
-    fun `정상적인 경우`() = transactionManager.doInTransaction {
+    fun `정상적인 경우`() = transactionManager.doAndRollback {
         val nickname = "swann"
         val password = "password"
         val createdUser = testDataGenerator.createUser(
@@ -34,7 +26,7 @@ class UserAuthServiceTest : UserDomainTestBase() {
     }
 
     @Test
-    fun `닉네임이 잘못되면 로그인에 실패한다`() = transactionManager.doInTransaction {
+    fun `닉네임이 잘못되면 로그인에 실패한다`() = transactionManager.doAndRollback {
         val nickname = "swann"
         val password = "password"
         testDataGenerator.createUser(
@@ -51,7 +43,7 @@ class UserAuthServiceTest : UserDomainTestBase() {
     }
 
     @Test
-    fun `비밀번호가 잘못되면 로그인에 실패한다`() = transactionManager.doInTransaction {
+    fun `비밀번호가 잘못되면 로그인에 실패한다`() = transactionManager.doAndRollback {
         val nickname = "swann"
         val password = "password"
         testDataGenerator.createUser(

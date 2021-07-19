@@ -55,4 +55,17 @@ class JpaTransactionManager(
             throw t
         }
     }
+
+    override fun doAndRollback(block: () -> Any) {
+        try {
+            start()
+            block()
+            rollback()
+        } catch (t: Throwable) {
+            if (isInTransaction()) {
+                rollback()
+            }
+            throw t
+        }
+    }
 }

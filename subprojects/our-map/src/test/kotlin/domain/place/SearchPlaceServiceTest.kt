@@ -9,7 +9,6 @@ import domain.place.service.SearchPlaceService
 import domain.util.EntityIdRandomGenerator
 import domain.util.Location
 import org.junit.Assert
-import org.junit.Before
 import org.junit.Test
 import org.koin.test.inject
 
@@ -18,14 +17,8 @@ class SearchPlaceServiceTest : PlaceDomainTestBase() {
     private val buildingRepository by inject<BuildingRepository>()
     private val searchPlaceService by inject<SearchPlaceService>()
 
-    @Before
-    fun setUp() = transactionManager.doInTransaction {
-        placeRepository.removeAll()
-        buildingRepository.removeAll()
-    }
-
     @Test
-    fun `검색이 잘 되어야 한다`() = transactionManager.doInTransaction {
+    fun `검색이 잘 되어야 한다`() = transactionManager.doAndRollback {
         val result1 = searchPlaceService.searchPlaces("수환", Location(0.0, 0.0))
         Assert.assertEquals(0, result1.size)
 
@@ -62,7 +55,7 @@ class SearchPlaceServiceTest : PlaceDomainTestBase() {
     }
 
     @Test
-    fun `가까운 장소가 먼저 노출되어야 한다`() = transactionManager.doInTransaction {
+    fun `가까운 장소가 먼저 노출되어야 한다`() = transactionManager.doAndRollback {
         val result1 = searchPlaceService.searchPlaces("수환", Location(0.0, 0.0))
         Assert.assertEquals(0, result1.size)
 

@@ -5,7 +5,6 @@ import domain.DomainException
 import domain.user.repository.UserRepository
 import domain.util.Bcrypt
 import org.junit.Assert
-import org.junit.Before
 import org.junit.Test
 import org.koin.test.inject
 
@@ -14,13 +13,8 @@ class UserServiceTest : UserDomainTestBase() {
 
     private val userRepository by inject<UserRepository>()
 
-    @Before
-    fun setUp() = transactionManager.doInTransaction {
-        userRepository.removeAll()
-    }
-
     @Test
-    fun `정상적인 경우`() = transactionManager.doInTransaction {
+    fun `정상적인 경우`() = transactionManager.doAndRollback {
         val nickname = "nickname"
         val password = "password"
         val instagramId = "instagramId"
@@ -37,7 +31,7 @@ class UserServiceTest : UserDomainTestBase() {
     }
 
     @Test(expected = DomainException::class)
-    fun `중복된 닉네임은 허용하지 않는다`() = transactionManager.doInTransaction {
+    fun `중복된 닉네임은 허용하지 않는다`() = transactionManager.doAndRollback {
         repeat(2) {
             testDataGenerator.createUser(
                 nickname = "nickname",
