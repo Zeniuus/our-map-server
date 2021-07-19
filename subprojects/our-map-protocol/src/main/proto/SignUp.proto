@@ -10,9 +10,8 @@ option java_outer_classname = "SignUpProto";
 
 message SignUpParams {
     string nickname = 1;
-    string email = 2;
-    StringValue instagram_id = 3;
-    string password = 4;
+    StringValue instagram_id = 2;
+    string password = 3;
 }
 
 message SignUpResult {

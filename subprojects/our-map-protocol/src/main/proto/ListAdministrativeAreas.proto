@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "model.proto";
+
+option java_multiple_files = true;
+option java_package = "ourMap.protocol";
+option java_outer_classname = "ListAdministrativeAreasProto";
+
+// 서비스 가능 지역의 행정구역 목록을 가져오기 위한 API.
+
+message ListAdministrativeAreasParams {
+}
+
+message ListAdministrativeAreasResult {
+    repeated SiGunGu si_gun_gus = 1;
+    repeated EupMyeonDong eup_myeon_dongs = 2;
+}

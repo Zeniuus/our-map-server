@@ -25,9 +25,9 @@ message PlaceAccessibility {
     bool is_first_floor = 2;
     bool has_stair = 3;
     bool is_wheelchair_accessible = 4;
-    int32 like_count = 5; // 이 정보가 도움이 돼요를 받은 횟수.
 
     string place_id = 6;
+    string registered_user_name = 7;
 }
 
 // 건물의 접근성 정보.
@@ -43,4 +43,15 @@ message BuildingAccessibility {
     StairInfo stair_info = 4;
 
     string building_id = 5;
+    string registered_user_name = 6;
+}
+
+message SiGunGu {
+    string id = 1;
+    string name = 2;
+}
+
+message EupMyeonDong {
+    string id = 1;
+    string name = 2;
 }

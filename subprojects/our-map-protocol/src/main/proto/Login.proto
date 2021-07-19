@@ -9,7 +9,7 @@ option java_outer_classname = "LoginProto";
 // 로그인을 할 때 호출되는 API.
 
 message LoginParams {
-    string email = 1;
+    string nickname = 1;
     string password = 2;
 }
 
