@@ -1,5 +1,6 @@
 syntax = "proto3";
 
+import "common.proto";
 import "model.proto";
 
 option java_multiple_files = true;
@@ -12,8 +13,8 @@ message SearchPlacesParams {
     string search_text = 1;
     Location current_location = 2; // 현재 위치.
     int32 distance_meters_limit = 3;
-    string si_gun_gu_id = 4;
-    string eup_myeon_dong_id = 5;
+    StringValue si_gun_gu_id = 4; // "전체"면 null.
+    StringValue eup_myeon_dong_id = 5; // "전체"면 null.
 }
 
 message SearchPlacesResult {

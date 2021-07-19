@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+import "common.proto";
+
 option java_package = "ourMap.protocol";
 
 message Location {
@@ -11,7 +13,6 @@ message Place {
     string id = 1;
     string name = 2; // 장소의 human-readable한 이름.
     string address = 3; // 장소의 human-readable한 주소.
-    int32 like_count = 4;
 }
 
 message Building {
@@ -27,7 +28,7 @@ message PlaceAccessibility {
     bool is_wheelchair_accessible = 4;
 
     string place_id = 6;
-    string registered_user_name = 7;
+    StringValue registered_user_name = 7; // 익명이면 null.
 }
 
 // 건물의 접근성 정보.
@@ -43,7 +44,7 @@ message BuildingAccessibility {
     StairInfo stair_info = 4;
 
     string building_id = 5;
-    string registered_user_name = 6;
+    StringValue registered_user_name = 6; // 익명이면 null.
 }
 
 message SiGunGu {
