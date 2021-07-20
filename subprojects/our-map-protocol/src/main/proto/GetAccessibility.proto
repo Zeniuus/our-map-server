@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "model.proto";
+
+option java_multiple_files = true;
+option java_package = "ourMap.protocol";
+option java_outer_classname = "GetAccessibilityProto";
+
+// 건물 & 장소 정보를 조회하기 위한 API.
+
+message GetAccessibilityParams {
+    string place_id = 1;
+}
+
+message GetAccessibilityResult {
+    BuildingAccessibility building_accessibility = 1; // 정보가 아직 채워지지 않았으면 null
+    PlaceAccessibility place_accessibility = 2; // 정보가 아직 채워지지 않았으면 null
+}

@@ -1,5 +1,6 @@
 syntax = "proto3";
 
+import "common.proto";
 import "model.proto";
 
 option java_multiple_files = true;
@@ -11,13 +12,17 @@ option java_outer_classname = "SearchPlacesProto";
 message SearchPlacesParams {
     string search_text = 1;
     Location current_location = 2; // 현재 위치.
+    int32 distance_meters_limit = 3;
+    StringValue si_gun_gu_id = 4; // "전체"면 null.
+    StringValue eup_myeon_dong_id = 5; // "전체"면 null.
 }
 
 message SearchPlacesResult {
     message Item {
         Place place = 1;
-        BuildingAccessibility building_accessibility = 2; // 정보가 아직 채워지지 않았으면 null
-        PlaceAccessibility place_accessibility = 3; // 정보가 아직 채워지지 않았으면 null
+        Building building = 2;
+        bool has_building_accessibility = 3;
+        bool has_place_accessibility = 4;
     }
 
     repeated Item items = 1;
