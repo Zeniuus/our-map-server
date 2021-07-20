@@ -4,6 +4,7 @@ plugins {
 }
 
 dependencies {
+    testImplementation project(':our-map-test-common')
     compile "io.insert-koin:koin-core:$koinVersion"
     testCompile "io.insert-koin:koin-test:$koinVersion"
     testCompile "io.insert-koin:koin-test-junit4:$koinVersion"

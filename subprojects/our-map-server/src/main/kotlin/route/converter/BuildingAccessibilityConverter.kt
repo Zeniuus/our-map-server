@@ -35,5 +35,6 @@ class BuildingAccessibilityConverter(
                 it.registeredUserName = Common.StringValue.newBuilder().setValue(user.nickname).build()
             }
         }
+        .setBuildingId(buildingAccessibility.buildingId)
         .build()!!
 }

@@ -19,5 +19,6 @@ class PlaceAccessibilityConverter(
                 it.registeredUserName = Common.StringValue.newBuilder().setValue(user.nickname).build()
             }
         }
+        .setPlaceId(placeAccessibility.placeId)
         .build()!!
 }

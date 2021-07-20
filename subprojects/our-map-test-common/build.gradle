@@ -1,0 +1,4 @@
+dependencies {
+    implementation project(':our-map')
+    testCompile "io.insert-koin:koin-test:$koinVersion"
+}
