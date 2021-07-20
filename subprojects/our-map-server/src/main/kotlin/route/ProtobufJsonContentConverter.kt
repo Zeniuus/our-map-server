@@ -2,7 +2,6 @@ package route
 
 import com.google.protobuf.Message
 import com.google.protobuf.MessageOrBuilder
-import com.google.protobuf.util.JsonFormat
 import io.ktor.application.ApplicationCall
 import io.ktor.application.call
 import io.ktor.features.ContentConverter
@@ -17,9 +16,6 @@ import kotlinx.coroutines.withContext
 import kotlin.reflect.jvm.jvmErasure
 
 class ProtobufJsonContentConverter : ContentConverter {
-    private val serializer = JsonFormat.printer()!!
-    private val deserializer = JsonFormat.parser().ignoringUnknownFields()!!
-
     // ktor의 JacksonConverter를 참고하여 구현함.
     override suspend fun convertForReceive(context: PipelineContext<ApplicationReceiveRequest, ApplicationCall>): Any? {
         val request = context.subject
@@ -30,7 +26,7 @@ class ProtobufJsonContentConverter : ContentConverter {
             reader.use {
                 val messageOrBuilderClazz = request.typeInfo.jvmErasure.javaObjectType
                 val builder = messageOrBuilderClazz.getMethod("newBuilder").invoke(null) as Message.Builder
-                deserializer.merge(it.readText(), builder)
+                ProtobufJsonConverter.deserializer.merge(it.readText(), builder)
                 builder.build()
             }
         }
@@ -41,6 +37,6 @@ class ProtobufJsonContentConverter : ContentConverter {
         contentType: ContentType,
         value: Any
     ): Any {
-        return serializer.print(value as MessageOrBuilder)
+        return ProtobufJsonConverter.serializer.print(value as MessageOrBuilder)
     }
 }
