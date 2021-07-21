@@ -7,4 +7,5 @@
       http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.2.xsd">
     <include file="classpath://liquibase/1_init.sql" />
     <include file="classpath://liquibase/2_golden_path.xml" />
+    <include file="classpath://liquibase/3_village_domain.xml" />
 </databaseChangeLog>
