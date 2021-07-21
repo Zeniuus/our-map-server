@@ -9,13 +9,7 @@
                 <constraints primaryKey="true" nullable="false" />
             </column>
             <column name="eup_myeon_dong_id" type="VARCHAR(36)">
-                <constraints
-                    nullable="false"
-                    foreignKeyName="fk_village_eup_myeon_dong"
-                    referencedTableName="eup_myeon_dong"
-                    referencedColumnNames="id"
-                    deleteCascade="false"
-                />
+                <constraints nullable="false" />
             </column>
             <column name="building_count" type="INT">
                 <constraints nullable="false" />
@@ -36,5 +30,21 @@
                 <constraints nullable="true" />
             </column>
         </createTable>
+        <addColumn tableName="building">
+            <column name="si_gun_gu_id" type="VARCHAR(36)">
+                <constraints nullable="false" />
+            </column>
+            <column name="eup_myeon_dong_id" type="VARCHAR(36)">
+                <constraints nullable="false" />
+            </column>
+        </addColumn>
+        <addColumn tableName="place">
+            <column name="si_gun_gu_id" type="VARCHAR(36)">
+                <constraints nullable="false" />
+            </column>
+            <column name="eup_myeon_dong_id" type="VARCHAR(36)">
+                <constraints nullable="false" />
+            </column>
+        </addColumn>
     </changeSet>
 </databaseChangeLog>

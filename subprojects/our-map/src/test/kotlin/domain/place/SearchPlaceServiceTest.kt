@@ -1,20 +1,14 @@
 package domain.place
 
-import domain.place.entity.Building
-import domain.place.entity.BuildingAddress
-import domain.place.entity.Place
-import domain.place.repository.BuildingRepository
-import domain.place.repository.PlaceRepository
+import TestDataGenerator
 import domain.place.service.SearchPlaceService
-import domain.util.EntityIdRandomGenerator
 import domain.util.Location
 import org.junit.Assert
 import org.junit.Test
 import org.koin.test.inject
 
 class SearchPlaceServiceTest : PlaceDomainTestBase() {
-    private val placeRepository by inject<PlaceRepository>()
-    private val buildingRepository by inject<BuildingRepository>()
+    private val testDataGenerator = TestDataGenerator()
     private val searchPlaceService by inject<SearchPlaceService>()
 
     @Test
@@ -22,28 +16,7 @@ class SearchPlaceServiceTest : PlaceDomainTestBase() {
         val result1 = searchPlaceService.searchPlaces("수환", Location(0.0, 0.0))
         Assert.assertEquals(0, result1.size)
 
-        val building = buildingRepository.add(Building(
-            id = EntityIdRandomGenerator.generate(),
-            name = "아크로서울포레스트 D타워",
-            lng = 0.0,
-            lat = 0.0,
-            address = BuildingAddress(
-                siDo = "서울특별시",
-                siGunGu = "성동구",
-                eupMyeonDong = "성수동",
-                li = "",
-                roadName = "왕십리로",
-                mainBuildingNumber = "83",
-                subBuildingNumber = "21"
-            )
-        ))
-        val place = placeRepository.add(Place(
-            id = EntityIdRandomGenerator.generate(),
-            name = "D타워 장소1",
-            lng = 0.0,
-            lat = 0.0,
-            building = building
-        ))
+        val place = testDataGenerator.createPlace(placeName = "D타워 장소1")
 
         val result2 = searchPlaceService.searchPlaces("타워", Location(0.0, 0.0))
         Assert.assertEquals(1, result2.size)
@@ -59,51 +32,14 @@ class SearchPlaceServiceTest : PlaceDomainTestBase() {
         val result1 = searchPlaceService.searchPlaces("수환", Location(0.0, 0.0))
         Assert.assertEquals(0, result1.size)
 
-        val nearBuilding = buildingRepository.add(Building(
-            id = EntityIdRandomGenerator.generate(),
-            name = "아크로서울포레스트 D타워1",
-            lng = 0.05,
-            lat = 0.05,
-            address = BuildingAddress(
-                siDo = "서울특별시",
-                siGunGu = "성동구",
-                eupMyeonDong = "성수동",
-                li = "",
-                roadName = "왕십리로",
-                mainBuildingNumber = "83",
-                subBuildingNumber = "21"
-            )
-        ))
-        val nearPlace = placeRepository.add(Place(
-            id = EntityIdRandomGenerator.generate(),
-            name = "D타워1 장소",
-            lng = 0.05,
-            lat = 0.05,
-            building = nearBuilding
-        ))
-
-        val farBuilding = buildingRepository.add(Building(
-            id = EntityIdRandomGenerator.generate(),
-            name = "아크로서울포레스트 D타워2",
-            lng = 0.1,
-            lat = 0.1,
-            address = BuildingAddress(
-                siDo = "서울특별시",
-                siGunGu = "성동구",
-                eupMyeonDong = "성수동",
-                li = "",
-                roadName = "왕십리로",
-                mainBuildingNumber = "83",
-                subBuildingNumber = "21"
-            )
-        ))
-        val farPlace = placeRepository.add(Place(
-            id = EntityIdRandomGenerator.generate(),
-            name = "D타워2 장소",
-            lng = 0.1,
-            lat = 0.1,
-            building = nearBuilding
-        ))
+        val nearPlace = testDataGenerator.createPlace(
+            placeName = "D타워 장소1",
+            location = Location(0.05, 0.05)
+        )
+        val farPlace = testDataGenerator.createPlace(
+            placeName = "D타워 장소2",
+            location = Location(0.1, 0.1)
+        )
 
         val result = searchPlaceService.searchPlaces("D타워", Location(0.0, 0.0))
         Assert.assertEquals(2, result.size)

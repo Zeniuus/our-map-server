@@ -20,6 +20,10 @@ data class Building(
     private val lat: Double,
     @Embedded
     val address: BuildingAddress,
+    @Column(nullable = false, length = 36)
+    val siGunGuId: String,
+    @Column(nullable = false, length = 36)
+    val eupMyeonDongId: String,
 ) {
     @get:Transient
     val location: Location

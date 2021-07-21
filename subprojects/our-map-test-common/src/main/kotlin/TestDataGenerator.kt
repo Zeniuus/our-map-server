@@ -14,6 +14,7 @@ import domain.user.entity.User
 import domain.user.service.UserService
 import domain.user.userDomainModule
 import domain.util.EntityIdRandomGenerator
+import domain.util.Location
 import kotlin.random.Random
 
 class TestDataGenerator {
@@ -47,12 +48,13 @@ class TestDataGenerator {
 
     fun createPlace(
         placeName: String = "장소장소",
+        location: Location = Location(127.5, 37.5)
     ): Place {
         val building = buildingRepository.add(Building(
             id = EntityIdRandomGenerator.generate(),
             name = "건물건물",
-            lng = 127.5,
-            lat = 37.5,
+            lng = location.lng,
+            lat = location.lat,
             address = BuildingAddress(
                 siDo = "서울특별시",
                 siGunGu = "성동구",
@@ -62,13 +64,17 @@ class TestDataGenerator {
                 mainBuildingNumber = "83",
                 subBuildingNumber = "21",
             ),
+            siGunGuId = "",
+            eupMyeonDongId = "",
         ))
         return placeRepository.add(Place(
             id = EntityIdRandomGenerator.generate(),
             name = placeName,
-            lng = 127.5,
-            lat = 37.5,
-            building = building
+            lng = location.lng,
+            lat = location.lat,
+            building = building,
+            siGunGuId = "",
+            eupMyeonDongId = "",
         ))
     }
 

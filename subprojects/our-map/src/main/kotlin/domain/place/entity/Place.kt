@@ -22,7 +22,11 @@ data class Place(
     val lat: Double,
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "building_id", nullable = false)
-    val building: Building
+    val building: Building,
+    @Column(nullable = false, length = 36)
+    val siGunGuId: String,
+    @Column(nullable = false, length = 36)
+    val eupMyeonDongId: String,
 ) {
     @get:Transient
     val location: Location

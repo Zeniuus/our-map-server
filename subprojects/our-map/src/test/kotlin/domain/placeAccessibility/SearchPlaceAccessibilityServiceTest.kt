@@ -1,10 +1,6 @@
 package domain.placeAccessibility
 
-import domain.place.entity.Building
-import domain.place.entity.BuildingAddress
-import domain.place.entity.Place
-import domain.place.repository.BuildingRepository
-import domain.place.repository.PlaceRepository
+import TestDataGenerator
 import domain.placeAccessibility.entity.BuildingAccessibility
 import domain.placeAccessibility.entity.BuildingStairInfo
 import domain.placeAccessibility.entity.PlaceAccessibility
@@ -17,36 +13,14 @@ import org.junit.Test
 import org.koin.test.inject
 
 class SearchPlaceAccessibilityServiceTest : PlaceAccessibilityDomainTestBase() {
-    private val placeRepository by inject<PlaceRepository>()
-    private val buildingRepository by inject<BuildingRepository>()
+    private val testDataGenerator = TestDataGenerator()
     private val placeAccessibilityRepository by inject<PlaceAccessibilityRepository>()
     private val buildingAccessibilityRepository by inject<BuildingAccessibilityRepository>()
     private val searchPlaceAccessibilityService by inject<SearchPlaceAccessibilityService>()
 
     @Test
     fun `정상적인 경우`() = transactionManager.doAndRollback {
-        val building = buildingRepository.add(Building(
-            id = EntityIdRandomGenerator.generate(),
-            name = "아크로서울포레스트 D타워",
-            lng = 0.0,
-            lat = 0.0,
-            address = BuildingAddress(
-                siDo = "서울특별시",
-                siGunGu = "성동구",
-                eupMyeonDong = "성수동",
-                li = "",
-                roadName = "왕십리로",
-                mainBuildingNumber = "83",
-                subBuildingNumber = "21"
-            )
-        ))
-        val place = placeRepository.add(Place(
-            id = EntityIdRandomGenerator.generate(),
-            name = "D타워 장소1",
-            lng = 0.0,
-            lat = 0.0,
-            building = building
-        ))
+        val place = testDataGenerator.createPlace(placeName = "D타워 장소1")
 
         val result1 = searchPlaceAccessibilityService.search(listOf(place)).getAccessibility(place)
         Assert.assertNull(result1.first)
@@ -54,7 +28,7 @@ class SearchPlaceAccessibilityServiceTest : PlaceAccessibilityDomainTestBase() {
 
         val buildingAccessibility = buildingAccessibilityRepository.add(BuildingAccessibility(
             id = EntityIdRandomGenerator.generate(),
-            buildingId = building.id,
+            buildingId = place.building.id,
             hasElevator = true,
             hasObstacleToElevator = true,
             stairInfo = BuildingStairInfo.LESS_THAN_FIVE,

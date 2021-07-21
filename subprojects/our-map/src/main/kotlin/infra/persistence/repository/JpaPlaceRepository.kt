@@ -2,6 +2,7 @@ package infra.persistence.repository
 
 import domain.place.entity.Place
 import domain.place.repository.PlaceRepository
+import domain.village.entity.EupMyeonDong
 import infra.persistence.transaction.EntityManagerHolder
 
 class JpaPlaceRepository :
@@ -16,5 +17,16 @@ class JpaPlaceRepository :
         """.trimIndent(), Place::class.java)
         query.setParameter("searchText", "%$searchText%")
         return query.resultList
+    }
+
+    override fun countByEupMyeonDong(eupMyeonDong: EupMyeonDong): Int {
+        val em = EntityManagerHolder.get()!!
+        val query = em.createQuery("""
+            SELECT COUNT(*)
+            FROM Place p
+            WHERE p.eupMyeonDongId = :eupMyeonDongId
+        """.trimIndent(), Int::class.java)
+        query.setParameter("eupMyeonDongId", eupMyeonDong.id)
+        return query.firstResult
     }
 }
