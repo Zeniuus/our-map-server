@@ -1,6 +1,8 @@
 import application.place.placeApplicationModule
 import application.placeAccessibility.placeAccessibilityApplicationModule
 import application.user.userApplicationModule
+import auth.UserAuthenticator
+import converter.ourMapConverterModule
 import domain.place.placeDomainModule
 import domain.placeAccessibility.placeAccessibilityDomainModule
 import domain.user.userDomainModule
@@ -11,12 +13,12 @@ import io.ktor.features.ContentNegotiation
 import io.ktor.http.ContentType
 import io.ktor.routing.routing
 import org.koin.dsl.module
-import route.ProtobufJsonContentConverter
-import route.UserAuthenticator
-import route.converter.ourMapConverterModule
-import route.place.placeRoutes
-import route.placeAccessibility.placeAccessibilityRoutes
-import route.user.userRoutes
+import route.getAccessibility
+import route.getMainViewData
+import route.login
+import route.registerAccessibility
+import route.searchPlaces
+import route.signUp
 
 // TODO: embeddedServer로 서버를 띄우려고 하면 install(ContentNegotiation) { ... } 이 두 번 불려서
 //       DuplicateApplicationFeatureException가 발생한다. 실험 & 원인 파악 후 에러 리포팅하면 좋을 듯?
@@ -51,8 +53,11 @@ fun Application.ourMapModule(testing: Boolean = false) {
     }
 
     routing {
-        userRoutes()
-        placeRoutes()
-        placeAccessibilityRoutes()
+        signUp()
+        login()
+        getMainViewData()
+        searchPlaces()
+        getAccessibility()
+        registerAccessibility()
     }
 }

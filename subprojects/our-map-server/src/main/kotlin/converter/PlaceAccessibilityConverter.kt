@@ -1,4 +1,4 @@
-package route.converter
+package converter
 
 import domain.placeAccessibility.entity.PlaceAccessibility
 import domain.user.repository.UserRepository

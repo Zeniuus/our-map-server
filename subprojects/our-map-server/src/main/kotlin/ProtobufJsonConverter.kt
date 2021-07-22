@@ -1,5 +1,3 @@
-package route
-
 import com.google.protobuf.util.JsonFormat
 
 object ProtobufJsonConverter {

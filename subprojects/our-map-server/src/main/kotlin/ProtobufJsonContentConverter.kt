@@ -1,5 +1,3 @@
-package route
-
 import com.google.protobuf.Message
 import com.google.protobuf.MessageOrBuilder
 import io.ktor.application.ApplicationCall
@@ -35,7 +33,7 @@ class ProtobufJsonContentConverter : ContentConverter {
     override suspend fun convertForSend(
         context: PipelineContext<Any, ApplicationCall>,
         contentType: ContentType,
-        value: Any
+        value: Any,
     ): Any {
         return ProtobufJsonConverter.serializer.print(value as MessageOrBuilder)
     }

@@ -1,4 +1,4 @@
-package route.converter
+package converter
 
 import domain.place.entity.Building
 import ourMap.protocol.Model

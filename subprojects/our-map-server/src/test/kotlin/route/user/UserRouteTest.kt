@@ -1,12 +1,12 @@
 package route.user
 
+import auth.UserAuthenticator
 import org.junit.Assert
 import org.junit.Test
 import ourMap.protocol.Common
 import ourMap.protocol.LoginParams
 import ourMap.protocol.SignUpParams
 import route.RouteTestBase
-import route.UserAuthenticator
 import kotlin.random.Random
 
 class UserRouteTest : RouteTestBase() {

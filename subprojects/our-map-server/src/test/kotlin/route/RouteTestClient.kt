@@ -1,6 +1,8 @@
 package route
 
+import ProtobufJsonConverter
 import application.TransactionManager
+import auth.UserAuthenticator
 import com.google.protobuf.MessageOrBuilder
 import domain.user.entity.User
 import domain.user.service.UserAuthService

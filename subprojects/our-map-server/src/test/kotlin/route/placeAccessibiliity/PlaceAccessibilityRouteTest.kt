@@ -1,5 +1,6 @@
 package route.placeAccessibiliity
 
+import converter.BuildingAccessibilityConverter
 import org.junit.Assert
 import org.junit.Test
 import ourMap.protocol.GetAccessibilityParams
@@ -8,7 +9,6 @@ import ourMap.protocol.Model
 import ourMap.protocol.RegisterAccessibilityParams
 import ourMap.protocol.RegisterAccessibilityResult
 import route.RouteTestBase
-import route.converter.BuildingAccessibilityConverter
 
 class PlaceAccessibilityRouteTest : RouteTestBase() {
     @Test

@@ -1,4 +1,4 @@
-package route.converter
+package converter
 
 import org.koin.dsl.module
 

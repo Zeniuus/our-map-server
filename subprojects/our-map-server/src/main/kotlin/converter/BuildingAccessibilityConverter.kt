@@ -1,4 +1,4 @@
-package route.converter
+package converter
 
 import domain.placeAccessibility.entity.BuildingAccessibility
 import domain.placeAccessibility.entity.BuildingStairInfo

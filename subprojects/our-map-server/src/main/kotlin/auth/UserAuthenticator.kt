@@ -1,4 +1,4 @@
-package route
+package auth
 
 import application.user.UserAuthApplicationService
 import domain.user.exception.UserAuthenticationException

@@ -1,7 +1,8 @@
-package route.village
+package route
 
 import application.TransactionManager
 import application.village.VillageApplicationService
+import auth.UserAuthenticator
 import domain.village.repository.EupMyeonDongRepository
 import io.ktor.application.call
 import io.ktor.response.respond
@@ -9,9 +10,8 @@ import io.ktor.routing.Route
 import io.ktor.routing.post
 import org.koin.core.context.GlobalContext
 import ourMap.protocol.GetMainViewDataResult
-import route.UserAuthenticator
 
-fun Route.villageRoutes() {
+fun Route.getMainViewData() {
     val koin = GlobalContext.getKoinApplicationOrNull()!!.koin
 
     val transactionManager = koin.get<TransactionManager>()

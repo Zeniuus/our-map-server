@@ -1,6 +1,9 @@
-package route.place
+package route
 
 import application.place.PlaceApplicationService
+import auth.UserAuthenticator
+import converter.BuildingConverter
+import converter.PlaceConverter
 import domain.util.Location
 import io.ktor.application.call
 import io.ktor.request.receive
@@ -10,11 +13,8 @@ import io.ktor.routing.post
 import org.koin.core.context.GlobalContext
 import ourMap.protocol.SearchPlacesParams
 import ourMap.protocol.SearchPlacesResult
-import route.UserAuthenticator
-import route.converter.BuildingConverter
-import route.converter.PlaceConverter
 
-fun Route.placeRoutes() {
+fun Route.searchPlaces() {
     val koin = GlobalContext.getKoinApplicationOrNull()!!.koin
     val placeApplicationService = koin.get<PlaceApplicationService>()
     val userAuthenticator = koin.get<UserAuthenticator>()
