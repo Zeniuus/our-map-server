@@ -21,7 +21,7 @@ class VillageService(
             .sortedByDescending { it.registerProgress }
     }
 
-    fun upsert(eupMyeonDong: EupMyeonDong): Village {
+    fun upsertStatistics(eupMyeonDong: EupMyeonDong): Village {
         val buildingAccessibilities = buildingAccessibilityRepository.findByEupMyeonDong(eupMyeonDong)
         val buildingAccessibilitiesByUserId = buildingAccessibilities
             .filter { it.userId != null }
