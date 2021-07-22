@@ -5,6 +5,7 @@ import domain.place.entity.Place
 import domain.placeAccessibility.entity.BuildingAccessibility
 import domain.placeAccessibility.entity.PlaceAccessibility
 import domain.user.entity.User
+import domain.village.entity.Village
 import org.hibernate.dialect.MySQL57Dialect
 import org.hibernate.jpa.HibernatePersistenceProvider
 import java.net.URL
@@ -78,6 +79,7 @@ object HibernateJpaConfiguration {
                 Building::class.qualifiedName!!,
                 PlaceAccessibility::class.qualifiedName!!,
                 BuildingAccessibility::class.qualifiedName!!,
+                Village::class.qualifiedName!!,
             )
         }
 

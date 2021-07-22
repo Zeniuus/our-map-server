@@ -1,18 +1,19 @@
 import application.place.placeApplicationModule
 import application.placeAccessibility.placeAccessibilityApplicationModule
 import application.user.userApplicationModule
-import auth.UserAuthenticator
+import application.village.villageApplicationModule
+import auth.ourMapAuthModule
 import converter.ourMapConverterModule
 import domain.place.placeDomainModule
 import domain.placeAccessibility.placeAccessibilityDomainModule
 import domain.user.userDomainModule
+import domain.village.villageDomainModule
 import infra.persistence.schema.LiquibaseMigrator
 import io.ktor.application.Application
 import io.ktor.application.install
 import io.ktor.features.ContentNegotiation
 import io.ktor.http.ContentType
 import io.ktor.routing.routing
-import org.koin.dsl.module
 import route.getAccessibility
 import route.getMainViewData
 import route.login
@@ -40,11 +41,11 @@ fun Application.ourMapModule(testing: Boolean = false) {
             placeAccessibilityDomainModule,
             placeAccessibilityApplicationModule,
 
-            ourMapConverterModule,
+            villageDomainModule,
+            villageApplicationModule,
 
-            module {
-                single { UserAuthenticator(get()) }
-            }
+            ourMapConverterModule,
+            ourMapAuthModule,
         )
     }
 

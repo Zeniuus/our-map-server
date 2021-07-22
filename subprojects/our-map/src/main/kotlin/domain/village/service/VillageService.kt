@@ -42,7 +42,7 @@ class VillageService(
                 buildingAccessibilityCount = buildingAccessibilities.size,
                 placeAccessibilityCount = placeAccessibilityRepository.countByEupMyeonDong(eupMyeonDong),
                 buildingAccessibilityRegisteredUserCount = buildingAccessibilitiesByUserId.size,
-                mostBuildingAccessibilityRegisteredUserId = buildingAccessibilitiesByUserId.maxByOrNull { it.value.size }!!.key,
+                mostBuildingAccessibilityRegisteredUserId = buildingAccessibilitiesByUserId.maxByOrNull { it.value.size }?.key,
             ))
         }
     }

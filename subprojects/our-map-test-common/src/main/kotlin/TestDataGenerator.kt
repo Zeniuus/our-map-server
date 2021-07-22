@@ -64,8 +64,8 @@ class TestDataGenerator {
                 mainBuildingNumber = "83",
                 subBuildingNumber = "21",
             ),
-            siGunGuId = "",
-            eupMyeonDongId = "",
+            siGunGuId = "1",
+            eupMyeonDongId = "1",
         ))
         return placeRepository.add(Place(
             id = EntityIdRandomGenerator.generate(),
@@ -73,8 +73,8 @@ class TestDataGenerator {
             lng = location.lng,
             lat = location.lat,
             building = building,
-            siGunGuId = "",
-            eupMyeonDongId = "",
+            siGunGuId = "1",
+            eupMyeonDongId = "1",
         ))
     }
 

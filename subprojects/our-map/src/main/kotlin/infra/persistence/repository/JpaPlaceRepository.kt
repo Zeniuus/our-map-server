@@ -22,11 +22,11 @@ class JpaPlaceRepository :
     override fun countByEupMyeonDong(eupMyeonDong: EupMyeonDong): Int {
         val em = EntityManagerHolder.get()!!
         val query = em.createQuery("""
-            SELECT COUNT(*)
+            SELECT COUNT(p.id)
             FROM Place p
             WHERE p.eupMyeonDongId = :eupMyeonDongId
-        """.trimIndent(), Int::class.java)
+        """.trimIndent())
         query.setParameter("eupMyeonDongId", eupMyeonDong.id)
-        return query.firstResult
+        return (query.singleResult as java.lang.Long).toInt()
     }
 }

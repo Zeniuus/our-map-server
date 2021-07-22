@@ -33,7 +33,7 @@ class JpaBuildingAccessibilityRepository :
     override fun findByEupMyeonDong(eupMyeonDong: EupMyeonDong): List<BuildingAccessibility> {
         val em = EntityManagerHolder.get()!!
         val query = em.createNativeQuery("""
-            SELECT building_accessibility.*
+            SELECT *
             FROM building_accessibility ba
             LEFT OUTER JOIN building ON building.id = ba.id
             WHERE building.eup_myeon_dong_id = :eupMyeonDongId

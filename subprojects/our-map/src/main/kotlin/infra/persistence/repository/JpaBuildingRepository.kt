@@ -11,11 +11,11 @@ class JpaBuildingRepository :
     override fun countByEupMyeonDong(eupMyeonDong: EupMyeonDong): Int {
         val em = EntityManagerHolder.get()!!
         val query = em.createQuery("""
-            SELECT COUNT(*)
+            SELECT COUNT(b.id)
             FROM Building b
             WHERE b.eupMyeonDongId = :eupMyeonDongId
-        """.trimIndent(), Int::class.java)
+        """.trimIndent())
         query.setParameter("eupMyeonDongId", eupMyeonDong.id)
-        return query.firstResult
+        return (query.singleResult as java.lang.Long).toInt()
     }
 }

@@ -22,9 +22,9 @@ class JpaVillageRepository :
         val query = em.createQuery("""
             SELECT v
             FROM Village v
-            WHERE v.eupMyeonDong = :eupMyeonDong
+            WHERE v.eupMyeonDongId = :eupMyeonDongId
         """.trimIndent(), Village::class.java)
-        query.setParameter("eupMyeonDong", eupMyeonDong)
+        query.setParameter("eupMyeonDongId", eupMyeonDong.id)
         return getSingularResultOrThrow(query.resultList)
     }
 }

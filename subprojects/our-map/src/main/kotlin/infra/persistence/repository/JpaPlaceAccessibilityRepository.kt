@@ -4,6 +4,7 @@ import domain.placeAccessibility.entity.PlaceAccessibility
 import domain.placeAccessibility.repository.PlaceAccessibilityRepository
 import domain.village.entity.EupMyeonDong
 import infra.persistence.transaction.EntityManagerHolder
+import java.math.BigInteger
 
 class JpaPlaceAccessibilityRepository :
     JpaEntityRepositoryBase<PlaceAccessibility, String>(PlaceAccessibility::class.java),
@@ -37,8 +38,8 @@ class JpaPlaceAccessibilityRepository :
             FROM place_accessibility pa
             LEFT OUTER JOIN place ON place.id = pa.id
             WHERE place.eup_myeon_dong_id = :eupMyeonDongId
-        """.trimIndent(), Int::class.java)
+        """.trimIndent())
         query.setParameter("eupMyeonDongId", eupMyeonDong.id)
-        return query.firstResult
+        return (query.singleResult as BigInteger).toInt()
     }
 }
