@@ -24,7 +24,7 @@ class UserServiceTest : UserDomainTestBase() {
             instagramId = instagramId
         ).id
 
-        val user = userRepository.findById(userId)!!
+        val user = userRepository.findById(userId)
         Assert.assertEquals(nickname, user.nickname)
         Assert.assertTrue(Bcrypt.verify(password, user.encryptedPassword))
         Assert.assertEquals(instagramId, user.instagramId)

@@ -20,9 +20,9 @@ open class JpaEntityRepositoryBase<ENTITY : Any, ID>(
             .executeUpdate()
     }
 
-    override fun findById(id: ID): ENTITY? {
+    override fun findById(id: ID): ENTITY {
         val em = EntityManagerHolder.get()!!
-        return em.find(clazz, id)
+        return em.find(clazz, id) ?: throw SQLException("No entity found with id $id")
     }
 
     protected fun getSingularResultOrThrow(queryResults: List<ENTITY>): ENTITY? {

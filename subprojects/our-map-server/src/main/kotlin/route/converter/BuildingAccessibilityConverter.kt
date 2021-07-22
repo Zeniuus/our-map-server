@@ -31,7 +31,7 @@ class BuildingAccessibilityConverter(
         .setStairInfo(toProto(buildingAccessibility.stairInfo))
         .also {
             buildingAccessibility.userId?.let { userId ->
-                val user = userRepository.findById(userId)!!
+                val user = userRepository.findById(userId)
                 it.registeredUserName = Common.StringValue.newBuilder().setValue(user.nickname).build()
             }
         }

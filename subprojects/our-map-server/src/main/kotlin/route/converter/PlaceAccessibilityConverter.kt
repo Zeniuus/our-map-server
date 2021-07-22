@@ -15,7 +15,7 @@ class PlaceAccessibilityConverter(
         .setIsWheelchairAccessible(placeAccessibility.isWheelchairAccessible)
         .also {
             placeAccessibility.userId?.let { userId ->
-                val user = userRepository.findById(userId)!!
+                val user = userRepository.findById(userId)
                 it.registeredUserName = Common.StringValue.newBuilder().setValue(user.nickname).build()
             }
         }

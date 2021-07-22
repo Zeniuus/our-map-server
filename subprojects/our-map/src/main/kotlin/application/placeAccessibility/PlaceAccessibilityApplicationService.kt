@@ -19,7 +19,7 @@ class PlaceAccessibilityApplicationService(
 ) {
     fun getAccessibility(placeId: String): Pair<PlaceAccessibility?, BuildingAccessibility?> = transactionManager.doInTransaction {
         val placeAccessibility = placeAccessibilityRepository.findByPlaceId(placeId)
-        val place = placeRepository.findById(placeId)!!
+        val place = placeRepository.findById(placeId)
         val buildingAccessibility = buildingAccessibilityRepository.findByBuildingId(place.building.id)
 
         Pair(placeAccessibility, buildingAccessibility)
