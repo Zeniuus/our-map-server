@@ -16,7 +16,6 @@ class PlaceAccessibilityApplicationService(
     private val buildingAccessibilityRepository: BuildingAccessibilityRepository,
     private val placeAccessibilityService: PlaceAccessibilityService,
     private val buildingAccessibilityService: BuildingAccessibilityService,
-    private val placeAccessibilityEventPublisher: PlaceAccessibilityEventPublisher,
 ) {
     fun getAccessibility(placeId: String): Pair<PlaceAccessibility?, BuildingAccessibility?> = transactionManager.doInTransaction {
         val placeAccessibility = placeAccessibilityRepository.findByPlaceId(placeId)
@@ -32,10 +31,6 @@ class PlaceAccessibilityApplicationService(
     ): Pair<PlaceAccessibility, BuildingAccessibility?> = transactionManager.doInTransaction {
         val placeAccessibility = placeAccessibilityService.create(createPlaceAccessibilityParams)
         val buildingAccessibility = createBuildingAccessibilityParams?.let { buildingAccessibilityService.create(createBuildingAccessibilityParams) }
-        val result = Pair(placeAccessibility, buildingAccessibility)
-
-        placeAccessibilityEventPublisher.accessibilityRegistered(placeRepository.findById(placeAccessibility.placeId))
-
-        result
+        Pair(placeAccessibility, buildingAccessibility)
     }
 }

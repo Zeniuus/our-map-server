@@ -6,6 +6,7 @@ import domain.util.EntityIdRandomGenerator
 
 class PlaceAccessibilityService(
     private val placeAccessibilityRepository: PlaceAccessibilityRepository,
+    private val placeAccessibilityEventPublisher: PlaceAccessibilityEventPublisher,
 ) {
     data class CreateParams(
         val placeId: String,
@@ -16,7 +17,7 @@ class PlaceAccessibilityService(
     )
 
     fun create(params: CreateParams): PlaceAccessibility {
-        return placeAccessibilityRepository.add(
+        val result = placeAccessibilityRepository.add(
             PlaceAccessibility(
                 id = EntityIdRandomGenerator.generate(),
                 placeId = params.placeId,
@@ -26,5 +27,9 @@ class PlaceAccessibilityService(
                 userId = params.userId,
             )
         )
+
+        placeAccessibilityEventPublisher.accessibilityRegistered(result)
+
+        return result
     }
 }
