@@ -1,14 +1,19 @@
 package domain.village
 
 import TestDataGenerator
+import domain.place.repository.BuildingRepository
+import domain.place.repository.PlaceRepository
 import domain.placeAccessibility.entity.BuildingStairInfo
 import domain.placeAccessibility.placeAccessibilityDomainModule
+import domain.placeAccessibility.repository.BuildingAccessibilityRepository
+import domain.placeAccessibility.repository.PlaceAccessibilityRepository
 import domain.placeAccessibility.service.BuildingAccessibilityService
 import domain.placeAccessibility.service.PlaceAccessibilityService
 import domain.village.repository.EupMyeonDongRepository
 import domain.village.repository.VillageRepository
 import domain.village.service.VillageService
 import org.junit.Assert
+import org.junit.Before
 import org.junit.Test
 import org.koin.test.inject
 
@@ -16,11 +21,26 @@ class VillageServiceTest : VillageDomainTestBase() {
     override val koinModules = super.koinModules + placeAccessibilityDomainModule
 
     private val testDataGenerator = TestDataGenerator()
+    private val placeRepository by inject<PlaceRepository>()
+    private val buildingRepository by inject<BuildingRepository>()
+    private val placeAccessibilityRepository by inject<PlaceAccessibilityRepository>()
+    private val buildingAccessibilityRepository by inject<BuildingAccessibilityRepository>()
     private val villageRepository by inject<VillageRepository>()
     private val eupMyeonDongRepository by inject<EupMyeonDongRepository>()
     private val villageService by inject<VillageService>()
     private val buildingAccessibilityService by inject<BuildingAccessibilityService>()
     private val placeAccessibilityService by inject<PlaceAccessibilityService>()
+
+    @Before
+    fun setUp() {
+        transactionManager.doInTransaction {
+            placeAccessibilityRepository.removeAll()
+            buildingAccessibilityRepository.removeAll()
+            placeRepository.removeAll()
+            buildingRepository.removeAll()
+            villageRepository.removeAll()
+        }
+    }
 
     @Test
     fun `upsertStatistics - 정상적인 경우`() = transactionManager.doAndRollback {
