@@ -35,7 +35,7 @@ class JpaBuildingAccessibilityRepository :
         val query = em.createNativeQuery("""
             SELECT *
             FROM building_accessibility ba
-            LEFT OUTER JOIN building ON building.id = ba.id
+            LEFT OUTER JOIN building ON building.id = ba.building_id
             WHERE building.eup_myeon_dong_id = :eupMyeonDongId
         """.trimIndent(), BuildingAccessibility::class.java)
         query.setParameter("eupMyeonDongId", eupMyeonDong.id)

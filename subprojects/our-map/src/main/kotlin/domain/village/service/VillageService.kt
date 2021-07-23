@@ -31,7 +31,7 @@ class VillageService(
             existingVillage.buildingAccessibilityCount = buildingAccessibilities.size
             existingVillage.placeAccessibilityCount = placeAccessibilityRepository.countByEupMyeonDong(eupMyeonDong)
             existingVillage.buildingAccessibilityRegisteredUserCount = buildingAccessibilitiesByUserId.size
-            existingVillage.mostBuildingAccessibilityRegisteredUserId = buildingAccessibilitiesByUserId.maxByOrNull { it.value.size }!!.key
+            existingVillage.mostBuildingAccessibilityRegisteredUserId = buildingAccessibilitiesByUserId.maxByOrNull { it.value.size }?.key
             existingVillage
         } else {
             villageRepository.add(Village(

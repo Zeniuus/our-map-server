@@ -8,4 +8,6 @@ class InMemoryEupMyeonDongRepository : EupMyeonDongRepository {
     override fun findById(id: String): EupMyeonDong {
         return eupMyeonDongs.find { it.id == id }!!
     }
+
+    override fun listAll() = eupMyeonDongs
 }

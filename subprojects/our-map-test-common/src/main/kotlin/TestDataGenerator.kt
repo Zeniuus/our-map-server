@@ -15,6 +15,9 @@ import domain.user.service.UserService
 import domain.user.userDomainModule
 import domain.util.EntityIdRandomGenerator
 import domain.util.Location
+import domain.village.repository.EupMyeonDongRepository
+import domain.village.repository.SiGunGuRepository
+import domain.village.villageDomainModule
 import kotlin.random.Random
 
 class TestDataGenerator {
@@ -22,7 +25,8 @@ class TestDataGenerator {
         modules(
             userDomainModule,
             placeDomainModule,
-            placeAccessibilityDomainModule
+            placeAccessibilityDomainModule,
+            villageDomainModule,
         )
     }
 
@@ -31,6 +35,8 @@ class TestDataGenerator {
     private val buildingRepository = koin.get<BuildingRepository>()
     private val placeAccessibilityService = koin.get<PlaceAccessibilityService>()
     private val buildingAccessibilityService = koin.get<BuildingAccessibilityService>()
+    private val eupMyeonDongRepository = koin.get<EupMyeonDongRepository>()
+    private val siGunGuRepository = koin.get<SiGunGuRepository>()
 
     fun createUser(
         nickname: String = Random.nextBytes(32).toString(),
@@ -48,9 +54,12 @@ class TestDataGenerator {
 
     fun createPlace(
         placeName: String = "장소장소",
-        location: Location = Location(127.5, 37.5)
+        location: Location = Location(127.5, 37.5),
+        building: Building? = null,
+        eupMyeonDongId: String = eupMyeonDongRepository.listAll()[0].id,
+        siGunGuId: String = siGunGuRepository.listAll()[0].id
     ): Place {
-        val building = buildingRepository.add(Building(
+        val buildingToUse = building ?: buildingRepository.add(Building(
             id = EntityIdRandomGenerator.generate(),
             name = "건물건물",
             lng = location.lng,
@@ -64,17 +73,17 @@ class TestDataGenerator {
                 mainBuildingNumber = "83",
                 subBuildingNumber = "21",
             ),
-            siGunGuId = "1",
-            eupMyeonDongId = "1",
+            siGunGuId = siGunGuId,
+            eupMyeonDongId = eupMyeonDongId,
         ))
         return placeRepository.add(Place(
             id = EntityIdRandomGenerator.generate(),
             name = placeName,
             lng = location.lng,
             lat = location.lat,
-            building = building,
-            siGunGuId = "1",
-            eupMyeonDongId = "1",
+            building = buildingToUse,
+            siGunGuId = siGunGuId,
+            eupMyeonDongId = eupMyeonDongId,
         ))
     }
 

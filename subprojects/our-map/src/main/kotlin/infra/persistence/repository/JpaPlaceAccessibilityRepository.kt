@@ -36,7 +36,7 @@ class JpaPlaceAccessibilityRepository :
         val query = em.createNativeQuery("""
             SELECT count(*)
             FROM place_accessibility pa
-            LEFT OUTER JOIN place ON place.id = pa.id
+            LEFT OUTER JOIN place ON place.id = pa.place_id
             WHERE place.eup_myeon_dong_id = :eupMyeonDongId
         """.trimIndent())
         query.setParameter("eupMyeonDongId", eupMyeonDong.id)

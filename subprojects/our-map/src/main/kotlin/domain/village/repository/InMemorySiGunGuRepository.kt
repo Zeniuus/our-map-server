@@ -8,4 +8,6 @@ class InMemorySiGunGuRepository : SiGunGuRepository {
     override fun findById(id: String): SiGunGu {
         return siGunGus.find { it.id == id }!!
     }
+
+    override fun listAll() = siGunGus
 }
