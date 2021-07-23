@@ -2,13 +2,14 @@ package application.village
 
 import application.TransactionManager
 import domain.village.entity.Village
-import domain.village.service.VillageService
+import domain.village.repository.VillageRepository
 
 class VillageApplicationService(
     private val transactionManager: TransactionManager,
-    private val villageService: VillageService,
+    private val villageRepository: VillageRepository,
 ) {
     fun listForMainView(): List<Village> = transactionManager.doInTransaction {
-        villageService.listByRanking()
+        villageRepository.listAll()
+            .sortedByDescending { it.registerProgress }
     }
 }

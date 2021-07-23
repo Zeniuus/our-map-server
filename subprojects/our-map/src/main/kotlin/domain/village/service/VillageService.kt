@@ -16,11 +16,6 @@ class VillageService(
     private val placeAccessibilityRepository: PlaceAccessibilityRepository,
     private val villageRepository: VillageRepository,
 ) {
-    fun listByRanking(): List<Village> {
-        return villageRepository.listAll()
-            .sortedByDescending { it.registerProgress }
-    }
-
     fun upsertStatistics(eupMyeonDong: EupMyeonDong): Village {
         val buildingAccessibilities = buildingAccessibilityRepository.findByEupMyeonDong(eupMyeonDong)
         val buildingAccessibilitiesByUserId = buildingAccessibilities
