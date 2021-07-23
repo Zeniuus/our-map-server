@@ -10,6 +10,7 @@ import io.ktor.routing.Route
 import io.ktor.routing.post
 import org.koin.core.context.GlobalContext
 import ourMap.protocol.GetMainViewDataResult
+import java.math.BigDecimal
 
 fun Route.getMainViewData() {
     val koin = GlobalContext.getKoinApplicationOrNull()!!.koin
@@ -34,7 +35,11 @@ fun Route.getMainViewData() {
                                 .setVillageId(village.id)
                                 .setVillageName("${eupMyeonDong.siGunGu.name} ${eupMyeonDong.name}")
                                 .setRank(idx + 1)
-                                .setProgressPercentage(village.registerProgress.toString())
+                                .setProgressPercentage(
+                                    (village.registerProgress * BigDecimal(100)).toString()
+                                        // 소수점 부분이 0으로 끝나는 경우 처리
+                                        .replace(Regex("0+$"), "")
+                                        .replace(Regex("\\.$"), ""))
                                 .build()
                         }
                     )

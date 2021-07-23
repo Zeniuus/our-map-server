@@ -100,7 +100,4 @@ class VillageServiceTest : VillageDomainTestBase() {
         Assert.assertEquals(1, village3.buildingAccessibilityRegisteredUserCount)
         Assert.assertEquals(user.id, village3.mostBuildingAccessibilityRegisteredUserId)
     }
-
-    // TODO: list ranking test
-    // TODO: getMainViewData route test
 }
