@@ -40,11 +40,6 @@ class GetHomeViewDataTest : OurMapServerRouteTestBase() {
         }
 
         val eupMyeonDongs = transactionManager.doInTransaction {
-            placeAccessibilityRepository.removeAll()
-            buildingAccessibilityRepository.removeAll()
-            placeRepository.removeAll()
-            buildingRepository.removeAll()
-
             val eupMyeonDongs = eupMyeonDongRepository.listAll().shuffled()
             eupMyeonDongs.forEachIndexed { idx, eupMyeonDong ->
                 val places = (1..100).map {

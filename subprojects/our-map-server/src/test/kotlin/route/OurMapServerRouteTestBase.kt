@@ -22,6 +22,7 @@ import kotlin.reflect.KClass
 
 open class OurMapServerRouteTestBase : KoinTest {
     init {
+        MySQLContainer.startOnce()
         configOurMapServerIoCContainerOnce()
     }
 

@@ -56,7 +56,7 @@ object HibernateJpaConfiguration {
         }
 
         override fun getNonJtaDataSource(): DataSource {
-            return DatabaseConfiguration.dataSource
+            return DatabaseConfiguration.getDataSource()
         }
 
         override fun getMappingFileNames(): MutableList<String> {

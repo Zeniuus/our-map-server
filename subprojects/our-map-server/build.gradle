@@ -6,6 +6,7 @@ plugins {
 dependencies {
     implementation project(':our-map')
     implementation project(':our-map-protocol')
+    implementation project(':database-migrator')
     testImplementation project(':our-map-test-common')
 
     implementation "io.ktor:ktor-server-core:$ktorVersion"

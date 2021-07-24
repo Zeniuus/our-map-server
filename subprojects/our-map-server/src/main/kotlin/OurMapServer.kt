@@ -8,7 +8,6 @@ import domain.place.placeDomainModule
 import domain.placeAccessibility.placeAccessibilityDomainModule
 import domain.user.userDomainModule
 import domain.village.villageDomainModule
-import infra.persistence.schema.LiquibaseMigrator
 import io.ktor.application.Application
 import io.ktor.application.install
 import io.ktor.features.ContentNegotiation
@@ -27,7 +26,7 @@ import route.signUp
 //       DuplicateApplicationFeatureException가 발생한다. 실험 & 원인 파악 후 에러 리포팅하면 좋을 듯?
 //       일단은 EngineMain 방식을 사용하여 문제를 우회한다.
 fun main(args: Array<String>) {
-    LiquibaseMigrator.migrate()
+    LiquibaseDatabaseMigrator.migrate()
     configOurMapServerIoCContainerOnce()
     io.ktor.server.netty.EngineMain.main(args)
 }
