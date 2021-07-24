@@ -14,9 +14,9 @@ data class Village(
     @Column(nullable = false, length = 36)
     val eupMyeonDongId: String,
     @Column(nullable = false)
-    val buildingCount: Int,
+    var buildingCount: Int,
     @Column(nullable = false)
-    val placeCount: Int,
+    var placeCount: Int,
     @Column(nullable = false)
     var buildingAccessibilityCount: Int,
     @Column(nullable = false)

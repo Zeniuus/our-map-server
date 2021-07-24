@@ -14,7 +14,7 @@ object MySQLContainer {
                         withExposedPorts(3306)
                         withEnv("MYSQL_ROOT_PASSWORD", "password")
                     }
-                mysql!!.start()
+                mysql!!.start() // https://www.testcontainers.org/test_framework_integration/manual_lifecycle_control/
 
                 DatabaseConfiguration.setOverridingProperties(
                     jdbcUrl = "jdbc:mysql://localhost:${mysql!!.firstMappedPort}/our_map?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&createDatabaseIfNotExist=true",
