@@ -1,28 +1,12 @@
-package route.user
+package route
 
 import auth.UserAuthenticator
 import org.junit.Assert
 import org.junit.Test
-import ourMap.protocol.Common
 import ourMap.protocol.LoginParams
-import ourMap.protocol.SignUpParams
-import route.RouteTestBase
 import kotlin.random.Random
 
-class UserRouteTest : RouteTestBase() {
-    @Test
-    fun testSignUp() = runRouteTest {
-        val nickname = Random.nextBytes(32).toString()
-        val params = SignUpParams.newBuilder()
-            .setNickname(nickname)
-            .setInstagramId(Common.StringValue.newBuilder().setValue("instagramId"))
-            .setPassword("password")
-            .build()
-        requestWithoutAuth("/signUp", params).apply {
-            Assert.assertNotNull(response.headers[UserAuthenticator.accessTokenHeader])
-        }
-    }
-
+class LoginTest : RouteTestBase() {
     @Test
     fun testLogin() = runRouteTest {
         val nickname = Random.nextBytes(32).toString()

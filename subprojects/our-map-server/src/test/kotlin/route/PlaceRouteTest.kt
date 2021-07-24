@@ -1,11 +1,10 @@
-package route.place
+package route
 
 import org.junit.Assert
 import org.junit.Test
 import ourMap.protocol.Model
 import ourMap.protocol.SearchPlacesParams
 import ourMap.protocol.SearchPlacesResult
-import route.RouteTestBase
 import kotlin.random.Random
 
 class PlaceRouteTest : RouteTestBase() {
