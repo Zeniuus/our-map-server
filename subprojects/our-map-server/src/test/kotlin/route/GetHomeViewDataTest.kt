@@ -11,10 +11,10 @@ import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 import org.koin.test.inject
-import ourMap.protocol.GetMainViewDataParams
-import ourMap.protocol.GetMainViewDataResult
+import ourMap.protocol.GetHomeViewDataParams
+import ourMap.protocol.GetHomeViewDataResult
 
-class GetMainViewDataTest : OurMapServerRouteTestBase() {
+class GetHomeViewDataTest : OurMapServerRouteTestBase() {
     private val placeRepository by inject<PlaceRepository>()
     private val buildingRepository by inject<BuildingRepository>()
     private val placeAccessibilityRepository by inject<PlaceAccessibilityRepository>()
@@ -34,7 +34,7 @@ class GetMainViewDataTest : OurMapServerRouteTestBase() {
     }
 
     @Test
-    fun testGetMainViewData() = runRouteTest {
+    fun testGetHomeViewData() = runRouteTest {
         val user = transactionManager.doInTransaction {
             testDataGenerator.createUser()
         }
@@ -63,8 +63,8 @@ class GetMainViewDataTest : OurMapServerRouteTestBase() {
         }
 
         val testClient = getTestClient(user)
-        testClient.request("/getMainViewData", GetMainViewDataParams.getDefaultInstance()).apply {
-            val result = getResult(GetMainViewDataResult::class)
+        testClient.request("/getHomeViewData", GetHomeViewDataParams.getDefaultInstance()).apply {
+            val result = getResult(GetHomeViewDataResult::class)
             Assert.assertEquals(eupMyeonDongs.size, result.villageRankingEntriesList.size)
             transactionManager.doInTransaction {
                 eupMyeonDongs.zip(result.villageRankingEntriesList.reversed()).forEachIndexed { idx, (eupMyeonDong, villageRankingEntry) ->

@@ -9,10 +9,10 @@ import io.ktor.response.respond
 import io.ktor.routing.Route
 import io.ktor.routing.post
 import org.koin.core.context.GlobalContext
-import ourMap.protocol.GetMainViewDataResult
+import ourMap.protocol.GetHomeViewDataResult
 import java.math.BigDecimal
 
-fun Route.getMainViewData() {
+fun Route.getHomeViewData() {
     val koin = GlobalContext.getKoinApplicationOrNull()!!.koin
 
     val transactionManager = koin.get<TransactionManager>()
@@ -20,18 +20,18 @@ fun Route.getMainViewData() {
     val eupMyeonDongRepository = koin.get<EupMyeonDongRepository>()
     val villageApplicationService = koin.get<VillageApplicationService>()
 
-    post("/getMainViewData") {
+    post("/getHomeViewData") {
         userAuthenticator.checkAuth(call.request)
 
         val villages = villageApplicationService.listForMainView()
 
         call.respond(
             transactionManager.doInTransaction {
-                GetMainViewDataResult.newBuilder()
+                GetHomeViewDataResult.newBuilder()
                     .addAllVillageRankingEntries(
                         villages.mapIndexed { idx, village ->
                             val eupMyeonDong = eupMyeonDongRepository.findById(village.eupMyeonDongId)
-                            GetMainViewDataResult.VillageRankingEntry.newBuilder()
+                            GetHomeViewDataResult.VillageRankingEntry.newBuilder()
                                 .setVillageId(village.id)
                                 .setVillageName("${eupMyeonDong.siGunGu.name} ${eupMyeonDong.name}")
                                 .setRank(idx + 1)

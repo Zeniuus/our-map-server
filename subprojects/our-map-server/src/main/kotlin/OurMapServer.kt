@@ -16,7 +16,7 @@ import io.ktor.http.ContentType
 import io.ktor.routing.routing
 import org.koin.core.error.KoinAppAlreadyStartedException
 import route.getAccessibility
-import route.getMainViewData
+import route.getHomeViewData
 import route.login
 import route.registerAccessibility
 import route.searchPlaces
@@ -39,7 +39,7 @@ fun Application.ourMapModule(testing: Boolean = false) {
     routing {
         signUp()
         login()
-        getMainViewData()
+        getHomeViewData()
         searchPlaces()
         getAccessibility()
         registerAccessibility()
