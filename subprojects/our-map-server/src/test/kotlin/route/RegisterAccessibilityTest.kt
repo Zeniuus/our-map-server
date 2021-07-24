@@ -6,7 +6,7 @@ import ourMap.protocol.Model
 import ourMap.protocol.RegisterAccessibilityParams
 import ourMap.protocol.RegisterAccessibilityResult
 
-class RegisterAccessibilityTest : RouteTestBase() {
+class RegisterAccessibilityTest : OurMapServerRouteTestBase() {
     @Test
     fun testRegisterAccessibility() = runRouteTest {
         val user = transactionManager.doInTransaction {

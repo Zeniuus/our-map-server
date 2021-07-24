@@ -6,7 +6,7 @@ import org.junit.Test
 import ourMap.protocol.GetAccessibilityParams
 import ourMap.protocol.GetAccessibilityResult
 
-class GetAccessibilityTest : RouteTestBase() {
+class GetAccessibilityTest : OurMapServerRouteTestBase() {
     @Test
     fun getAccessibilityTest() = runRouteTest {
         val user = transactionManager.doInTransaction {

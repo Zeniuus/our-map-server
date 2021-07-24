@@ -7,7 +7,7 @@ import ourMap.protocol.Common
 import ourMap.protocol.SignUpParams
 import kotlin.random.Random
 
-class SignUpTest : RouteTestBase() {
+class SignUpTest : OurMapServerRouteTestBase() {
     @Test
     fun testSignUp() = runRouteTest {
         val nickname = Random.nextBytes(32).toString()

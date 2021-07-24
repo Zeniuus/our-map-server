@@ -5,6 +5,7 @@ import TestDataGenerator
 import application.TransactionManager
 import com.google.protobuf.Message
 import com.google.protobuf.MessageOrBuilder
+import configOurMapServerIoCContainerOnce
 import domain.user.entity.User
 import io.ktor.application.Application
 import io.ktor.http.ContentType
@@ -19,7 +20,11 @@ import org.koin.test.inject
 import ourMapModule
 import kotlin.reflect.KClass
 
-open class RouteTestBase : KoinTest {
+open class OurMapServerRouteTestBase : KoinTest {
+    init {
+        configOurMapServerIoCContainerOnce()
+    }
+
     /**
      * [runRouteTest]에서 [ourMapModule]을 실행할 때 Global KoinApplication이 설정되므로
      * 별도로 KoinTestRule을 설정하지 않아도 inject가 가능하다.

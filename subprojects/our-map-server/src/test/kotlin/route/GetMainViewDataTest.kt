@@ -8,12 +8,13 @@ import domain.placeAccessibility.repository.PlaceAccessibilityRepository
 import domain.village.repository.EupMyeonDongRepository
 import domain.village.repository.VillageRepository
 import org.junit.Assert
+import org.junit.Before
 import org.junit.Test
 import org.koin.test.inject
 import ourMap.protocol.GetMainViewDataParams
 import ourMap.protocol.GetMainViewDataResult
 
-class GetMainViewDataTest : RouteTestBase() {
+class GetMainViewDataTest : OurMapServerRouteTestBase() {
     private val placeRepository by inject<PlaceRepository>()
     private val buildingRepository by inject<BuildingRepository>()
     private val placeAccessibilityRepository by inject<PlaceAccessibilityRepository>()
@@ -22,10 +23,8 @@ class GetMainViewDataTest : RouteTestBase() {
     private val eupMyeonDongRepository by inject<EupMyeonDongRepository>()
     private val villageApplicationService by inject<VillageApplicationService>()
 
-    @Test
-    fun testGetMainViewData() = runRouteTest {
-        // TODO: @Before로 빼기; 지금은 runRouteTest {}를 호출해서 Application::ourMapModule이 실행돼야
-        //       global koin이 구성되기 때문에 @Before에서 bean을 사용하면 에러가 난다.
+    @Before
+    fun setUp() = transactionManager.doInTransaction {
         transactionManager.doInTransaction {
             placeAccessibilityRepository.removeAll()
             buildingAccessibilityRepository.removeAll()
@@ -36,6 +35,10 @@ class GetMainViewDataTest : RouteTestBase() {
             //       HashUtil을 멱등적으로 바꾸면 이걸 제거해도 제대로 동작해야 한다.
             villageRepository.removeAll()
         }
+    }
+
+    @Test
+    fun testGetMainViewData() = runRouteTest {
         val user = transactionManager.doInTransaction {
             testDataGenerator.createUser()
         }

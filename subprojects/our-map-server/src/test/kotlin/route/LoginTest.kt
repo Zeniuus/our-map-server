@@ -6,7 +6,7 @@ import org.junit.Test
 import ourMap.protocol.LoginParams
 import kotlin.random.Random
 
-class LoginTest : RouteTestBase() {
+class LoginTest : OurMapServerRouteTestBase() {
     @Test
     fun testLogin() = runRouteTest {
         val nickname = Random.nextBytes(32).toString()

@@ -14,6 +14,7 @@ import io.ktor.application.install
 import io.ktor.features.ContentNegotiation
 import io.ktor.http.ContentType
 import io.ktor.routing.routing
+import org.koin.core.error.KoinAppAlreadyStartedException
 import route.getAccessibility
 import route.getMainViewData
 import route.login
@@ -26,29 +27,11 @@ import route.signUp
 //       일단은 EngineMain 방식을 사용하여 문제를 우회한다.
 fun main(args: Array<String>) {
     LiquibaseMigrator.migrate()
+    configOurMapServerIoCContainerOnce()
     io.ktor.server.netty.EngineMain.main(args)
 }
 
 fun Application.ourMapModule(testing: Boolean = false) {
-    OurMapIoCFactory.configGlobally {
-        modules(
-            userDomainModule,
-            userApplicationModule,
-
-            placeDomainModule,
-            placeApplicationModule,
-
-            placeAccessibilityDomainModule,
-            placeAccessibilityApplicationModule,
-
-            villageDomainModule,
-            villageApplicationModule,
-
-            ourMapConverterModule,
-            ourMapAuthModule,
-        )
-    }
-
     install(ContentNegotiation) {
         register(ContentType.Application.Json, ProtobufJsonContentConverter())
     }
@@ -60,5 +43,29 @@ fun Application.ourMapModule(testing: Boolean = false) {
         searchPlaces()
         getAccessibility()
         registerAccessibility()
+    }
+}
+
+fun configOurMapServerIoCContainerOnce() {
+    try {
+        OurMapIoCFactory.configGlobally {
+            modules(
+                userDomainModule,
+                userApplicationModule,
+
+                placeDomainModule,
+                placeApplicationModule,
+
+                placeAccessibilityDomainModule,
+                placeAccessibilityApplicationModule,
+
+                villageDomainModule,
+                villageApplicationModule,
+
+                ourMapConverterModule,
+                ourMapAuthModule,
+            )
+        }
+    } catch (e: KoinAppAlreadyStartedException) {
     }
 }
