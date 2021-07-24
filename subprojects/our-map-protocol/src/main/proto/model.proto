@@ -55,4 +55,5 @@ message SiGunGu {
 message EupMyeonDong {
     string id = 1;
     string name = 2;
+    string si_gun_gu_id = 3;
 }
