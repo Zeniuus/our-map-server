@@ -18,6 +18,7 @@ import domain.util.Location
 import domain.village.repository.EupMyeonDongRepository
 import domain.village.repository.SiGunGuRepository
 import domain.village.villageDomainModule
+import java.util.Base64
 import kotlin.random.Random
 
 class TestDataGenerator {
@@ -39,7 +40,7 @@ class TestDataGenerator {
     private val siGunGuRepository = koin.get<SiGunGuRepository>()
 
     fun createUser(
-        nickname: String = Random.nextBytes(32).toString(),
+        nickname: String = generateRandomString(12),
         password: String = "password",
         instagramId: String? = null
     ): User {
@@ -107,5 +108,9 @@ class TestDataGenerator {
             )
         )
         return Pair(placeAccessibility, buildingAccessibility)
+    }
+
+    private fun generateRandomString(length: Int): String {
+        return Base64.getEncoder().encodeToString(Random.nextBytes(length)).take(length)
     }
 }
