@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "ourMap.protocol";
+option java_outer_classname = "GetHomeViewDataProto";
+
+// 홈 화면에 노출할 정보를 조회하는 API.
+
+message GetHomeViewDataParams {
+}
+
+message GetHomeViewDataResult {
+    message VillageRankingEntry {
+        string village_id = 1;
+        string village_name = 2;
+        int32 rank = 3;
+        string progress_percentage = 4;
+    }
+
+    // 채워진 비율이 많은 순으로 정렬되어 내려간다.
+    // 더보기를 눌렀을 때 표시해줄 항목들도 한 번에 내려간다.
+    repeated VillageRankingEntry village_ranking_entries = 1;
+}
