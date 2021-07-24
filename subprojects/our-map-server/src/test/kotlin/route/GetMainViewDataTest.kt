@@ -30,10 +30,6 @@ class GetMainViewDataTest : OurMapServerRouteTestBase() {
             buildingAccessibilityRepository.removeAll()
             placeRepository.removeAll()
             buildingRepository.removeAll()
-            // TODO: 지금 HashUtil이 멱등적이지 않은 것 때문에 매번 EupMyeonDong.id가 다르게 생성되고,
-            //       이에 따라 Village도 매번 새로 생성됨. 따라서 매번 Village를 모두 날려줘야 함.
-            //       HashUtil을 멱등적으로 바꾸면 이걸 제거해도 제대로 동작해야 한다.
-            villageRepository.removeAll()
         }
     }
 

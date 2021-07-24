@@ -2,7 +2,7 @@ package domain.village.repository
 
 import domain.village.entity.EupMyeonDong
 import domain.village.entity.SiGunGu
-import util.HashUtil
+import util.Hashing
 import util.TextResourceReader
 
 object EupMyeonDongs {
@@ -11,18 +11,16 @@ object EupMyeonDongs {
         val eupMyeonDongs = lines.map { line ->
             val (siDo, siGunGu, eupMyeonDong) = line.split("\t")
             EupMyeonDong(
-                id = HashUtil.getHash("$siDo $siGunGu $eupMyeonDong".toByteArray()),
+                id = Hashing.getHash("$siDo $siGunGu $eupMyeonDong".toByteArray(), length = 36),
                 name = eupMyeonDong,
                 siGunGu = SiGunGu(
-                    id = HashUtil.getHash("$siDo $siGunGu".toByteArray()),
+                    id = Hashing.getHash("$siDo $siGunGu".toByteArray(), length = 36),
                     name = siGunGu,
                     sido = siDo,
                 ),
             )
         }
-        eupMyeonDongs.forEach { eupMyeonDong ->
-            require(eupMyeonDongs.count { it.id == eupMyeonDong.id } == 1)
-        }
+        require(eupMyeonDongs.size == eupMyeonDongs.map { it.id }.toSet().size)
         eupMyeonDongs
     }
 
