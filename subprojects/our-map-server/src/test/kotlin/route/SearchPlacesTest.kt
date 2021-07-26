@@ -7,7 +7,7 @@ import ourMap.protocol.SearchPlacesParams
 import ourMap.protocol.SearchPlacesResult
 import kotlin.random.Random
 
-class PlaceRouteTest : OurMapServerRouteTestBase() {
+class SearchPlacesTest : OurMapServerRouteTestBase() {
     @Test
     fun testSearchPlaces() = runRouteTest {
         val user = transactionManager.doInTransaction {
