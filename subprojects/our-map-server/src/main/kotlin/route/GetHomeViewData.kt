@@ -34,7 +34,7 @@ fun Route.getHomeViewData() {
                             GetHomeViewDataResult.VillageRankingEntry.newBuilder()
                                 .setVillageId(village.id)
                                 .setVillageName("${eupMyeonDong.siGunGu.name} ${eupMyeonDong.name}")
-                                .setRank(idx + 1)
+                                .setProgressRank(idx + 1)
                                 .setProgressPercentage(
                                     (village.registerProgress * BigDecimal(100)).toString()
                                         // 소수점 부분이 0으로 끝나는 경우 처리
