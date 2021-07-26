@@ -17,6 +17,7 @@ import org.koin.core.error.KoinAppAlreadyStartedException
 import route.getAccessibility
 import route.getHomeViewData
 import route.listAdministrativeAreas
+import route.listVillageDropdownItems
 import route.login
 import route.registerAccessibility
 import route.searchPlaces
@@ -44,6 +45,7 @@ fun Application.ourMapModule(testing: Boolean = false) {
         searchPlaces()
         getAccessibility()
         registerAccessibility()
+        listVillageDropdownItems()
     }
 }
 

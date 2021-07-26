@@ -17,6 +17,13 @@ class VillageApplicationService(
             .sortedByDescending { it.registerProgress }
     }
 
+    fun listDropdownItems(): List<VillageDropdownItem> = transactionManager.doInTransaction {
+        val eupMyeonDongById = eupMyeonDongRepository.listAll().associateBy { it.id }
+        val villages = villageRepository.listAll()
+        villages.map { VillageDropdownItem(village = it, eupMyeonDong = eupMyeonDongById[it.eupMyeonDongId]!!) }
+            .sortedBy { it.villageName }
+    }
+
     fun insertAll() = transactionManager.doInTransaction {
         val eupMyeonDongs = eupMyeonDongRepository.listAll()
         eupMyeonDongs.forEach { eupMyeonDong ->
