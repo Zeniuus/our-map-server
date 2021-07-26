@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "model.proto";
+
+option java_multiple_files = true;
+option java_package = "ourMap.protocol";
+option java_outer_classname = "RegisterFavoriteVillageProto";
+
+// 동네 즐겨찾기 등록 API.
+
+message RegisterFavoriteVillageParams {
+    string village_id = 1;
+}
+
+message RegisterFavoriteVillageResult {
+    Village village = 1;
+}

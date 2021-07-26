@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "model.proto";
+
+option java_multiple_files = true;
+option java_package = "ourMap.protocol";
+option java_outer_classname = "ListVillageDropdownItemsProto";
+
+// 계단정복 랭킹 페이지의 동네 드롭다운에 노출할 아이템을 조회하는 API.
+
+message ListVillageDropdownItemsParams {
+}
+
+message ListVillageDropdownItemsResult {
+    message VillageDropdownItem {
+        string village_id = 1;
+        string village_name = 2;
+    }
+    repeated VillageDropdownItem village_dropdown_items = 1;
+}

@@ -9,6 +9,12 @@ message Location {
     double lat = 2;
 }
 
+message User {
+    string id = 1;
+    string nickname = 2;
+    string instagram_id = 3;
+}
+
 message Place {
     string id = 1;
     string name = 2; // 장소의 human-readable한 이름.
@@ -45,6 +51,12 @@ message BuildingAccessibility {
 
     string building_id = 5;
     StringValue registered_user_name = 6; // 익명이면 null.
+}
+
+message Village {
+    string id = 1;
+    string name = 2;
+    bool is_favorite_village = 3;
 }
 
 message SiGunGu {
