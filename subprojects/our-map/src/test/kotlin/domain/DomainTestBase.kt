@@ -3,7 +3,6 @@ package domain
 import OurMapIoCFactory.installCommonConfig
 import TestDataGenerator
 import application.TransactionManager
-import domain.user.userDomainModule
 import org.junit.Rule
 import org.koin.core.module.Module
 import org.koin.test.KoinTest
