@@ -2,10 +2,9 @@
 <databaseChangeLog
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
-        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.2.xsd
-      http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.2.xsd">
-    <include file="classpath://liquibase/1_init.sql" />
-    <include file="classpath://liquibase/2_golden_path.xml" />
-    <include file="classpath://liquibase/3_village_domain.xml" />
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.2.xsd">
+    <include file="liquibase/1_init.sql" />
+    <include file="liquibase/2_golden_path.xml" />
+    <include file="liquibase/3_village_domain.xml" />
+    <include file="liquibase/4_user_favorite_village.xml" />
 </databaseChangeLog>
