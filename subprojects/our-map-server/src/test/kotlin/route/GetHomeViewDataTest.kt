@@ -52,7 +52,8 @@ class GetHomeViewDataTest : OurMapServerRouteTestBase() {
                     testDataGenerator.registerPlaceAccessibility(places[it], null)
                 }
             }
-            villageApplicationService.insertAll()
+
+            villageApplicationService.upsertAll()
 
             eupMyeonDongs
         }

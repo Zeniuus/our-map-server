@@ -7,6 +7,7 @@ import domain.placeAccessibility.repository.PlaceAccessibilityRepository
 import domain.util.EntityIdRandomGenerator
 import domain.village.entity.EupMyeonDong
 import domain.village.entity.Village
+import domain.village.repository.EupMyeonDongRepository
 import domain.village.repository.VillageRepository
 
 class VillageService(
@@ -15,7 +16,13 @@ class VillageService(
     private val buildingAccessibilityRepository: BuildingAccessibilityRepository,
     private val placeAccessibilityRepository: PlaceAccessibilityRepository,
     private val villageRepository: VillageRepository,
+    private val eupMyeonDongRepository: EupMyeonDongRepository,
 ) {
+    fun getName(village: Village): String {
+        val eupMyeonDong = eupMyeonDongRepository.findById(village.eupMyeonDongId)
+        return "${eupMyeonDong.siGunGu.name} ${eupMyeonDong.name}"
+    }
+
     fun upsertStatistics(eupMyeonDong: EupMyeonDong): Village {
         val buildingAccessibilities = buildingAccessibilityRepository.findByEupMyeonDong(eupMyeonDong)
         val buildingAccessibilitiesByUserId = buildingAccessibilities

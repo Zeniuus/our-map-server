@@ -3,6 +3,7 @@ package route
 import ProtobufJsonConverter
 import TestDataGenerator
 import application.TransactionManager
+import application.village.VillageApplicationService
 import com.google.protobuf.Message
 import com.google.protobuf.MessageOrBuilder
 import configOurMapServerIoCContainerOnce
@@ -21,17 +22,21 @@ import ourMapModule
 import kotlin.reflect.KClass
 
 open class OurMapServerRouteTestBase : KoinTest {
-    init {
-        MySQLContainer.startOnce()
-        configOurMapServerIoCContainerOnce()
-    }
-
     /**
      * [runRouteTest]에서 [ourMapModule]을 실행할 때 Global KoinApplication이 설정되므로
      * 별도로 KoinTestRule을 설정하지 않아도 inject가 가능하다.
      */
     protected val transactionManager by inject<TransactionManager>()
     protected val testDataGenerator = TestDataGenerator()
+
+    private val villageApplicationService by inject<VillageApplicationService>()
+
+    init {
+        MySQLContainer.startOnce()
+        configOurMapServerIoCContainerOnce()
+
+        villageApplicationService.upsertAll()
+    }
 
     fun TestApplicationEngine.requestWithoutAuth(url: String, params: MessageOrBuilder): TestApplicationCall {
         return handleRequest(HttpMethod.Post, url) {

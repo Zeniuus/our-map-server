@@ -11,6 +11,6 @@ import org.koin.dsl.module
 val villageDomainModule = module {
     single<SiGunGuRepository> { InMemorySiGunGuRepository() }
     single<EupMyeonDongRepository> { InMemoryEupMyeonDongRepository() }
-    single { VillageService(get(), get(), get(), get(), get()) }
+    single { VillageService(get(), get(), get(), get(), get(), get()) }
     single { UserFavoriteVillageService(get(), get()) }
 }

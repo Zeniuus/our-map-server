@@ -24,7 +24,7 @@ class VillageApplicationService(
             .sortedBy { it.villageName }
     }
 
-    fun insertAll() = transactionManager.doInTransaction {
+    fun upsertAll() = transactionManager.doInTransaction {
         val eupMyeonDongs = eupMyeonDongRepository.listAll()
         eupMyeonDongs.forEach { eupMyeonDong ->
             villageService.upsertStatistics(eupMyeonDong)

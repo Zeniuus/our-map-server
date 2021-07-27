@@ -1,12 +1,10 @@
 package domain.village
 
-import application.village.VillageApplicationService
 import application.village.villageApplicationModule
 import domain.DomainTestBase
 import domain.village.repository.VillageRepository
 import domain.village.service.UserFavoriteVillageService
 import org.junit.Assert
-import org.junit.Before
 import org.junit.Test
 import org.koin.test.inject
 
@@ -15,12 +13,6 @@ class UserFavoriteVillageServiceTest : DomainTestBase() {
 
     private val villageRepository by inject<VillageRepository>()
     private val userFavoriteVillageService by inject<UserFavoriteVillageService>()
-    private val villageApplicationService by inject<VillageApplicationService>()
-
-    @Before
-    fun setUp() {
-        villageApplicationService.insertAll()
-    }
 
     @Test
     fun `정상적인 경우`() = transactionManager.doAndRollback {

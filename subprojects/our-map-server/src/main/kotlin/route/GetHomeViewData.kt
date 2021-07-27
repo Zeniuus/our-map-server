@@ -3,7 +3,7 @@ package route
 import application.TransactionManager
 import application.village.VillageApplicationService
 import auth.UserAuthenticator
-import domain.village.repository.EupMyeonDongRepository
+import domain.village.service.VillageService
 import io.ktor.application.call
 import io.ktor.response.respond
 import io.ktor.routing.Route
@@ -17,7 +17,7 @@ fun Route.getHomeViewData() {
 
     val transactionManager = koin.get<TransactionManager>()
     val userAuthenticator = koin.get<UserAuthenticator>()
-    val eupMyeonDongRepository = koin.get<EupMyeonDongRepository>()
+    val villageService = koin.get<VillageService>()
     val villageApplicationService = koin.get<VillageApplicationService>()
 
     post("/getHomeViewData") {
@@ -30,10 +30,9 @@ fun Route.getHomeViewData() {
                 GetHomeViewDataResult.newBuilder()
                     .addAllVillageRankingEntries(
                         villages.mapIndexed { idx, village ->
-                            val eupMyeonDong = eupMyeonDongRepository.findById(village.eupMyeonDongId)
                             GetHomeViewDataResult.VillageRankingEntry.newBuilder()
                                 .setVillageId(village.id)
-                                .setVillageName("${eupMyeonDong.siGunGu.name} ${eupMyeonDong.name}")
+                                .setVillageName(villageService.getName(village))
                                 .setProgressRank(idx + 1)
                                 .setProgressPercentage(
                                     (village.registerProgress * BigDecimal(100)).toString()

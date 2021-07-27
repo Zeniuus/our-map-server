@@ -1,10 +1,8 @@
 package route
 
-import application.village.VillageApplicationService
 import domain.village.repository.EupMyeonDongRepository
 import domain.village.repository.VillageRepository
 import org.junit.Assert
-import org.junit.Before
 import org.junit.Test
 import org.koin.test.inject
 import ourMap.protocol.ListVillageDropdownItemsParams
@@ -13,14 +11,6 @@ import ourMap.protocol.ListVillageDropdownItemsResult
 class ListVillageDropdownItemsTest : OurMapServerRouteTestBase() {
     private val villageRepository by inject<VillageRepository>()
     private val eupMyeonDongRepository by inject<EupMyeonDongRepository>()
-    private val villageApplicationService by inject<VillageApplicationService>()
-
-    @Before
-    fun setUp() {
-        transactionManager.doInTransaction {
-            villageApplicationService.insertAll()
-        }
-    }
 
     @Test
     fun testListVillageDropdownItems() = runRouteTest {
