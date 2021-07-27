@@ -30,6 +30,9 @@
                 <constraints nullable="true" />
             </column>
         </createTable>
+        <createIndex tableName="village" indexName="idx_village_1">
+            <column name="eup_myeon_dong_id" />
+        </createIndex>
         <addColumn tableName="building">
             <column name="si_gun_gu_id" type="VARCHAR(36)">
                 <constraints nullable="false" />
@@ -46,5 +49,11 @@
                 <constraints nullable="false" />
             </column>
         </addColumn>
+        <createIndex tableName="building" indexName="idx_building_1">
+            <column name="eup_myeon_dong_id" />
+        </createIndex>
+        <createIndex tableName="place" indexName="idx_place_1">
+            <column name="eup_myeon_dong_id" />
+        </createIndex>
     </changeSet>
 </databaseChangeLog>
