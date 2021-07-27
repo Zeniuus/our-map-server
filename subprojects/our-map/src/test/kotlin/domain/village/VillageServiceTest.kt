@@ -1,6 +1,6 @@
 package domain.village
 
-import TestDataGenerator
+import domain.DomainTestBase
 import domain.place.repository.BuildingRepository
 import domain.place.repository.PlaceRepository
 import domain.placeAccessibility.entity.BuildingStairInfo
@@ -17,10 +17,9 @@ import org.junit.Before
 import org.junit.Test
 import org.koin.test.inject
 
-class VillageServiceTest : VillageDomainTestBase() {
-    override val koinModules = super.koinModules + placeAccessibilityDomainModule
+class VillageServiceTest : DomainTestBase() {
+    override val koinModules = listOf(placeAccessibilityDomainModule, villageDomainModule)
 
-    private val testDataGenerator = TestDataGenerator()
     private val placeRepository by inject<PlaceRepository>()
     private val buildingRepository by inject<BuildingRepository>()
     private val placeAccessibilityRepository by inject<PlaceAccessibilityRepository>()

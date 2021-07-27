@@ -1,14 +1,15 @@
 package domain.place
 
-import TestDataGenerator
+import domain.DomainTestBase
 import domain.place.service.SearchPlaceService
 import domain.util.Location
 import org.junit.Assert
 import org.junit.Test
 import org.koin.test.inject
 
-class SearchPlaceServiceTest : PlaceDomainTestBase() {
-    private val testDataGenerator = TestDataGenerator()
+class SearchPlaceServiceTest : DomainTestBase() {
+    override val koinModules = listOf(placeDomainModule)
+
     private val searchPlaceService by inject<SearchPlaceService>()
 
     @Test

@@ -1,6 +1,6 @@
 package domain.placeAccessibility
 
-import TestDataGenerator
+import domain.DomainTestBase
 import domain.placeAccessibility.entity.BuildingAccessibility
 import domain.placeAccessibility.entity.BuildingStairInfo
 import domain.placeAccessibility.entity.PlaceAccessibility
@@ -12,8 +12,9 @@ import org.junit.Assert
 import org.junit.Test
 import org.koin.test.inject
 
-class SearchPlaceAccessibilityServiceTest : PlaceAccessibilityDomainTestBase() {
-    private val testDataGenerator = TestDataGenerator()
+class SearchPlaceAccessibilityServiceTest : DomainTestBase() {
+    override val koinModules = listOf(placeAccessibilityDomainModule)
+
     private val placeAccessibilityRepository by inject<PlaceAccessibilityRepository>()
     private val buildingAccessibilityRepository by inject<BuildingAccessibilityRepository>()
     private val searchPlaceAccessibilityService by inject<SearchPlaceAccessibilityService>()

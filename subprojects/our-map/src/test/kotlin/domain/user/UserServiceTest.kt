@@ -1,15 +1,15 @@
 package domain.user
 
-import TestDataGenerator
 import domain.DomainException
+import domain.DomainTestBase
 import domain.user.repository.UserRepository
 import domain.util.Bcrypt
 import org.junit.Assert
 import org.junit.Test
 import org.koin.test.inject
 
-class UserServiceTest : UserDomainTestBase() {
-    private val testDataGenerator = TestDataGenerator()
+class UserServiceTest : DomainTestBase() {
+    override val koinModules = listOf(userDomainModule)
 
     private val userRepository by inject<UserRepository>()
 
