@@ -11,7 +11,7 @@ import org.koin.core.context.GlobalContext
 import ourMap.protocol.ListVillageDropdownItemsResult
 
 fun Route.listVillageDropdownItems() {
-    val koin = GlobalContext.getKoinApplicationOrNull()!!.koin
+    val koin = GlobalContext.get()
 
     val transactionManager = koin.get<TransactionManager>()
     val userAuthenticator = koin.get<UserAuthenticator>()

@@ -12,7 +12,7 @@ import ourMap.protocol.LoginParams
 import ourMap.protocol.LoginResult
 
 fun Route.login() {
-    val koin = GlobalContext.getKoinApplicationOrNull()!!.koin
+    val koin = GlobalContext.get()
     val userApplicationService = koin.get<UserApplicationService>()
     val userAuthenticator = koin.get<UserAuthenticator>()
 

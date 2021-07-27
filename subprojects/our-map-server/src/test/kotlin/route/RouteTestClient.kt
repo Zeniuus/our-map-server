@@ -18,8 +18,8 @@ class RouteTestClient(
     private val testApplicationEngine: TestApplicationEngine,
     private val user: User,
 ) {
-    private val userAuthService = GlobalContext.getKoinApplicationOrNull()!!.koin.get<UserAuthService>()
-    private val transactionManager = GlobalContext.getKoinApplicationOrNull()!!.koin.get<TransactionManager>()
+    private val userAuthService = GlobalContext.get().get<UserAuthService>()
+    private val transactionManager = GlobalContext.get().get<TransactionManager>()
 
     private val accessToken = transactionManager.doInTransaction {
         userAuthService.issueAccessToken(user)

@@ -13,7 +13,7 @@ import ourMap.protocol.GetHomeViewDataResult
 import java.math.BigDecimal
 
 fun Route.getHomeViewData() {
-    val koin = GlobalContext.getKoinApplicationOrNull()!!.koin
+    val koin = GlobalContext.get()
 
     val transactionManager = koin.get<TransactionManager>()
     val userAuthenticator = koin.get<UserAuthenticator>()

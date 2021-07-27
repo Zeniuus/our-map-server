@@ -7,10 +7,11 @@ import io.ktor.request.receive
 import io.ktor.response.respond
 import io.ktor.routing.Route
 import io.ktor.routing.post
+import org.koin.core.context.GlobalContext
 import ourMap.protocol.SignUpParams
 
 fun Route.signUp() {
-    val koin = org.koin.core.context.GlobalContext.getKoinApplicationOrNull()!!.koin
+    val koin = GlobalContext.get()
     val userApplicationService = koin.get<UserApplicationService>()
     val userAuthenticator = koin.get<UserAuthenticator>()
 

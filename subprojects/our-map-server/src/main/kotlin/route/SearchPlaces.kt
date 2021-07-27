@@ -15,7 +15,7 @@ import ourMap.protocol.SearchPlacesParams
 import ourMap.protocol.SearchPlacesResult
 
 fun Route.searchPlaces() {
-    val koin = GlobalContext.getKoinApplicationOrNull()!!.koin
+    val koin = GlobalContext.get()
     val placeApplicationService = koin.get<PlaceApplicationService>()
     val userAuthenticator = koin.get<UserAuthenticator>()
 

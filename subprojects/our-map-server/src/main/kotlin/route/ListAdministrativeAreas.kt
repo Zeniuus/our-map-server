@@ -13,7 +13,7 @@ import ourMap.protocol.ListAdministrativeAreasResult
 import ourMap.protocol.Model
 
 fun Route.listAdministrativeAreas() {
-    val koin = GlobalContext.getKoinApplicationOrNull()!!.koin
+    val koin = GlobalContext.get()
 
     val transactionManager = koin.get<TransactionManager>()
     val userAuthenticator = koin.get<UserAuthenticator>()

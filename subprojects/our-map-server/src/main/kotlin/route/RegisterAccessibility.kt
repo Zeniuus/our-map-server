@@ -17,7 +17,7 @@ import ourMap.protocol.RegisterAccessibilityParams
 import ourMap.protocol.RegisterAccessibilityResult
 
 fun Route.registerAccessibility() {
-    val koin = GlobalContext.getKoinApplicationOrNull()!!.koin
+    val koin = GlobalContext.get()
     val transactionManager = koin.get<TransactionManager>()
     val placeAccessibilityApplicationService = koin.get<PlaceAccessibilityApplicationService>()
     val userAuthenticator = koin.get<UserAuthenticator>()
