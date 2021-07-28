@@ -16,6 +16,7 @@ import io.ktor.routing.routing
 import org.koin.core.error.KoinAppAlreadyStartedException
 import route.getAccessibility
 import route.getHomeViewData
+import route.getVillageStatistics
 import route.listAdministrativeAreas
 import route.listVillageDropdownItems
 import route.login
@@ -48,6 +49,7 @@ fun Application.ourMapModule(testing: Boolean = false) {
         getAccessibility()
         registerAccessibility()
         listVillageDropdownItems()
+        getVillageStatistics()
         registerFavoriteVillage()
         unregisterFavoriteVillage()
     }

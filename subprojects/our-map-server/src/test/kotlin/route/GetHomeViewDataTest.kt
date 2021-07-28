@@ -25,12 +25,10 @@ class GetHomeViewDataTest : OurMapServerRouteTestBase() {
 
     @Before
     fun setUp() = transactionManager.doInTransaction {
-        transactionManager.doInTransaction {
-            placeAccessibilityRepository.removeAll()
-            buildingAccessibilityRepository.removeAll()
-            placeRepository.removeAll()
-            buildingRepository.removeAll()
-        }
+        placeAccessibilityRepository.removeAll()
+        buildingAccessibilityRepository.removeAll()
+        placeRepository.removeAll()
+        buildingRepository.removeAll()
     }
 
     @Test

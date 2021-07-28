@@ -3,6 +3,7 @@ package route
 import application.TransactionManager
 import application.village.VillageApplicationService
 import auth.UserAuthenticator
+import converter.VillageConverter
 import domain.village.service.VillageService
 import io.ktor.application.call
 import io.ktor.response.respond
@@ -10,7 +11,6 @@ import io.ktor.routing.Route
 import io.ktor.routing.post
 import org.koin.core.context.GlobalContext
 import ourMap.protocol.GetHomeViewDataResult
-import java.math.BigDecimal
 
 fun Route.getHomeViewData() {
     val koin = GlobalContext.get()
@@ -34,11 +34,7 @@ fun Route.getHomeViewData() {
                                 .setVillageId(village.id)
                                 .setVillageName(villageService.getName(village))
                                 .setProgressRank(idx + 1)
-                                .setProgressPercentage(
-                                    (village.registerProgress * BigDecimal(100)).toString()
-                                        // 소수점 부분이 0으로 끝나는 경우 처리
-                                        .replace(Regex("0+$"), "")
-                                        .replace(Regex("\\.$"), ""))
+                                .setProgressPercentage(VillageConverter.getProgressPercentage(village))
                                 .build()
                         }
                     )

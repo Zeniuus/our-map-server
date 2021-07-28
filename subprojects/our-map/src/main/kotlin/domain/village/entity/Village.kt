@@ -28,5 +28,9 @@ data class Village(
     // TODO: 다음 채색을 위해 필요한 BuildingAccessibility 숫자
 ) {
     val registerProgress: BigDecimal
-        @Transient get() = BigDecimal(buildingAccessibilityCount).setScale(4) / BigDecimal(buildingCount).setScale(4)
+        @Transient get() = if (buildingCount > 0) {
+            BigDecimal(buildingAccessibilityCount).setScale(4) / BigDecimal(buildingCount).setScale(4)
+        } else {
+            BigDecimal.ZERO
+        }
 }
