@@ -13,8 +13,8 @@ message GetHomeViewDataResult {
     message VillageRankingEntry {
         string village_id = 1;
         string village_name = 2;
-        int32 rank = 3;
-        string progress_percentage = 4;
+        int32 progress_rank = 3; // 계단정복률 순위.
+        string progress_percentage = 4; // 계단정복률.
     }
 
     // 채워진 비율이 많은 순으로 정렬되어 내려간다.
