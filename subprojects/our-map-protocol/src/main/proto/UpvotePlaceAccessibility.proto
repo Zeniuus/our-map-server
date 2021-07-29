@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "ourMap.protocol";
+option java_outer_classname = "UpvotePlaceAccessibilityProto";
+
+// 이 정보가 도움이 돼요를 주기 위한 API.
+
+message UpvotePlaceAccessibilityParams {
+    string place_accessibility_id = 1;
+}
+
+message UpvotePlaceAccessibilityResult {
+}

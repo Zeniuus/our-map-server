@@ -23,7 +23,6 @@ object DatabaseConfiguration {
     @Synchronized
     fun getDataSource(): DataSource {
         if (dataSource == null) {
-            // TODO: 설정 파일로 빼기
             val config = HikariConfig()
             config.jdbcUrl = overridingProperties?.get("hikari.jdbcUrl")?.toString() ?: OurMapProperties["hikari.jdbcUrl"]
             config.username = overridingProperties?.get("hikari.username")?.toString() ?: OurMapProperties["hikari.username"]
