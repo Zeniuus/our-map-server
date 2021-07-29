@@ -3,5 +3,5 @@ output "aws_eip_address" {
 }
 
 output "db_password" {
-  value = random_password.password.result
+  value = random_password.main_db_password.result
 }
