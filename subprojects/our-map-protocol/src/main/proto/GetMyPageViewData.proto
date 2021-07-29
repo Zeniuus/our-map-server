@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "model.proto";
+
+option java_multiple_files = true;
+option java_package = "ourMap.protocol";
+option java_outer_classname = "GetMyPageViewDataProto";
+
+// 마이페이지 화면에 노출할 정보를 조회하는 API.
+
+message GetMyPageViewDataParams {
+}
+
+message GetMyPageViewDataResult {
+    User user = 1;
+    repeated Village favorite_villages = 2;
+    AchievementBadge badges = 3;
+    int32 total_upvote_count = 4;
+}

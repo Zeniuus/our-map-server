@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "common.proto";
+import "model.proto";
+
+option java_multiple_files = true;
+option java_package = "ourMap.protocol";
+option java_outer_classname = "UpdateUserInfoProto";
+
+// 유저의 정보를 수정할 때 호출하는 API.
+
+message UpdateUserInfoParams {
+    string nickname = 1; // 변경되지 않았어도 항상 올려준다.
+    StringValue instagram_id = 2; // 변경되지 않았어도 항상 올려준다.
+}
+
+message UpdateUserInfoResult {
+    User user = 1;
+}
