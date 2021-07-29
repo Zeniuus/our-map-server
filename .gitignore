@@ -8,3 +8,5 @@ terraform.tfstate*
 plan.tfplan
 
 application.properties.deploy
+
+migratePlacesAndBuildings.sql
