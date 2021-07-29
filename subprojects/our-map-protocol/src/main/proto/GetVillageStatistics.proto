@@ -18,16 +18,14 @@ message GetVillageStatisticsResult {
     int32 progress_rank = 2; // 계단정복률 순위. (현재 n위)
     string progress_percentage = 3; // 계단정복률
 
-    bool is_favorite_village = 4;
+    int32 building_accessibility_count = 4; // 건물 접근성 정보 수.
+    int32 total_building_count = 5; // 총 건물 수.
+    int32 place_accessibility_count = 6; // 장소 접근성 정보 수.
+    int32 total_place_count = 7; // 총 장소 수.
 
-    int32 building_accessibility_count = 5; // 건물 접근성 정보 수.
-    int32 total_building_count = 6; // 총 건물 수.
-    int32 place_accessibility_count = 7; // 장소 접근성 정보 수.
-    int32 total_place_count = 8; // 총 장소 수.
+    int32 registered_user_count = 8; // n명과 함께 정복 중!
 
-    int32 registered_user_count = 9; // n명과 함께 정복 중!
-
-    string eup_myeon_dong_name = 10; // OO동 건물 정복왕
-    User most_registered_user_nickname = 11; // 정복왕 정보
-    int32 next_coloring_remaining_count = 12; // 다음 색칠까지 건물 n개 남았어요!
+    string eup_myeon_dong_name = 9; // OO동 건물 정복왕
+    User most_registered_user = 10; // 정복왕 정보
+    int32 next_coloring_remaining_count = 11; // 다음 색칠까지 건물 n개 남았어요!
 }

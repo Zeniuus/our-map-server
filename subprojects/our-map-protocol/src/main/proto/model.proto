@@ -12,7 +12,7 @@ message Location {
 message User {
     string id = 1;
     string nickname = 2;
-    string instagram_id = 3;
+    StringValue instagram_id = 3;
 }
 
 message Place {
