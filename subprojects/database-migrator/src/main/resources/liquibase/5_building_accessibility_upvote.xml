@@ -13,12 +13,13 @@
             </column>
             <column name="building_accessibility_id" type="VARCHAR(36)">
                 <constraints
-                    nullable="false"
-                    foreignKeyName="fk_building_accessibility_upvote_building_accessibility"
-                    referencedTableName="building_accessibility"
-                    referencedColumnNames="id"
-                    deleteCascade="false"
-                />
+                    nullable="false" />
+<!--                TODO: collate / charset 때문에 fk 추가 안 되는 문제 해결-->
+<!--                    foreignKeyName="fk_building_accessibility_upvote_building_accessibility"-->
+<!--                    referencedTableName="building_accessibility"-->
+<!--                    referencedColumnNames="id"-->
+<!--                    deleteCascade="false"-->
+<!--                />-->
             </column>
             <column name="created_at" type="TIMESTAMP(6)">
                 <constraints nullable="false" />
