@@ -4,12 +4,14 @@ import application.TransactionManager
 import domain.place.repository.BuildingRepository
 import domain.place.repository.PlaceRepository
 import domain.placeAccessibility.repository.BuildingAccessibilityRepository
+import domain.placeAccessibility.repository.BuildingAccessibilityUpvoteRepository
 import domain.placeAccessibility.repository.PlaceAccessibilityRepository
 import domain.user.repository.UserRepository
 import domain.village.repository.UserFavoriteVillageRepository
 import domain.village.repository.VillageRepository
 import infra.persistence.configuration.HibernateJpaConfiguration
 import infra.persistence.repository.JpaBuildingAccessibilityRepository
+import infra.persistence.repository.JpaBuildingAccessibilityUpvoteRepository
 import infra.persistence.repository.JpaBuildingRepository
 import infra.persistence.repository.JpaPlaceAccessibilityRepository
 import infra.persistence.repository.JpaPlaceRepository
@@ -28,6 +30,7 @@ val persistenceModule = module {
     single<BuildingRepository> { JpaBuildingRepository() }
     single<PlaceAccessibilityRepository> { JpaPlaceAccessibilityRepository() }
     single<BuildingAccessibilityRepository> { JpaBuildingAccessibilityRepository() }
+    single<BuildingAccessibilityUpvoteRepository> { JpaBuildingAccessibilityUpvoteRepository() }
     single<VillageRepository> { JpaVillageRepository() }
     single<UserFavoriteVillageRepository> { JpaUserFavoriteVillageRepository() }
     single { JpaTransactionManager(get()) } bind TransactionManager::class

@@ -14,9 +14,11 @@ import io.ktor.features.ContentNegotiation
 import io.ktor.http.ContentType
 import io.ktor.routing.routing
 import org.koin.core.error.KoinAppAlreadyStartedException
+import route.cancelBuildingAccessibilityUpvote
 import route.getAccessibility
 import route.getHomeViewData
 import route.getVillageStatistics
+import route.giveBuildingAccessibilityUpvote
 import route.listAdministrativeAreas
 import route.listVillageDropdownItems
 import route.login
@@ -47,6 +49,8 @@ fun Application.ourMapModule(testing: Boolean = false) {
         listAdministrativeAreas()
         searchPlaces()
         getAccessibility()
+        giveBuildingAccessibilityUpvote()
+        cancelBuildingAccessibilityUpvote()
         registerAccessibility()
         listVillageDropdownItems()
         getVillageStatistics()
