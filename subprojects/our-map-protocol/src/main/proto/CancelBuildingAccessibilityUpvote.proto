@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "ourMap.protocol";
+option java_outer_classname = "CancelBuildingAccessibilityUpvoteProto";
+
+// 이 정보가 도음이 돼요를 취소하기 위한 API.
+
+message CancelBuildingAccessibilityUpvoteParams {
+    string building_accessibility_id = 1;
+}
+
+message CancelBuildingAccessibilityUpvoteResult {
+}
