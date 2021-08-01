@@ -21,7 +21,7 @@ class SearchPlaceAccessibilityServiceTest : DomainTestBase() {
 
     @Test
     fun `정상적인 경우`() = transactionManager.doAndRollback {
-        val place = testDataGenerator.createPlace(placeName = "D타워 장소1")
+        val place = testDataGenerator.createBuildingAndPlace(placeName = "D타워 장소1")
 
         val result1 = searchPlaceAccessibilityService.search(listOf(place)).getAccessibility(place)
         Assert.assertNull(result1.first)

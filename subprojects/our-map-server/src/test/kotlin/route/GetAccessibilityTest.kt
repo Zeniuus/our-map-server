@@ -14,8 +14,8 @@ class GetAccessibilityTest : OurMapServerRouteTestBase() {
         }
         val testClient = getTestClient(user)
         val (place, placeAccessibility, buildingAccessibility) = transactionManager.doInTransaction {
-            val place = testDataGenerator.createPlace(placeName = "장소장소")
-            val (placeAccessibility, buildingAccessibility) = testDataGenerator.registerPlaceAccessibility(place, user)
+            val place = testDataGenerator.createBuildingAndPlace(placeName = "장소장소")
+            val (placeAccessibility, buildingAccessibility) = testDataGenerator.registerBuildingAndPlaceAccessibility(place, user)
             Triple(place, placeAccessibility, buildingAccessibility)
         }
 

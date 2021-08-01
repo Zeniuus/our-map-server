@@ -41,13 +41,13 @@ class GetVillageStatisticsTest : OurMapServerRouteTestBase() {
             val user = testDataGenerator.createUser(instagramId = "instagramId")
 
             repeat(100) { idx ->
-                val place = testDataGenerator.createPlace(
+                val place = testDataGenerator.createBuildingAndPlace(
                     eupMyeonDongId = eupMyeonDong.id,
                     siGunGuId = eupMyeonDong.siGunGu.id
                 )
 
                 if (idx % 2 == 0) {
-                    testDataGenerator.registerPlaceAccessibility(place, user)
+                    testDataGenerator.registerBuildingAndPlaceAccessibility(place, user)
                 }
             }
 

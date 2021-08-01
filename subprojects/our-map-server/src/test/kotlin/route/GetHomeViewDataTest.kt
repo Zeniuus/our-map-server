@@ -41,13 +41,13 @@ class GetHomeViewDataTest : OurMapServerRouteTestBase() {
             val eupMyeonDongs = eupMyeonDongRepository.listAll().shuffled()
             eupMyeonDongs.forEachIndexed { idx, eupMyeonDong ->
                 val places = (1..100).map {
-                    testDataGenerator.createPlace(
+                    testDataGenerator.createBuildingAndPlace(
                         eupMyeonDongId = eupMyeonDong.id,
                         siGunGuId = eupMyeonDong.siGunGu.id
                     )
                 }
                 repeat(idx) {
-                    testDataGenerator.registerPlaceAccessibility(places[it], null)
+                    testDataGenerator.registerBuildingAndPlaceAccessibility(places[it], null)
                 }
             }
 

@@ -14,8 +14,8 @@ class BuildingAccessibilityUpvoteServiceTest : DomainTestBase() {
     @Test
     fun `정상적인 경우`() = transactionManager.doAndRollback {
         val user = testDataGenerator.createUser()
-        val place = testDataGenerator.createPlace()
-        val buildingAccessibility = testDataGenerator.registerPlaceAccessibility(user = user, place = place).second
+        val place = testDataGenerator.createBuildingAndPlace()
+        val buildingAccessibility = testDataGenerator.registerBuildingAndPlaceAccessibility(user = user, place = place).second
 
         Assert.assertFalse(buildingAccessibilityUpvoteService.isUpvoted(user, buildingAccessibility))
 

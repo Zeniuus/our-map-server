@@ -47,7 +47,7 @@ class VillageServiceTest : DomainTestBase() {
 
         val placeCount = 100
         val places = (1..placeCount).map {
-            testDataGenerator.createPlace(
+            testDataGenerator.createBuildingAndPlace(
                 eupMyeonDongId = eupMyeonDong.id,
                 siGunGuId = eupMyeonDong.siGunGu.id
             )

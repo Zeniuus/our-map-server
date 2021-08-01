@@ -60,7 +60,7 @@ class TestDataGenerator {
         )
     }
 
-    fun createPlace(
+    fun createBuildingAndPlace(
         placeName: String = "장소장소",
         location: Location = Location(127.5, 37.5),
         building: Building? = null,
@@ -95,7 +95,7 @@ class TestDataGenerator {
         ))
     }
 
-    fun registerPlaceAccessibility(place: Place, user: User? = null): Pair<PlaceAccessibility, BuildingAccessibility> {
+    fun registerBuildingAndPlaceAccessibility(place: Place, user: User? = null): Pair<PlaceAccessibility, BuildingAccessibility> {
         val placeAccessibility = placeAccessibilityService.create(
             PlaceAccessibilityService.CreateParams(
                 placeId = place.id,

@@ -29,8 +29,8 @@ class GetMyPageViewDataTest : OurMapServerRouteTestBase() {
     fun getMyPageViewDataTest() = runRouteTest {
         val (user, favoriteVillage) = transactionManager.doInTransaction {
             val user = testDataGenerator.createUser()
-            val place = testDataGenerator.createPlace()
-            val buildingAccessibility = testDataGenerator.registerPlaceAccessibility(place, user).second
+            val place = testDataGenerator.createBuildingAndPlace()
+            val buildingAccessibility = testDataGenerator.registerBuildingAndPlaceAccessibility(place, user).second
             testDataGenerator.giveBuildingAccessibilityUpvote(buildingAccessibility)
             val favoriteVillage = testDataGenerator.getRandomVillage()
             testDataGenerator.registerFavoriteVillage(user, favoriteVillage)

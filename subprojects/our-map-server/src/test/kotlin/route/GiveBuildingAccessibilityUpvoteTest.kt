@@ -13,8 +13,8 @@ class GiveBuildingAccessibilityUpvoteTest : OurMapServerRouteTestBase() {
     fun giveBuildingAccessibilityUpvoteTest() = runRouteTest {
         val (user, buildingAccessibility) = transactionManager.doInTransaction {
             val user = testDataGenerator.createUser()
-            val place = testDataGenerator.createPlace()
-            val buildingAccessibility = testDataGenerator.registerPlaceAccessibility(user = user, place = place).second
+            val place = testDataGenerator.createBuildingAndPlace()
+            val buildingAccessibility = testDataGenerator.registerBuildingAndPlaceAccessibility(user = user, place = place).second
             Pair(user, buildingAccessibility)
         }
 

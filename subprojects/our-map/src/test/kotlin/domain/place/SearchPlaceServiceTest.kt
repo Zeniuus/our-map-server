@@ -17,7 +17,7 @@ class SearchPlaceServiceTest : DomainTestBase() {
         val result1 = searchPlaceService.searchPlaces("수환", Location(0.0, 0.0))
         Assert.assertEquals(0, result1.size)
 
-        val place = testDataGenerator.createPlace(placeName = "D타워 장소1")
+        val place = testDataGenerator.createBuildingAndPlace(placeName = "D타워 장소1")
 
         val result2 = searchPlaceService.searchPlaces("타워", Location(0.0, 0.0))
         Assert.assertEquals(1, result2.size)
@@ -33,11 +33,11 @@ class SearchPlaceServiceTest : DomainTestBase() {
         val result1 = searchPlaceService.searchPlaces("수환", Location(0.0, 0.0))
         Assert.assertEquals(0, result1.size)
 
-        val nearPlace = testDataGenerator.createPlace(
+        val nearPlace = testDataGenerator.createBuildingAndPlace(
             placeName = "D타워 장소1",
             location = Location(0.05, 0.05)
         )
-        val farPlace = testDataGenerator.createPlace(
+        val farPlace = testDataGenerator.createBuildingAndPlace(
             placeName = "D타워 장소2",
             location = Location(0.1, 0.1)
         )

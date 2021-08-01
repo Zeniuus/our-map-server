@@ -15,7 +15,7 @@ class SearchPlacesTest : OurMapServerRouteTestBase() {
         }
         val testClient = getTestClient(user)
         val place = transactionManager.doInTransaction {
-            testDataGenerator.createPlace(placeName = Random.nextBytes(32).toString())
+            testDataGenerator.createBuildingAndPlace(placeName = Random.nextBytes(32).toString())
         }
 
         val params = SearchPlacesParams.newBuilder()
