@@ -1,13 +1,25 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.16'
+    }
+}
+
 plugins {
+    id "java"
+    id "com.google.protobuf" version "0.8.16"
     id 'application'
     id 'com.palantir.docker' version '0.27.0'
 }
 
 dependencies {
     implementation project(':our-map')
-    implementation project(':our-map-protocol')
     implementation project(':database-migrator')
     testImplementation project(':our-map-test-common')
+
+    implementation 'com.google.protobuf:protobuf-java:3.17.2'
 
     implementation "io.ktor:ktor-server-core:$ktorVersion"
     implementation "io.ktor:ktor-server-netty:$ktorVersion"
@@ -35,3 +47,18 @@ docker {
 }
 
 docker.dependsOn(installDist)
+
+protobuf {
+
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.17.2'
+    }
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'build/generated/source/proto/main/java'
+        }
+    }
+}
