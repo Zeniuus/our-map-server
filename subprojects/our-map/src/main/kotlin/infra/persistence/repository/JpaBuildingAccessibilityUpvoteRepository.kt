@@ -40,4 +40,17 @@ class JpaBuildingAccessibilityUpvoteRepository :
         query.setParameter("userId", user.id)
         return (query.singleResult as java.lang.Long).toInt()
     }
+
+    override fun getTotalUpvoteCount(buildingAccessibility: BuildingAccessibility): Int {
+        val em = EntityManagerHolder.get()!!
+        val query = em.createQuery("""
+            SELECT COUNT(bau.id)
+            FROM BuildingAccessibilityUpvote bau
+            WHERE
+                bau.buildingAccessibility = :buildingAccessibility
+                AND bau.deletedAt IS NULL
+        """.trimIndent())
+        query.setParameter("buildingAccessibility", buildingAccessibility)
+        return (query.singleResult as java.lang.Long).toInt()
+    }
 }

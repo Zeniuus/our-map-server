@@ -41,6 +41,8 @@ class RegisterAccessibilityTest : OurMapServerRouteTestBase() {
             Assert.assertTrue(buildingAccessibility.hasElevator)
             Assert.assertTrue(buildingAccessibility.hasObstacleToElevator)
             Assert.assertEquals(Model.BuildingAccessibility.StairInfo.LESS_THAN_FIVE, buildingAccessibility.stairInfo)
+            Assert.assertFalse(result.buildingAccessibility.isUpvoted)
+            Assert.assertEquals(0, result.buildingAccessibility.totalUpvoteCount)
 
             val placeAccessibility = result.placeAccessibility
             Assert.assertTrue(result.hasPlaceAccessibility())

@@ -5,6 +5,7 @@ import application.placeAccessibility.PlaceAccessibilityApplicationService
 import auth.UserAuthenticator
 import converter.BuildingAccessibilityConverter
 import converter.PlaceAccessibilityConverter
+import domain.user.repository.UserRepository
 import io.ktor.application.call
 import io.ktor.request.receive
 import io.ktor.response.respond
@@ -17,19 +18,21 @@ import ourMap.protocol.GetAccessibilityResult
 fun Route.getAccessibility() {
     val koin = GlobalContext.get()
     val transactionManager = koin.get<TransactionManager>()
-    val placeAccessibilityApplicationService = koin.get<PlaceAccessibilityApplicationService>()
     val userAuthenticator = koin.get<UserAuthenticator>()
+    val userRepository = koin.get<UserRepository>()
+    val placeAccessibilityApplicationService = koin.get<PlaceAccessibilityApplicationService>()
     val placeAccessibilityConverter = koin.get<PlaceAccessibilityConverter>()
     val buildingAccessibilityConverter = koin.get<BuildingAccessibilityConverter>()
 
     post("/getAccessibility") {
-        userAuthenticator.checkAuth(call.request)
+        val userId = userAuthenticator.checkAuth(call.request)
 
         val params = call.receive<GetAccessibilityParams>()
         val (placeAccessibility, buildingAccessibility) = placeAccessibilityApplicationService.getAccessibility(params.placeId)
 
         call.respond(
             transactionManager.doInTransaction {
+                val user = userRepository.findById(userId)
                 GetAccessibilityResult.newBuilder()
                     .also {
                         if (placeAccessibility != null) {
@@ -38,7 +41,7 @@ fun Route.getAccessibility() {
                     }
                     .also {
                         if (buildingAccessibility != null) {
-                            it.buildingAccessibility = buildingAccessibilityConverter.toProto(buildingAccessibility)
+                            it.buildingAccessibility = buildingAccessibilityConverter.toProto(buildingAccessibility, user)
                         }
                     }
                     .build()

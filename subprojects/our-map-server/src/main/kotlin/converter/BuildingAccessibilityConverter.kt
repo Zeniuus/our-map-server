@@ -2,12 +2,17 @@ package converter
 
 import domain.placeAccessibility.entity.BuildingAccessibility
 import domain.placeAccessibility.entity.BuildingStairInfo
+import domain.placeAccessibility.repository.BuildingAccessibilityUpvoteRepository
+import domain.placeAccessibility.service.BuildingAccessibilityUpvoteService
+import domain.user.entity.User
 import domain.user.repository.UserRepository
 import ourMap.protocol.Common
 import ourMap.protocol.Model
 
 class BuildingAccessibilityConverter(
     private val userRepository: UserRepository,
+    private val buildingAccessibilityUpvoteRepository: BuildingAccessibilityUpvoteRepository,
+    private val buildingAccessibilityUpvoteService: BuildingAccessibilityUpvoteService,
 ) {
     companion object {
         fun toProto(stairInfo: BuildingStairInfo) = when (stairInfo) {
@@ -24,7 +29,7 @@ class BuildingAccessibilityConverter(
         }
     }
 
-    fun toProto(buildingAccessibility: BuildingAccessibility) = Model.BuildingAccessibility.newBuilder()
+    fun toProto(buildingAccessibility: BuildingAccessibility, user: User) = Model.BuildingAccessibility.newBuilder()
         .setId(buildingAccessibility.id)
         .setHasElevator(buildingAccessibility.hasElevator)
         .setHasObstacleToElevator(buildingAccessibility.hasObstacleToElevator)
@@ -36,5 +41,7 @@ class BuildingAccessibilityConverter(
             }
         }
         .setBuildingId(buildingAccessibility.buildingId)
+        .setIsUpvoted(buildingAccessibilityUpvoteService.isUpvoted(user, buildingAccessibility))
+        .setTotalUpvoteCount(buildingAccessibilityUpvoteRepository.getTotalUpvoteCount(buildingAccessibility))
         .build()!!
 }

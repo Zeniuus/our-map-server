@@ -16,6 +16,12 @@ class GetAccessibilityTest : OurMapServerRouteTestBase() {
         val (place, placeAccessibility, buildingAccessibility) = transactionManager.doInTransaction {
             val place = testDataGenerator.createBuildingAndPlace(placeName = "장소장소")
             val (placeAccessibility, buildingAccessibility) = testDataGenerator.registerBuildingAndPlaceAccessibility(place, user)
+
+            repeat(2) {
+                testDataGenerator.giveBuildingAccessibilityUpvote(buildingAccessibility)
+            }
+            testDataGenerator.giveBuildingAccessibilityUpvote(buildingAccessibility, user)
+
             Triple(place, placeAccessibility, buildingAccessibility)
         }
 
@@ -30,6 +36,8 @@ class GetAccessibilityTest : OurMapServerRouteTestBase() {
             Assert.assertEquals(buildingAccessibility.hasObstacleToElevator, result.buildingAccessibility.hasObstacleToElevator)
             Assert.assertEquals(buildingAccessibility.stairInfo, BuildingAccessibilityConverter.fromProto(result.buildingAccessibility.stairInfo))
             Assert.assertEquals(user.nickname, result.buildingAccessibility.registeredUserName.value)
+            Assert.assertTrue(result.buildingAccessibility.isUpvoted)
+            Assert.assertEquals(3, result.buildingAccessibility.totalUpvoteCount)
 
             Assert.assertEquals(placeAccessibility.id, result.placeAccessibility.id)
             Assert.assertEquals(placeAccessibility.placeId, result.placeAccessibility.placeId)

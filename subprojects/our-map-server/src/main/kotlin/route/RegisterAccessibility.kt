@@ -7,6 +7,7 @@ import converter.BuildingAccessibilityConverter
 import converter.PlaceAccessibilityConverter
 import domain.placeAccessibility.service.BuildingAccessibilityService
 import domain.placeAccessibility.service.PlaceAccessibilityService
+import domain.user.repository.UserRepository
 import io.ktor.application.call
 import io.ktor.request.receive
 import io.ktor.response.respond
@@ -19,8 +20,9 @@ import ourMap.protocol.RegisterAccessibilityResult
 fun Route.registerAccessibility() {
     val koin = GlobalContext.get()
     val transactionManager = koin.get<TransactionManager>()
-    val placeAccessibilityApplicationService = koin.get<PlaceAccessibilityApplicationService>()
     val userAuthenticator = koin.get<UserAuthenticator>()
+    val userRepository = koin.get<UserRepository>()
+    val placeAccessibilityApplicationService = koin.get<PlaceAccessibilityApplicationService>()
     val placeAccessibilityConverter = koin.get<PlaceAccessibilityConverter>()
     val buildingAccessibilityConverter = koin.get<BuildingAccessibilityConverter>()
 
@@ -51,11 +53,12 @@ fun Route.registerAccessibility() {
 
         call.respond(
             transactionManager.doInTransaction {
+                val user = userRepository.findById(userId)
                 RegisterAccessibilityResult.newBuilder()
                     .setPlaceAccessibility(placeAccessibilityConverter.toProto(placeAccessibility))
                     .also {
                         if (buildingAccessibility != null) {
-                            it.buildingAccessibility = buildingAccessibilityConverter.toProto(buildingAccessibility)
+                            it.buildingAccessibility = buildingAccessibilityConverter.toProto(buildingAccessibility, user)
                         }
                     }
                     .build()
