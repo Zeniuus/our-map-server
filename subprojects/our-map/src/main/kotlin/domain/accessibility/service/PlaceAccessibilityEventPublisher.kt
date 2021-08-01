@@ -1,7 +1,7 @@
 package domain.accessibility.service
 
-import domain.place.repository.PlaceRepository
 import domain.accessibility.entity.PlaceAccessibility
+import domain.place.repository.PlaceRepository
 import domain.village.repository.EupMyeonDongRepository
 import domain.village.service.VillageService
 

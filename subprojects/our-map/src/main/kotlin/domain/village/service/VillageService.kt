@@ -1,9 +1,9 @@
 package domain.village.service
 
-import domain.place.repository.BuildingRepository
-import domain.place.repository.PlaceRepository
 import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.accessibility.repository.PlaceAccessibilityRepository
+import domain.place.repository.BuildingRepository
+import domain.place.repository.PlaceRepository
 import domain.util.EntityIdRandomGenerator
 import domain.village.entity.EupMyeonDong
 import domain.village.entity.Village

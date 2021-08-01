@@ -1,10 +1,10 @@
 package route
 
 import application.village.VillageApplicationService
-import domain.place.repository.BuildingRepository
-import domain.place.repository.PlaceRepository
 import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.accessibility.repository.PlaceAccessibilityRepository
+import domain.place.repository.BuildingRepository
+import domain.place.repository.PlaceRepository
 import domain.village.repository.EupMyeonDongRepository
 import domain.village.repository.VillageRepository
 import domain.village.service.VillageService

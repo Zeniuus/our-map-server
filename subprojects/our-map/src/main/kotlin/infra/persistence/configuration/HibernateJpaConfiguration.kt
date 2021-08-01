@@ -1,10 +1,10 @@
 package infra.persistence.configuration
 
-import domain.place.entity.Building
-import domain.place.entity.Place
 import domain.accessibility.entity.BuildingAccessibility
 import domain.accessibility.entity.BuildingAccessibilityUpvote
 import domain.accessibility.entity.PlaceAccessibility
+import domain.place.entity.Building
+import domain.place.entity.Place
 import domain.user.entity.User
 import domain.village.entity.UserFavoriteVillage
 import domain.village.entity.Village

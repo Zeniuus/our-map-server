@@ -1,14 +1,14 @@
 package domain.village
 
 import domain.DomainTestBase
-import domain.place.repository.BuildingRepository
-import domain.place.repository.PlaceRepository
-import domain.accessibility.entity.BuildingStairInfo
 import domain.accessibility.accessibilityDomainModule
+import domain.accessibility.entity.BuildingStairInfo
 import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.accessibility.service.BuildingAccessibilityService
 import domain.accessibility.service.PlaceAccessibilityService
+import domain.place.repository.BuildingRepository
+import domain.place.repository.PlaceRepository
 import domain.village.repository.EupMyeonDongRepository
 import domain.village.repository.VillageRepository
 import domain.village.service.VillageService

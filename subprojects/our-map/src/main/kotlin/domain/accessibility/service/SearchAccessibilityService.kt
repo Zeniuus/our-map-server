@@ -1,10 +1,10 @@
 package domain.accessibility.service
 
-import domain.place.entity.Place
 import domain.accessibility.entity.BuildingAccessibility
 import domain.accessibility.entity.PlaceAccessibility
 import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.accessibility.repository.PlaceAccessibilityRepository
+import domain.place.entity.Place
 
 class SearchAccessibilityService(
     private val placeAccessibilityRepository: PlaceAccessibilityRepository,

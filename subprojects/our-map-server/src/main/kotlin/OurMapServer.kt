@@ -1,11 +1,11 @@
-import application.place.placeApplicationModule
 import application.accessibility.accessibilityApplicationModule
+import application.place.placeApplicationModule
 import application.user.userApplicationModule
 import application.village.villageApplicationModule
 import auth.ourMapAuthModule
 import converter.ourMapConverterModule
-import domain.place.placeDomainModule
 import domain.accessibility.accessibilityDomainModule
+import domain.place.placeDomainModule
 import domain.user.userDomainModule
 import domain.village.villageDomainModule
 import io.ktor.application.Application

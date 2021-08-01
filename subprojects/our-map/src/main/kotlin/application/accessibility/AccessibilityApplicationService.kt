@@ -1,13 +1,13 @@
 package application.accessibility
 
 import application.TransactionManager
-import domain.place.repository.PlaceRepository
 import domain.accessibility.entity.BuildingAccessibility
 import domain.accessibility.entity.PlaceAccessibility
 import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.accessibility.service.BuildingAccessibilityService
 import domain.accessibility.service.PlaceAccessibilityService
+import domain.place.repository.PlaceRepository
 
 class AccessibilityApplicationService(
     private val transactionManager: TransactionManager,
