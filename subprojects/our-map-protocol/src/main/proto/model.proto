@@ -62,6 +62,12 @@ message Village {
     bool is_favorite_village = 3;
 }
 
+message VillageRankingEntry {
+    Village village = 1;
+    int32 progress_rank = 2; // 계단정복률 순위.
+    string progress_percentage = 3; // 계단정복률.
+}
+
 message SiGunGu {
     string id = 1;
     string name = 2;
@@ -71,4 +77,8 @@ message EupMyeonDong {
     string id = 1;
     string name = 2;
     string si_gun_gu_id = 3;
+}
+
+message AchievementBadge {
+    string image_url = 1;
 }
