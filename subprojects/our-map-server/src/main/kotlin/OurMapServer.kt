@@ -10,6 +10,7 @@ import domain.user.userDomainModule
 import domain.village.villageDomainModule
 import io.ktor.application.Application
 import io.ktor.application.install
+import io.ktor.features.CORS
 import io.ktor.features.ContentNegotiation
 import io.ktor.http.ContentType
 import io.ktor.routing.routing
@@ -42,6 +43,10 @@ fun main(args: Array<String>) {
 fun Application.ourMapModule(testing: Boolean = false) {
     install(ContentNegotiation) {
         register(ContentType.Application.Json, ProtobufJsonContentConverter())
+    }
+
+    install(CORS) {
+        anyHost()
     }
 
     routing {
