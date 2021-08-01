@@ -1,8 +1,8 @@
 package infra.persistence.repository
 
-import domain.placeAccessibility.entity.BuildingAccessibility
-import domain.placeAccessibility.entity.BuildingAccessibilityUpvote
-import domain.placeAccessibility.repository.BuildingAccessibilityUpvoteRepository
+import domain.accessibility.entity.BuildingAccessibility
+import domain.accessibility.entity.BuildingAccessibilityUpvote
+import domain.accessibility.repository.BuildingAccessibilityUpvoteRepository
 import domain.user.entity.User
 import infra.persistence.transaction.EntityManagerHolder
 

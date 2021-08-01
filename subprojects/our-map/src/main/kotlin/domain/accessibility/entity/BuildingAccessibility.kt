@@ -1,22 +1,25 @@
-package domain.placeAccessibility.entity
+package domain.accessibility.entity
 
 import javax.persistence.Column
 import javax.persistence.Entity
+import javax.persistence.EnumType
+import javax.persistence.Enumerated
 import javax.persistence.Id
 
 @Entity
-data class PlaceAccessibility(
+data class BuildingAccessibility(
     @Id
     @Column(length = 36, nullable = false)
     val id: String,
     @Column(length = 36, nullable = false)
-    val placeId: String,
+    val buildingId: String,
     @Column(nullable = false)
-    val isFirstFloor: Boolean,
+    val hasElevator: Boolean,
     @Column(nullable = false)
-    val hasStair: Boolean,
+    val hasObstacleToElevator: Boolean,
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    val isWheelchairAccessible: Boolean,
+    val stairInfo: BuildingStairInfo,
     @Column(length = 36, nullable = true)
     val userId: String?,
 )

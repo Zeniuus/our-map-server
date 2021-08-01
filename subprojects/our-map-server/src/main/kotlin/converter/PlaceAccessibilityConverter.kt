@@ -1,6 +1,6 @@
 package converter
 
-import domain.placeAccessibility.entity.PlaceAccessibility
+import domain.accessibility.entity.PlaceAccessibility
 import domain.user.repository.UserRepository
 import ourMap.protocol.Common
 import ourMap.protocol.Model

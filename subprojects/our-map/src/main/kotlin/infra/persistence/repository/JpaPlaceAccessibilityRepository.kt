@@ -1,7 +1,7 @@
 package infra.persistence.repository
 
-import domain.placeAccessibility.entity.PlaceAccessibility
-import domain.placeAccessibility.repository.PlaceAccessibilityRepository
+import domain.accessibility.entity.PlaceAccessibility
+import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.village.entity.EupMyeonDong
 import infra.persistence.transaction.EntityManagerHolder
 import java.math.BigInteger

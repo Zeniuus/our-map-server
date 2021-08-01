@@ -1,4 +1,4 @@
-package domain.placeAccessibility.entity
+package domain.accessibility.entity
 
 import java.time.Instant
 import javax.persistence.Column

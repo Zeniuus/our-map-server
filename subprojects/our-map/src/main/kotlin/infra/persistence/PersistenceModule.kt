@@ -3,9 +3,9 @@ package infra.persistence
 import application.TransactionManager
 import domain.place.repository.BuildingRepository
 import domain.place.repository.PlaceRepository
-import domain.placeAccessibility.repository.BuildingAccessibilityRepository
-import domain.placeAccessibility.repository.BuildingAccessibilityUpvoteRepository
-import domain.placeAccessibility.repository.PlaceAccessibilityRepository
+import domain.accessibility.repository.BuildingAccessibilityRepository
+import domain.accessibility.repository.BuildingAccessibilityUpvoteRepository
+import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.user.repository.UserRepository
 import domain.village.repository.UserFavoriteVillageRepository
 import domain.village.repository.VillageRepository

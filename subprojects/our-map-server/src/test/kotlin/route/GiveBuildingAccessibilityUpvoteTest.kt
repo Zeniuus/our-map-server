@@ -1,6 +1,6 @@
 package route
 
-import domain.placeAccessibility.service.BuildingAccessibilityUpvoteService
+import domain.accessibility.service.BuildingAccessibilityUpvoteService
 import org.junit.Assert
 import org.junit.Test
 import org.koin.test.inject

@@ -1,11 +1,11 @@
 import application.place.placeApplicationModule
-import application.placeAccessibility.placeAccessibilityApplicationModule
+import application.accessibility.accessibilityApplicationModule
 import application.user.userApplicationModule
 import application.village.villageApplicationModule
 import auth.ourMapAuthModule
 import converter.ourMapConverterModule
 import domain.place.placeDomainModule
-import domain.placeAccessibility.placeAccessibilityDomainModule
+import domain.accessibility.accessibilityDomainModule
 import domain.user.userDomainModule
 import domain.village.villageDomainModule
 import io.ktor.application.Application
@@ -73,8 +73,8 @@ fun configOurMapServerIoCContainerOnce() {
                 placeDomainModule,
                 placeApplicationModule,
 
-                placeAccessibilityDomainModule,
-                placeAccessibilityApplicationModule,
+                accessibilityDomainModule,
+                accessibilityApplicationModule,
 
                 villageDomainModule,
                 villageApplicationModule,

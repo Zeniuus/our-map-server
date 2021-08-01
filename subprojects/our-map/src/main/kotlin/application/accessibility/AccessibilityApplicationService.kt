@@ -1,15 +1,15 @@
-package application.placeAccessibility
+package application.accessibility
 
 import application.TransactionManager
 import domain.place.repository.PlaceRepository
-import domain.placeAccessibility.entity.BuildingAccessibility
-import domain.placeAccessibility.entity.PlaceAccessibility
-import domain.placeAccessibility.repository.BuildingAccessibilityRepository
-import domain.placeAccessibility.repository.PlaceAccessibilityRepository
-import domain.placeAccessibility.service.BuildingAccessibilityService
-import domain.placeAccessibility.service.PlaceAccessibilityService
+import domain.accessibility.entity.BuildingAccessibility
+import domain.accessibility.entity.PlaceAccessibility
+import domain.accessibility.repository.BuildingAccessibilityRepository
+import domain.accessibility.repository.PlaceAccessibilityRepository
+import domain.accessibility.service.BuildingAccessibilityService
+import domain.accessibility.service.PlaceAccessibilityService
 
-class PlaceAccessibilityApplicationService(
+class AccessibilityApplicationService(
     private val transactionManager: TransactionManager,
     private val placeRepository: PlaceRepository,
     private val placeAccessibilityRepository: PlaceAccessibilityRepository,

@@ -1,7 +1,7 @@
-package domain.placeAccessibility.repository
+package domain.accessibility.repository
 
 import domain.EntityRepository
-import domain.placeAccessibility.entity.PlaceAccessibility
+import domain.accessibility.entity.PlaceAccessibility
 import domain.village.entity.EupMyeonDong
 
 interface PlaceAccessibilityRepository : EntityRepository<PlaceAccessibility, String> {

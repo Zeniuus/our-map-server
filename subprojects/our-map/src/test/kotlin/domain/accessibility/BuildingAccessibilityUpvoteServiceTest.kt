@@ -1,13 +1,13 @@
-package domain.placeAccessibility
+package domain.accessibility
 
 import domain.DomainTestBase
-import domain.placeAccessibility.service.BuildingAccessibilityUpvoteService
+import domain.accessibility.service.BuildingAccessibilityUpvoteService
 import org.junit.Assert
 import org.junit.Test
 import org.koin.test.inject
 
 class BuildingAccessibilityUpvoteServiceTest : DomainTestBase() {
-    override val koinModules = listOf(placeAccessibilityDomainModule)
+    override val koinModules = listOf(accessibilityDomainModule)
 
     private val buildingAccessibilityUpvoteService by inject<BuildingAccessibilityUpvoteService>()
 

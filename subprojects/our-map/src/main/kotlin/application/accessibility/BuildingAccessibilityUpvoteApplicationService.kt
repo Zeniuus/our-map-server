@@ -1,8 +1,8 @@
-package application.placeAccessibility
+package application.accessibility
 
 import application.TransactionManager
-import domain.placeAccessibility.repository.BuildingAccessibilityRepository
-import domain.placeAccessibility.service.BuildingAccessibilityUpvoteService
+import domain.accessibility.repository.BuildingAccessibilityRepository
+import domain.accessibility.service.BuildingAccessibilityUpvoteService
 import domain.user.repository.UserRepository
 
 class BuildingAccessibilityUpvoteApplicationService(

@@ -1,12 +1,12 @@
-package domain.placeAccessibility.service
+package domain.accessibility.service
 
 import domain.place.entity.Place
-import domain.placeAccessibility.entity.BuildingAccessibility
-import domain.placeAccessibility.entity.PlaceAccessibility
-import domain.placeAccessibility.repository.BuildingAccessibilityRepository
-import domain.placeAccessibility.repository.PlaceAccessibilityRepository
+import domain.accessibility.entity.BuildingAccessibility
+import domain.accessibility.entity.PlaceAccessibility
+import domain.accessibility.repository.BuildingAccessibilityRepository
+import domain.accessibility.repository.PlaceAccessibilityRepository
 
-class SearchPlaceAccessibilityService(
+class SearchAccessibilityService(
     private val placeAccessibilityRepository: PlaceAccessibilityRepository,
     private val buildingAccessibilityRepository: BuildingAccessibilityRepository,
 ) {

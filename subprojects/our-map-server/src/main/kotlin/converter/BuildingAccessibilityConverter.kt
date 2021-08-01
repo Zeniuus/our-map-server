@@ -1,9 +1,9 @@
 package converter
 
-import domain.placeAccessibility.entity.BuildingAccessibility
-import domain.placeAccessibility.entity.BuildingStairInfo
-import domain.placeAccessibility.repository.BuildingAccessibilityUpvoteRepository
-import domain.placeAccessibility.service.BuildingAccessibilityUpvoteService
+import domain.accessibility.entity.BuildingAccessibility
+import domain.accessibility.entity.BuildingStairInfo
+import domain.accessibility.repository.BuildingAccessibilityUpvoteRepository
+import domain.accessibility.service.BuildingAccessibilityUpvoteService
 import domain.user.entity.User
 import domain.user.repository.UserRepository
 import ourMap.protocol.Common

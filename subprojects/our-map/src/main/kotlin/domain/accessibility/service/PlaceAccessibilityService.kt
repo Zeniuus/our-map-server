@@ -1,7 +1,7 @@
-package domain.placeAccessibility.service
+package domain.accessibility.service
 
-import domain.placeAccessibility.entity.PlaceAccessibility
-import domain.placeAccessibility.repository.PlaceAccessibilityRepository
+import domain.accessibility.entity.PlaceAccessibility
+import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.util.EntityIdRandomGenerator
 
 class PlaceAccessibilityService(

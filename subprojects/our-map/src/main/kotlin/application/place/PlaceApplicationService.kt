@@ -3,15 +3,15 @@ package application.place
 import application.TransactionManager
 import domain.place.entity.Place
 import domain.place.service.SearchPlaceService
-import domain.placeAccessibility.entity.BuildingAccessibility
-import domain.placeAccessibility.entity.PlaceAccessibility
-import domain.placeAccessibility.service.SearchPlaceAccessibilityService
+import domain.accessibility.entity.BuildingAccessibility
+import domain.accessibility.entity.PlaceAccessibility
+import domain.accessibility.service.SearchAccessibilityService
 import domain.util.Location
 
 class PlaceApplicationService(
     private val transactionManager: TransactionManager,
     private val searchPlaceService: SearchPlaceService,
-    private val searchPlaceAccessibilityService: SearchPlaceAccessibilityService,
+    private val searchAccessibilityService: SearchAccessibilityService,
 ) {
     data class SearchPlaceResult(
         val place: Place,
@@ -21,7 +21,7 @@ class PlaceApplicationService(
 
     fun searchPlaces(searchText: String, location: Location): List<SearchPlaceResult> = transactionManager.doInTransaction {
         val places = searchPlaceService.searchPlaces(searchText, location)
-        val accessibilitySearchResult = searchPlaceAccessibilityService.search(places)
+        val accessibilitySearchResult = searchAccessibilityService.search(places)
         places.map { place ->
             val (placeAccessibility, buildingAccessibility) = accessibilitySearchResult.getAccessibility(place)
             SearchPlaceResult(

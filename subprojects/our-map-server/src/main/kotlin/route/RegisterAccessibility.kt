@@ -1,12 +1,12 @@
 package route
 
 import application.TransactionManager
-import application.placeAccessibility.PlaceAccessibilityApplicationService
+import application.accessibility.AccessibilityApplicationService
 import auth.UserAuthenticator
 import converter.BuildingAccessibilityConverter
 import converter.PlaceAccessibilityConverter
-import domain.placeAccessibility.service.BuildingAccessibilityService
-import domain.placeAccessibility.service.PlaceAccessibilityService
+import domain.accessibility.service.BuildingAccessibilityService
+import domain.accessibility.service.PlaceAccessibilityService
 import domain.user.repository.UserRepository
 import io.ktor.application.call
 import io.ktor.request.receive
@@ -22,7 +22,7 @@ fun Route.registerAccessibility() {
     val transactionManager = koin.get<TransactionManager>()
     val userAuthenticator = koin.get<UserAuthenticator>()
     val userRepository = koin.get<UserRepository>()
-    val placeAccessibilityApplicationService = koin.get<PlaceAccessibilityApplicationService>()
+    val placeAccessibilityApplicationService = koin.get<AccessibilityApplicationService>()
     val placeAccessibilityConverter = koin.get<PlaceAccessibilityConverter>()
     val buildingAccessibilityConverter = koin.get<BuildingAccessibilityConverter>()
 

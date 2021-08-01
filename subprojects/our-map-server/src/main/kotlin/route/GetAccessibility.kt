@@ -1,7 +1,7 @@
 package route
 
 import application.TransactionManager
-import application.placeAccessibility.PlaceAccessibilityApplicationService
+import application.accessibility.AccessibilityApplicationService
 import auth.UserAuthenticator
 import converter.BuildingAccessibilityConverter
 import converter.PlaceAccessibilityConverter
@@ -20,7 +20,7 @@ fun Route.getAccessibility() {
     val transactionManager = koin.get<TransactionManager>()
     val userAuthenticator = koin.get<UserAuthenticator>()
     val userRepository = koin.get<UserRepository>()
-    val placeAccessibilityApplicationService = koin.get<PlaceAccessibilityApplicationService>()
+    val placeAccessibilityApplicationService = koin.get<AccessibilityApplicationService>()
     val placeAccessibilityConverter = koin.get<PlaceAccessibilityConverter>()
     val buildingAccessibilityConverter = koin.get<BuildingAccessibilityConverter>()
 

@@ -2,8 +2,8 @@ package route
 
 import domain.place.repository.BuildingRepository
 import domain.place.repository.PlaceRepository
-import domain.placeAccessibility.repository.BuildingAccessibilityRepository
-import domain.placeAccessibility.repository.PlaceAccessibilityRepository
+import domain.accessibility.repository.BuildingAccessibilityRepository
+import domain.accessibility.repository.PlaceAccessibilityRepository
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test

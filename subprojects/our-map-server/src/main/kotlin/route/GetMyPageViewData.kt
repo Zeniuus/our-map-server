@@ -4,7 +4,7 @@ import application.TransactionManager
 import auth.UserAuthenticator
 import converter.UserConverter
 import converter.VillageConverter
-import domain.placeAccessibility.repository.BuildingAccessibilityUpvoteRepository
+import domain.accessibility.repository.BuildingAccessibilityUpvoteRepository
 import domain.user.repository.UserRepository
 import domain.village.repository.UserFavoriteVillageRepository
 import io.ktor.application.call

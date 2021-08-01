@@ -1,8 +1,8 @@
-package domain.placeAccessibility.repository
+package domain.accessibility.repository
 
 import domain.EntityRepository
-import domain.placeAccessibility.entity.BuildingAccessibility
-import domain.placeAccessibility.entity.BuildingAccessibilityUpvote
+import domain.accessibility.entity.BuildingAccessibility
+import domain.accessibility.entity.BuildingAccessibilityUpvote
 import domain.user.entity.User
 
 interface BuildingAccessibilityUpvoteRepository : EntityRepository<BuildingAccessibilityUpvote, String> {

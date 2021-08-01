@@ -1,7 +1,7 @@
 package infra.persistence.repository
 
-import domain.placeAccessibility.entity.BuildingAccessibility
-import domain.placeAccessibility.repository.BuildingAccessibilityRepository
+import domain.accessibility.entity.BuildingAccessibility
+import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.village.entity.EupMyeonDong
 import infra.persistence.transaction.EntityManagerHolder
 

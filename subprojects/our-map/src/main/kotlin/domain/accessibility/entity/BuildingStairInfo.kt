@@ -1,4 +1,4 @@
-package domain.placeAccessibility.entity
+package domain.accessibility.entity
 
 enum class BuildingStairInfo {
     NONE,

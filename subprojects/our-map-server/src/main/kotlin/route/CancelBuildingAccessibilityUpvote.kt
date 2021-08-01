@@ -1,6 +1,6 @@
 package route
 
-import application.placeAccessibility.BuildingAccessibilityUpvoteApplicationService
+import application.accessibility.BuildingAccessibilityUpvoteApplicationService
 import auth.UserAuthenticator
 import io.ktor.application.call
 import io.ktor.request.receive

@@ -3,8 +3,8 @@ package route
 import application.village.VillageApplicationService
 import domain.place.repository.BuildingRepository
 import domain.place.repository.PlaceRepository
-import domain.placeAccessibility.repository.BuildingAccessibilityRepository
-import domain.placeAccessibility.repository.PlaceAccessibilityRepository
+import domain.accessibility.repository.BuildingAccessibilityRepository
+import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.village.repository.EupMyeonDongRepository
 import domain.village.repository.VillageRepository
 import domain.village.service.VillageService

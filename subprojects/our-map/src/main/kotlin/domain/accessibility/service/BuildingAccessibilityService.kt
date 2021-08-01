@@ -1,8 +1,8 @@
-package domain.placeAccessibility.service
+package domain.accessibility.service
 
-import domain.placeAccessibility.entity.BuildingAccessibility
-import domain.placeAccessibility.entity.BuildingStairInfo
-import domain.placeAccessibility.repository.BuildingAccessibilityRepository
+import domain.accessibility.entity.BuildingAccessibility
+import domain.accessibility.entity.BuildingStairInfo
+import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.util.EntityIdRandomGenerator
 
 class BuildingAccessibilityService(

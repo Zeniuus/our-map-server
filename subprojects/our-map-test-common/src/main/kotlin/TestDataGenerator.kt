@@ -4,13 +4,13 @@ import domain.place.entity.Place
 import domain.place.placeDomainModule
 import domain.place.repository.BuildingRepository
 import domain.place.repository.PlaceRepository
-import domain.placeAccessibility.entity.BuildingAccessibility
-import domain.placeAccessibility.entity.BuildingStairInfo
-import domain.placeAccessibility.entity.PlaceAccessibility
-import domain.placeAccessibility.placeAccessibilityDomainModule
-import domain.placeAccessibility.service.BuildingAccessibilityService
-import domain.placeAccessibility.service.BuildingAccessibilityUpvoteService
-import domain.placeAccessibility.service.PlaceAccessibilityService
+import domain.accessibility.entity.BuildingAccessibility
+import domain.accessibility.entity.BuildingStairInfo
+import domain.accessibility.entity.PlaceAccessibility
+import domain.accessibility.accessibilityDomainModule
+import domain.accessibility.service.BuildingAccessibilityService
+import domain.accessibility.service.BuildingAccessibilityUpvoteService
+import domain.accessibility.service.PlaceAccessibilityService
 import domain.user.entity.User
 import domain.user.service.UserService
 import domain.user.userDomainModule
@@ -30,7 +30,7 @@ class TestDataGenerator {
         modules(
             userDomainModule,
             placeDomainModule,
-            placeAccessibilityDomainModule,
+            accessibilityDomainModule,
             villageDomainModule,
         )
     }

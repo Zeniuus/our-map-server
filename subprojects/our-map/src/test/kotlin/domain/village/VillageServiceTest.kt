@@ -3,12 +3,12 @@ package domain.village
 import domain.DomainTestBase
 import domain.place.repository.BuildingRepository
 import domain.place.repository.PlaceRepository
-import domain.placeAccessibility.entity.BuildingStairInfo
-import domain.placeAccessibility.placeAccessibilityDomainModule
-import domain.placeAccessibility.repository.BuildingAccessibilityRepository
-import domain.placeAccessibility.repository.PlaceAccessibilityRepository
-import domain.placeAccessibility.service.BuildingAccessibilityService
-import domain.placeAccessibility.service.PlaceAccessibilityService
+import domain.accessibility.entity.BuildingStairInfo
+import domain.accessibility.accessibilityDomainModule
+import domain.accessibility.repository.BuildingAccessibilityRepository
+import domain.accessibility.repository.PlaceAccessibilityRepository
+import domain.accessibility.service.BuildingAccessibilityService
+import domain.accessibility.service.PlaceAccessibilityService
 import domain.village.repository.EupMyeonDongRepository
 import domain.village.repository.VillageRepository
 import domain.village.service.VillageService
@@ -18,7 +18,7 @@ import org.junit.Test
 import org.koin.test.inject
 
 class VillageServiceTest : DomainTestBase() {
-    override val koinModules = listOf(placeAccessibilityDomainModule, villageDomainModule)
+    override val koinModules = listOf(accessibilityDomainModule, villageDomainModule)
 
     private val placeRepository by inject<PlaceRepository>()
     private val buildingRepository by inject<BuildingRepository>()
@@ -80,7 +80,7 @@ class VillageServiceTest : DomainTestBase() {
         }
 
         /**
-         * [domain.placeAccessibility.service.PlaceAccessibilityEventPublisher.accessibilityRegistered] 때문에
+         * [domain.accessibility.service.PlaceAccessibilityEventPublisher.accessibilityRegistered] 때문에
          * 명시적으로 [VillageService.upsertStatistics]를 호출하지 않아도 된다.
          */
         val village2 = villageRepository.findById(village1.id)
