@@ -2,11 +2,13 @@ package application.user
 
 import application.TransactionManager
 import domain.user.entity.User
+import domain.user.repository.UserRepository
 import domain.user.service.UserAuthService
 import domain.user.service.UserService
 
 class UserApplicationService(
     private val transactionManager: TransactionManager,
+    private val userRepository: UserRepository,
     private val userService: UserService,
     private val userAuthService: UserAuthService,
 ) {
@@ -39,4 +41,13 @@ class UserApplicationService(
         val user: User,
         val accessToken: String
     )
+
+    fun updateUserInfo(
+        userId: String,
+        nickname: String,
+        instagramId: String?
+    ): User = transactionManager.doInTransaction {
+        val user = userRepository.findById(userId)
+        userService.updateUserInfo(user, nickname, instagramId)
+    }
 }

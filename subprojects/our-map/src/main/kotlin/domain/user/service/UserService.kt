@@ -16,21 +16,32 @@ class UserService(
     )
 
     fun createUser(params: CreateUserParams): User {
-        val normalizedNickname = params.nickname.trim()
+        val normalizedNickname = normalizeAndValidateNickname(params.nickname)
+        return userRepository.add(
+            User(
+                id = EntityIdRandomGenerator.generate(),
+                nickname = normalizedNickname,
+                encryptedPassword = Bcrypt.encrypt(params.password.trim()),
+                instagramId = params.instagramId?.trim()?.takeIf { it.isNotEmpty() }
+            )
+        )
+    }
+
+    fun updateUserInfo(user: User, nickname: String, instagramId: String?): User {
+        user.nickname = normalizeAndValidateNickname(nickname)
+        user.instagramId = instagramId?.trim()?.takeIf { it.isNotEmpty() }
+        return userRepository.add(user)
+    }
+
+    private fun normalizeAndValidateNickname(nickname: String): String {
+        val normalizedNickname = nickname.trim()
         if (normalizedNickname.length < 2) {
             throw DomainException("최소 2자 이상의 닉네임을 설정해주세요.")
         }
         if (userRepository.findByNickname(normalizedNickname) != null) {
-            throw DomainException("${params.nickname}은 이미 사용 중인 닉네임입니다.")
+            throw DomainException("${normalizedNickname}은 이미 사용 중인 닉네임입니다.")
         }
 
-        return userRepository.add(
-            User(
-                id = EntityIdRandomGenerator.generate(),
-                nickname = params.nickname,
-                encryptedPassword = Bcrypt.encrypt(params.password),
-                instagramId = params.instagramId
-            )
-        )
+        return normalizedNickname
     }
 }
