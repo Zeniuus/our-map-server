@@ -4,6 +4,7 @@ import application.TransactionManager
 import application.village.UserFavoriteVillageApplicationService
 import auth.UserAuthenticator
 import converter.VillageConverter
+import domain.user.repository.UserRepository
 import domain.village.repository.VillageRepository
 import io.ktor.application.call
 import io.ktor.request.receive
@@ -19,6 +20,7 @@ fun Route.unregisterFavoriteVillage() {
 
     val transactionManager = koin.get<TransactionManager>()
     val userAuthenticator = koin.get<UserAuthenticator>()
+    val userRepository = koin.get<UserRepository>()
     val villageRepository = koin.get<VillageRepository>()
     val villageConverter = koin.get<VillageConverter>()
     val userFavoriteVillageApplicationService = koin.get<UserFavoriteVillageApplicationService>()
@@ -31,9 +33,10 @@ fun Route.unregisterFavoriteVillage() {
 
         call.respond(
             transactionManager.doInTransaction {
+                val user = userRepository.findById(userId)
                 val village = villageRepository.findById(params.villageId)
                 RegisterFavoriteVillageResult.newBuilder()
-                    .setVillage(villageConverter.toProto(village, isFavoriteVillage = false))
+                    .setVillage(villageConverter.toProto(village, user))
                     .build()
             }
         )

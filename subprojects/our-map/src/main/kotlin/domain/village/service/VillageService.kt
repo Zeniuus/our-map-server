@@ -23,7 +23,7 @@ class VillageService(
         return "${eupMyeonDong.siGunGu.name} ${eupMyeonDong.name}"
     }
 
-    fun getProgressRanking(village: Village): Int {
+    fun getProgressRank(village: Village): Int {
         val villages = villageRepository.listAll()
             .sortedByDescending { it.registerProgress }
         return villages.indexOfFirst { it.id == village.id } + 1

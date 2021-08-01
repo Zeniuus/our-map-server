@@ -5,6 +5,7 @@ import application.village.VillageApplicationService
 import auth.UserAuthenticator
 import converter.UserConverter
 import converter.VillageConverter
+import domain.user.repository.UserRepository
 import io.ktor.application.call
 import io.ktor.request.receive
 import io.ktor.response.respond
@@ -19,6 +20,7 @@ fun Route.getVillageStatistics() {
 
     val transactionManager = koin.get<TransactionManager>()
     val userAuthenticator = koin.get<UserAuthenticator>()
+    val userRepository = koin.get<UserRepository>()
     val villageApplicationService = koin.get<VillageApplicationService>()
     val villageConverter = koin.get<VillageConverter>()
 
@@ -30,10 +32,9 @@ fun Route.getVillageStatistics() {
 
         call.respond(
             transactionManager.doInTransaction {
+                val user = userRepository.findById(userId)
                 GetVillageStatisticsResult.newBuilder()
-                    .setVillage(villageConverter.toProto(stats.village, stats.isFavoriteVillage))
-                    .setProgressRank(stats.progressRank)
-                    .setProgressPercentage(VillageConverter.getProgressPercentage(stats.village))
+                    .setVillageRankingEntry(villageConverter.toRankingEntryProto(stats.village, user))
                     .setBuildingAccessibilityCount(stats.village.buildingAccessibilityCount)
                     .setTotalBuildingCount(stats.village.buildingCount)
                     .setPlaceAccessibilityCount(stats.village.placeAccessibilityCount)

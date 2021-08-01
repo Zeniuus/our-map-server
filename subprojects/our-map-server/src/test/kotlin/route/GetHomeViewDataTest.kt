@@ -59,12 +59,12 @@ class GetHomeViewDataTest : OurMapServerRouteTestBase() {
         val testClient = getTestClient(user)
         testClient.request("/getHomeViewData", GetHomeViewDataParams.getDefaultInstance()).apply {
             val result = getResult(GetHomeViewDataResult::class)
-            Assert.assertEquals(eupMyeonDongs.size, result.villageRankingEntriesList.size)
+            Assert.assertEquals(eupMyeonDongs.size, result.entriesList.size)
             transactionManager.doInTransaction {
-                eupMyeonDongs.zip(result.villageRankingEntriesList.reversed()).forEachIndexed { idx, (eupMyeonDong, villageRankingEntry) ->
+                eupMyeonDongs.zip(result.entriesList.reversed()).forEachIndexed { idx, (eupMyeonDong, villageRankingEntry) ->
                     val village = villageRepository.findByEupMyeonDong(eupMyeonDong)!!
-                    Assert.assertEquals(village.id, villageRankingEntry.villageId)
-                    Assert.assertEquals("${eupMyeonDong.siGunGu.name} ${eupMyeonDong.name}", villageRankingEntry.villageName)
+                    Assert.assertEquals(village.id, villageRankingEntry.village.id)
+                    Assert.assertEquals("${eupMyeonDong.siGunGu.name} ${eupMyeonDong.name}", villageRankingEntry.village.name)
                     Assert.assertEquals("$idx", villageRankingEntry.progressPercentage)
                 }
             }

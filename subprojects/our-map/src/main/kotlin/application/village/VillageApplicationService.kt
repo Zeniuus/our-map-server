@@ -34,7 +34,7 @@ class VillageApplicationService(
         VillageStatistics(
             village = village,
             eupMyeonDong = eupMyeonDongRepository.findById(village.eupMyeonDongId),
-            progressRank = villageService.getProgressRanking(village),
+            progressRank = villageService.getProgressRank(village),
             isFavoriteVillage = userFavoriteVillageService.isFavoriteVillage(user, village),
             mostRegisteredUser = village.mostBuildingAccessibilityRegisteredUserId?.let {
                 userRepository.findById(it)
