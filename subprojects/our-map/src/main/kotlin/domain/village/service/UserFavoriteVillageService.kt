@@ -12,11 +12,11 @@ class UserFavoriteVillageService(
     private val userFavoriteVillageRepository: UserFavoriteVillageRepository,
 ) {
     fun isFavoriteVillage(user: User, village: Village): Boolean {
-        return userFavoriteVillageRepository.findByUserAndVillageAndDeletedAtIsNull(user, village) != null
+        return userFavoriteVillageRepository.findByUserAndVillageAndNotDeleted(user, village) != null
     }
 
     fun register(user: User, village: Village): UserFavoriteVillage {
-        val existingOne = userFavoriteVillageRepository.findByUserAndVillageAndDeletedAtIsNull(user, village)
+        val existingOne = userFavoriteVillageRepository.findByUserAndVillageAndNotDeleted(user, village)
         if (existingOne != null) {
             return existingOne
         }
@@ -30,7 +30,7 @@ class UserFavoriteVillageService(
     }
 
     fun unregister(user: User, village: Village) {
-        userFavoriteVillageRepository.findByUserAndVillageAndDeletedAtIsNull(user, village)?.let {
+        userFavoriteVillageRepository.findByUserAndVillageAndNotDeleted(user, village)?.let {
             it.deletedAt = clock.instant()
             userFavoriteVillageRepository.add(it)
         }

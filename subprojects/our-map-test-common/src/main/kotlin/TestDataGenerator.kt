@@ -9,14 +9,18 @@ import domain.placeAccessibility.entity.BuildingStairInfo
 import domain.placeAccessibility.entity.PlaceAccessibility
 import domain.placeAccessibility.placeAccessibilityDomainModule
 import domain.placeAccessibility.service.BuildingAccessibilityService
+import domain.placeAccessibility.service.BuildingAccessibilityUpvoteService
 import domain.placeAccessibility.service.PlaceAccessibilityService
 import domain.user.entity.User
 import domain.user.service.UserService
 import domain.user.userDomainModule
 import domain.util.EntityIdRandomGenerator
 import domain.util.Location
+import domain.village.entity.Village
 import domain.village.repository.EupMyeonDongRepository
 import domain.village.repository.SiGunGuRepository
+import domain.village.repository.VillageRepository
+import domain.village.service.UserFavoriteVillageService
 import domain.village.villageDomainModule
 import java.util.Base64
 import kotlin.random.Random
@@ -38,6 +42,9 @@ class TestDataGenerator {
     private val buildingAccessibilityService = koin.get<BuildingAccessibilityService>()
     private val eupMyeonDongRepository = koin.get<EupMyeonDongRepository>()
     private val siGunGuRepository = koin.get<SiGunGuRepository>()
+    private val userFavoriteVillageService = koin.get<UserFavoriteVillageService>()
+    private val buildingAccessibilityUpvoteService = koin.get<BuildingAccessibilityUpvoteService>()
+    private val villageRepository = koin.get<VillageRepository>()
 
     fun createUser(
         nickname: String = generateRandomString(12),
@@ -108,6 +115,18 @@ class TestDataGenerator {
             )
         )
         return Pair(placeAccessibility, buildingAccessibility)
+    }
+
+    fun getRandomVillage(): Village {
+        return villageRepository.listAll().shuffled()[0]
+    }
+
+    fun registerFavoriteVillage(user: User, village: Village) {
+        userFavoriteVillageService.register(user, village)
+    }
+
+    fun giveBuildingAccessibilityUpvote(buildingAccessibility: BuildingAccessibility, user: User = createUser()) {
+        buildingAccessibilityUpvoteService.giveUpvote(user, buildingAccessibility)
     }
 
     private fun generateRandomString(length: Int): String {

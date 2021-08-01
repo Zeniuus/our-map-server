@@ -17,6 +17,7 @@ import org.koin.core.error.KoinAppAlreadyStartedException
 import route.cancelBuildingAccessibilityUpvote
 import route.getAccessibility
 import route.getHomeViewData
+import route.getMyPageViewData
 import route.getVillageStatistics
 import route.giveBuildingAccessibilityUpvote
 import route.listAdministrativeAreas
@@ -56,6 +57,7 @@ fun Application.ourMapModule(testing: Boolean = false) {
         getVillageStatistics()
         registerFavoriteVillage()
         unregisterFavoriteVillage()
+        getMyPageViewData()
     }
 }
 
