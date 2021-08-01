@@ -2,6 +2,7 @@ import application.accessibility.accessibilityApplicationModule
 import application.place.placeApplicationModule
 import application.user.userApplicationModule
 import application.village.villageApplicationModule
+import auth.UserAuthenticator
 import auth.ourMapAuthModule
 import converter.ourMapConverterModule
 import domain.accessibility.accessibilityDomainModule
@@ -13,6 +14,7 @@ import io.ktor.application.install
 import io.ktor.features.CORS
 import io.ktor.features.ContentNegotiation
 import io.ktor.http.ContentType
+import io.ktor.http.HttpMethod
 import io.ktor.routing.routing
 import org.koin.core.error.KoinAppAlreadyStartedException
 import route.cancelBuildingAccessibilityUpvote
@@ -46,6 +48,12 @@ fun Application.ourMapModule(testing: Boolean = false) {
     }
 
     install(CORS) {
+        HttpMethod.DefaultMethods.forEach {
+            method(it)
+        }
+        header(UserAuthenticator.accessTokenHeader)
+        allowNonSimpleContentTypes = true
+        allowCredentials = true
         anyHost()
     }
 
