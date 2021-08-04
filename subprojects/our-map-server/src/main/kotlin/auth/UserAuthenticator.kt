@@ -20,7 +20,7 @@ class UserAuthenticator(
 
     // User ID를 반환한다.
     fun checkAuth(request: ApplicationRequest): String {
-        val accessToken = request.header(accessTokenHeader) ?: throw UserAuthenticationException(UserAuthenticationException.ErrorCode.INVALID_ACCESS_TOKEN)
+        val accessToken = request.header(accessTokenHeader) ?: throw UserAuthenticationException()
         return userAuthApplicationService.verify(accessToken)
     }
 }

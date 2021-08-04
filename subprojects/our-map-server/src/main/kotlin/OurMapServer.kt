@@ -9,12 +9,16 @@ import domain.accessibility.accessibilityDomainModule
 import domain.place.placeDomainModule
 import domain.user.userDomainModule
 import domain.village.villageDomainModule
+import exception.OurMapExceptionHandler
 import io.ktor.application.Application
+import io.ktor.application.call
 import io.ktor.application.install
 import io.ktor.features.CORS
 import io.ktor.features.ContentNegotiation
+import io.ktor.features.StatusPages
 import io.ktor.http.ContentType
 import io.ktor.http.HttpMethod
+import io.ktor.response.respond
 import io.ktor.routing.routing
 import org.koin.core.error.KoinAppAlreadyStartedException
 import route.cancelBuildingAccessibilityUpvote
@@ -56,6 +60,13 @@ fun Application.ourMapModule(testing: Boolean = false) {
         allowNonSimpleContentTypes = true
         allowCredentials = true
         anyHost()
+    }
+
+    install(StatusPages) {
+        exception<Throwable> {
+            val result = OurMapExceptionHandler.handle(it)
+            call.respond(result.statusCode, result.body)
+        }
     }
 
     routing {

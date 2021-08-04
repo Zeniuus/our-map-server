@@ -21,7 +21,7 @@ class RouteTestClient(
     private val userAuthService = GlobalContext.get().get<UserAuthService>()
     private val transactionManager = GlobalContext.get().get<TransactionManager>()
 
-    private val accessToken = transactionManager.doInTransaction {
+    private var accessToken = transactionManager.doInTransaction {
         userAuthService.issueAccessToken(user)
     }
 
@@ -31,5 +31,9 @@ class RouteTestClient(
             addHeader("Content-Type", ContentType.Application.Json.toString())
             setBody(ProtobufJsonConverter.serializer.print(params))
         }
+    }
+
+    fun setAccessToken(accessToken: String) {
+        this.accessToken = accessToken
     }
 }

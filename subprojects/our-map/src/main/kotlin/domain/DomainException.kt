@@ -1,3 +1,3 @@
 package domain
 
-class DomainException(msg: String) : RuntimeException(msg)
+class DomainException(val msg: String) : RuntimeException(msg)

@@ -1,6 +1,7 @@
 package domain.user.service
 
 import com.auth0.jwt.exceptions.JWTVerificationException
+import domain.DomainException
 import domain.user.entity.User
 import domain.user.exception.UserAuthenticationException
 import domain.user.repository.UserRepository
@@ -12,9 +13,9 @@ class UserAuthService(
     private val userRepository: UserRepository
 ) {
     fun authenticate(nickname: String, password: String): User {
-        val user = userRepository.findByNickname(nickname) ?: throw UserAuthenticationException(UserAuthenticationException.ErrorCode.USER_DOES_NOT_EXIST)
+        val user = userRepository.findByNickname(nickname) ?: throw DomainException("잘못된 계정 아이디입니다.")
         if (!Bcrypt.verify(password, user.encryptedPassword)) {
-            throw UserAuthenticationException(UserAuthenticationException.ErrorCode.WRONG_PASSWORD)
+            throw DomainException("잘못된 비밀번호입니다.")
         }
         return user
     }
@@ -26,14 +27,10 @@ class UserAuthService(
     }
 
     fun verifyAccessToken(token: String): UserAccessTokenPayload {
-        val payload = try {
+        return try {
             jwt.verify(token, UserAccessTokenPayload::class)
         } catch (e: JWTVerificationException) {
-            throw UserAuthenticationException(UserAuthenticationException.ErrorCode.INVALID_ACCESS_TOKEN)
+            throw UserAuthenticationException()
         }
-        if (userRepository.findById(payload.userId) == null) {
-            throw UserAuthenticationException(UserAuthenticationException.ErrorCode.INVALID_ACCESS_TOKEN)
-        }
-        return payload
     }
 }

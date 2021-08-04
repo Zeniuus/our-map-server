@@ -1,7 +1,7 @@
 package domain.user
 
+import domain.DomainException
 import domain.DomainTestBase
-import domain.user.exception.UserAuthenticationException
 import domain.user.service.UserAuthService
 import org.junit.Assert
 import org.junit.Test
@@ -37,8 +37,8 @@ class UserAuthServiceTest : DomainTestBase() {
         try {
             userAuthService.authenticate("wrongNickname", password)
             Assert.fail()
-        } catch (e: UserAuthenticationException) {
-            Assert.assertEquals(UserAuthenticationException.ErrorCode.USER_DOES_NOT_EXIST, e.errorCode)
+        } catch (e: DomainException) {
+            Assert.assertEquals("잘못된 계정 아이디입니다.", e.msg)
         }
     }
 
@@ -54,8 +54,8 @@ class UserAuthServiceTest : DomainTestBase() {
         try {
             userAuthService.authenticate(nickname, "wrongPassword")
             Assert.fail()
-        } catch (e: UserAuthenticationException) {
-            Assert.assertEquals(UserAuthenticationException.ErrorCode.WRONG_PASSWORD, e.errorCode)
+        } catch (e: DomainException) {
+            Assert.assertEquals("잘못된 비밀번호입니다.", e.msg)
         }
     }
 }
