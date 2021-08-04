@@ -52,6 +52,7 @@ fun Application.ourMapModule(testing: Boolean = false) {
             method(it)
         }
         header(UserAuthenticator.accessTokenHeader)
+        exposeHeader(UserAuthenticator.accessTokenHeader)
         allowNonSimpleContentTypes = true
         allowCredentials = true
         anyHost()
