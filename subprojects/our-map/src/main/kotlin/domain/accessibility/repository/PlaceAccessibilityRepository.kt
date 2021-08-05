@@ -8,4 +8,5 @@ interface PlaceAccessibilityRepository : EntityRepository<PlaceAccessibility, St
     fun findByPlaceIds(placeIds: Collection<String>): List<PlaceAccessibility>
     fun findByPlaceId(placeId: String): PlaceAccessibility?
     fun countByEupMyeonDong(eupMyeonDong: EupMyeonDong): Int
+    fun countAll(): Int
 }

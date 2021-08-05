@@ -34,12 +34,21 @@ class JpaPlaceAccessibilityRepository :
     override fun countByEupMyeonDong(eupMyeonDong: EupMyeonDong): Int {
         val em = EntityManagerHolder.get()!!
         val query = em.createNativeQuery("""
-            SELECT count(*)
+            SELECT COUNT(*)
             FROM place_accessibility pa
             LEFT OUTER JOIN place ON place.id = pa.place_id
             WHERE place.eup_myeon_dong_id = :eupMyeonDongId
         """.trimIndent())
         query.setParameter("eupMyeonDongId", eupMyeonDong.id)
+        return (query.singleResult as BigInteger).toInt()
+    }
+
+    override fun countAll(): Int {
+        val em = EntityManagerHolder.get()!!
+        val query = em.createNativeQuery("""
+            SELECT COUNT(*)
+            FROM place_accessibility pa
+        """.trimIndent())
         return (query.singleResult as BigInteger).toInt()
     }
 }

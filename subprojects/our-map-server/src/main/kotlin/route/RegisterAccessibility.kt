@@ -5,6 +5,7 @@ import application.accessibility.AccessibilityApplicationService
 import auth.UserAuthenticator
 import converter.BuildingAccessibilityConverter
 import converter.PlaceAccessibilityConverter
+import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.accessibility.service.BuildingAccessibilityService
 import domain.accessibility.service.PlaceAccessibilityService
 import domain.user.repository.UserRepository
@@ -22,6 +23,7 @@ fun Route.registerAccessibility() {
     val transactionManager = koin.get<TransactionManager>()
     val userAuthenticator = koin.get<UserAuthenticator>()
     val userRepository = koin.get<UserRepository>()
+    val placeAccessibilityRepository = koin.get<PlaceAccessibilityRepository>()
     val placeAccessibilityApplicationService = koin.get<AccessibilityApplicationService>()
     val placeAccessibilityConverter = koin.get<PlaceAccessibilityConverter>()
     val buildingAccessibilityConverter = koin.get<BuildingAccessibilityConverter>()
@@ -61,6 +63,7 @@ fun Route.registerAccessibility() {
                             it.buildingAccessibility = buildingAccessibilityConverter.toProto(buildingAccessibility, user)
                         }
                     }
+                    .setRegisteredUserOrder(placeAccessibilityRepository.countAll())
                     .build()
             }
         )
