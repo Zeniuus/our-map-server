@@ -4,6 +4,10 @@ import "common.proto";
 
 option java_package = "ourMap.protocol";
 
+message OurMapError {
+    string message = 1;
+}
+
 message Location {
     double lng = 1;
     double lat = 2;
