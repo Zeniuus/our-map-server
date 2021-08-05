@@ -4,6 +4,7 @@ import application.place.PlaceApplicationService
 import auth.UserAuthenticator
 import converter.BuildingConverter
 import converter.PlaceConverter
+import domain.util.Length
 import domain.util.Location
 import io.ktor.application.call
 import io.ktor.request.receive
@@ -29,7 +30,17 @@ fun Route.searchPlaces() {
                 lng = params.currentLocation.lng,
                 lat = params.currentLocation.lat,
             ),
-            // TODO: 거리 조건, 시군구 / 읍면동 조건 고려하기
+            maxDistance = Length(params.distanceMetersLimit),
+            siGunGuId = if (params.hasSiGunGuId()) {
+                params.siGunGuId.value
+            } else {
+                null
+            },
+            eupMyeonDongId = if (params.hasEupMyeonDongId()) {
+                params.eupMyeonDongId.value
+            } else {
+                null
+            },
         )
 
         call.respond(
