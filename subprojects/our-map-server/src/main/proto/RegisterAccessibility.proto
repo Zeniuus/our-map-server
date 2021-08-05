@@ -31,4 +31,5 @@ message RegisterAccessibilityParams {
 message RegisterAccessibilityResult {
     BuildingAccessibility building_accessibility = 1;
     PlaceAccessibility place_accessibility = 2;
+    int32 registered_user_order = 3; // n번째 정복자.
 }
