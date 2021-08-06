@@ -30,7 +30,7 @@ fun Route.searchPlaces() {
                 lng = params.currentLocation.lng,
                 lat = params.currentLocation.lat,
             ),
-            maxDistance = Length(params.distanceMetersLimit),
+            maxDistance = params.distanceMetersLimit.takeIf { it > 0 }?.let { Length(it) },
             siGunGuId = if (params.hasSiGunGuId()) {
                 params.siGunGuId.value
             } else {
