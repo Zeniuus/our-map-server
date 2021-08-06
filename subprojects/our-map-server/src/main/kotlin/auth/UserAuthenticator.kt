@@ -1,6 +1,7 @@
 package auth
 
 import application.user.UserAuthApplicationService
+import com.google.common.net.HttpHeaders
 import domain.user.exception.UserAuthenticationException
 import io.ktor.request.ApplicationRequest
 import io.ktor.request.header
@@ -20,7 +21,7 @@ class UserAuthenticator(
 
     // User ID를 반환한다.
     fun checkAuth(request: ApplicationRequest): String {
-        val accessToken = request.header(accessTokenHeader) ?: throw UserAuthenticationException()
+        val accessToken = request.header(HttpHeaders.AUTHORIZATION)?.replace("JWT ", "") ?: throw UserAuthenticationException()
         return userAuthApplicationService.verify(accessToken)
     }
 }

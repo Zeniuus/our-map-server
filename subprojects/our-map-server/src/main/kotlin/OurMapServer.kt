@@ -17,6 +17,7 @@ import io.ktor.features.CORS
 import io.ktor.features.ContentNegotiation
 import io.ktor.features.StatusPages
 import io.ktor.http.ContentType
+import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpMethod
 import io.ktor.response.respond
 import io.ktor.routing.routing
@@ -55,7 +56,9 @@ fun Application.ourMapModule(testing: Boolean = false) {
         HttpMethod.DefaultMethods.forEach {
             method(it)
         }
-        header(UserAuthenticator.accessTokenHeader)
+        header(HttpHeaders.Authorization)
+        header(HttpHeaders.Referrer)
+        header(HttpHeaders.UserAgent)
         exposeHeader(UserAuthenticator.accessTokenHeader)
         allowNonSimpleContentTypes = true
         allowCredentials = true
