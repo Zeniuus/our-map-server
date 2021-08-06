@@ -2,11 +2,11 @@ package route
 
 import ProtobufJsonConverter
 import application.TransactionManager
-import auth.UserAuthenticator
 import com.google.protobuf.MessageOrBuilder
 import domain.user.entity.User
 import domain.user.service.UserAuthService
 import io.ktor.http.ContentType
+import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpMethod
 import io.ktor.server.testing.TestApplicationCall
 import io.ktor.server.testing.TestApplicationEngine
@@ -27,7 +27,7 @@ class RouteTestClient(
 
     fun request(url: String, params: MessageOrBuilder): TestApplicationCall {
         return testApplicationEngine.handleRequest(HttpMethod.Post, url) {
-            addHeader(UserAuthenticator.accessTokenHeader, accessToken)
+            addHeader(HttpHeaders.Authorization, accessToken)
             addHeader("Content-Type", ContentType.Application.Json.toString())
             setBody(ProtobufJsonConverter.serializer.print(params))
         }
