@@ -13,6 +13,7 @@ class JpaPlaceRepository :
         val query = em.createQuery("""
             SELECT p
             FROM Place p
+            JOIN FETCH p.building building
             WHERE p.name LIKE :searchText
         """.trimIndent(), Place::class.java)
         query.setParameter("searchText", "%$searchText%")
