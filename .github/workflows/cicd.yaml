@@ -10,34 +10,34 @@ jobs:
         uses: actions/checkout@v2
       - run: echo "Run gradle check"
       - run: ./gradlew check
-  CD:
-    if: github.ref == 'refs/heads/main'
-    needs: CI
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "CD for branch [{{ github.ref }}] started"
-      - run: echo "Clone repository and checkout to the target branch"
-      - name: Check out repository code
-        uses: actions/checkout@v2
-
-      - run: echo "Configure AWS credentials"
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-west-2 # TODO: ap-northeast-2로 변경하기
-      - run: echo "Push docker image to ECR"
-      - run: ./bin/docker-push.sh
-
-      - run: echo "Deploy OurMapServer with docker image"
-      - name: Deploy OurMapServer with docker image
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.DEPLOY_SSH_HOST }}
-          username: ${{ secrets.DEPLOY_SSH_USERNAME }}
-          key: ${{ secrets.DEPLOY_SSH_PRIVATE_KEY }}
-          script: |
-            cd our-map-server
-            git pull
-            ./bin/deploy.sh
+#  CD:
+#    if: github.ref == 'refs/heads/main'
+#    needs: CI
+#    runs-on: ubuntu-latest
+#    steps:
+#      - run: echo "CD for branch [{{ github.ref }}] started"
+#      - run: echo "Clone repository and checkout to the target branch"
+#      - name: Check out repository code
+#        uses: actions/checkout@v2
+#
+#      - run: echo "Configure AWS credentials"
+#      - name: Configure AWS Credentials
+#        uses: aws-actions/configure-aws-credentials@v1
+#        with:
+#          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#          aws-region: us-west-2 # TODO: ap-northeast-2로 변경하기
+#      - run: echo "Push docker image to ECR"
+#      - run: ./bin/docker-push.sh
+#
+#      - run: echo "Deploy OurMapServer with docker image"
+#      - name: Deploy OurMapServer with docker image
+#        uses: appleboy/ssh-action@master
+#        with:
+#          host: ${{ secrets.DEPLOY_SSH_HOST }}
+#          username: ${{ secrets.DEPLOY_SSH_USERNAME }}
+#          key: ${{ secrets.DEPLOY_SSH_PRIVATE_KEY }}
+#          script: |
+#            cd our-map-server
+#            git pull
+#            ./bin/deploy.sh
