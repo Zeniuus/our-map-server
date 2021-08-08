@@ -29,6 +29,7 @@ class JpaTransactionManager(
     fun commit() {
         val curr = EntityManagerHolder.get()
         if (curr != null) {
+            curr.close()
             curr.transaction.commit()
             EntityManagerHolder.remove()
         }
@@ -37,6 +38,7 @@ class JpaTransactionManager(
     fun rollback() {
         val curr = EntityManagerHolder.get()
         if (curr != null) {
+            curr.close()
             curr.transaction.rollback()
             EntityManagerHolder.remove()
         }
