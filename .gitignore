@@ -7,6 +7,6 @@ build/
 terraform.tfstate*
 plan.tfplan
 
-application.properties.deploy
+application-prod.properties
 
 migratePlacesAndBuildings.sql
