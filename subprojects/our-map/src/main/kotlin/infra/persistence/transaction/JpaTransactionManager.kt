@@ -1,6 +1,9 @@
 package infra.persistence.transaction
 
+import application.TransactionIsolationLevel
 import application.TransactionManager
+import org.hibernate.internal.SessionImpl
+import java.sql.Connection
 import javax.persistence.EntityManager
 import javax.persistence.EntityManagerFactory
 
@@ -8,10 +11,14 @@ class JpaTransactionManager(
     private val entityManagerFactory: EntityManagerFactory,
 ) : TransactionManager {
     // 멱등적이다.
-    fun start() {
+    fun start(isolationLevel: TransactionIsolationLevel = TransactionIsolationLevel.REPEATABLE_READ) {
         val curr = EntityManagerHolder.get()
         if (curr == null) {
             val new = entityManagerFactory.createEntityManager()
+            if (isolationLevel != TransactionIsolationLevel.REPEATABLE_READ) {
+                val session = new.unwrap(SessionImpl::class.java)
+                session.connection().transactionIsolation = isolationLevel.toConnectionIsolationLevel()
+            }
             new.transaction.begin()
             EntityManagerHolder.set(new)
         }
@@ -45,8 +52,12 @@ class JpaTransactionManager(
     }
 
     override fun <T> doInTransaction(block: () -> T): T {
+        return doInTransaction(TransactionIsolationLevel.REPEATABLE_READ, block)
+    }
+
+    override fun <T> doInTransaction(isolationLevel: TransactionIsolationLevel, block: () -> T): T {
         try {
-            start()
+            start(isolationLevel)
             val result = block()
             commit()
             return result
@@ -69,5 +80,10 @@ class JpaTransactionManager(
             }
             throw t
         }
+    }
+
+    private fun TransactionIsolationLevel.toConnectionIsolationLevel() = when (this) {
+        TransactionIsolationLevel.REPEATABLE_READ -> Connection.TRANSACTION_REPEATABLE_READ
+        TransactionIsolationLevel.SERIALIZABLE -> Connection.TRANSACTION_SERIALIZABLE
     }
 }

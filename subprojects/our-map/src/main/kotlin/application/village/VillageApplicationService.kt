@@ -1,5 +1,6 @@
 package application.village
 
+import application.TransactionIsolationLevel
 import application.TransactionManager
 import domain.user.repository.UserRepository
 import domain.village.entity.Village
@@ -43,9 +44,18 @@ class VillageApplicationService(
     }
 
     fun upsertAll() = transactionManager.doInTransaction {
-        val eupMyeonDongs = eupMyeonDongRepository.listAll()
-        eupMyeonDongs.forEach { eupMyeonDong ->
-            villageService.upsertStatistics(eupMyeonDong)
+        val eupMyeonDongIds = transactionManager.doInTransaction {
+            eupMyeonDongRepository.listAll().map { it.id }
+        }
+        eupMyeonDongIds.forEach { eupMyeonDongId ->
+            try {
+                transactionManager.doInTransaction(TransactionIsolationLevel.SERIALIZABLE) {
+                    val eupMyeonDong = eupMyeonDongRepository.findById(eupMyeonDongId)
+                    villageService.upsertStatistics(eupMyeonDong)
+                }
+            } catch (t: Throwable) {
+                // TODO: 에러 로깅
+            }
         }
     }
 }

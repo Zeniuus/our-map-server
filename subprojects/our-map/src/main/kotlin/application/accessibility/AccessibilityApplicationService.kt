@@ -1,5 +1,6 @@
 package application.accessibility
 
+import application.TransactionIsolationLevel
 import application.TransactionManager
 import domain.accessibility.entity.BuildingAccessibility
 import domain.accessibility.entity.PlaceAccessibility
@@ -28,7 +29,7 @@ class AccessibilityApplicationService(
     fun register(
         createPlaceAccessibilityParams: PlaceAccessibilityService.CreateParams,
         createBuildingAccessibilityParams: BuildingAccessibilityService.CreateParams?,
-    ): Pair<PlaceAccessibility, BuildingAccessibility?> = transactionManager.doInTransaction {
+    ): Pair<PlaceAccessibility, BuildingAccessibility?> = transactionManager.doInTransaction(TransactionIsolationLevel.SERIALIZABLE) {
         val placeAccessibility = placeAccessibilityService.create(createPlaceAccessibilityParams)
         val buildingAccessibility = createBuildingAccessibilityParams?.let { buildingAccessibilityService.create(createBuildingAccessibilityParams) }
         Pair(placeAccessibility, buildingAccessibility)

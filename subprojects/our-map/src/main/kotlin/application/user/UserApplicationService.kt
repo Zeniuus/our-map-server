@@ -1,5 +1,6 @@
 package application.user
 
+import application.TransactionIsolationLevel
 import application.TransactionManager
 import domain.user.entity.User
 import domain.user.repository.UserRepository
@@ -16,7 +17,7 @@ class UserApplicationService(
         nickname: String,
         password: String,
         instagramId: String?
-    ): LoginResult = transactionManager.doInTransaction {
+    ): LoginResult = transactionManager.doInTransaction(TransactionIsolationLevel.SERIALIZABLE) {
         val user = userService.createUser(
             UserService.CreateUserParams(
                 nickname = nickname,
@@ -31,7 +32,7 @@ class UserApplicationService(
     fun login(
         nickname: String,
         password: String
-    ): LoginResult = transactionManager.doInTransaction {
+    ): LoginResult = transactionManager.doInTransaction(TransactionIsolationLevel.SERIALIZABLE) {
         val user = userAuthService.authenticate(nickname, password)
         val accessToken = userAuthService.issueAccessToken(user)
         LoginResult(user, accessToken)
@@ -46,7 +47,7 @@ class UserApplicationService(
         userId: String,
         nickname: String,
         instagramId: String?
-    ): User = transactionManager.doInTransaction {
+    ): User = transactionManager.doInTransaction(TransactionIsolationLevel.SERIALIZABLE) {
         val user = userRepository.findById(userId)
         userService.updateUserInfo(user, nickname, instagramId)
     }
