@@ -3,7 +3,6 @@ package infra.persistence.transaction
 import application.TransactionIsolationLevel
 import application.TransactionManager
 import org.hibernate.internal.SessionImpl
-import java.sql.Connection
 import javax.persistence.EntityManager
 import javax.persistence.EntityManagerFactory
 
@@ -56,13 +55,20 @@ class JpaTransactionManager(
     }
 
     override fun <T> doInTransaction(isolationLevel: TransactionIsolationLevel, block: () -> T): T {
+        val isNestedTransaction = isInTransaction()
         try {
-            start(isolationLevel)
+            // nested transaction일 경우 이미 열려 있는 트랜잭션에 그대로 참여한다.
+            if (!isNestedTransaction) {
+                start(isolationLevel)
+            }
             val result = block()
-            commit()
+
+            if (!isNestedTransaction) {
+                commit()
+            }
             return result
         } catch (t: Throwable) {
-            if (isInTransaction()) {
+            if (!isNestedTransaction) {
                 rollback()
             }
             throw t
@@ -80,10 +86,5 @@ class JpaTransactionManager(
             }
             throw t
         }
-    }
-
-    private fun TransactionIsolationLevel.toConnectionIsolationLevel() = when (this) {
-        TransactionIsolationLevel.REPEATABLE_READ -> Connection.TRANSACTION_REPEATABLE_READ
-        TransactionIsolationLevel.SERIALIZABLE -> Connection.TRANSACTION_SERIALIZABLE
     }
 }
