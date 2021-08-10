@@ -31,7 +31,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-west-2 # TODO: ap-northeast-2로 변경하기
+          aws-region: ap-northeast-2
       - run: echo "Push docker image to ECR"
       - run: ./bin/docker-push.sh
 

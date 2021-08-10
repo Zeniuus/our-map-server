@@ -10,5 +10,5 @@ terraform {
 }
 
 provider "aws" {
-  region  = "us-west-2" // TODO: ap-northeast-2로 변경하기
+  region  = "ap-northeast-2"
 }

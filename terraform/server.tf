@@ -51,8 +51,7 @@ EOF
 }
 
 resource "aws_instance" "server" {
-//  ami           = "ami-0b827f3319f7447c6" // ap-northeast-2
-  ami           = "ami-0dc8f589abe99f538" // TODO: ap-northeast-2로 변경하기
+  ami           = "ami-0b827f3319f7447c6" // ap-northeast-2
   instance_type = "t2.micro"
 
   iam_instance_profile = aws_iam_instance_profile.server.id
