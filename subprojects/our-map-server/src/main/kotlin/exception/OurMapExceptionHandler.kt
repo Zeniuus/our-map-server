@@ -2,13 +2,11 @@ package exception
 
 import domain.DomainException
 import domain.user.exception.UserAuthenticationException
+import infra.monitoring.ErrorReporter
 import io.ktor.http.HttpStatusCode
-import org.slf4j.LoggerFactory
 import ourMap.protocol.Model
 
 object OurMapExceptionHandler {
-    private val logger = LoggerFactory.getLogger(javaClass)
-
     data class Result(
         val statusCode: HttpStatusCode,
         val body: Model.OurMapError,
@@ -41,8 +39,7 @@ object OurMapExceptionHandler {
     }
 
     private fun handleUnexpectedError(t: Throwable): Result {
-        // TODO: 에러 로깅 & 리포트
-        logger.error(t.message, t)
+        ErrorReporter.report(t)
         return Result(
             statusCode = HttpStatusCode.InternalServerError,
             body = Model.OurMapError.newBuilder()
