@@ -4,7 +4,7 @@ import domain.DomainException
 import domain.user.entity.User
 import domain.user.repository.UserRepository
 import domain.util.Bcrypt
-import domain.util.EntityIdRandomGenerator
+import domain.util.EntityIdGenerator
 
 class UserService(
     private val userRepository: UserRepository
@@ -19,7 +19,7 @@ class UserService(
         val normalizedNickname = normalizeAndValidateNickname(params.nickname)
         return userRepository.add(
             User(
-                id = EntityIdRandomGenerator.generate(),
+                id = EntityIdGenerator.generateRandom(),
                 nickname = normalizedNickname,
                 encryptedPassword = Bcrypt.encrypt(params.password.trim()),
                 instagramId = params.instagramId?.trim()?.takeIf { it.isNotEmpty() }

@@ -14,7 +14,7 @@ import domain.place.repository.PlaceRepository
 import domain.user.entity.User
 import domain.user.service.UserService
 import domain.user.userDomainModule
-import domain.util.EntityIdRandomGenerator
+import domain.util.EntityIdGenerator
 import domain.util.Location
 import domain.village.entity.Village
 import domain.village.repository.EupMyeonDongRepository
@@ -68,7 +68,7 @@ class TestDataGenerator {
         siGunGuId: String = siGunGuRepository.listAll()[0].id
     ): Place {
         val buildingToUse = building ?: buildingRepository.add(Building(
-            id = EntityIdRandomGenerator.generate(),
+            id = EntityIdGenerator.generateRandom(),
             name = "건물건물",
             lng = location.lng,
             lat = location.lat,
@@ -85,7 +85,7 @@ class TestDataGenerator {
             eupMyeonDongId = eupMyeonDongId,
         ))
         return placeRepository.add(Place(
-            id = EntityIdRandomGenerator.generate(),
+            id = EntityIdGenerator.generateRandom(),
             name = placeName,
             lng = location.lng,
             lat = location.lat,

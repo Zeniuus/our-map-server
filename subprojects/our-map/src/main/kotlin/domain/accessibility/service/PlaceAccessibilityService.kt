@@ -2,7 +2,7 @@ package domain.accessibility.service
 
 import domain.accessibility.entity.PlaceAccessibility
 import domain.accessibility.repository.PlaceAccessibilityRepository
-import domain.util.EntityIdRandomGenerator
+import domain.util.EntityIdGenerator
 
 class PlaceAccessibilityService(
     private val placeAccessibilityRepository: PlaceAccessibilityRepository,
@@ -19,7 +19,7 @@ class PlaceAccessibilityService(
     fun create(params: CreateParams): PlaceAccessibility {
         val result = placeAccessibilityRepository.add(
             PlaceAccessibility(
-                id = EntityIdRandomGenerator.generate(),
+                id = EntityIdGenerator.generateRandom(),
                 placeId = params.placeId,
                 isFirstFloor = params.isFirstFloor,
                 hasStair = params.hasStair,

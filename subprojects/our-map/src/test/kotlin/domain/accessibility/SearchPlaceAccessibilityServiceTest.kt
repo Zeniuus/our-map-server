@@ -7,7 +7,7 @@ import domain.accessibility.entity.PlaceAccessibility
 import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.accessibility.service.SearchAccessibilityService
-import domain.util.EntityIdRandomGenerator
+import domain.util.EntityIdGenerator
 import org.junit.Assert
 import org.junit.Test
 import org.koin.test.inject
@@ -28,7 +28,7 @@ class SearchPlaceAccessibilityServiceTest : DomainTestBase() {
         Assert.assertNull(result1.second)
 
         val buildingAccessibility = buildingAccessibilityRepository.add(BuildingAccessibility(
-            id = EntityIdRandomGenerator.generate(),
+            id = EntityIdGenerator.generateRandom(),
             buildingId = place.building.id,
             hasElevator = true,
             hasObstacleToElevator = true,
@@ -42,7 +42,7 @@ class SearchPlaceAccessibilityServiceTest : DomainTestBase() {
         Assert.assertEquals(buildingAccessibility.id, result2.second!!.id)
 
         val placeAccessibility = placeAccessibilityRepository.add(PlaceAccessibility(
-            id = EntityIdRandomGenerator.generate(),
+            id = EntityIdGenerator.generateRandom(),
             placeId = place.id,
             isFirstFloor = false,
             hasStair = false,

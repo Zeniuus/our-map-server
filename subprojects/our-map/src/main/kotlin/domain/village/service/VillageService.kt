@@ -4,7 +4,7 @@ import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.place.repository.BuildingRepository
 import domain.place.repository.PlaceRepository
-import domain.util.EntityIdRandomGenerator
+import domain.util.EntityIdGenerator
 import domain.village.entity.EupMyeonDong
 import domain.village.entity.Village
 import domain.village.repository.EupMyeonDongRepository
@@ -48,7 +48,7 @@ class VillageService(
             existingVillage
         } else {
             villageRepository.add(Village(
-                id = EntityIdRandomGenerator.generate(),
+                id = EntityIdGenerator.generateRandom(),
                 eupMyeonDongId = eupMyeonDong.id,
                 buildingCount = buildingRepository.countByEupMyeonDong(eupMyeonDong),
                 placeCount = placeRepository.countByEupMyeonDong(eupMyeonDong),

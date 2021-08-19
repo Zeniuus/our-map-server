@@ -2,8 +2,10 @@ package infra.persistence.repository
 
 import domain.accessibility.entity.BuildingAccessibility
 import domain.accessibility.repository.BuildingAccessibilityRepository
+import domain.user.entity.User
 import domain.village.entity.EupMyeonDong
 import infra.persistence.transaction.EntityManagerHolder
+import java.math.BigInteger
 
 class JpaBuildingAccessibilityRepository :
     JpaEntityRepositoryBase<BuildingAccessibility, String>(BuildingAccessibility::class.java),
@@ -40,5 +42,16 @@ class JpaBuildingAccessibilityRepository :
         """.trimIndent(), BuildingAccessibility::class.java)
         query.setParameter("eupMyeonDongId", eupMyeonDong.id)
         return query.resultList.map { it as BuildingAccessibility }
+    }
+
+    override fun countByUser(user: User): Int {
+        val em = EntityManagerHolder.get()!!
+        val query = em.createNativeQuery("""
+            SELECT COUNT(*)
+            FROM building_accessibility ba
+            WHERE user_id = :userId
+        """.trimIndent())
+        query.setParameter("userId", user.id)
+        return (query.singleResult as BigInteger).toInt()
     }
 }

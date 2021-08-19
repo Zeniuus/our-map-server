@@ -8,4 +8,5 @@
     <include file="liquibase/3_village_domain.xml" />
     <include file="liquibase/4_user_favorite_village.xml" />
     <include file="liquibase/5_building_accessibility_upvote.xml" />
+    <include file="liquibase/6_badge_domain.xml" />
 </databaseChangeLog>

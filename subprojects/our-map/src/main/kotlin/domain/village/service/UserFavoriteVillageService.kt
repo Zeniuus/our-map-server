@@ -1,7 +1,7 @@
 package domain.village.service
 
 import domain.user.entity.User
-import domain.util.EntityIdRandomGenerator
+import domain.util.EntityIdGenerator
 import domain.village.entity.UserFavoriteVillage
 import domain.village.entity.Village
 import domain.village.repository.UserFavoriteVillageRepository
@@ -22,7 +22,7 @@ class UserFavoriteVillageService(
         }
 
         return userFavoriteVillageRepository.add(UserFavoriteVillage(
-            id = EntityIdRandomGenerator.generate(),
+            id = EntityIdGenerator.generateRandom(),
             userId = user.id,
             village = village,
             createdAt = clock.instant(),

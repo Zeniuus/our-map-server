@@ -4,7 +4,7 @@ import domain.accessibility.entity.BuildingAccessibility
 import domain.accessibility.entity.BuildingAccessibilityUpvote
 import domain.accessibility.repository.BuildingAccessibilityUpvoteRepository
 import domain.user.entity.User
-import domain.util.EntityIdRandomGenerator
+import domain.util.EntityIdGenerator
 import java.time.Clock
 
 class BuildingAccessibilityUpvoteService(
@@ -18,7 +18,7 @@ class BuildingAccessibilityUpvoteService(
         }
 
         return buildingAccessibilityUpvoteRepository.add(BuildingAccessibilityUpvote(
-            id = EntityIdRandomGenerator.generate(),
+            id = EntityIdGenerator.generateRandom(),
             userId = user.id,
             buildingAccessibility = buildingAccessibility,
             createdAt = clock.instant()
