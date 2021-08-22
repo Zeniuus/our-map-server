@@ -28,6 +28,7 @@ import route.getHomeViewData
 import route.getMyPageViewData
 import route.getVillageStatistics
 import route.giveBuildingAccessibilityUpvote
+import route.health
 import route.listAdministrativeAreas
 import route.listVillageDropdownItems
 import route.login
@@ -70,6 +71,10 @@ fun Application.ourMapModule(testing: Boolean = false) {
             val result = OurMapExceptionHandler.handle(it)
             call.respond(result.statusCode, result.body)
         }
+    }
+
+    routing {
+        health()
     }
 
     routing {

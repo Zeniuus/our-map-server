@@ -71,8 +71,7 @@ resource "aws_security_group" "server" {
   description = "server instance sg"
   vpc_id      = data.aws_vpc.default.id
 
-  // TODO: 현재 도메인을 구매하지 않아서 SSL 인증서를 발급할 수 없음. 따라서 임시로 HTTPS가 아니라 HTTP 서버를 운영함.
-  //       도메인 구매하면 AWS ACM Certificate + NLB TLS Termination 기능을 사용하면 될 것 같다.
+  // TODO: 충분한 시간이 지난 뒤 ALB 트래픽만 받도록 변경
   ingress {
     description      = "Allow HTTP requests"
     from_port        = 80
