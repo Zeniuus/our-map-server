@@ -3,7 +3,7 @@ package auth
 import io.ktor.http.HttpStatusCode
 import org.junit.Assert
 import org.junit.Test
-import ourMap.protocol.GetHomeViewDataParams
+import ourMap.protocol.GetMyPageViewDataParams
 import ourMap.protocol.Model
 import route.OurMapServerRouteTestBase
 
@@ -15,7 +15,7 @@ class UserAuthenticatorTest : OurMapServerRouteTestBase() {
         }
         val testClient = getTestClient(user)
         testClient.setAccessToken("invalidAccessToken")
-        testClient.request("/getHomeViewData", GetHomeViewDataParams.getDefaultInstance()).apply {
+        testClient.request("/getMyPageViewData", GetMyPageViewDataParams.getDefaultInstance()).apply {
             Assert.assertEquals(HttpStatusCode.Unauthorized, response.status())
             val result = getResult(Model.OurMapError::class)
             Assert.assertEquals("인증되지 않은 유저입니다.", result.message)

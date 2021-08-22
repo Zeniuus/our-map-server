@@ -21,11 +21,15 @@ class UserAuthenticator(
 
     // User ID를 반환한다.
     fun checkAuth(request: ApplicationRequest): String {
-        val accessToken = getUserId(request) ?: throw UserAuthenticationException()
+        val accessToken = request.header(HttpHeaders.Authorization)?.replace(Regex("^[\\w\\W]+ "), "") ?: throw UserAuthenticationException()
         return userAuthApplicationService.verify(accessToken)
     }
 
     fun getUserId(request: ApplicationRequest): String? {
-        return request.header(HttpHeaders.Authorization)?.replace(Regex("^[\\w\\W]+ "), "")
+        return try {
+            checkAuth(request)
+        } catch (e: UserAuthenticationException) {
+            null
+        }
     }
 }
