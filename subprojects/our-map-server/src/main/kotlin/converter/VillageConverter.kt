@@ -11,15 +11,15 @@ class VillageConverter(
     private val villageService: VillageService,
     private val userFavoriteVillageService: UserFavoriteVillageService,
 ) {
-    fun toProto(village: Village, user: User) = Model.Village.newBuilder()
+    fun toProto(village: Village, user: User?) = Model.Village.newBuilder()
         .setId(village.id)
         .setName(villageService.getName(village))
-        .setIsFavoriteVillage(userFavoriteVillageService.isFavoriteVillage(user, village))
+        .setIsFavoriteVillage(user?.let { userFavoriteVillageService.isFavoriteVillage(it, village) } ?: false)
         .build()!!
 
     fun toRankingEntryProto(
         village: Village,
-        user: User,
+        user: User?,
         progressRank: Int = villageService.getProgressRank(village)
     ) = Model.VillageRankingEntry.newBuilder()
         .setVillage(toProto(village, user))

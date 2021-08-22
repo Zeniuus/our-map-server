@@ -2,7 +2,6 @@ package route
 
 import application.TransactionManager
 import application.place.PlaceApplicationService
-import auth.UserAuthenticator
 import converter.BuildingConverter
 import converter.PlaceConverter
 import domain.util.Length
@@ -21,11 +20,8 @@ fun Route.searchPlaces() {
 
     val transactionManager = koin.get<TransactionManager>()
     val placeApplicationService = koin.get<PlaceApplicationService>()
-    val userAuthenticator = koin.get<UserAuthenticator>()
 
     post("/searchPlaces") {
-        userAuthenticator.checkAuth(call.request)
-
         val params = call.receive<SearchPlacesParams>()
         val results = placeApplicationService.searchPlaces(
             searchText = params.searchText,

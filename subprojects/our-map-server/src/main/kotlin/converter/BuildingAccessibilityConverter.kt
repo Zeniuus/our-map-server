@@ -29,19 +29,19 @@ class BuildingAccessibilityConverter(
         }
     }
 
-    fun toProto(buildingAccessibility: BuildingAccessibility, user: User) = Model.BuildingAccessibility.newBuilder()
+    fun toProto(buildingAccessibility: BuildingAccessibility, user: User?) = Model.BuildingAccessibility.newBuilder()
         .setId(buildingAccessibility.id)
         .setHasElevator(buildingAccessibility.hasElevator)
         .setHasObstacleToElevator(buildingAccessibility.hasObstacleToElevator)
         .setStairInfo(toProto(buildingAccessibility.stairInfo))
         .also {
-            buildingAccessibility.userId?.let { userId ->
-                val user = userRepository.findById(userId)
-                it.registeredUserName = Common.StringValue.newBuilder().setValue(user.nickname).build()
+            buildingAccessibility.userId?.let { registeredUserId ->
+                val registeredUser = userRepository.findById(registeredUserId)
+                it.registeredUserName = Common.StringValue.newBuilder().setValue(registeredUser.nickname).build()
             }
         }
         .setBuildingId(buildingAccessibility.buildingId)
-        .setIsUpvoted(buildingAccessibilityUpvoteService.isUpvoted(user, buildingAccessibility))
+        .setIsUpvoted(user?.let { buildingAccessibilityUpvoteService.isUpvoted(it, buildingAccessibility) } ?: false)
         .setTotalUpvoteCount(buildingAccessibilityUpvoteRepository.getTotalUpvoteCount(buildingAccessibility))
         .build()!!
 }

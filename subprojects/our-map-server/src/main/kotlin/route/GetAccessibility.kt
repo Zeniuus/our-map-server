@@ -25,14 +25,14 @@ fun Route.getAccessibility() {
     val buildingAccessibilityConverter = koin.get<BuildingAccessibilityConverter>()
 
     post("/getAccessibility") {
-        val userId = userAuthenticator.checkAuth(call.request)
+        val userId = userAuthenticator.getUserId(call.request)
 
         val params = call.receive<GetAccessibilityParams>()
         val (placeAccessibility, buildingAccessibility) = placeAccessibilityApplicationService.getAccessibility(params.placeId)
 
         call.respond(
             transactionManager.doInTransaction {
-                val user = userRepository.findById(userId)
+                val user = userId?.let { userRepository.findById(it) }
                 GetAccessibilityResult.newBuilder()
                     .also {
                         if (placeAccessibility != null) {

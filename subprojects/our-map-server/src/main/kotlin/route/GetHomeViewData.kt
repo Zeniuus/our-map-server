@@ -22,13 +22,13 @@ fun Route.getHomeViewData() {
     val villageConverter = koin.get<VillageConverter>()
 
     post("/getHomeViewData") {
-        val userId = userAuthenticator.checkAuth(call.request)
+        val userId = userAuthenticator.getUserId(call.request)
 
         val villages = villageApplicationService.listForMainView()
 
         call.respond(
             transactionManager.doInTransaction {
-                val user = userRepository.findById(userId)
+                val user = userId?.let { userRepository.findById(it) }
                 GetHomeViewDataResult.newBuilder()
                     .addAllEntries(
                         villages.mapIndexed { idx, village ->
