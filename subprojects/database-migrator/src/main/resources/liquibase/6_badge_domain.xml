@@ -10,7 +10,6 @@
             </column>
             <column name="user_id" type="VARCHAR(36)">
                 <constraints nullable="false" />
-<!--                TODO: collate / charset 때문에 fk 추가 안 되는 문제 해결-->
             </column>
             <column name="badge_id" type="VARCHAR(36)">
                 <constraints nullable="false" />
@@ -19,5 +18,8 @@
                 <constraints nullable="false" />
             </column>
         </createTable>
+        <createIndex tableName="user_badge_issue" indexName="idx_user_badge_issue_1">
+            <column name="user_id" />
+        </createIndex>
     </changeSet>
 </databaseChangeLog>
