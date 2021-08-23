@@ -44,9 +44,9 @@ message PlaceAccessibility {
 // 건물의 접근성 정보.
 message BuildingAccessibility {
     enum StairInfo {
-        NONE = 0;
-        LESS_THAN_FIVE = 1;
-        OVER_TEN = 2;
+        NONE = 0; // 없음
+        LESS_THAN_FIVE = 1; // 5개 미만
+        FIVE_AND_OVER = 2; // 5개 이상
     }
     string id = 1;
     bool has_elevator = 2;

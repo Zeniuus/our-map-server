@@ -18,13 +18,13 @@ class BuildingAccessibilityConverter(
         fun toProto(stairInfo: BuildingStairInfo) = when (stairInfo) {
             BuildingStairInfo.NONE -> Model.BuildingAccessibility.StairInfo.NONE
             BuildingStairInfo.LESS_THAN_FIVE -> Model.BuildingAccessibility.StairInfo.LESS_THAN_FIVE
-            BuildingStairInfo.OVER_TEN -> Model.BuildingAccessibility.StairInfo.OVER_TEN
+            BuildingStairInfo.FIVE_AND_OVER -> Model.BuildingAccessibility.StairInfo.FIVE_AND_OVER
         }
 
         fun fromProto(stairInfo: Model.BuildingAccessibility.StairInfo) = when (stairInfo) {
             Model.BuildingAccessibility.StairInfo.NONE -> BuildingStairInfo.NONE
             Model.BuildingAccessibility.StairInfo.LESS_THAN_FIVE -> BuildingStairInfo.LESS_THAN_FIVE
-            Model.BuildingAccessibility.StairInfo.OVER_TEN -> BuildingStairInfo.OVER_TEN
+            Model.BuildingAccessibility.StairInfo.FIVE_AND_OVER -> BuildingStairInfo.FIVE_AND_OVER
             else -> throw IllegalArgumentException("Invalid stairInfo: $stairInfo")
         }
     }
