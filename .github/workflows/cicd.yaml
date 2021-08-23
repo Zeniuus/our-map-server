@@ -10,6 +10,15 @@ jobs:
         uses: actions/checkout@v2
       - run: echo "Run gradle check"
       - run: ./gradlew check
+      - run: echo "Save artifacts"
+      - name: Save test result
+        if: failure()
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-result
+          path: |
+            subprojects/our-map/build/reports/tests
+            subprojects/our-map-server/build/reports/tests
   CD:
     if: github.ref == 'refs/heads/main'
     needs: CI
