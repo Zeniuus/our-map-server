@@ -47,4 +47,6 @@ class GetAccessibilityTest : OurMapServerRouteTestBase() {
             Assert.assertEquals(user.nickname, result.placeAccessibility.registeredUserName.value)
         }
     }
+
+    // TODO: 유저 없는 경우도 테스트?
 }

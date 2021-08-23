@@ -28,4 +28,6 @@ class SearchPlacesTest : OurMapServerRouteTestBase() {
             Assert.assertEquals(place.id, result.itemsList[0].place.id)
         }
     }
+
+    // TODO: 유저 없는 경우도 테스트?
 }
