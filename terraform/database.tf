@@ -8,20 +8,9 @@ resource "aws_db_parameter_group" "main_db" {
   name   = "main-db"
   family = "mysql5.7"
 
-  // 장소 / 건물 데이터 마이그레이션 파일의 사이즈가 기본 max_allowed_packet의 크기보다 커서 조정해준다.
   parameter {
     name  = "max_allowed_packet"
     value = "41943040"
-  }
-
-  parameter {
-    name  = "character_set_server"
-    value = "utf8mb4"
-  }
-
-  parameter {
-    name  = "collation_server"
-    value = "utf8mb4_unicode_ci"
   }
 }
 
