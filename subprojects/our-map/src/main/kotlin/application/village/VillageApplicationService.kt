@@ -8,6 +8,7 @@ import domain.village.repository.EupMyeonDongRepository
 import domain.village.repository.VillageRepository
 import domain.village.service.UserFavoriteVillageService
 import domain.village.service.VillageService
+import infra.monitoring.ErrorReporter
 
 class VillageApplicationService(
     private val transactionManager: TransactionManager,
@@ -43,7 +44,7 @@ class VillageApplicationService(
         )
     }
 
-    fun upsertAll() = transactionManager.doInTransaction {
+    fun upsertAll() {
         val eupMyeonDongIds = transactionManager.doInTransaction {
             eupMyeonDongRepository.listAll().map { it.id }
         }
@@ -54,7 +55,7 @@ class VillageApplicationService(
                     villageService.upsertStatistics(eupMyeonDong)
                 }
             } catch (t: Throwable) {
-                // TODO: 에러 로깅
+                ErrorReporter.report(t)
             }
         }
     }
