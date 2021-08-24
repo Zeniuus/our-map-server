@@ -10,4 +10,5 @@
     <include file="liquibase/5_building_accessibility_upvote.xml" />
     <include file="liquibase/6_badge_domain.xml" />
     <include file="liquibase/7_add_created_at.xml" />
+    <include file="liquibase/8_add_fk_building_accessibility_upvote_building_accessibility.xml" />
 </databaseChangeLog>

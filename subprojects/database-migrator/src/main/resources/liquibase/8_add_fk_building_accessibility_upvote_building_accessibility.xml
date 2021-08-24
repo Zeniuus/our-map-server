@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.2.xsd">
+    <changeSet id="8" author="swann">
+        <addForeignKeyConstraint
+                baseTableName="building_accessibility_upvote"
+                baseColumnNames="building_accessibility_id"
+                constraintName="fk_building_accessibility_upvote_building_accessibility"
+                referencedTableName="building_accessibility"
+                referencedColumnNames="id"
+        />
+    </changeSet>
+</databaseChangeLog>

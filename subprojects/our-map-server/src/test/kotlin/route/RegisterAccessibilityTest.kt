@@ -1,6 +1,7 @@
 package route
 
 import domain.accessibility.repository.BuildingAccessibilityRepository
+import domain.accessibility.repository.BuildingAccessibilityUpvoteRepository
 import domain.accessibility.repository.PlaceAccessibilityRepository
 import org.junit.Assert
 import org.junit.Before
@@ -13,10 +14,12 @@ import ourMap.protocol.RegisterAccessibilityResult
 class RegisterAccessibilityTest : OurMapServerRouteTestBase() {
     private val placeAccessibilityRepository by inject<PlaceAccessibilityRepository>()
     private val buildingAccessibilityRepository by inject<BuildingAccessibilityRepository>()
+    private val buildingAccessibilityUpvoteRepository by inject<BuildingAccessibilityUpvoteRepository>()
 
     @Before
     fun setUp() = transactionManager.doInTransaction {
         placeAccessibilityRepository.removeAll()
+        buildingAccessibilityUpvoteRepository.removeAll()
         buildingAccessibilityRepository.removeAll()
     }
 

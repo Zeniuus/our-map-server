@@ -35,18 +35,18 @@ class JpaTransactionManager(
     fun commit() {
         val curr = EntityManagerHolder.get()
         if (curr != null) {
-            curr.close()
-            curr.transaction.commit()
             EntityManagerHolder.remove()
+            curr.transaction.commit() // em이 닫힌 후에 해도 autoClosed 로직이 동작하긴 하지만, 원칙적으로는 em이 닫히기 전에 트랜잭션을 커밋하는 게 맞다.
+            curr.close()
         }
     }
 
     fun rollback() {
         val curr = EntityManagerHolder.get()
         if (curr != null) {
-            curr.close()
-            curr.transaction.rollback()
             EntityManagerHolder.remove()
+            curr.transaction.rollback() // em이 닫히기 전에 트랜잭션을 롤백해야 한다.
+            curr.close()
         }
     }
 
