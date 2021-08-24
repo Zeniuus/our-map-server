@@ -5,9 +5,11 @@ import domain.user.entity.User
 import domain.user.repository.UserRepository
 import domain.util.Bcrypt
 import domain.util.EntityIdGenerator
+import java.time.Clock
 
 class UserService(
-    private val userRepository: UserRepository
+    private val clock: Clock,
+    private val userRepository: UserRepository,
 ) {
     data class CreateUserParams(
         val nickname: String,
@@ -22,7 +24,8 @@ class UserService(
                 id = EntityIdGenerator.generateRandom(),
                 nickname = normalizedNickname,
                 encryptedPassword = Bcrypt.encrypt(params.password.trim()),
-                instagramId = params.instagramId?.trim()?.takeIf { it.isNotEmpty() }
+                instagramId = params.instagramId?.trim()?.takeIf { it.isNotEmpty() },
+                createdAt = clock.instant(),
             )
         )
     }

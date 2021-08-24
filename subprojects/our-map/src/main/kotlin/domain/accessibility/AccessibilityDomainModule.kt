@@ -9,8 +9,8 @@ import org.koin.dsl.module
 
 val accessibilityDomainModule = module {
     single { SearchAccessibilityService(get(), get()) }
-    single { PlaceAccessibilityService(get(), get()) }
-    single { BuildingAccessibilityService(get()) }
+    single { PlaceAccessibilityService(get(), get(), get()) }
+    single { BuildingAccessibilityService(get(), get()) }
     single { BuildingAccessibilityUpvoteService(get(), get()) }
     single { PlaceAccessibilityEventPublisher(get(), get(), get()) }
 }

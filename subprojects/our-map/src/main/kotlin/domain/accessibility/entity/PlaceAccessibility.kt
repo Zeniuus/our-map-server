@@ -1,5 +1,6 @@
 package domain.accessibility.entity
 
+import java.time.Instant
 import javax.persistence.Column
 import javax.persistence.Entity
 import javax.persistence.Id
@@ -19,4 +20,6 @@ data class PlaceAccessibility(
     val isWheelchairAccessible: Boolean,
     @Column(length = 36, nullable = true)
     val userId: String?,
+    @Column(nullable = false)
+    val createdAt: Instant,
 )

@@ -11,10 +11,12 @@ import domain.util.EntityIdGenerator
 import org.junit.Assert
 import org.junit.Test
 import org.koin.test.inject
+import java.time.Clock
 
 class SearchPlaceAccessibilityServiceTest : DomainTestBase() {
     override val koinModules = listOf(accessibilityDomainModule)
 
+    private val clock by inject<Clock>()
     private val placeAccessibilityRepository by inject<PlaceAccessibilityRepository>()
     private val buildingAccessibilityRepository by inject<BuildingAccessibilityRepository>()
     private val searchAccessibilityService by inject<SearchAccessibilityService>()
@@ -33,7 +35,8 @@ class SearchPlaceAccessibilityServiceTest : DomainTestBase() {
             hasElevator = true,
             hasObstacleToElevator = true,
             stairInfo = BuildingStairInfo.LESS_THAN_FIVE,
-            userId = null
+            userId = null,
+            createdAt = clock.instant(),
         ))
 
         val result2 = searchAccessibilityService.search(listOf(place)).getAccessibility(place)
@@ -47,7 +50,8 @@ class SearchPlaceAccessibilityServiceTest : DomainTestBase() {
             isFirstFloor = false,
             hasStair = false,
             isWheelchairAccessible = true,
-            userId = null
+            userId = null,
+            createdAt = clock.instant(),
         ))
         val result3 = searchAccessibilityService.search(listOf(place)).getAccessibility(place)
         Assert.assertNotNull(result3.first)

@@ -4,8 +4,10 @@ import domain.accessibility.entity.BuildingAccessibility
 import domain.accessibility.entity.BuildingStairInfo
 import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.util.EntityIdGenerator
+import java.time.Clock
 
 class BuildingAccessibilityService(
+    private val clock: Clock,
     private val buildingAccessibilityRepository: BuildingAccessibilityRepository,
 ) {
     data class CreateParams(
@@ -25,6 +27,7 @@ class BuildingAccessibilityService(
                 hasObstacleToElevator = params.hasObstacleToElevator,
                 stairInfo = params.stairInfo,
                 userId = params.userId,
+                createdAt = clock.instant(),
             )
         )
     }

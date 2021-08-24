@@ -1,5 +1,6 @@
 package domain.accessibility.entity
 
+import java.time.Instant
 import javax.persistence.Column
 import javax.persistence.Entity
 import javax.persistence.EnumType
@@ -22,4 +23,6 @@ data class BuildingAccessibility(
     val stairInfo: BuildingStairInfo,
     @Column(length = 36, nullable = true)
     val userId: String?,
+    @Column(nullable = false)
+    val createdAt: Instant,
 )

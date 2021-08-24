@@ -5,6 +5,6 @@ import domain.user.service.UserService
 import org.koin.dsl.module
 
 val userDomainModule = module {
-    single { UserService(get()) }
+    single { UserService(get(), get()) }
     single { UserAuthService(get(), get()) }
 }
