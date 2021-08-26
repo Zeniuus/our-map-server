@@ -4,6 +4,9 @@ import application.TransactionManager
 import domain.accessibility.entity.BuildingAccessibility
 import domain.accessibility.entity.PlaceAccessibility
 import domain.accessibility.service.SearchAccessibilityService
+import domain.logging.OurMapEvent
+import domain.logging.OurMapEventLogger
+import domain.logging.SearchPlacesEvent
 import domain.place.entity.Place
 import domain.place.service.SearchPlaceService
 import domain.util.Length
@@ -17,6 +20,7 @@ class PlaceApplicationService(
     private val eupMyeonDongRepository: EupMyeonDongRepository,
     private val searchPlaceService: SearchPlaceService,
     private val searchAccessibilityService: SearchAccessibilityService,
+    private val eventLogger: OurMapEventLogger,
 ) {
     data class SearchPlaceResult(
         val place: Place,
@@ -40,7 +44,7 @@ class PlaceApplicationService(
             eupMyeonDong = eupMyeonDongId?.let { eupMyeonDongRepository.findById(it) },
         ))
         val accessibilitySearchResult = searchAccessibilityService.search(places)
-        places.map { place ->
+        val result = places.map { place ->
             val (placeAccessibility, buildingAccessibility) = accessibilitySearchResult.getAccessibility(place)
             SearchPlaceResult(
                 place = place,
@@ -48,5 +52,13 @@ class PlaceApplicationService(
                 buildingAccessibility = buildingAccessibility,
             )
         }
+
+        eventLogger.log(OurMapEvent(
+            searchPlacesEvent = SearchPlacesEvent(
+                keyword = searchText,
+            )
+        ))
+
+        result
     }
 }

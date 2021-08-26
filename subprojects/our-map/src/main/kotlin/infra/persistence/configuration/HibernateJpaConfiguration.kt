@@ -9,6 +9,7 @@ import domain.place.entity.Place
 import domain.user.entity.User
 import domain.village.entity.UserFavoriteVillage
 import domain.village.entity.Village
+import infra.logging.jpa.OurMapEventEntity
 import org.hibernate.dialect.MySQL57Dialect
 import org.hibernate.jpa.HibernatePersistenceProvider
 import java.net.URL
@@ -86,6 +87,7 @@ object HibernateJpaConfiguration {
                 Village::class.qualifiedName!!,
                 UserFavoriteVillage::class.qualifiedName!!,
                 UserBadgeIssue::class.qualifiedName!!,
+                OurMapEventEntity::class.qualifiedName!!,
             )
         }
 

@@ -3,6 +3,7 @@ import domain.village.repository.EupMyeonDongRepository
 import domain.village.repository.InMemoryEupMyeonDongRepository
 import domain.village.repository.InMemorySiGunGuRepository
 import domain.village.repository.SiGunGuRepository
+import infra.logging.loggingModule
 import infra.persistence.persistenceModule
 import org.koin.core.Koin
 import org.koin.core.KoinApplication
@@ -27,6 +28,7 @@ object OurMapIoCFactory {
         modules(
             domainUtilModule,
             persistenceModule,
+            loggingModule,
         )
         modules(
             module {
