@@ -32,6 +32,6 @@ data class Place(
     val location: Location
         get() = Location(lng, lat)
 
-    @Transient
-    val address = building.address
+    val address: BuildingAddress
+        @Transient get() = building.address
 }
