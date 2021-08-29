@@ -79,11 +79,7 @@ class VillageServiceTest : DomainTestBase() {
             ))
         }
 
-        /**
-         * [domain.accessibility.service.PlaceAccessibilityEventPublisher.accessibilityRegistered] 때문에
-         * 명시적으로 [VillageService.upsertStatistics]를 호출하지 않아도 된다.
-         */
-        val village2 = villageRepository.findById(village1.id)
+        val village2 = villageService.upsertStatistics(eupMyeonDong)
         Assert.assertEquals(eupMyeonDong.id, village2.eupMyeonDongId)
         Assert.assertEquals(placeCount, village2.buildingCount)
         Assert.assertEquals(placeCount, village2.placeCount)
@@ -110,7 +106,7 @@ class VillageServiceTest : DomainTestBase() {
             ))
         }
 
-        val village3 = villageRepository.findById(village1.id)
+        val village3 = villageService.upsertStatistics(eupMyeonDong)
         Assert.assertEquals(eupMyeonDong.id, village3.eupMyeonDongId)
         Assert.assertEquals(placeCount, village3.buildingCount)
         Assert.assertEquals(placeCount, village3.placeCount)
