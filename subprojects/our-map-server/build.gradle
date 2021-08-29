@@ -46,8 +46,6 @@ docker {
     tag 'ourMap', '563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-server:latest'
 }
 
-docker.dependsOn(installDist)
-
 protobuf {
 
     protoc {

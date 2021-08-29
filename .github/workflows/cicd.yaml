@@ -10,8 +10,8 @@ jobs:
         uses: actions/checkout@v2
       - run: echo "Run gradle check"
       - run: ./gradlew check
-      - run: echo "Save artifacts"
-      - name: Save test result
+      - run: echo "Upload test result"
+      - name: Upload test result
         if: failure()
         uses: actions/upload-artifact@v2
         with:
@@ -19,6 +19,21 @@ jobs:
           path: |
             subprojects/our-map/build/reports/tests
             subprojects/our-map-server/build/reports/tests
+
+      # gradle check 때 만들어진 빌드 아티팩트를 최대한 재사용하기 위해
+      # 여기서 gradle installDist를 실행한 후 CD job으로 넘겨준다.
+      - run: echo "Run gradle installDist"
+        if: github.ref == 'refs/heads/main'
+      - run: ./gradlew installDist
+        if: github.ref == 'refs/heads/main'
+      - run: echo "Upload installDist artifacts"
+        if: github.ref == 'refs/heads/main'
+      - name: Upload installDist artifact
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v2
+        with:
+          name: installDist-artifact
+          path: subprojects/our-map-server/build/install
   CD:
     if: github.ref == 'refs/heads/main'
     needs: CI
@@ -33,6 +48,13 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '8'
+      - run: echo "Download installDist artifact"
+      - name: Download installDist artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: installDist-artifact
+          path: subprojects/our-map-server/build
+      - run: ls subprojects/our-map-server/build
 
       - run: echo "Configure AWS credentials"
       - name: Configure AWS Credentials
