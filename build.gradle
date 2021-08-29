@@ -11,7 +11,7 @@ buildscript {
     }
 }
 
-group = 'udong-map'
+group = 'our-map'
 version = '1.0-SNAPSHOT'
 
 subprojects {
