@@ -1,5 +1,6 @@
 package domain.accessibility.service
 
+import domain.DomainException
 import domain.accessibility.entity.BuildingAccessibility
 import domain.accessibility.entity.BuildingStairInfo
 import domain.accessibility.repository.BuildingAccessibilityRepository
@@ -19,6 +20,9 @@ class BuildingAccessibilityService(
     )
 
     fun create(params: CreateParams): BuildingAccessibility {
+        if (buildingAccessibilityRepository.findByBuildingId(params.buildingId) != null) {
+            throw DomainException("이미 접근성 정보가 등록된 건물입니다.")
+        }
         return buildingAccessibilityRepository.add(
             BuildingAccessibility(
                 id = EntityIdGenerator.generateRandom(),
