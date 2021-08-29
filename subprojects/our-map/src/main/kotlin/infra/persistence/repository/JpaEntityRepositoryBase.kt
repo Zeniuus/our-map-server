@@ -22,12 +22,12 @@ open class JpaEntityRepositoryBase<ENTITY : Any, ID>(
 
     override fun findById(id: ID): ENTITY {
         val em = EntityManagerHolder.get()!!
-        return em.find(clazz, id) ?: throw SQLException("No entity found with id $id")
+        return em.find(clazz, id) ?: throw EntityNotFoundException("${id}에 해당하는 데이터가 없습니다.")
     }
 
     protected fun getSingularResultOrThrow(queryResults: List<ENTITY>): ENTITY? {
         if (queryResults.size > 1) {
-            throw SQLException("query result contains more than one row.")
+            throw SQLException("Query result contains more than one row.")
         }
         return queryResults.firstOrNull()
     }

@@ -1,8 +1,10 @@
 package exception
 
+import com.google.protobuf.InvalidProtocolBufferException
 import domain.DomainException
 import domain.user.exception.UserAuthenticationException
 import infra.monitoring.ErrorReporter
+import infra.persistence.repository.EntityNotFoundException
 import io.ktor.http.HttpStatusCode
 import ourMap.protocol.Model
 
@@ -16,6 +18,8 @@ object OurMapExceptionHandler {
         return when (t) {
             is UserAuthenticationException -> handleUserAuthenticationException(t)
             is DomainException -> handleDomainException(t)
+            is EntityNotFoundException -> handleEntityNotFoundException(t)
+            is InvalidProtocolBufferException -> handleInvalidProtocolBufferException(t)
             else -> handleUnexpectedError(t)
         }
     }
@@ -34,6 +38,24 @@ object OurMapExceptionHandler {
             statusCode = HttpStatusCode.BadRequest,
             body = Model.OurMapError.newBuilder()
                 .setMessage(e.msg)
+                .build(),
+        )
+    }
+
+    private fun handleEntityNotFoundException(e: EntityNotFoundException): Result {
+        return Result(
+            statusCode = HttpStatusCode.BadRequest,
+            body = Model.OurMapError.newBuilder()
+                .setMessage(e.msg)
+                .build(),
+        )
+    }
+
+    private fun handleInvalidProtocolBufferException(e: InvalidProtocolBufferException): Result {
+        return Result(
+            statusCode = HttpStatusCode.BadRequest,
+            body = Model.OurMapError.newBuilder()
+                .setMessage("올바르지 않은 request body 입니다.(${e.message})")
                 .build(),
         )
     }
