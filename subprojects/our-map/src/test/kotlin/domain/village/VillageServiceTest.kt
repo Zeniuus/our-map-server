@@ -2,7 +2,7 @@ package domain.village
 
 import domain.DomainTestBase
 import domain.accessibility.accessibilityDomainModule
-import domain.accessibility.entity.BuildingStairInfo
+import domain.accessibility.entity.StairInfo
 import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.accessibility.service.BuildingAccessibilityService
@@ -65,16 +65,16 @@ class VillageServiceTest : DomainTestBase() {
         places.take(placeCount / 2).forEach { place ->
             buildingAccessibilityService.create(BuildingAccessibilityService.CreateParams(
                 buildingId = place.building.id,
-                entranceStairInfo = BuildingStairInfo.NONE,
+                entranceStairInfo = StairInfo.NONE,
                 hasSlope = true,
                 hasElevator = true,
-                elevatorStairInfo = BuildingStairInfo.NONE,
+                elevatorStairInfo = StairInfo.NONE,
                 userId = null,
             ))
             placeAccessibilityService.create(PlaceAccessibilityService.CreateParams(
                 placeId = place.id,
                 isFirstFloor = true,
-                hasStair = true,
+                stairInfo = true,
                 hasSlope = true,
                 userId = null
             ))
@@ -93,16 +93,16 @@ class VillageServiceTest : DomainTestBase() {
         places.takeLast(placeCount / 2).forEach { place ->
             buildingAccessibilityService.create(BuildingAccessibilityService.CreateParams(
                 buildingId = place.building.id,
-                entranceStairInfo = BuildingStairInfo.NONE,
+                entranceStairInfo = StairInfo.NONE,
                 hasSlope = true,
                 hasElevator = true,
-                elevatorStairInfo = BuildingStairInfo.NONE,
+                elevatorStairInfo = StairInfo.NONE,
                 userId = user.id,
             ))
             placeAccessibilityService.create(PlaceAccessibilityService.CreateParams(
                 placeId = place.id,
                 isFirstFloor = true,
-                hasStair = true,
+                stairInfo = true,
                 hasSlope = true,
                 userId = user.id,
             ))

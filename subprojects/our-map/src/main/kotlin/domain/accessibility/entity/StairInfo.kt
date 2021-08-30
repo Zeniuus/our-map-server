@@ -1,6 +1,6 @@
 package domain.accessibility.entity
 
-enum class BuildingStairInfo {
+enum class StairInfo {
     NONE,
     ONE,
     TWO_TO_FIVE,

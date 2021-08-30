@@ -2,7 +2,7 @@ package domain.accessibility.service
 
 import domain.DomainException
 import domain.accessibility.entity.BuildingAccessibility
-import domain.accessibility.entity.BuildingStairInfo
+import domain.accessibility.entity.StairInfo
 import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.util.EntityIdGenerator
 import java.time.Clock
@@ -13,10 +13,10 @@ class BuildingAccessibilityService(
 ) {
     data class CreateParams(
         val buildingId: String,
-        val entranceStairInfo: BuildingStairInfo,
+        val entranceStairInfo: StairInfo,
         val hasSlope: Boolean,
         val hasElevator: Boolean,
-        val elevatorStairInfo: BuildingStairInfo,
+        val elevatorStairInfo: StairInfo,
         val userId: String?,
     )
 

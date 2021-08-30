@@ -39,16 +39,16 @@ class RegisterAccessibilityTest : OurMapServerRouteTestBase() {
                 .setBuildingAccessibilityParams(
                     RegisterAccessibilityParams.RegisterBuildingAccessibilityParams.newBuilder()
                         .setBuildingId(place.building.id)
-                        .setEntranceStairInfo(Model.BuildingAccessibility.StairInfo.NONE)
+                        .setEntranceStairInfo(Model.StairInfo.NONE)
                         .setHasSlope(true)
                         .setHasElevator(true)
-                        .setElevatorStairInfo(Model.BuildingAccessibility.StairInfo.TWO_TO_FIVE)
+                        .setElevatorStairInfo(Model.StairInfo.TWO_TO_FIVE)
                 )
                 .setPlaceAccessibilityParams(
                     RegisterAccessibilityParams.RegisterPlaceAccessibilityParams.newBuilder()
                         .setPlaceId(place.id)
                         .setIsFirstFloor(false)
-                        .setHasStair(false)
+                        .setStairInfo(Model.StairInfo.ONE)
                         .setHasSlope(true)
                 )
                 .build()
@@ -57,10 +57,10 @@ class RegisterAccessibilityTest : OurMapServerRouteTestBase() {
                 val buildingAccessibility = result.buildingAccessibility
                 Assert.assertTrue(result.hasBuildingAccessibility())
                 Assert.assertEquals(place.building.id, buildingAccessibility.buildingId)
-                Assert.assertEquals(Model.BuildingAccessibility.StairInfo.NONE, buildingAccessibility.entranceStairInfo)
+                Assert.assertEquals(Model.StairInfo.NONE, buildingAccessibility.entranceStairInfo)
                 Assert.assertTrue(buildingAccessibility.hasSlope)
                 Assert.assertTrue(buildingAccessibility.hasElevator)
-                Assert.assertEquals(Model.BuildingAccessibility.StairInfo.TWO_TO_FIVE, buildingAccessibility.elevatorStairInfo)
+                Assert.assertEquals(Model.StairInfo.TWO_TO_FIVE, buildingAccessibility.elevatorStairInfo)
                 Assert.assertFalse(result.buildingAccessibility.isUpvoted)
                 Assert.assertEquals(0, result.buildingAccessibility.totalUpvoteCount)
 
@@ -68,7 +68,7 @@ class RegisterAccessibilityTest : OurMapServerRouteTestBase() {
                 Assert.assertTrue(result.hasPlaceAccessibility())
                 Assert.assertEquals(place.id, placeAccessibility.placeId)
                 Assert.assertFalse(placeAccessibility.isFirstFloor)
-                Assert.assertFalse(placeAccessibility.hasStair)
+                Assert.assertEquals(Model.StairInfo.ONE, placeAccessibility.stairInfo)
                 Assert.assertTrue(placeAccessibility.hasSlope)
 
                 Assert.assertEquals(expectedRegisteredUserOrder, result.registeredUserOrder)

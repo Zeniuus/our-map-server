@@ -2,8 +2,8 @@ package domain.accessibility
 
 import domain.DomainTestBase
 import domain.accessibility.entity.BuildingAccessibility
-import domain.accessibility.entity.BuildingStairInfo
 import domain.accessibility.entity.PlaceAccessibility
+import domain.accessibility.entity.StairInfo
 import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.accessibility.service.SearchAccessibilityService
@@ -32,10 +32,10 @@ class SearchPlaceAccessibilityServiceTest : DomainTestBase() {
         val buildingAccessibility = buildingAccessibilityRepository.add(BuildingAccessibility(
             id = EntityIdGenerator.generateRandom(),
             buildingId = place.building.id,
-            entranceStairInfo = BuildingStairInfo.NONE,
+            entranceStairInfo = StairInfo.NONE,
             hasSlope = true,
             hasElevator = true,
-            elevatorStairInfo = BuildingStairInfo.NONE,
+            elevatorStairInfo = StairInfo.NONE,
             userId = null,
             createdAt = clock.instant(),
         ))
@@ -49,7 +49,7 @@ class SearchPlaceAccessibilityServiceTest : DomainTestBase() {
             id = EntityIdGenerator.generateRandom(),
             placeId = place.id,
             isFirstFloor = false,
-            hasStair = false,
+            stairInfo = StairInfo.NONE,
             hasSlope = true,
             userId = null,
             createdAt = clock.instant(),

@@ -5,6 +5,7 @@ import application.accessibility.AccessibilityApplicationService
 import auth.UserAuthenticator
 import converter.BuildingAccessibilityConverter
 import converter.PlaceAccessibilityConverter
+import converter.StairInfoConverter
 import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.accessibility.service.BuildingAccessibilityService
 import domain.accessibility.service.PlaceAccessibilityService
@@ -36,17 +37,17 @@ fun Route.registerAccessibility() {
             createPlaceAccessibilityParams = PlaceAccessibilityService.CreateParams(
                 placeId = params.placeAccessibilityParams.placeId,
                 isFirstFloor = params.placeAccessibilityParams.isFirstFloor,
-                hasStair = params.placeAccessibilityParams.hasStair,
+                stairInfo = StairInfoConverter.fromProto(params.placeAccessibilityParams.stairInfo),
                 hasSlope = params.placeAccessibilityParams.hasSlope,
                 userId = userId,
             ),
             createBuildingAccessibilityParams = if (params.hasBuildingAccessibilityParams()) {
                 BuildingAccessibilityService.CreateParams(
                     buildingId = params.buildingAccessibilityParams.buildingId,
-                    entranceStairInfo = BuildingAccessibilityConverter.fromProto(params.buildingAccessibilityParams.entranceStairInfo),
+                    entranceStairInfo = StairInfoConverter.fromProto(params.buildingAccessibilityParams.entranceStairInfo),
                     hasSlope = params.buildingAccessibilityParams.hasSlope,
                     hasElevator = params.buildingAccessibilityParams.hasElevator,
-                    elevatorStairInfo = BuildingAccessibilityConverter.fromProto(params.buildingAccessibilityParams.elevatorStairInfo),
+                    elevatorStairInfo = StairInfoConverter.fromProto(params.buildingAccessibilityParams.elevatorStairInfo),
                     userId = userId,
                 )
             } else {
