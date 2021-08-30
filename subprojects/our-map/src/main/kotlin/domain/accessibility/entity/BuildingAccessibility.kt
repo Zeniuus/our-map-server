@@ -14,13 +14,16 @@ data class BuildingAccessibility(
     val id: String,
     @Column(length = 36, nullable = false)
     val buildingId: String,
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false, length = 32)
+    val entranceStairInfo: StairInfo,
+    @Column(nullable = false)
+    val hasSlope: Boolean,
     @Column(nullable = false)
     val hasElevator: Boolean,
-    @Column(nullable = false)
-    val hasObstacleToElevator: Boolean,
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    val stairInfo: BuildingStairInfo,
+    @Column(nullable = false, length = 32)
+    val elevatorStairInfo: StairInfo,
     @Column(length = 36, nullable = true)
     val userId: String?,
     @Column(nullable = false)

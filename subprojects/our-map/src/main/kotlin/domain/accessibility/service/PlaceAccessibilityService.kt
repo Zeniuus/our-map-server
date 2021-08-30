@@ -2,6 +2,7 @@ package domain.accessibility.service
 
 import domain.DomainException
 import domain.accessibility.entity.PlaceAccessibility
+import domain.accessibility.entity.StairInfo
 import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.util.EntityIdGenerator
 import java.time.Clock
@@ -13,8 +14,8 @@ class PlaceAccessibilityService(
     data class CreateParams(
         val placeId: String,
         val isFirstFloor: Boolean,
-        val hasStair: Boolean,
-        val isWheelchairAccessible: Boolean,
+        val stairInfo: StairInfo,
+        val hasSlope: Boolean,
         val userId: String?,
     )
 
@@ -27,8 +28,8 @@ class PlaceAccessibilityService(
                 id = EntityIdGenerator.generateRandom(),
                 placeId = params.placeId,
                 isFirstFloor = params.isFirstFloor,
-                hasStair = params.hasStair,
-                isWheelchairAccessible = params.isWheelchairAccessible,
+                stairInfo = params.stairInfo,
+                hasSlope = params.hasSlope,
                 userId = params.userId,
                 createdAt = clock.instant(),
             )

@@ -1,6 +1,6 @@
 package route
 
-import converter.BuildingAccessibilityConverter
+import converter.StairInfoConverter
 import org.junit.Assert
 import org.junit.Test
 import ourMap.protocol.GetAccessibilityParams
@@ -32,9 +32,10 @@ class GetAccessibilityTest : OurMapServerRouteTestBase() {
             val result = getResult(GetAccessibilityResult::class)
             Assert.assertEquals(buildingAccessibility.id, result.buildingAccessibility.id)
             Assert.assertEquals(buildingAccessibility.buildingId, result.buildingAccessibility.buildingId)
+            Assert.assertEquals(buildingAccessibility.entranceStairInfo, StairInfoConverter.fromProto(result.buildingAccessibility.entranceStairInfo))
+            Assert.assertEquals(buildingAccessibility.hasSlope, result.buildingAccessibility.hasSlope)
             Assert.assertEquals(buildingAccessibility.hasElevator, result.buildingAccessibility.hasElevator)
-            Assert.assertEquals(buildingAccessibility.hasObstacleToElevator, result.buildingAccessibility.hasObstacleToElevator)
-            Assert.assertEquals(buildingAccessibility.stairInfo, BuildingAccessibilityConverter.fromProto(result.buildingAccessibility.stairInfo))
+            Assert.assertEquals(buildingAccessibility.elevatorStairInfo, StairInfoConverter.fromProto(result.buildingAccessibility.elevatorStairInfo))
             Assert.assertEquals(user.nickname, result.buildingAccessibility.registeredUserName.value)
             Assert.assertTrue(result.buildingAccessibility.isUpvoted)
             Assert.assertEquals(3, result.buildingAccessibility.totalUpvoteCount)
@@ -42,8 +43,8 @@ class GetAccessibilityTest : OurMapServerRouteTestBase() {
             Assert.assertEquals(placeAccessibility.id, result.placeAccessibility.id)
             Assert.assertEquals(placeAccessibility.placeId, result.placeAccessibility.placeId)
             Assert.assertEquals(placeAccessibility.isFirstFloor, result.placeAccessibility.isFirstFloor)
-            Assert.assertEquals(placeAccessibility.hasStair, result.placeAccessibility.hasStair)
-            Assert.assertEquals(placeAccessibility.isWheelchairAccessible, result.placeAccessibility.isWheelchairAccessible)
+            Assert.assertEquals(placeAccessibility.stairInfo, StairInfoConverter.fromProto(result.placeAccessibility.stairInfo))
+            Assert.assertEquals(placeAccessibility.hasSlope, result.placeAccessibility.hasSlope)
             Assert.assertEquals(user.nickname, result.placeAccessibility.registeredUserName.value)
         }
     }

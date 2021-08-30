@@ -2,7 +2,7 @@ package domain.village
 
 import domain.DomainTestBase
 import domain.accessibility.accessibilityDomainModule
-import domain.accessibility.entity.BuildingStairInfo
+import domain.accessibility.entity.StairInfo
 import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.accessibility.service.BuildingAccessibilityService
@@ -65,16 +65,17 @@ class VillageServiceTest : DomainTestBase() {
         places.take(placeCount / 2).forEach { place ->
             buildingAccessibilityService.create(BuildingAccessibilityService.CreateParams(
                 buildingId = place.building.id,
+                entranceStairInfo = StairInfo.NONE,
+                hasSlope = true,
                 hasElevator = true,
-                hasObstacleToElevator = true,
-                stairInfo = BuildingStairInfo.NONE,
-                userId = null
+                elevatorStairInfo = StairInfo.NONE,
+                userId = null,
             ))
             placeAccessibilityService.create(PlaceAccessibilityService.CreateParams(
                 placeId = place.id,
                 isFirstFloor = true,
-                hasStair = true,
-                isWheelchairAccessible = true,
+                stairInfo = StairInfo.NONE,
+                hasSlope = true,
                 userId = null
             ))
         }
@@ -92,17 +93,18 @@ class VillageServiceTest : DomainTestBase() {
         places.takeLast(placeCount / 2).forEach { place ->
             buildingAccessibilityService.create(BuildingAccessibilityService.CreateParams(
                 buildingId = place.building.id,
+                entranceStairInfo = StairInfo.NONE,
+                hasSlope = true,
                 hasElevator = true,
-                hasObstacleToElevator = true,
-                stairInfo = BuildingStairInfo.NONE,
-                userId = user.id
+                elevatorStairInfo = StairInfo.NONE,
+                userId = user.id,
             ))
             placeAccessibilityService.create(PlaceAccessibilityService.CreateParams(
                 placeId = place.id,
                 isFirstFloor = true,
-                hasStair = true,
-                isWheelchairAccessible = true,
-                userId = user.id
+                stairInfo = StairInfo.NONE,
+                hasSlope = true,
+                userId = user.id,
             ))
         }
 

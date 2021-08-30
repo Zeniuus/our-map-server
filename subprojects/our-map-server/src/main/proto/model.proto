@@ -30,34 +30,37 @@ message Building {
     string address = 2; // 건물의 human-readable한 주소.
 }
 
+enum StairInfo {
+    NONE = 0;
+    ONE = 1;
+    TWO_TO_FIVE = 2;
+    OVER_SIX = 3;
+}
+
 // 장소의 접근성 정보.
 message PlaceAccessibility {
     string id = 1;
     bool is_first_floor = 2;
-    bool has_stair = 3;
-    bool is_wheelchair_accessible = 4;
+    StairInfo stair_info = 3;
+    bool has_slope = 4;
 
-    string place_id = 6;
-    StringValue registered_user_name = 7; // 익명이면 null.
+    string place_id = 5;
+    StringValue registered_user_name = 6; // 익명이면 null.
 }
 
 // 건물의 접근성 정보.
 message BuildingAccessibility {
-    enum StairInfo {
-        NONE = 0;
-        LESS_THAN_FIVE = 1;
-        OVER_TEN = 2;
-    }
     string id = 1;
-    bool has_elevator = 2;
-    bool has_obstacle_to_elevator = 3;
-    StairInfo stair_info = 4;
+    StairInfo entrance_stair_info = 2;
+    bool has_slope = 3;
+    bool has_elevator = 4;
+    StairInfo elevator_stair_info = 5;
 
-    string building_id = 5;
-    StringValue registered_user_name = 6; // 익명이면 null.
+    string building_id = 6;
+    StringValue registered_user_name = 7; // 익명이면 null.
 
-    bool is_upvoted = 7; // 도움이 돼요를 표시했는지 여부.
-    int32 total_upvote_count = 8; // 도움이 돼요를 받은 총 횟수. 이 숫자에 따라 버튼 텍스트에 '도움이 돼요'나 '정확한 정보에요'를 사용한다.
+    bool is_upvoted = 8; // 도움이 돼요를 표시했는지 여부.
+    int32 total_upvote_count = 9; // 도움이 돼요를 받은 총 횟수. 이 숫자에 따라 버튼 텍스트에 '도움이 돼요'나 '정확한 정보에요'를 사용한다.
 }
 
 message Village {

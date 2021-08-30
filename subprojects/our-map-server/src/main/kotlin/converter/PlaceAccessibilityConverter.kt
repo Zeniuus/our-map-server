@@ -11,8 +11,8 @@ class PlaceAccessibilityConverter(
     fun toProto(placeAccessibility: PlaceAccessibility) = Model.PlaceAccessibility.newBuilder()
         .setId(placeAccessibility.id)
         .setIsFirstFloor(placeAccessibility.isFirstFloor)
-        .setHasStair(placeAccessibility.hasStair)
-        .setIsWheelchairAccessible(placeAccessibility.isWheelchairAccessible)
+        .setStairInfo(StairInfoConverter.toProto(placeAccessibility.stairInfo))
+        .setHasSlope(placeAccessibility.hasSlope)
         .also {
             placeAccessibility.userId?.let { userId ->
                 val user = userRepository.findById(userId)

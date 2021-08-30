@@ -1,7 +1,7 @@
 import domain.accessibility.accessibilityDomainModule
 import domain.accessibility.entity.BuildingAccessibility
-import domain.accessibility.entity.BuildingStairInfo
 import domain.accessibility.entity.PlaceAccessibility
+import domain.accessibility.entity.StairInfo
 import domain.accessibility.service.BuildingAccessibilityService
 import domain.accessibility.service.BuildingAccessibilityUpvoteService
 import domain.accessibility.service.PlaceAccessibilityService
@@ -100,17 +100,18 @@ class TestDataGenerator {
             PlaceAccessibilityService.CreateParams(
                 placeId = place.id,
                 isFirstFloor = true,
-                hasStair = true,
-                isWheelchairAccessible = true,
+                stairInfo = StairInfo.NONE,
+                hasSlope = true,
                 userId = user?.id,
             )
         )
         val buildingAccessibility = buildingAccessibilityService.create(
             BuildingAccessibilityService.CreateParams(
                 buildingId = place.building.id,
+                entranceStairInfo = StairInfo.NONE,
+                hasSlope = true,
                 hasElevator = true,
-                hasObstacleToElevator = true,
-                stairInfo = BuildingStairInfo.NONE,
+                elevatorStairInfo = StairInfo.NONE,
                 userId = user?.id,
             )
         )
