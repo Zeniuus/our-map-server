@@ -23,7 +23,7 @@
             <column name="stair_info" type="VARCHAR(32)" afterColumn="is_first_floor" defaultValue="NONE">
                 <constraints nullable="false" />
             </column>
-            <column name="has_slope" type="BOOLEAN" afterColumn="has_stair" defaultValue="false">
+            <column name="has_slope" type="BOOLEAN" afterColumn="stair_info" defaultValue="false">
                 <constraints nullable="false" />
             </column>
         </addColumn>

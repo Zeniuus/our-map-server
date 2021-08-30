@@ -74,7 +74,7 @@ class VillageServiceTest : DomainTestBase() {
             placeAccessibilityService.create(PlaceAccessibilityService.CreateParams(
                 placeId = place.id,
                 isFirstFloor = true,
-                stairInfo = true,
+                stairInfo = StairInfo.NONE,
                 hasSlope = true,
                 userId = null
             ))
@@ -102,7 +102,7 @@ class VillageServiceTest : DomainTestBase() {
             placeAccessibilityService.create(PlaceAccessibilityService.CreateParams(
                 placeId = place.id,
                 isFirstFloor = true,
-                stairInfo = true,
+                stairInfo = StairInfo.NONE,
                 hasSlope = true,
                 userId = user.id,
             ))
