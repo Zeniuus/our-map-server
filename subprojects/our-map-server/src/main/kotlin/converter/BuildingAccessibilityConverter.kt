@@ -17,23 +17,26 @@ class BuildingAccessibilityConverter(
     companion object {
         fun toProto(stairInfo: BuildingStairInfo) = when (stairInfo) {
             BuildingStairInfo.NONE -> Model.BuildingAccessibility.StairInfo.NONE
-            BuildingStairInfo.LESS_THAN_FIVE -> Model.BuildingAccessibility.StairInfo.LESS_THAN_FIVE
-            BuildingStairInfo.OVER_TEN -> Model.BuildingAccessibility.StairInfo.OVER_TEN
+            BuildingStairInfo.ONE -> Model.BuildingAccessibility.StairInfo.ONE
+            BuildingStairInfo.TWO_TO_FIVE -> Model.BuildingAccessibility.StairInfo.TWO_TO_FIVE
+            BuildingStairInfo.OVER_SIX -> Model.BuildingAccessibility.StairInfo.OVER_SIX
         }
 
         fun fromProto(stairInfo: Model.BuildingAccessibility.StairInfo) = when (stairInfo) {
             Model.BuildingAccessibility.StairInfo.NONE -> BuildingStairInfo.NONE
-            Model.BuildingAccessibility.StairInfo.LESS_THAN_FIVE -> BuildingStairInfo.LESS_THAN_FIVE
-            Model.BuildingAccessibility.StairInfo.OVER_TEN -> BuildingStairInfo.OVER_TEN
+            Model.BuildingAccessibility.StairInfo.ONE -> BuildingStairInfo.ONE
+            Model.BuildingAccessibility.StairInfo.TWO_TO_FIVE -> BuildingStairInfo.TWO_TO_FIVE
+            Model.BuildingAccessibility.StairInfo.OVER_SIX -> BuildingStairInfo.OVER_SIX
             else -> throw IllegalArgumentException("Invalid stairInfo: $stairInfo")
         }
     }
 
     fun toProto(buildingAccessibility: BuildingAccessibility, user: User?) = Model.BuildingAccessibility.newBuilder()
         .setId(buildingAccessibility.id)
+        .setEntranceStairInfo(toProto(buildingAccessibility.entranceStairInfo))
+        .setHasSlope(buildingAccessibility.hasSlope)
         .setHasElevator(buildingAccessibility.hasElevator)
-        .setHasObstacleToElevator(buildingAccessibility.hasObstacleToElevator)
-        .setStairInfo(toProto(buildingAccessibility.stairInfo))
+        .setElevatorStairInfo(toProto(buildingAccessibility.elevatorStairInfo))
         .also {
             buildingAccessibility.userId?.let { registeredUserId ->
                 val registeredUser = userRepository.findById(registeredUserId)

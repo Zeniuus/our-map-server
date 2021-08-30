@@ -101,16 +101,17 @@ class TestDataGenerator {
                 placeId = place.id,
                 isFirstFloor = true,
                 hasStair = true,
-                isWheelchairAccessible = true,
+                hasSlope = true,
                 userId = user?.id,
             )
         )
         val buildingAccessibility = buildingAccessibilityService.create(
             BuildingAccessibilityService.CreateParams(
                 buildingId = place.building.id,
+                entranceStairInfo = BuildingStairInfo.NONE,
+                hasSlope = true,
                 hasElevator = true,
-                hasObstacleToElevator = true,
-                stairInfo = BuildingStairInfo.NONE,
+                elevatorStairInfo = BuildingStairInfo.NONE,
                 userId = user?.id,
             )
         )

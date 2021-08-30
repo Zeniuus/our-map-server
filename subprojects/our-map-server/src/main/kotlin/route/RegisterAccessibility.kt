@@ -37,15 +37,16 @@ fun Route.registerAccessibility() {
                 placeId = params.placeAccessibilityParams.placeId,
                 isFirstFloor = params.placeAccessibilityParams.isFirstFloor,
                 hasStair = params.placeAccessibilityParams.hasStair,
-                isWheelchairAccessible = params.placeAccessibilityParams.isWheelchairAccessible,
+                hasSlope = params.placeAccessibilityParams.hasSlope,
                 userId = userId,
             ),
             createBuildingAccessibilityParams = if (params.hasBuildingAccessibilityParams()) {
                 BuildingAccessibilityService.CreateParams(
                     buildingId = params.buildingAccessibilityParams.buildingId,
+                    entranceStairInfo = BuildingAccessibilityConverter.fromProto(params.buildingAccessibilityParams.entranceStairInfo),
+                    hasSlope = params.buildingAccessibilityParams.hasSlope,
                     hasElevator = params.buildingAccessibilityParams.hasElevator,
-                    hasObstacleToElevator = params.buildingAccessibilityParams.hasObstacleToElevator,
-                    stairInfo = BuildingAccessibilityConverter.fromProto(params.buildingAccessibilityParams.stairInfo),
+                    elevatorStairInfo = BuildingAccessibilityConverter.fromProto(params.buildingAccessibilityParams.elevatorStairInfo),
                     userId = userId,
                 )
             } else {

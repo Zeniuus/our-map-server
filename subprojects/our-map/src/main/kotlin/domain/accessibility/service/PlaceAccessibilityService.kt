@@ -14,7 +14,7 @@ class PlaceAccessibilityService(
         val placeId: String,
         val isFirstFloor: Boolean,
         val hasStair: Boolean,
-        val isWheelchairAccessible: Boolean,
+        val hasSlope: Boolean,
         val userId: String?,
     )
 
@@ -28,7 +28,7 @@ class PlaceAccessibilityService(
                 placeId = params.placeId,
                 isFirstFloor = params.isFirstFloor,
                 hasStair = params.hasStair,
-                isWheelchairAccessible = params.isWheelchairAccessible,
+                hasSlope = params.hasSlope,
                 userId = params.userId,
                 createdAt = clock.instant(),
             )

@@ -13,9 +13,10 @@ class BuildingAccessibilityService(
 ) {
     data class CreateParams(
         val buildingId: String,
+        val entranceStairInfo: BuildingStairInfo,
+        val hasSlope: Boolean,
         val hasElevator: Boolean,
-        val hasObstacleToElevator: Boolean,
-        val stairInfo: BuildingStairInfo,
+        val elevatorStairInfo: BuildingStairInfo,
         val userId: String?,
     )
 
@@ -27,9 +28,10 @@ class BuildingAccessibilityService(
             BuildingAccessibility(
                 id = EntityIdGenerator.generateRandom(),
                 buildingId = params.buildingId,
+                entranceStairInfo = params.entranceStairInfo,
+                hasSlope = params.hasSlope,
                 hasElevator = params.hasElevator,
-                hasObstacleToElevator = params.hasObstacleToElevator,
-                stairInfo = params.stairInfo,
+                elevatorStairInfo = params.elevatorStairInfo,
                 userId = params.userId,
                 createdAt = clock.instant(),
             )

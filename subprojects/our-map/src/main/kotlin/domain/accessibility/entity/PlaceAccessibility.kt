@@ -17,7 +17,7 @@ data class PlaceAccessibility(
     @Column(nullable = false)
     val hasStair: Boolean,
     @Column(nullable = false)
-    val isWheelchairAccessible: Boolean,
+    val hasSlope: Boolean,
     @Column(length = 36, nullable = true)
     val userId: String?,
     @Column(nullable = false)

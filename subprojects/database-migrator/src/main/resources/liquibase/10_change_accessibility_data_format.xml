@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.2.xsd">
+    <changeSet id="10" author="swann">
+        <dropColumn tableName="building_accessibility" columnName="has_obstacle_to_elevator" />
+        <dropColumn tableName="building_accessibility" columnName="stair_info" />
+        <addColumn tableName="building_accessibility">
+            <column name="entrance_stair_info" type="VARCHAR(32)" afterColumn="building_id" defaultValue="NONE">
+                <constraints nullable="false" />
+            </column>
+            <column name="has_slope" type="BOOLEAN" afterColumn="entrance_stair_info" defaultValue="false">
+                <constraints nullable="false" />
+            </column>
+            <column name="elevator_stair_info" type="VARCHAR(32)" afterColumn="has_elevator" defaultValue="NONE">
+                <constraints nullable="false" />
+            </column>
+        </addColumn>
+        <dropColumn tableName="place_accessibility" columnName="is_wheelchair_accessible" />
+        <addColumn tableName="place_accessibility">
+            <column name="has_slope" type="BOOLEAN" afterColumn="has_stair" defaultValue="false">
+                <constraints nullable="false" />
+            </column>
+        </addColumn>
+    </changeSet>
+</databaseChangeLog>

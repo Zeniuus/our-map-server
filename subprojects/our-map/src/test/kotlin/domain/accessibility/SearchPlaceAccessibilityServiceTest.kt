@@ -32,9 +32,10 @@ class SearchPlaceAccessibilityServiceTest : DomainTestBase() {
         val buildingAccessibility = buildingAccessibilityRepository.add(BuildingAccessibility(
             id = EntityIdGenerator.generateRandom(),
             buildingId = place.building.id,
+            entranceStairInfo = BuildingStairInfo.NONE,
+            hasSlope = true,
             hasElevator = true,
-            hasObstacleToElevator = true,
-            stairInfo = BuildingStairInfo.LESS_THAN_FIVE,
+            elevatorStairInfo = BuildingStairInfo.NONE,
             userId = null,
             createdAt = clock.instant(),
         ))
@@ -49,7 +50,7 @@ class SearchPlaceAccessibilityServiceTest : DomainTestBase() {
             placeId = place.id,
             isFirstFloor = false,
             hasStair = false,
-            isWheelchairAccessible = true,
+            hasSlope = true,
             userId = null,
             createdAt = clock.instant(),
         ))

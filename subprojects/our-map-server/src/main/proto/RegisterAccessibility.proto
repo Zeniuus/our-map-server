@@ -14,13 +14,14 @@ message RegisterAccessibilityParams {
         string place_id = 1;
         bool is_first_floor = 2;
         bool has_stair = 3;
-        bool is_wheelchair_accessible = 4;
+        bool has_slope = 4;
     }
     message RegisterBuildingAccessibilityParams {
         string building_id = 1;
-        bool has_elevator = 2;
-        bool has_obstacle_to_elevator = 3;
-        BuildingAccessibility.StairInfo stair_info = 4;
+        BuildingAccessibility.StairInfo entrance_stair_info = 2;
+        bool has_slope = 3;
+        bool has_elevator = 4;
+        BuildingAccessibility.StairInfo elevator_stair_info = 5;
     }
 
 

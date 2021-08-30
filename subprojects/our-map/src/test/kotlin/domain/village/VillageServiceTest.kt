@@ -65,16 +65,17 @@ class VillageServiceTest : DomainTestBase() {
         places.take(placeCount / 2).forEach { place ->
             buildingAccessibilityService.create(BuildingAccessibilityService.CreateParams(
                 buildingId = place.building.id,
+                entranceStairInfo = BuildingStairInfo.NONE,
+                hasSlope = true,
                 hasElevator = true,
-                hasObstacleToElevator = true,
-                stairInfo = BuildingStairInfo.NONE,
-                userId = null
+                elevatorStairInfo = BuildingStairInfo.NONE,
+                userId = null,
             ))
             placeAccessibilityService.create(PlaceAccessibilityService.CreateParams(
                 placeId = place.id,
                 isFirstFloor = true,
                 hasStair = true,
-                isWheelchairAccessible = true,
+                hasSlope = true,
                 userId = null
             ))
         }
@@ -92,17 +93,18 @@ class VillageServiceTest : DomainTestBase() {
         places.takeLast(placeCount / 2).forEach { place ->
             buildingAccessibilityService.create(BuildingAccessibilityService.CreateParams(
                 buildingId = place.building.id,
+                entranceStairInfo = BuildingStairInfo.NONE,
+                hasSlope = true,
                 hasElevator = true,
-                hasObstacleToElevator = true,
-                stairInfo = BuildingStairInfo.NONE,
-                userId = user.id
+                elevatorStairInfo = BuildingStairInfo.NONE,
+                userId = user.id,
             ))
             placeAccessibilityService.create(PlaceAccessibilityService.CreateParams(
                 placeId = place.id,
                 isFirstFloor = true,
                 hasStair = true,
-                isWheelchairAccessible = true,
-                userId = user.id
+                hasSlope = true,
+                userId = user.id,
             ))
         }
 

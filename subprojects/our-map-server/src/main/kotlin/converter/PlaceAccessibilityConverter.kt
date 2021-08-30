@@ -12,7 +12,7 @@ class PlaceAccessibilityConverter(
         .setId(placeAccessibility.id)
         .setIsFirstFloor(placeAccessibility.isFirstFloor)
         .setHasStair(placeAccessibility.hasStair)
-        .setIsWheelchairAccessible(placeAccessibility.isWheelchairAccessible)
+        .setHasSlope(placeAccessibility.hasSlope)
         .also {
             placeAccessibility.userId?.let { userId ->
                 val user = userRepository.findById(userId)

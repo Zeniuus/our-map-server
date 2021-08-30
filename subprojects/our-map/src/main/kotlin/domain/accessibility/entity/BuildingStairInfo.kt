@@ -2,6 +2,7 @@ package domain.accessibility.entity
 
 enum class BuildingStairInfo {
     NONE,
-    LESS_THAN_FIVE,
-    OVER_TEN,
+    ONE,
+    TWO_TO_FIVE,
+    OVER_SIX,
 }
