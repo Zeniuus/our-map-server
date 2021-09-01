@@ -1,7 +1,15 @@
 import * as React from "react";
-import { Admin } from "react-admin";
-import simpleRestProvider from 'ra-data-simple-rest';
+import { BrowserRouter } from 'react-router-dom';
+import AppMenu from "./AppMenu";
+import AppBody from "./AppBody";
 
-const App = () => <Admin dataProvider={simpleRestProvider('http://localhost:8080')}></Admin>
+import "./App.css";
+
+const App = () => (
+  <BrowserRouter>
+    <AppMenu></AppMenu>
+    <AppBody></AppBody>
+  </BrowserRouter>
+);
 
 export default App;
