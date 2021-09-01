@@ -24,6 +24,10 @@ class BuildingAccessibilityService(
         if (buildingAccessibilityRepository.findByBuildingId(params.buildingId) != null) {
             throw DomainException("이미 접근성 정보가 등록된 건물입니다.")
         }
+        if (params.hasElevator && params.elevatorStairInfo == StairInfo.UNDEFINED ||
+            !params.hasElevator && params.elevatorStairInfo != StairInfo.UNDEFINED) {
+            throw DomainException("엘레베이터 유무 정보와 엘레베이터까지의 계단 개수 정보가 맞지 않습니다.")
+        }
         return buildingAccessibilityRepository.add(
             BuildingAccessibility(
                 id = EntityIdGenerator.generateRandom(),
