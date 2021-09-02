@@ -1,0 +1,13 @@
+dependencies {
+    implementation project(':our-map')
+    implementation project(':our-map-server')
+
+    implementation "io.ktor:ktor-server-core:$ktorVersion"
+    implementation "io.ktor:ktor-server-netty:$ktorVersion"
+    testImplementation "io.ktor:ktor-server-test-host:$ktorVersion"
+    implementation "io.ktor:ktor-jackson:$ktorVersion"
+    testImplementation "io.insert-koin:koin-test-junit4:$koinVersion"
+    implementation "ch.qos.logback:logback-classic:1.2.3"
+
+    implementation 'org.hibernate:hibernate-core:5.4.32.Final' // TODO: 이게 없으면 Cannot access class 'javax.persistence.EntityManager'. Check your module classpath for missing or conflicting dependencies 라는 에러가 뜨는데, 이유를 모르겠다...
+}
