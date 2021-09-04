@@ -20,4 +20,4 @@ sudo nohup docker run -p 8081:8081 \
 sudo rm nohup-frontend-admin.out
 sudo docker pull 563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-frontend-admin:latest
 sudo nohup docker run -p 3001:80 \
-  563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-frontend-admin &> nohup-server-admin.out &
+  563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-frontend-admin &> nohup-frontend-admin.out &
