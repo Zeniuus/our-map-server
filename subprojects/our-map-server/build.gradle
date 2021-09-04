@@ -39,6 +39,7 @@ jar {
         attributes['Main-Class'] = 'OurMapServerKt'
     }
 }
+
 docker {
     name 'our-map-server:latest'
     copySpec.from('build/install/our-map-server')

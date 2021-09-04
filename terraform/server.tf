@@ -71,13 +71,20 @@ resource "aws_security_group" "server" {
   description = "server instance sg"
   vpc_id      = data.aws_vpc.default.id
 
-  // TODO: 충분한 시간이 지난 뒤 ALB 트래픽만 받도록 변경
   ingress {
-    description      = "Allow HTTP requests"
+    description      = "Allow server traffics from LB"
     from_port        = 80
     to_port          = 80
     protocol         = "tcp"
-    cidr_blocks      = ["0.0.0.0/0"]
+    security_groups  = [aws_security_group.server_lb.id]
+  }
+
+  ingress {
+    description      = "Allow server-admin traffics from LB"
+    from_port        = 8081
+    to_port          = 8081
+    protocol         = "tcp"
+    security_groups  = [aws_security_group.server_lb.id]
   }
 
   ingress {
@@ -99,6 +106,15 @@ resource "aws_security_group" "server" {
 
 resource "aws_ecr_repository" "server" {
   name                 = "our-map-server"
+  image_tag_mutability = "MUTABLE"
+
+  image_scanning_configuration {
+    scan_on_push = true
+  }
+}
+
+resource "aws_ecr_repository" "server_admin" {
+  name                 = "our-map-server-admin"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {

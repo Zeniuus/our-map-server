@@ -7,6 +7,7 @@ import io.ktor.http.HttpMethod
 import io.ktor.jackson.jackson
 import io.ktor.routing.routing
 import org.koin.core.error.KoinAppAlreadyStartedException
+import route.health
 import route.runSql
 
 // TODO: embeddedServer로 서버를 띄우려고 하면 install(ContentNegotiation) { ... } 이 두 번 불려서
@@ -34,16 +35,8 @@ fun Application.ourMapServerAdminModule(testing: Boolean = false) {
         anyHost()
     }
 
-    // TODO: our-map-server-common 만들어서 OurMapExceptionHandler / health() 추가하기
-//    install(StatusPages) {
-//        exception<Throwable> {
-//            val result = OurMapExceptionHandler.handle(it)
-//            call.respond(result.statusCode, result.body)
-//        }
-//    }
-
     routing {
-        // health()
+        health()
         runSql()
     }
 }
