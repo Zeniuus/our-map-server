@@ -34,9 +34,13 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-2
-      - run: echo "Push docker image to ECR"
+      - run: echo "Push server docker image to ECR"
         if: github.ref == 'refs/heads/main'
       - run: ./bin/docker-push.sh
+        if: github.ref == 'refs/heads/main'
+      - run: echo "Push frontend docker image to ECR"
+        if: github.ref == 'refs/heads/main'
+      - run: ./bin/docker-push-frontend.sh
         if: github.ref == 'refs/heads/main'
   CD:
     if: github.ref == 'refs/heads/main'

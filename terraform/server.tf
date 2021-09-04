@@ -88,6 +88,14 @@ resource "aws_security_group" "server" {
   }
 
   ingress {
+    description      = "Allow frontend-admin traffics from LB"
+    from_port        = 3001
+    to_port          = 3001
+    protocol         = "tcp"
+    security_groups  = [aws_security_group.server_lb.id]
+  }
+
+  ingress {
     description      = "Allow SSH connections"
     from_port        = 22
     to_port          = 22
@@ -115,6 +123,15 @@ resource "aws_ecr_repository" "server" {
 
 resource "aws_ecr_repository" "server_admin" {
   name                 = "our-map-server-admin"
+  image_tag_mutability = "MUTABLE"
+
+  image_scanning_configuration {
+    scan_on_push = true
+  }
+}
+
+resource "aws_ecr_repository" "frontend_admin" {
+  name                 = "our-map-frontend-admin"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {

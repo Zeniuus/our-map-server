@@ -16,3 +16,8 @@ sudo nohup docker run -p 8081:8081 \
   -v $(pwd)/deploy/prod:/app/conf \
   -e OUR_MAP_OVERRIDING_PROPERTIES_FILENAME=/app/conf/application-prod.properties \
   563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-server-admin &> nohup-server-admin.out &
+
+sudo rm nohup-frontend-admin.out
+sudo docker pull 563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-frontend-admin:latest
+sudo nohup docker run -p 3001:80 \
+  563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-frontend-admin &> nohup-server-admin.out &
