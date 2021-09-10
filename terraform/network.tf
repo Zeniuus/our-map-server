@@ -11,22 +11,57 @@ resource "aws_security_group" "server_lb" {
   name        = "server_lb"
   description = "server lb sg"
   vpc_id      = data.aws_vpc.default.id
+}
 
-  ingress {
-    description      = "Allow HTTP requests"
-    from_port        = 80
-    to_port          = 80
-    protocol         = "tcp"
-    cidr_blocks      = ["0.0.0.0/0"]
-  }
+resource "aws_security_group_rule" "server_lb_ingress_http" {
+  security_group_id = aws_security_group.server_lb.id
+  type              = "ingress"
+  description       = "Allow HTTP requests"
+  from_port         = 80
+  to_port           = 80
+  protocol          = "tcp"
+  cidr_blocks       = ["0.0.0.0/0"]
+}
 
-  ingress {
-    description      = "Allow HTTPS requests"
-    from_port        = 443
-    to_port          = 443
-    protocol         = "tcp"
-    cidr_blocks      = ["0.0.0.0/0"]
-  }
+
+resource aws_security_group_rule "server_lb_ingress_https" {
+  security_group_id = aws_security_group.server_lb.id
+  type              = "ingress"
+  description       = "Allow HTTPS requests"
+  from_port         = 443
+  to_port           = 443
+  protocol          = "tcp"
+  cidr_blocks       = ["0.0.0.0/0"]
+}
+
+resource aws_security_group_rule "server_lb_egress_server" {
+  security_group_id        = aws_security_group.server_lb.id
+  type                     = "egress"
+  description              = "Allow routing traffic to server"
+  from_port                = 80
+  to_port                  = 80
+  protocol                 = "tcp"
+  source_security_group_id = aws_security_group.server.id
+}
+
+resource aws_security_group_rule "server_lb_egress_server_admin" {
+  security_group_id        = aws_security_group.server_lb.id
+  type                     = "egress"
+  description              = "Allow routing traffic to server-admin"
+  from_port                = 8081
+  to_port                  = 8081
+  protocol                 = "tcp"
+  source_security_group_id = aws_security_group.server.id
+}
+
+resource aws_security_group_rule "server_lb_egress_frontend_admin" {
+  security_group_id        = aws_security_group.server_lb.id
+  type                     = "egress"
+  description              = "Allow routing traffic to frontend-admin"
+  from_port                = 3001
+  to_port                  = 3001
+  protocol                 = "tcp"
+  source_security_group_id = aws_security_group.server.id
 }
 
 resource aws_lb_listener "server_http" {
