@@ -9,6 +9,7 @@ import io.ktor.routing.routing
 import org.koin.core.error.KoinAppAlreadyStartedException
 import route.health
 import route.runSql
+import util.utilModule
 
 // TODO: embeddedServer로 서버를 띄우려고 하면 install(ContentNegotiation) { ... } 이 두 번 불려서
 //       DuplicateApplicationFeatureException가 발생한다. 실험 & 원인 파악 후 에러 리포팅하면 좋을 듯?
@@ -43,7 +44,9 @@ fun Application.ourMapServerAdminModule(testing: Boolean = false) {
 
 fun configOurMapServerAdminIoCContainerOnce() {
     try {
-        OurMapIoCFactory.configGlobally { this }
+        OurMapIoCFactory.configGlobally {
+            modules(utilModule)
+        }
     } catch (e: KoinAppAlreadyStartedException) {
     }
 }
