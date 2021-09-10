@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Intent, TextArea } from '@blueprintjs/core';
 import apiClient from '../apiClient';
+import { downloadAttachment } from '../util/downloadAttachment';
 
 
 function RunSql() {
@@ -8,17 +9,32 @@ function RunSql() {
   const [query, setQuery] = useState('');
   const [queryResult, setQueryResult] = useState<RunSqlResult | null>(null);
 
-  function fetchRunSqlResult() {
+  function withLoading(block: () => Promise<any>) {
     setIsLoading(true);
-    apiClient.post('/runSql', {
-      query,
-    }).then((res) => {
-      const result: RunSqlResult = res.data;
-      setQueryResult(result);
+    block().finally(() => {
       setIsLoading(false);
-    }, () => {
-      setIsLoading(false);
-    })
+    });
+  }
+
+  function runSql() {
+    withLoading(() => {
+      return apiClient.post('/runSql', {
+        query,
+      }).then((res) => {
+        const result: RunSqlResult = res.data;
+        setQueryResult(result);
+      });
+    });
+  }
+
+  function downloadSqlResultAsTsv() {
+    withLoading(() => {
+      return apiClient.post('/downloadSqlResultAsTsv', {
+        query,
+      }).then((res) => {
+        downloadAttachment(res);
+      });
+    });
   }
 
   const queryResultElem = queryResult != null
@@ -49,7 +65,8 @@ function RunSql() {
   return (
     <div>
       <h1>SQL 실행</h1>
-      <Button disabled={isLoading} text="실행" onClick={fetchRunSqlResult}></Button>
+      <Button disabled={isLoading} text="실행" onClick={runSql}></Button>
+      <Button disabled={isLoading} text="쿼리 결과 다운로드" onClick={downloadSqlResultAsTsv}></Button>
       <br />
       <TextArea
         growVertically={true}

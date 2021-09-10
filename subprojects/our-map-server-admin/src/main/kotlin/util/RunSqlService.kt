@@ -5,7 +5,7 @@ import infra.persistence.configuration.DatabaseConfiguration
 class RunSqlService {
     data class Result(
         val columns: List<String>,
-        val rows: List<List<String>>,
+        val rows: List<List<String?>>,
     )
 
     fun runSql(query: String): Result {

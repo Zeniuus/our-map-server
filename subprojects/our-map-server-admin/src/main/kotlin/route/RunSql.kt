@@ -28,7 +28,7 @@ fun Route.runSql() {
         val result = runSqlService.runSql(params.query)
         call.respond(RunSqlResult(
             columns = result.columns,
-            rows = result.rows,
+            rows = result.rows.map { row -> row.map { it ?: "" } },
         ))
     }
 }

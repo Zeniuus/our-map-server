@@ -7,6 +7,7 @@ import io.ktor.http.HttpMethod
 import io.ktor.jackson.jackson
 import io.ktor.routing.routing
 import org.koin.core.error.KoinAppAlreadyStartedException
+import route.downloadSqlResultAsTsv
 import route.health
 import route.runSql
 import util.utilModule
@@ -34,11 +35,13 @@ fun Application.ourMapServerAdminModule(testing: Boolean = false) {
         allowNonSimpleContentTypes = true
         allowCredentials = true
         anyHost()
+        exposeHeader("Content-Disposition")
     }
 
     routing {
         health()
         runSql()
+        downloadSqlResultAsTsv()
     }
 }
 
