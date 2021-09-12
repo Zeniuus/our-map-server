@@ -13,4 +13,5 @@
     <include file="liquibase/8_add_fk_building_accessibility_upvote_building_accessibility.xml" />
     <include file="liquibase/9_our_map_event_entity.xml" />
     <include file="liquibase/10_change_accessibility_data_format.xml" />
+    <include file="liquibase/11_si_gun_gu_and_eup_myeon_dong.sql" />
 </databaseChangeLog>
