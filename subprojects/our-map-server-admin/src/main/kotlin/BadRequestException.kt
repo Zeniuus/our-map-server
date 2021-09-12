@@ -1,1 +1,1 @@
-class BadRequestException(msg: String) : RuntimeException(msg)
+class BadRequestException(val msg: String) : RuntimeException(msg)

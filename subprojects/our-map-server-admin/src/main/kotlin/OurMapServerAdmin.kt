@@ -1,10 +1,14 @@
+import exception.OurMapServerAdminExceptionHandler
 import io.ktor.application.Application
+import io.ktor.application.call
 import io.ktor.application.install
 import io.ktor.features.CORS
 import io.ktor.features.ContentNegotiation
+import io.ktor.features.StatusPages
 import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpMethod
 import io.ktor.jackson.jackson
+import io.ktor.response.respond
 import io.ktor.routing.routing
 import org.koin.core.error.KoinAppAlreadyStartedException
 import route.downloadSqlResultAsTsv
@@ -36,6 +40,13 @@ fun Application.ourMapServerAdminModule(testing: Boolean = false) {
         allowCredentials = true
         anyHost()
         exposeHeader("Content-Disposition")
+    }
+
+    install(StatusPages) {
+        exception<Throwable> {
+            val result = OurMapServerAdminExceptionHandler.handle(it)
+            call.respond(result.statusCode, result.body)
+        }
     }
 
     routing {
