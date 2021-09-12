@@ -25,7 +25,7 @@ class RunSqlService {
                         }
                         val rows = mutableListOf<List<String>>()
                         while (resultSet.next()) {
-                            rows.add(columns.map { resultSet.getString(it) })
+                            rows.add(columns.mapIndexed { idx, _ -> resultSet.getString(idx + 1) })
                         }
                         Result(
                             columns = columns,
