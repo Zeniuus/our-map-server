@@ -23,7 +23,7 @@ fun Route.downloadSqlResultAsTsv() {
         val result = runSqlService.runSql(params.query)
         val lines = listOf(result.columns) + result.rows
         val nowStr = DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss").format(clock.instant().atZone(ZoneId.of("Asia/Seoul")))
-        call.response.header("Content-Disposition", "attachment; filename=\"$nowStr.csv\"")
+        call.response.header("Content-Disposition", "attachment; filename=\"$nowStr.tsv\"")
         call.respondText(
             lines.joinToString("\n") { columns ->
                 columns.joinToString("\t") { column ->

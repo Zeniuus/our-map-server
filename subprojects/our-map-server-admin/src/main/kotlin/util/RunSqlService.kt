@@ -11,7 +11,7 @@ class RunSqlService {
     )
 
     fun runSql(query: String): Result {
-        if (query.toLowerCase().contains(Regex("update|delete|drop|alter"))) {
+        if (query.toLowerCase().contains(Regex("update|delete|drop|alter|insert"))) {
             throw BadRequestException("SELECT 문만 입력 가능합니다.") // TODO: 테스트 작성
         }
         val connection = DatabaseConfiguration.getDataSource().connection
