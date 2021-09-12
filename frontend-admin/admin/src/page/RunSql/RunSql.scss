@@ -1,7 +1,27 @@
-.button-group {
-  margin-bottom: 6px;
-}
+.body {
+  display: flex;
 
-.query-result-container {
-  margin-top: 20px;
+  .sidebar {
+    flex: 0 0 200px;
+    margin-right: 10px;
+  }
+
+  .main {
+    // 이게 없으면 .query-result-container의 width 만큼 .main의 width가 같이 자라서 화면을 벗어나게 된다.
+    // refs: https://css-tricks.com/flexbox-truncated-text/
+    min-width: 0;
+    flex: 1 1 auto;
+    position: relative;
+
+    .button-group {
+      margin-bottom: 6px;
+    }
+
+    .query-result-container {
+      display: inline-block;
+      margin-top: 20px;
+      max-width: 100%;
+      overflow-x: scroll;
+    }
+  }
 }
