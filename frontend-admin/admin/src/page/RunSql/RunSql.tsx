@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, ButtonGroup, Card, Divider, Intent, TextArea } from '@blueprintjs/core';
+import { Button, ButtonGroup, Card, Intent, TextArea } from '@blueprintjs/core';
 import apiClient from '../../apiClient';
 import { downloadAttachment } from '../../util/downloadAttachment';
 
@@ -21,7 +21,7 @@ function RunSql() {
       setTableNames(result.rows.map((row) => row[0]));
       // setTableNames(result.rows.map((row) => row[0]).filter((row) => !row.startsWith('DATABASECHANGELOG')));
     });
-  })
+  }, []);
 
   function withLoading(block: () => Promise<any>) {
     setIsLoading(true);
