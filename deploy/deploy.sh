@@ -1,9 +1,9 @@
 #!/bin/bash
-#aws ecr get-login-password --region ap-northeast-2 | sudo docker login --username AWS --password-stdin 563057296362.dkr.ecr.ap-northeast-2.amazonaws.com
-#
-#sudo docker pull 563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-server:latest
-#sudo docker pull 563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-server-admin:latest
-#sudo docker pull 563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-frontend-admin:latest
+aws ecr get-login-password --region ap-northeast-2 | sudo docker login --username AWS --password-stdin 563057296362.dkr.ecr.ap-northeast-2.amazonaws.com
+
+sudo docker pull 563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-server:latest
+sudo docker pull 563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-server-admin:latest
+sudo docker pull 563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-frontend-admin:latest
 
 sudo docker ps -a -q | xargs sudo docker rm -f # 기존에 떠 있던 서버를 종료한다.
 
