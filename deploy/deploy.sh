@@ -96,6 +96,6 @@ deploy_server prod server
 deploy_server prod server-admin
 deploy_frontend prod frontend-admin
 
-deploy_server test server
-deploy_server test server-admin
-deploy_frontend test frontend-admin
+#deploy_server test server
+#deploy_server test server-admin
+#deploy_frontend test frontend-admin
