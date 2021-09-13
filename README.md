@@ -13,11 +13,11 @@ $ terraform plan -out "plan.tfplan" # AWS credential이 세팅되어 있어야 �
 $ terraform apply plan.tfplan
 ```
 2. EC2에 ssh로 접근해서 이 레포지토리를 클론받는다.
-3. 실서버의 properties 파일을 `./deploy/prod/application-prod.properties`에 저장한다. 참고로, 현재 이 파일은 레포지토리 관리자의 로컬과 EC2 내부에서 수기로 관리하고 있다.
+3. 실서버의 properties 파일을 `./deploy/<클러스터>/application.properties`에 저장한다. 참고로, 현재 이 파일은 레포지토리 관리자의 로컬과 EC2 내부에서 수기로 관리하고 있다.
 4. 배포 스크립트를 실행하여 배포한다.
 ```
-$ ./bin/docker-push.sh # 도커 이미지 생성 & ECR에 푸시; 로컬에서 실행하려면 AWS credentials 세팅이 되어 있어야 한다.
-$ ./bin/deploy.sh # ECR에서 도커 이미지 받아오기 & 도커 실행; EC2 내부가 아니면 RDS에 붙을 수 없으므로 오류가 난다.
+$ ./deploy/docker-push.sh # 도커 이미지 생성 & ECR에 푸시; 로컬에서 실행하려면 AWS credentials 세팅이 되어 있어야 한다.
+$ ./deploy/deploy.sh # ECR에서 도커 이미지 받아오기 & 도커 실행; EC2 내부가 아니면 RDS에 붙을 수 없으므로 오류가 난다.
 ```
 
 이 중 1~3번은 수기로 진행해야 하고, 4번 과정은 github action(`cicd.yaml`)에 의해 main branch 통합이 발생할 경우 자동으로 이루어지고 있다.
