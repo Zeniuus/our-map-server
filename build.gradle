@@ -14,6 +14,8 @@ buildscript {
 group = 'our-map'
 version = '1.0-SNAPSHOT'
 
+// TODO: convention plugin으로 변경하기; subprojects 방식은 discouraged way라고 한다.
+//       refs: https://docs.gradle.org/current/userguide/sharing_build_logic_between_subprojects.html
 subprojects {
     repositories {
         // geotools
