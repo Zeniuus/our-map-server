@@ -102,6 +102,36 @@ resource "aws_security_group_rule" "server_ingress_frontend_admin" {
   source_security_group_id = aws_security_group.server_lb.id
 }
 
+resource "aws_security_group_rule" "server_ingress_test_server" {
+  security_group_id        = aws_security_group.server.id
+  type                     = "ingress"
+  description              = "Allow test-server traffics from LB"
+  from_port                = 90
+  to_port                  = 90
+  protocol                 = "tcp"
+  source_security_group_id = aws_security_group.server_lb.id
+}
+
+resource "aws_security_group_rule" "server_ingress_test_server_admin" {
+  security_group_id        = aws_security_group.server.id
+  type                     = "ingress"
+  description              = "Allow test-server-admin traffics from LB"
+  from_port                = 9081
+  to_port                  = 9081
+  protocol                 = "tcp"
+  source_security_group_id = aws_security_group.server_lb.id
+}
+
+resource "aws_security_group_rule" "server_ingress_test_frontend_admin" {
+  security_group_id        = aws_security_group.server.id
+  type                     = "ingress"
+  description              = "Allow test-frontend-admin traffics from LB"
+  from_port                = 4001
+  to_port                  = 4001
+  protocol                 = "tcp"
+  source_security_group_id = aws_security_group.server_lb.id
+}
+
 resource "aws_security_group_rule" "server_ingress_ssh" {
   security_group_id = aws_security_group.server.id
   type              = "ingress"
