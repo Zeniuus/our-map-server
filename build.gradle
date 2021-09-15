@@ -53,18 +53,29 @@ subprojects {
         // ktlint will pick them up
     }
 
+
+    def ktlintOutputDir = "${project.buildDir}/reports/ktlint"
     task ktlint(type: JavaExec, group: "verification") {
         description = "Check Kotlin code style."
         classpath = configurations.ktlint
         main = "com.pinterest.ktlint.Main"
-        args "src/**/*.kt"
+        args = [
+            "--reporter=plain",
+            "--reporter=checkstyle,output=${ktlintOutputDir}/ktlint-report.xml",
+            "src/**/*.kt"
+        ]
         // to generate report in checkstyle format prepend following args:
         // "--reporter=plain", "--reporter=checkstyle,output=${buildDir}/ktlint.xml"
         // to add a baseline to check against prepend following args:
         // "--baseline=ktlint-baseline.xml"
         // see https://github.com/pinterest/ktlint#usage for more
+
+        // incremental build 설정
+        inputs.files(project.fileTree(dir: "src", include: "**/*.kt"))
+        outputs.dir(ktlintOutputDir)
     }
     check.dependsOn ktlint
+
 
     // ktlintFormat은 쓰지 않을 예정이다.
 //    task ktlintFormat(type: JavaExec, group: "formatting") {
