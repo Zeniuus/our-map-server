@@ -76,7 +76,8 @@ function deploy_server {
   let CONTAINER_PORT=$(get_container_port $2)
   sudo rm "nohup-$1-$2.out"
   # JAVA_OPTS: 도커 컨테이너 사이즈를 제한하기 위함. refs: https://developers.redhat.com/blog/2017/03/14/java-inside-docker
-  sudo nohup docker run -p "$PUBLISHING_PORT:$CONTAINER_PORT" \
+  sudo nohup docker run --restart unless-stopped \
+    -p "$PUBLISHING_PORT:$CONTAINER_PORT" \
     -v "$(pwd)/deploy/$1":/app/conf \
     -e OUR_MAP_OVERRIDING_PROPERTIES_FILENAME=/app/conf/application.properties \
     -e JAVA_OPTS="-Xmx50m" \
@@ -89,7 +90,8 @@ function deploy_frontend {
   let PUBLISHING_PORT=$(get_publishing_port $1 $2)
   let CONTAINER_PORT=$(get_container_port $2)
   sudo rm "nohup-$1-$2.out"
-  sudo nohup docker run -p "$PUBLISHING_PORT:$CONTAINER_PORT" \
+  sudo nohup docker run --restart unless-stopped \
+    -p "$PUBLISHING_PORT:$CONTAINER_PORT" \
     -v "$(pwd)/deploy/$1/config.js":/app/build/config.js \
     "563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-$2" &> "nohup-$1-$2.out" &
 }
