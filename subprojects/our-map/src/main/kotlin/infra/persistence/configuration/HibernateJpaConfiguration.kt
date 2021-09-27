@@ -110,7 +110,7 @@ object HibernateJpaConfiguration {
             return Properties().apply {
                 setProperty("hibernate.dialect", MySQL57Dialect::class.qualifiedName!!)
                 setProperty("hibernate.connection.provider_disables_autocommit", "true")
-                setProperty("hibernate.show_sql", "true")
+                setProperty("hibernate.show_sql", "false")
                 setProperty("hibernate.physical_naming_strategy", SnakeCasePhysicalNamingStrategy::class.qualifiedName!!)
             }
         }
