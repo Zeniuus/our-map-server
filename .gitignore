@@ -9,4 +9,4 @@ plan.tfplan
 
 deploy/**/application.properties
 
-migratePlacesAndBuildings.sql
+*.sql
