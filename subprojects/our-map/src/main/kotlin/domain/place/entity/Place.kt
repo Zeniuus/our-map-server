@@ -3,6 +3,8 @@ package domain.place.entity
 import domain.util.Location
 import javax.persistence.Column
 import javax.persistence.Entity
+import javax.persistence.EnumType
+import javax.persistence.Enumerated
 import javax.persistence.FetchType
 import javax.persistence.Id
 import javax.persistence.JoinColumn
@@ -27,6 +29,9 @@ data class Place(
     val siGunGuId: String,
     @Column(nullable = false, length = 36)
     val eupMyeonDongId: String,
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = true, length = 32)
+    val category: PlaceCategory? = null,
 ) {
     @get:Transient
     val location: Location

@@ -14,4 +14,5 @@
     <include file="liquibase/9_our_map_event_entity.xml" />
     <include file="liquibase/10_change_accessibility_data_format.xml" />
     <include file="liquibase/11_si_gun_gu_and_eup_myeon_dong.sql" />
+    <include file="liquibase/12_place_category.xml" />
 </databaseChangeLog>
