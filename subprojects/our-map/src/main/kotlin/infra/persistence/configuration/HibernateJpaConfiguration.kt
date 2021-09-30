@@ -1,8 +1,10 @@
 package infra.persistence.configuration
 
 import domain.accessibility.entity.BuildingAccessibility
+import domain.accessibility.entity.BuildingAccessibilityComment
 import domain.accessibility.entity.BuildingAccessibilityUpvote
 import domain.accessibility.entity.PlaceAccessibility
+import domain.accessibility.entity.PlaceAccessibilityComment
 import domain.badge.entity.UserBadgeIssue
 import domain.place.entity.Building
 import domain.place.entity.Place
@@ -82,7 +84,9 @@ object HibernateJpaConfiguration {
                 Place::class.qualifiedName!!,
                 Building::class.qualifiedName!!,
                 PlaceAccessibility::class.qualifiedName!!,
+                PlaceAccessibilityComment::class.qualifiedName!!,
                 BuildingAccessibility::class.qualifiedName!!,
+                BuildingAccessibilityComment::class.qualifiedName!!,
                 BuildingAccessibilityUpvote::class.qualifiedName!!,
                 Village::class.qualifiedName!!,
                 UserFavoriteVillage::class.qualifiedName!!,
