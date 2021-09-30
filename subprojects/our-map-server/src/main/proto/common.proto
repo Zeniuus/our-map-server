@@ -5,3 +5,7 @@ option java_package = "ourMap.protocol";
 message StringValue {
     string value = 1;
 }
+
+message Timestamp {
+    int64 value = 1; // epoch millis
+}
