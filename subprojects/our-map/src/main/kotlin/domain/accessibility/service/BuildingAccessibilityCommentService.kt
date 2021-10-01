@@ -3,8 +3,6 @@ package domain.accessibility.service
 import domain.DomainException
 import domain.accessibility.entity.BuildingAccessibilityComment
 import domain.accessibility.repository.BuildingAccessibilityCommentRepository
-import domain.place.entity.Building
-import domain.user.entity.User
 import domain.util.EntityIdGenerator
 import java.time.Clock
 
@@ -13,8 +11,8 @@ class BuildingAccessibilityCommentService(
     private val buildingAccessibilityCommentRepository: BuildingAccessibilityCommentRepository,
 ) {
     data class CreateParams(
-        val building: Building,
-        val user: User?,
+        val buildingId: String,
+        val userId: String?,
         val comment: String,
     )
 
@@ -25,8 +23,8 @@ class BuildingAccessibilityCommentService(
         }
         return buildingAccessibilityCommentRepository.add(BuildingAccessibilityComment(
             id = EntityIdGenerator.generateRandom(),
-            buildingId = params.building.id,
-            userId = params.user?.id,
+            buildingId = params.buildingId,
+            userId = params.userId,
             comment = normalizedComment,
             createdAt = clock.instant(),
         ))

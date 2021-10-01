@@ -12,7 +12,7 @@ data class PlaceAccessibilityComment(
     val id: String,
     @Column(nullable = false, length = 36)
     val placeId: String,
-    @Column(nullable = false, length = 36)
+    @Column(nullable = true, length = 36)
     val userId: String?,
     @Column(nullable = false, columnDefinition = "TEXT")
     val comment: String,

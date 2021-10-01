@@ -1,9 +1,13 @@
 import domain.accessibility.accessibilityDomainModule
 import domain.accessibility.entity.BuildingAccessibility
+import domain.accessibility.entity.BuildingAccessibilityComment
 import domain.accessibility.entity.PlaceAccessibility
+import domain.accessibility.entity.PlaceAccessibilityComment
 import domain.accessibility.entity.StairInfo
+import domain.accessibility.service.BuildingAccessibilityCommentService
 import domain.accessibility.service.BuildingAccessibilityService
 import domain.accessibility.service.BuildingAccessibilityUpvoteService
+import domain.accessibility.service.PlaceAccessibilityCommentService
 import domain.accessibility.service.PlaceAccessibilityService
 import domain.place.entity.Building
 import domain.place.entity.BuildingAddress
@@ -45,6 +49,8 @@ class TestDataGenerator {
     private val userFavoriteVillageService = koin.get<UserFavoriteVillageService>()
     private val buildingAccessibilityUpvoteService = koin.get<BuildingAccessibilityUpvoteService>()
     private val villageRepository = koin.get<VillageRepository>()
+    private val buildingAccessibilityCommentService = koin.get<BuildingAccessibilityCommentService>()
+    private val placeAccessibilityCommentService = koin.get<PlaceAccessibilityCommentService>()
 
     fun createUser(
         nickname: String = generateRandomString(12),
@@ -116,6 +122,23 @@ class TestDataGenerator {
             )
         )
         return Pair(placeAccessibility, buildingAccessibility)
+    }
+
+    fun registerBuildingAccessibilityComment(building: Building, comment: String, user: User? = null): BuildingAccessibilityComment {
+        return buildingAccessibilityCommentService.create(
+            BuildingAccessibilityCommentService.CreateParams(
+            buildingId = building.id,
+            userId = user?.id,
+            comment = comment,
+        ))
+    }
+
+    fun registerPlaceAccessibilityComment(place: Place, comment: String, user: User? = null): PlaceAccessibilityComment {
+        return placeAccessibilityCommentService.create(PlaceAccessibilityCommentService.CreateParams(
+            placeId = place.id,
+            userId = user?.id,
+            comment = comment,
+        ))
     }
 
     fun getRandomVillage(): Village {

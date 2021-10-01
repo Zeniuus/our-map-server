@@ -5,4 +5,5 @@ import domain.user.entity.User
 
 interface UserRepository : EntityRepository<User, String> {
     fun findByNickname(nickname: String): User?
+    fun findByIdIn(ids: List<String>): List<User>
 }

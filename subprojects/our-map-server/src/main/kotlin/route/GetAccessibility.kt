@@ -3,7 +3,9 @@ package route
 import application.TransactionManager
 import application.accessibility.AccessibilityApplicationService
 import auth.UserAuthenticator
+import converter.BuildingAccessibilityCommentConverter
 import converter.BuildingAccessibilityConverter
+import converter.PlaceAccessibilityCommentConverter
 import converter.PlaceAccessibilityConverter
 import domain.user.repository.UserRepository
 import io.ktor.application.call
@@ -28,22 +30,28 @@ fun Route.getAccessibility() {
         val userId = userAuthenticator.getUserId(call.request)
 
         val params = call.receive<GetAccessibilityParams>()
-        val (placeAccessibility, buildingAccessibility) = placeAccessibilityApplicationService.getAccessibility(params.placeId)
+        val result = placeAccessibilityApplicationService.getAccessibility(params.placeId)
 
         call.respond(
             transactionManager.doInTransaction {
                 val user = userId?.let { userRepository.findById(it) }
+                val commentedUserIds = (result.buildingAccessibilityComments.map { it.userId } + result.placeAccessibilityComments.map { it.userId })
+                    .filterNotNull()
+                val commentedUserCache = userRepository.findByIdIn(commentedUserIds)
+                    .associateBy { it.id }
                 GetAccessibilityResult.newBuilder()
                     .also {
-                        if (placeAccessibility != null) {
-                            it.placeAccessibility = placeAccessibilityConverter.toProto(placeAccessibility)
+                        if (result.placeAccessibility != null) {
+                            it.placeAccessibility = placeAccessibilityConverter.toProto(result.placeAccessibility!!)
                         }
                     }
+                    .addAllPlaceAccessibilityComments(result.placeAccessibilityComments.map { PlaceAccessibilityCommentConverter.toProto(it, commentedUserCache) })
                     .also {
-                        if (buildingAccessibility != null) {
-                            it.buildingAccessibility = buildingAccessibilityConverter.toProto(buildingAccessibility, user)
+                        if (result.buildingAccessibility != null) {
+                            it.buildingAccessibility = buildingAccessibilityConverter.toProto(result.buildingAccessibility!!, user)
                         }
                     }
+                    .addAllBuildingAccessibilityComments(result.buildingAccessibilityComments.map { BuildingAccessibilityCommentConverter.toProto(it, commentedUserCache) })
                     .build()
             }
         )

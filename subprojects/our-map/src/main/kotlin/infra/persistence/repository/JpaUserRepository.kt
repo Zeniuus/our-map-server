@@ -17,4 +17,15 @@ class JpaUserRepository :
         query.setParameter("nickname", nickname)
         return getSingularResultOrThrow(query.resultList)
     }
+
+    override fun findByIdIn(ids: List<String>): List<User> {
+        val em = EntityManagerHolder.get()!!
+        val query = em.createQuery("""
+            SELECT u
+            FROM User u
+            WHERE u.id in :ids
+        """.trimIndent(), User::class.java)
+        query.setParameter("ids", ids)
+        return query.resultList
+    }
 }

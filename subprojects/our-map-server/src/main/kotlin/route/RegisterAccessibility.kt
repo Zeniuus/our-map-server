@@ -3,11 +3,15 @@ package route
 import application.TransactionManager
 import application.accessibility.AccessibilityApplicationService
 import auth.UserAuthenticator
+import converter.BuildingAccessibilityCommentConverter
 import converter.BuildingAccessibilityConverter
+import converter.PlaceAccessibilityCommentConverter
 import converter.PlaceAccessibilityConverter
 import converter.StairInfoConverter
 import domain.accessibility.repository.PlaceAccessibilityRepository
+import domain.accessibility.service.BuildingAccessibilityCommentService
 import domain.accessibility.service.BuildingAccessibilityService
+import domain.accessibility.service.PlaceAccessibilityCommentService
 import domain.accessibility.service.PlaceAccessibilityService
 import domain.user.repository.UserRepository
 import io.ktor.application.call
@@ -33,7 +37,7 @@ fun Route.registerAccessibility() {
         val userId = userAuthenticator.getUserId(call.request)
 
         val params = call.receive<RegisterAccessibilityParams>()
-        val (placeAccessibility, buildingAccessibility) = placeAccessibilityApplicationService.register(
+        val result = placeAccessibilityApplicationService.register(
             createPlaceAccessibilityParams = PlaceAccessibilityService.CreateParams(
                 placeId = params.placeAccessibilityParams.placeId,
                 isFirstFloor = params.placeAccessibilityParams.isFirstFloor,
@@ -41,6 +45,15 @@ fun Route.registerAccessibility() {
                 hasSlope = params.placeAccessibilityParams.hasSlope,
                 userId = userId,
             ),
+            createPlaceAccessibilityCommentParams = if (params.placeAccessibilityParams.hasComment()) {
+                PlaceAccessibilityCommentService.CreateParams(
+                    placeId = params.placeAccessibilityParams.placeId,
+                    userId = userId,
+                    comment = params.placeAccessibilityParams.comment.value,
+                )
+            } else {
+                null
+            },
             createBuildingAccessibilityParams = if (params.hasBuildingAccessibilityParams()) {
                 BuildingAccessibilityService.CreateParams(
                     buildingId = params.buildingAccessibilityParams.buildingId,
@@ -52,17 +65,37 @@ fun Route.registerAccessibility() {
                 )
             } else {
                 null
-            }
+            },
+            createBuildingAccessibilityCommentParams = if (params.buildingAccessibilityParams.hasComment()) {
+                BuildingAccessibilityCommentService.CreateParams(
+                    buildingId = params.buildingAccessibilityParams.buildingId,
+                    userId = userId,
+                    comment = params.buildingAccessibilityParams.comment.value,
+                )
+            } else {
+                null
+            },
         )
 
         call.respond(
             transactionManager.doInTransaction {
                 val user = userId?.let { userRepository.findById(it) }
+                val userCache = user?.let { mapOf(it.id to it) } ?: emptyMap()
                 RegisterAccessibilityResult.newBuilder()
-                    .setPlaceAccessibility(placeAccessibilityConverter.toProto(placeAccessibility))
+                    .setPlaceAccessibility(placeAccessibilityConverter.toProto(result.placeAccessibility))
                     .also {
-                        if (buildingAccessibility != null) {
-                            it.buildingAccessibility = buildingAccessibilityConverter.toProto(buildingAccessibility, user)
+                        if (result.placeAccessibilityComment != null) {
+                            it.addPlaceAccessibilityComments(PlaceAccessibilityCommentConverter.toProto(result.placeAccessibilityComment!!, userCache))
+                        }
+                    }
+                    .also {
+                        if (result.buildingAccessibility != null) {
+                            it.buildingAccessibility = buildingAccessibilityConverter.toProto(result.buildingAccessibility!!, user)
+                        }
+                    }
+                    .also {
+                        if (result.buildingAccessibilityComment != null) {
+                            it.addBuildingAccessibilityComments(BuildingAccessibilityCommentConverter.toProto(result.buildingAccessibilityComment!!, userCache))
                         }
                     }
                     .setRegisteredUserOrder(placeAccessibilityRepository.countAll())

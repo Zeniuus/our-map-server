@@ -7,6 +7,7 @@ import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 import org.koin.test.inject
+import ourMap.protocol.Common
 import ourMap.protocol.Model
 import ourMap.protocol.RegisterAccessibilityParams
 import ourMap.protocol.RegisterAccessibilityResult
@@ -43,6 +44,7 @@ class RegisterAccessibilityTest : OurMapServerRouteTestBase() {
                         .setHasSlope(true)
                         .setHasElevator(true)
                         .setElevatorStairInfo(Model.StairInfo.TWO_TO_FIVE)
+                        .setComment(Common.StringValue.newBuilder().setValue("건물 코멘트"))
                 )
                 .setPlaceAccessibilityParams(
                     RegisterAccessibilityParams.RegisterPlaceAccessibilityParams.newBuilder()
@@ -50,6 +52,7 @@ class RegisterAccessibilityTest : OurMapServerRouteTestBase() {
                         .setIsFirstFloor(false)
                         .setStairInfo(Model.StairInfo.ONE)
                         .setHasSlope(true)
+                        .setComment(Common.StringValue.newBuilder().setValue("장소 코멘트"))
                 )
                 .build()
             testClient.request("/registerAccessibility", params).apply {
@@ -64,12 +67,22 @@ class RegisterAccessibilityTest : OurMapServerRouteTestBase() {
                 Assert.assertFalse(result.buildingAccessibility.isUpvoted)
                 Assert.assertEquals(0, result.buildingAccessibility.totalUpvoteCount)
 
+                Assert.assertEquals(1, result.buildingAccessibilityCommentsCount)
+                Assert.assertEquals(place.building.id, result.buildingAccessibilityCommentsList[0].buildingId)
+                Assert.assertEquals(user.id, result.buildingAccessibilityCommentsList[0].user.id)
+                Assert.assertEquals("건물 코멘트", result.buildingAccessibilityCommentsList[0].comment)
+
                 val placeAccessibility = result.placeAccessibility
                 Assert.assertTrue(result.hasPlaceAccessibility())
                 Assert.assertEquals(place.id, placeAccessibility.placeId)
                 Assert.assertFalse(placeAccessibility.isFirstFloor)
                 Assert.assertEquals(Model.StairInfo.ONE, placeAccessibility.stairInfo)
                 Assert.assertTrue(placeAccessibility.hasSlope)
+
+                Assert.assertEquals(1, result.placeAccessibilityCommentsCount)
+                Assert.assertEquals(place.id, result.placeAccessibilityCommentsList[0].placeId)
+                Assert.assertEquals(user.id, result.placeAccessibilityCommentsList[0].user.id)
+                Assert.assertEquals("장소 코멘트", result.placeAccessibilityCommentsList[0].comment)
 
                 Assert.assertEquals(expectedRegisteredUserOrder, result.registeredUserOrder)
             }
