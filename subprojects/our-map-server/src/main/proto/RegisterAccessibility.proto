@@ -1,5 +1,6 @@
 syntax = "proto3";
 
+import "common.proto";
 import "model.proto";
 
 option java_multiple_files = true;
@@ -15,6 +16,7 @@ message RegisterAccessibilityParams {
         bool is_first_floor = 2;
         StairInfo stair_info = 3;
         bool has_slope = 4;
+        StringValue comment = 5;
     }
     message RegisterBuildingAccessibilityParams {
         string building_id = 1;
@@ -22,6 +24,7 @@ message RegisterAccessibilityParams {
         bool has_slope = 3;
         bool has_elevator = 4;
         StairInfo elevator_stair_info = 5;
+        StringValue comment = 6;
     }
 
 
@@ -31,6 +34,8 @@ message RegisterAccessibilityParams {
 
 message RegisterAccessibilityResult {
     BuildingAccessibility building_accessibility = 1;
-    PlaceAccessibility place_accessibility = 2;
-    int32 registered_user_order = 3; // n번째 정복자.
+    repeated BuildingAccessibilityComment building_accessibility_comments = 2;
+    PlaceAccessibility place_accessibility = 3;
+    repeated PlaceAccessibilityComment place_accessibility_comments = 4;
+    int32 registered_user_order = 5; // n번째 정복자.
 }

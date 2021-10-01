@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "model.proto";
+
+option java_multiple_files = true;
+option java_package = "ourMap.protocol";
+option java_outer_classname = "RegisterBuildingAccessibilityCommentProto";
+
+// 건물에 의견을 추가하기 위한 API.
+
+message RegisterBuildingAccessibilityCommentParams {
+    string building_id = 1;
+    string comment = 2;
+}
+
+message RegisterBuildingAccessibilityCommentResult {
+    repeated BuildingAccessibilityComment comments = 1;
+}
