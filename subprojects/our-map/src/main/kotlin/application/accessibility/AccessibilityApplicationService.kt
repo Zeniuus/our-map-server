@@ -73,4 +73,16 @@ class AccessibilityApplicationService(
             buildingAccessibilityComment = buildingAccessibilityComment,
         )
     }
+
+    fun registerBuildingAccessibilityComment(
+        params: BuildingAccessibilityCommentService.CreateParams,
+    ): BuildingAccessibilityComment = transactionManager.doInTransaction(TransactionIsolationLevel.SERIALIZABLE) {
+        buildingAccessibilityCommentService.create(params)
+    }
+
+    fun registerPlaceAccessibilityComment(
+        params: PlaceAccessibilityCommentService.CreateParams,
+    ): PlaceAccessibilityComment = transactionManager.doInTransaction(TransactionIsolationLevel.SERIALIZABLE) {
+        placeAccessibilityCommentService.create(params)
+    }
 }

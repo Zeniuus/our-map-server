@@ -21,8 +21,12 @@ open class JpaEntityRepositoryBase<ENTITY : Any, ID>(
     }
 
     override fun findById(id: ID): ENTITY {
+        return findByIdOrNull(id) ?: throw EntityNotFoundException("${id}에 해당하는 데이터가 없습니다.")
+    }
+
+    override fun findByIdOrNull(id: ID): ENTITY? {
         val em = EntityManagerHolder.get()!!
-        return em.find(clazz, id) ?: throw EntityNotFoundException("${id}에 해당하는 데이터가 없습니다.")
+        return em.find(clazz, id)
     }
 
     protected fun getSingularResultOrThrow(queryResults: List<ENTITY>): ENTITY? {

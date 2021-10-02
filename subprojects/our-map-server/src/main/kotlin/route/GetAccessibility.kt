@@ -35,7 +35,7 @@ fun Route.getAccessibility() {
         call.respond(
             transactionManager.doInTransaction {
                 val user = userId?.let { userRepository.findById(it) }
-                val commentedUserIds = (result.buildingAccessibilityComments.map { it.userId } + result.placeAccessibilityComments.map { it.userId })
+                val commentedUserIds = (result.buildingAccessibilityComments.mapNotNull { it.userId } + result.placeAccessibilityComments.mapNotNull { it.userId })
                     .filterNotNull()
                 val commentedUserCache = userRepository.findByIdIn(commentedUserIds)
                     .associateBy { it.id }

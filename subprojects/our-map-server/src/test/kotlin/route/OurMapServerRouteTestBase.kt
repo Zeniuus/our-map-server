@@ -1,5 +1,6 @@
 package route
 
+import ClockMock
 import ProtobufJsonConverter
 import TestDataGenerator
 import application.TransactionManager
@@ -16,9 +17,13 @@ import io.ktor.server.testing.TestApplicationEngine
 import io.ktor.server.testing.handleRequest
 import io.ktor.server.testing.setBody
 import io.ktor.server.testing.withTestApplication
+import org.koin.core.context.GlobalContext
+import org.koin.dsl.binds
+import org.koin.dsl.module
 import org.koin.test.KoinTest
 import org.koin.test.inject
 import ourMapModule
+import java.time.Clock
 import kotlin.reflect.KClass
 
 open class OurMapServerRouteTestBase : KoinTest {
@@ -34,6 +39,14 @@ open class OurMapServerRouteTestBase : KoinTest {
     init {
         MySQLContainer.startOnce()
         configOurMapServerIoCContainerOnce()
+        // FIXME: 이미 위에서 ClockMock이 아니라 SystemClock을 활용해서 bean을 생성해서,
+        //        이 아래서 clock bean을 갈아끼워도 아무 의미가 없다.
+        GlobalContext.unloadKoinModules(module {
+            single { Clock.systemUTC() }
+        })
+        GlobalContext.loadKoinModules(module {
+            single { ClockMock() }.binds(arrayOf(Clock::class, ClockMock::class))
+        })
 
         villageApplicationService.upsertAll()
     }

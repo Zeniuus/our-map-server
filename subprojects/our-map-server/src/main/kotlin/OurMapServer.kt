@@ -33,7 +33,9 @@ import route.listAdministrativeAreas
 import route.listVillageDropdownItems
 import route.login
 import route.registerAccessibility
+import route.registerBuildingAccessibilityComment
 import route.registerFavoriteVillage
+import route.registerPlaceAccessibilityComment
 import route.searchPlaces
 import route.signUp
 import route.unregisterFavoriteVillage
@@ -87,6 +89,8 @@ fun Application.ourMapModule(testing: Boolean = false) {
         giveBuildingAccessibilityUpvote()
         cancelBuildingAccessibilityUpvote()
         registerAccessibility()
+        registerBuildingAccessibilityComment()
+        registerPlaceAccessibilityComment()
         listVillageDropdownItems()
         getVillageStatistics()
         registerFavoriteVillage()
