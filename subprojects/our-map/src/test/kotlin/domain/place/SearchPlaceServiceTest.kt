@@ -33,16 +33,25 @@ class SearchPlaceServiceTest : DomainTestBase() {
         ))
         Assert.assertEquals(1, result2.size)
         Assert.assertEquals(place.id, result2[0].id)
+
         val result3 = searchPlaceService.searchPlaces(SearchPlaceService.SearchOption(
             searchText = "워타",
             location = Location(0.0, 0.0),
         ))
         Assert.assertEquals(0, result3.size)
+
         val result4 = searchPlaceService.searchPlaces(SearchPlaceService.SearchOption(
             searchText = "타",
             location = Location(0.0, 0.0),
         )) // 한글자로는 검색이 안 되어야 한다.
         Assert.assertEquals(0, result4.size)
+
+        val result5 = searchPlaceService.searchPlaces(SearchPlaceService.SearchOption(
+            searchText = "D타워장소",
+            location = Location(0.0, 0.0),
+        )) // 띄워쓰기를 안 하고 검색해도 검색이 잘 돼야 한다.
+        Assert.assertEquals(1, result5.size)
+        Assert.assertEquals(place.id, result5[0].id)
     }
 
     @Test

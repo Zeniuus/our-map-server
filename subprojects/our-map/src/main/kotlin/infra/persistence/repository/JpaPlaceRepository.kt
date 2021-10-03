@@ -14,7 +14,7 @@ class JpaPlaceRepository :
             SELECT p
             FROM Place p
             JOIN FETCH p.building building
-            WHERE p.name LIKE :searchText
+            WHERE REPLACE(p.name, ' ', '') LIKE REPLACE(:searchText, ' ', '%')
         """.trimIndent(), Place::class.java)
         query.setParameter("searchText", "%$searchText%")
         return query.resultList
