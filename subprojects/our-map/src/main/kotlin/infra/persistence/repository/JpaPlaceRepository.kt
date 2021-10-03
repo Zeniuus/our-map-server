@@ -4,20 +4,27 @@ import domain.place.entity.Place
 import domain.place.repository.PlaceRepository
 import domain.village.entity.EupMyeonDong
 import infra.persistence.transaction.EntityManagerHolder
+import org.hibernate.Session
 
 class JpaPlaceRepository :
     JpaEntityRepositoryBase<Place, String>(Place::class.java),
     PlaceRepository {
-    override fun findByNameContains(searchText: String): List<Place> {
+    override fun findByNameContains(searchTextRegex: String): List<Place> {
         val em = EntityManagerHolder.get()!!
-        val query = em.createQuery("""
-            SELECT p
-            FROM Place p
-            JOIN FETCH p.building building
-            WHERE REPLACE(p.name, ' ', '') LIKE REPLACE(:searchText, ' ', '%')
-        """.trimIndent(), Place::class.java)
-        query.setParameter("searchText", "%$searchText%")
-        return query.resultList
+        val session = em.unwrap(Session::class.java)
+        val query = session.createNativeQuery("""
+            SELECT *
+            FROM place p
+            LEFT OUTER JOIN building b ON b.id = p.building_id
+            WHERE REPLACE(p.name, ' ', '') REGEXP :searchTextRegex
+        """.trimIndent())
+            .addEntity("p", Place::class.java)
+            .addJoin("b", "p.building")
+            .setParameter("searchTextRegex", searchTextRegex)
+        val result = query.list()
+        return result.map {
+            (it as Array<Object>)[0] as Place
+        }
     }
 
     override fun countByEupMyeonDong(eupMyeonDong: EupMyeonDong): Int {

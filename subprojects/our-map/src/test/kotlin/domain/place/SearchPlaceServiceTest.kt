@@ -18,6 +18,14 @@ class SearchPlaceServiceTest : DomainTestBase() {
     private val searchPlaceService by inject<SearchPlaceService>()
 
     @Test
+    fun `getSQLSearchTextRegex 테스트`() {
+        Assert.assertEquals(".타벅스|스.벅스|스타.스|스타벅.", searchPlaceService.getSQLSearchTextRegex("스타벅스")) // 세 글자 이상이면 변환
+        Assert.assertEquals("CGV야탑", searchPlaceService.getSQLSearchTextRegex("CGV야탑")) // 한글 두 글자 이하는 변환 X
+        Assert.assertEquals("CGV ?야탑", searchPlaceService.getSQLSearchTextRegex("CGV 야탑")) // 스페이스는 검색 결과에 영향을 미치지 않도록 변환
+        Assert.assertEquals("CGV ?.탑역|CGV ?야.역|CGV ?야탑.", searchPlaceService.getSQLSearchTextRegex("CGV 야탑역")) // 한글만 변환
+    }
+
+    @Test
     fun `검색이 잘 되어야 한다`() = transactionManager.doAndRollback {
         val result1 = searchPlaceService.searchPlaces(SearchPlaceService.SearchOption(
             searchText = "수환",
@@ -25,14 +33,14 @@ class SearchPlaceServiceTest : DomainTestBase() {
         ))
         Assert.assertEquals(0, result1.size)
 
-        val place = testDataGenerator.createBuildingAndPlace(placeName = "D타워 장소1")
+        val place1 = testDataGenerator.createBuildingAndPlace(placeName = "D타워 장소1")
 
         val result2 = searchPlaceService.searchPlaces(SearchPlaceService.SearchOption(
             searchText = "타워",
             location = Location(0.0, 0.0),
         ))
         Assert.assertEquals(1, result2.size)
-        Assert.assertEquals(place.id, result2[0].id)
+        Assert.assertEquals(place1.id, result2[0].id)
 
         val result3 = searchPlaceService.searchPlaces(SearchPlaceService.SearchOption(
             searchText = "워타",
@@ -51,7 +59,22 @@ class SearchPlaceServiceTest : DomainTestBase() {
             location = Location(0.0, 0.0),
         )) // 띄워쓰기를 안 하고 검색해도 검색이 잘 돼야 한다.
         Assert.assertEquals(1, result5.size)
-        Assert.assertEquals(place.id, result5[0].id)
+        Assert.assertEquals(place1.id, result5[0].id)
+
+        val result6 = searchPlaceService.searchPlaces(SearchPlaceService.SearchOption(
+            searchText = "디타워장소",
+            location = Location(0.0, 0.0),
+        )) // 한글 한 글자는 틀려도 찾아준다.
+        Assert.assertEquals(1, result6.size)
+        Assert.assertEquals(place1.id, result6[0].id)
+
+        val place2 = testDataGenerator.createBuildingAndPlace(placeName = "D타워장소1")
+        val result7 = searchPlaceService.searchPlaces(SearchPlaceService.SearchOption(
+            searchText = "디타워 장소",
+            location = Location(0.0, 0.0),
+        )) // 스페이스를 추가해서 검색해도 찾아준다.
+        Assert.assertEquals(2, result7.size)
+        Assert.assertEquals(setOf(place1.id, place2.id), result7.map { it.id }.toSet())
     }
 
     @Test
