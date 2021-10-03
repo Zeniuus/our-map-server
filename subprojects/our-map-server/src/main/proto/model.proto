@@ -104,7 +104,3 @@ message EupMyeonDong {
     string name = 2;
     string si_gun_gu_id = 3;
 }
-
-message AchievementBadge {
-    string image_url = 1;
-}

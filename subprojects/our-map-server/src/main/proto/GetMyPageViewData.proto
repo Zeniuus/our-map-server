@@ -14,6 +14,5 @@ message GetMyPageViewDataParams {
 message GetMyPageViewDataResult {
     User user = 1;
     repeated Village favorite_villages = 2;
-    AchievementBadge badges = 3; // TODO: repeated AchievementBadge가 되어야 함.
     int32 total_upvote_count = 4;
 }

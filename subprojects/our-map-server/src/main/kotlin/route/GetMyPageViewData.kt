@@ -36,7 +36,6 @@ fun Route.getMyPageViewData() {
                     .addAllFavoriteVillages(
                         favoriteVillages.map { villageConverter.toProto(it.village, user) }
                     )
-                    // TODO: AchievementBadge
                     .setTotalUpvoteCount(buildingAccessibilityUpvoteRepository.getTotalUpvoteCount(user))
                     .build()
             }

@@ -46,7 +46,6 @@ class GetMyPageViewDataTest : OurMapServerRouteTestBase() {
             Assert.assertEquals(user.id, result.user.id)
             Assert.assertEquals(1, result.favoriteVillagesList.size)
             Assert.assertEquals(favoriteVillage.id, result.favoriteVillagesList[0].id)
-            Assert.assertFalse(result.hasBadges())
             Assert.assertEquals(1, result.totalUpvoteCount)
         }
     }
