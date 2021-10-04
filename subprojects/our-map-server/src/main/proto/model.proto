@@ -89,9 +89,22 @@ message Village {
 }
 
 message VillageRankingEntry {
+    message VillageProgressImage {
+        message Path {
+            string type = 1;
+            map<string, string> props = 2;
+        }
+
+        string id = 1;
+        int32 number_of_blocks = 2;
+        repeated Path paths = 3;
+    }
+
     Village village = 1;
     int32 progress_rank = 2; // 계단정복률 순위.
     string progress_percentage = 3; // 계단정복률.
+
+    VillageProgressImage progress_image = 4; // 동별 진행률 이미지 관련 데이터.
 }
 
 message SiGunGu {
