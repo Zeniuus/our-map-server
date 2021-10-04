@@ -18,4 +18,13 @@ class JpaBuildingRepository :
         query.setParameter("eupMyeonDongId", eupMyeonDong.id)
         return (query.singleResult as java.lang.Long).toInt()
     }
+
+    override fun findByIdIn(ids: Collection<String>): List<Building> {
+        val em = EntityManagerHolder.get()!!
+        val query = em.createQuery("""
+            SELECT b
+            FROM Building b
+        """.trimIndent(), Building::class.java)
+        return query.resultList
+    }
 }

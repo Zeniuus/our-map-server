@@ -32,7 +32,7 @@ val persistenceModule = module {
     single { HibernateJpaConfiguration.createEntityManagerFactory() }
 
     single<UserRepository> { JpaUserRepository() }
-    single<PlaceRepository> { JpaPlaceRepository() }
+    single<PlaceRepository> { JpaPlaceRepository(get()) }
     single<BuildingRepository> { JpaBuildingRepository() }
     single<PlaceAccessibilityRepository> { JpaPlaceAccessibilityRepository() }
     single<PlaceAccessibilityCommentRepository> { JpaPlaceAccessibilityCommentRepository() }
