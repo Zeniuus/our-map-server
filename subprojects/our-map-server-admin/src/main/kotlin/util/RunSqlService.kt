@@ -17,6 +17,12 @@ class RunSqlService {
         val connection = DatabaseConfiguration.getDataSource().connection
         return try {
             connection.use {
+                // 알 수 없는 이유로 collation_connection이 'utf8mb4_general_ci로 고정되어,
+                // 데이터 분석 시 변수를 사용할 때 collation 차이로 쿼리가 실행되지 않는 문제가 있다.
+                // 이를 해결하기 위해 collation_connection을 강제로 utf8mb4_unicode_ci로 설정해준다.
+                connection.createStatement().use { stmt ->
+                    stmt.executeQuery("SET collation_connection = 'utf8mb4_unicode_ci'").use {}
+                }
                 connection.createStatement().use { stmt ->
                     stmt.executeQuery(query).use { resultSet ->
                         val resultSetMetadata = resultSet.metaData
