@@ -2,6 +2,7 @@ package converter
 
 import domain.user.entity.User
 import domain.village.entity.Village
+import domain.village.repository.VillageProgressImages
 import domain.village.service.UserFavoriteVillageService
 import domain.village.service.VillageService
 import ourMap.protocol.Model
@@ -25,6 +26,20 @@ class VillageConverter(
         .setVillage(toProto(village, user))
         .setProgressRank(progressRank)
         .setProgressPercentage(getProgressPercentage(village))
+        .also { builder ->
+            VillageProgressImages.getImage(village.eupMyeonDongId)?.let { image ->
+                builder.progressImage = Model.VillageRankingEntry.VillageProgressImage.newBuilder()
+                    .setId(image.id)
+                    .setNumberOfBlocks(image.numberOfBlocks)
+                    .addAllPaths(image.paths.map { path ->
+                        Model.VillageRankingEntry.VillageProgressImage.Path.newBuilder()
+                            .setType(path.type)
+                            .putAllProps(path.props)
+                            .build()
+                    })
+                    .build()
+            }
+        }
         .build()!!
 
     companion object {
