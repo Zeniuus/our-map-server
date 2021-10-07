@@ -17,7 +17,7 @@ class ListAdministrativeAreasTest : OurMapServerRouteTestBase() {
             val eupMyeonDongs = result.eupMyeonDongsList
 
             Assert.assertEquals(3, siGunGus.size)
-            Assert.assertEquals(45, eupMyeonDongs.size)
+            Assert.assertEquals(31, eupMyeonDongs.size)
             val siGunGuIds = siGunGus.map { it.id }.toSet()
             Assert.assertTrue(eupMyeonDongs.all { it.siGunGuId in siGunGuIds })
         }
