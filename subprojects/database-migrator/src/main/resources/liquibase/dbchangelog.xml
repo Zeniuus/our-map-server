@@ -16,4 +16,5 @@
     <include file="liquibase/11_si_gun_gu_and_eup_myeon_dong.sql" />
     <include file="liquibase/12_place_category.xml" />
     <include file="liquibase/13_accessibility_comment.xml" />
+    <include file="liquibase/14_additional_eup_myeon_dong.sql" />
 </databaseChangeLog>
