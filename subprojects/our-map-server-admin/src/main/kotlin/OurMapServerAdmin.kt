@@ -8,9 +8,18 @@ import io.ktor.features.StatusPages
 import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpMethod
 import io.ktor.jackson.jackson
+import io.ktor.request.receive
 import io.ktor.response.respond
+import io.ktor.routing.get
+import io.ktor.routing.post
 import io.ktor.routing.routing
+import org.koin.core.context.GlobalContext
 import org.koin.core.error.KoinAppAlreadyStartedException
+import org.koin.dsl.module
+import quest.application.clubQuestApplicationModule
+import quest.domain.clubQuestDomainModule
+import quest.domain.service.ClubQuestService
+import route.ClubQuestRouteHandlers
 import route.downloadSqlResultAsTsv
 import route.health
 import route.runSql
@@ -53,6 +62,25 @@ fun Application.ourMapServerAdminModule(testing: Boolean = false) {
         health()
         runSql()
         downloadSqlResultAsTsv()
+
+        // TODO: 더 좋은 패턴으로 정리
+        val koin = GlobalContext.get()
+        val clubQuestRouteHandlers = koin.get<ClubQuestRouteHandlers>()
+        post("/api/clubQuests/create") {
+            val params = call.receive<ClubQuestService.CreateParams>()
+            call.respond(clubQuestRouteHandlers.createClubQuest(params))
+        }
+        get("/api/clubQuests/{id}/delete") {
+            val id = call.parameters["id"]!!
+            call.respond(clubQuestRouteHandlers.deleteClubQuest(id))
+        }
+        get("/api/clubQuests/{id}") {
+            val id = call.parameters["id"]!!
+            call.respond(clubQuestRouteHandlers.getClubQuest(id))
+        }
+        get("/api/clubQuests") {
+            call.respond(clubQuestRouteHandlers.listClubQuests())
+        }
     }
 }
 
@@ -60,6 +88,13 @@ fun configOurMapServerAdminIoCContainerOnce() {
     try {
         OurMapIoCFactory.configGlobally {
             modules(utilModule)
+            modules(module {
+                single { ClubQuestRouteHandlers(get()) }
+            })
+            modules(
+                clubQuestDomainModule,
+                clubQuestApplicationModule,
+            )
         }
     } catch (e: KoinAppAlreadyStartedException) {
     }

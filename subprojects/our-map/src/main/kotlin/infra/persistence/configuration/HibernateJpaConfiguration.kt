@@ -14,6 +14,7 @@ import domain.village.entity.Village
 import infra.logging.jpa.OurMapEventEntity
 import org.hibernate.dialect.MySQL57Dialect
 import org.hibernate.jpa.HibernatePersistenceProvider
+import quest.domain.entity.ClubQuest
 import java.net.URL
 import java.util.Properties
 import javax.persistence.EntityManagerFactory
@@ -92,6 +93,7 @@ object HibernateJpaConfiguration {
                 UserFavoriteVillage::class.qualifiedName!!,
                 UserBadgeIssue::class.qualifiedName!!,
                 OurMapEventEntity::class.qualifiedName!!,
+                ClubQuest::class.qualifiedName!!,
             )
         }
 

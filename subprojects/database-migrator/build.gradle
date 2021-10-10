@@ -1,5 +1,5 @@
 dependencies {
     implementation project(':our-map')
 
-    implementation 'org.liquibase:liquibase-core:4.4.0'
+    implementation 'org.liquibase:liquibase-core:4.4.3'
 }
