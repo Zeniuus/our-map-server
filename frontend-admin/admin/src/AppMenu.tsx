@@ -12,6 +12,9 @@ const AppMenu = () => (
       <Link to="/runSql">
         <Button minimal={true} text="SQL 실행"></Button>
       </Link>
+      <Link to="/clubQuests">
+        <Button minimal={true} text="퀘스트"></Button>
+      </Link>
     </NavbarGroup>
   </Navbar>
 );

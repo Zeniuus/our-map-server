@@ -8,5 +8,6 @@ terraform.tfstate*
 plan.tfplan
 
 deploy/**/application.properties
+config.js
 
 *.sql

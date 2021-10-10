@@ -1791,6 +1791,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/haversine@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@types/haversine/-/haversine-1.1.5.tgz#b839b870b1c3325030dbe55c11b0ce20feabd6cb"
+  integrity sha512-ITIhOBn4tjADEWTfiR3U0ioNRRNOlMJjornJZA/O6pTkvqV69or1Ms0reMNQw3la+wURknlRd1DW+CYUcCvq8A==
+
 "@types/history@*":
   version "4.7.9"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.9.tgz#1cfb6d60ef3822c589f18e70f8b12f9a28ce8724"
@@ -5740,6 +5745,11 @@ hash.js@^1.0.0, hash.js@^1.0.3:
   dependencies:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.1"
+
+haversine@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/haversine/-/haversine-1.1.1.tgz#05b65e0445aca8f217b0db56877e4d637d3fc8ae"
+  integrity sha512-KW4MS8+krLIeiw8bF5z532CptG0ZyGGFj0UbKMxx25lKnnJ1hMUbuzQl+PXQjNiDLnl1bOyz23U6hSK10r4guw==
 
 he@^1.2.0:
   version "1.2.0"

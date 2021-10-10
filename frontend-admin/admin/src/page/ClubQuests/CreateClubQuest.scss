@@ -1,0 +1,15 @@
+.root {
+  padding: 24px;
+
+  .input-container {
+    margin-bottom: 12px;
+
+    .title {
+      margin-bottom: 4px;
+    }
+
+    textarea {
+      height: 16rem;
+    }
+  }
+}
