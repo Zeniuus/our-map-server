@@ -97,8 +97,8 @@ function deploy_frontend {
     "563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-$2" &> "nohup-$1-$2.out" &
 }
 
-let HOSTNAME=$(curl 169.254.169.254/latest/meta-data/hostname)
-case HOSTNAME in
+HOSTNAME="$(curl 169.254.169.254/latest/meta-data/hostname)"
+case $HOSTNAME in
   "ip-172-31-12-24.ap-northeast-2.compute.internal")
     echo 80
     deploy_server prod server
