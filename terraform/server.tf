@@ -61,8 +61,26 @@ resource "aws_instance" "server" {
   vpc_security_group_ids = [aws_security_group.server.id]
 }
 
+// TODO: Auto Scaling으로 넘어가기? 근데 그러면 ssh 접속 후 배포하는 방식의 CD에서 벗어나야 한다.
+//       우선 ECS로 넘어간 다음에 Auto Scaling으로 가야 할 듯.
+resource "aws_instance" "server_2" {
+  ami           = "ami-0b827f3319f7447c6" // ap-northeast-2
+  instance_type = "t2.micro"
+
+  iam_instance_profile = aws_iam_instance_profile.server.id
+
+  key_name = "swann"
+
+  vpc_security_group_ids = [aws_security_group.server.id]
+}
+
 resource "aws_eip" "server" {
   instance = aws_instance.server.id
+  vpc      = true
+}
+
+resource "aws_eip" "server_2" {
+  instance = aws_instance.server_2.id
   vpc      = true
 }
 
@@ -182,4 +200,8 @@ resource "aws_ecr_repository" "frontend_admin" {
 resource "aws_key_pair" "swann" {
   key_name   = "swann"
   public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD14Q8XXmOyQzgze0ThU8hYQjf/ATyT5t9gr4RsfCc2Br9zZs11iz469NW/HFbALo0ON31hMznP25HPoNfvLKlx4W22wt26ebHs3aWSUZIUtlSMfiT3eOjk0p1i3hWSwlfT5tz8H6DtYGteehExVS8YWcSDt5+gnzvebIB04YV2RjDFOdVI3woumGoC1zAHSWp+huek62KlIPxhGOjrzu1iyV98EcA8HLhUGeP8Cn+BBID5h6veUPWrmzS1pkfxdwApz0XLLqQNtywWBJt2OeB8/ydgs5oL4PJEVIe8jIaZnyEF6P10G9yF5CYm+chbu1Ltm4LhlI31whhaM/EiibAz"
+}
+
+locals {
+  instance_ids = [aws_instance.server.id, aws_instance.server_2.id]
 }

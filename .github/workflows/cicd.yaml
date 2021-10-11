@@ -57,10 +57,20 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: echo "Deploy OurMapServer with docker image"
-      - name: Deploy OurMapServer with docker image
+      - name: Deploy OurMapServer to server with docker image
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.DEPLOY_SSH_HOST }}
+          username: ${{ secrets.DEPLOY_SSH_USERNAME }}
+          key: ${{ secrets.DEPLOY_SSH_PRIVATE_KEY }}
+          script: |
+            cd our-map-server
+            git pull
+            ./deploy/deploy.sh
+      - name: Deploy OurMapServer to server_2 with docker image
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DEPLOY_SSH_HOST_2 }}
           username: ${{ secrets.DEPLOY_SSH_USERNAME }}
           key: ${{ secrets.DEPLOY_SSH_PRIVATE_KEY }}
           script: |

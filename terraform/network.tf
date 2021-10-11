@@ -251,8 +251,9 @@ resource aws_lb_target_group "server_https" {
 }
 
 resource "aws_lb_target_group_attachment" "server_https" {
+  for_each         = toset(local.instance_ids)
   target_group_arn = aws_lb_target_group.server_https.arn
-  target_id        = aws_instance.server.id
+  target_id        = each.value
   port             = 80
 }
 
@@ -271,8 +272,9 @@ resource aws_lb_target_group "server_admin_https" {
 }
 
 resource "aws_lb_target_group_attachment" "server_admin_https" {
+  for_each         = toset(local.instance_ids)
   target_group_arn = aws_lb_target_group.server_admin_https.arn
-  target_id        = aws_instance.server.id
+  target_id        = each.value
   port             = 8081
 }
 
@@ -291,8 +293,9 @@ resource aws_lb_target_group "frontend_admin_https" {
 }
 
 resource "aws_lb_target_group_attachment" "frontend_admin_https" {
+  for_each         = toset(local.instance_ids)
   target_group_arn = aws_lb_target_group.frontend_admin_https.arn
-  target_id        = aws_instance.server.id
+  target_id        = each.value
   port             = 3001
 }
 
@@ -316,8 +319,9 @@ resource aws_lb_target_group "test_server_https" {
 }
 
 resource "aws_lb_target_group_attachment" "test_server_https" {
+  for_each         = toset(local.instance_ids)
   target_group_arn = aws_lb_target_group.test_server_https.arn
-  target_id        = aws_instance.server.id
+  target_id        = each.value
   port             = 90
 }
 
@@ -336,8 +340,9 @@ resource aws_lb_target_group "test_server_admin_https" {
 }
 
 resource "aws_lb_target_group_attachment" "test_server_admin_https" {
+  for_each         = toset(local.instance_ids)
   target_group_arn = aws_lb_target_group.test_server_admin_https.arn
-  target_id        = aws_instance.server.id
+  target_id        = each.value
   port             = 9081
 }
 
@@ -356,8 +361,9 @@ resource aws_lb_target_group "test_frontend_admin_https" {
 }
 
 resource "aws_lb_target_group_attachment" "test_frontend_admin_https" {
+  for_each         = toset(local.instance_ids)
   target_group_arn = aws_lb_target_group.test_frontend_admin_https.arn
-  target_id        = aws_instance.server.id
+  target_id        = each.value
   port             = 4001
 }
 

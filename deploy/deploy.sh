@@ -4,6 +4,7 @@ aws ecr get-login-password --region ap-northeast-2 | sudo docker login --usernam
 sudo docker pull 563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-server:latest
 sudo docker pull 563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-server-admin:latest
 sudo docker pull 563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-frontend-admin:latest
+sudo docker rmi -f $(sudo docker images -f "dangling=true" -q)
 
 sudo docker ps -a -q | xargs sudo docker rm -f # 기존에 떠 있던 서버를 종료한다.
 
@@ -27,7 +28,7 @@ function get_publishing_port {
         exit 1
         ;;
     esac
-  elif [ $1 == "test" ]
+  elif [ $1 = "test" ]
   then
     case $2 in
       "server")
@@ -80,7 +81,7 @@ function deploy_server {
     -p "$PUBLISHING_PORT:$CONTAINER_PORT" \
     -v "$(pwd)/deploy/$1":/app/conf \
     -e OUR_MAP_OVERRIDING_PROPERTIES_FILENAME=/app/conf/application.properties \
-    -e JAVA_OPTS="-Xmx50m" \
+    -e JAVA_OPTS="-Xmx150m" \
     "563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-$2" &> "nohup-$1-$2.out" &
 }
 
@@ -96,10 +97,20 @@ function deploy_frontend {
     "563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-$2" &> "nohup-$1-$2.out" &
 }
 
-deploy_server prod server
-deploy_server prod server-admin
-deploy_frontend prod frontend-admin
-
-deploy_server test server
-#deploy_server test server-admin
-#deploy_frontend test frontend-admin
+let HOSTNAME=$(curl 169.254.169.254/latest/meta-data/hostname)
+case HOSTNAME in
+  "ip-172-31-12-24.ap-northeast-2.compute.internal")
+    echo 80
+    deploy_server prod server
+    deploy_server test server
+    ;;
+  "ip-172-31-0-175.ap-northeast-2.compute.internal")
+    echo 80
+    deploy_frontend prod frontend-admin
+    deploy_server prod server-admin
+    ;;
+  *)
+    echo "invalid instance: $HOSTNAME"
+    exit 1
+    ;;
+esac
