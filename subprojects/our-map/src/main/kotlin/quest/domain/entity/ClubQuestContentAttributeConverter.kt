@@ -12,6 +12,5 @@ class ClubQuestContentAttributeConverter : AttributeConverter<ClubQuestContent, 
 
     override fun convertToEntityAttribute(dbData: String): ClubQuestContent {
         return objectMapper.readValue(dbData, ClubQuestContent::class.java)
-
     }
 }
