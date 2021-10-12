@@ -136,7 +136,7 @@ function ClubQuest(props: ClubQuestProps) {
   return (
     <div>
       <h1>{clubQuest?.title}</h1>
-      <div id="map" style={{ minWidth: '500px', minHeight: '500px' }} />
+      <div id="map" style={{ minWidth: '320px', minHeight: '500px' }} />
     </div>
   );
 }
