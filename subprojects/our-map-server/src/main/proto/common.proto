@@ -9,3 +9,7 @@ message StringValue {
 message Timestamp {
     int64 value = 1; // epoch millis
 }
+
+message Int32Value {
+    int32 value = 1;
+}

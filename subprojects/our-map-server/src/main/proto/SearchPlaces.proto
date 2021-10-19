@@ -23,6 +23,7 @@ message SearchPlacesResult {
         Building building = 2;
         bool has_building_accessibility = 3;
         bool has_place_accessibility = 4;
+        Int32Value distance_meters = 5; // current_location이 올라왔을 경우에만 non-null.
     }
 
     repeated Item items = 1;
