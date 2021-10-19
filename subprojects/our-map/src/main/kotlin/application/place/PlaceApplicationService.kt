@@ -26,16 +26,17 @@ class PlaceApplicationService(
         val place: Place,
         val placeAccessibility: PlaceAccessibility?,
         val buildingAccessibility: BuildingAccessibility?,
+        val distance: Length?,
     )
 
     fun searchPlaces(
         searchText: String,
-        location: Location,
+        location: Location?,
         maxDistance: Length? = null,
         siGunGuId: String? = null,
         eupMyeonDongId: String? = null,
     ): List<SearchPlaceResult> = transactionManager.doInTransaction {
-        val places = searchPlaceService.searchPlaces(
+        val placesWithMetadata = searchPlaceService.searchPlaces(
             SearchPlaceService.SearchOption(
             searchText = searchText,
             location = location,
@@ -43,13 +44,14 @@ class PlaceApplicationService(
             siGunGu = siGunGuId?.let { siGunGuRepository.findById(it) },
             eupMyeonDong = eupMyeonDongId?.let { eupMyeonDongRepository.findById(it) },
         ))
-        val accessibilitySearchResult = searchAccessibilityService.search(places)
-        val result = places.map { place ->
-            val (placeAccessibility, buildingAccessibility) = accessibilitySearchResult.getAccessibility(place)
+        val accessibilitySearchResult = searchAccessibilityService.search(placesWithMetadata.map { it.place })
+        val result = placesWithMetadata.map { placeWithMetadata ->
+            val (placeAccessibility, buildingAccessibility) = accessibilitySearchResult.getAccessibility(placeWithMetadata.place)
             SearchPlaceResult(
-                place = place,
+                place = placeWithMetadata.place,
                 placeAccessibility = placeAccessibility,
                 buildingAccessibility = buildingAccessibility,
+                distance = placeWithMetadata.distance
             )
         }
 

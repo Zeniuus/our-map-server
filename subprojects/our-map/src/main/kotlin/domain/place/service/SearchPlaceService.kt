@@ -13,13 +13,18 @@ class SearchPlaceService(
 ) {
     data class SearchOption(
         val searchText: String,
-        val location: Location,
+        val location: Location?,
         val maxDistance: Length? = null,
         val siGunGu: SiGunGu? = null,
         val eupMyeonDong: EupMyeonDong? = null,
     )
 
-    fun searchPlaces(searchOption: SearchOption): List<Place> {
+    data class PlaceWithMetadata(
+        val place: Place,
+        val distance: Length?,
+    )
+
+    fun searchPlaces(searchOption: SearchOption): List<PlaceWithMetadata> {
         val trimmedSearchText = searchOption.searchText.trim()
         // 검색어가 너무 짧으면 검색을 하지 않는다.
         if (trimmedSearchText.length <= 1) {
@@ -29,12 +34,17 @@ class SearchPlaceService(
         val searchTextRegex = getSQLSearchTextRegex(trimmedSearchText)
         return placeRepository.findByNameContains(searchTextRegex)
             .asSequence()
-            .filter { searchOption.siGunGu == null || it.siGunGuId == searchOption.siGunGu.id }
-            .filter { searchOption.eupMyeonDong == null || it.eupMyeonDongId == searchOption.eupMyeonDong.id }
-            .map { Pair(it, LocationUtils.calculateDistance(searchOption.location, it.location)) }
-            .filter { searchOption.maxDistance == null || it.second <= searchOption.maxDistance }
-            .sortedBy { it.second }
-            .map { it.first }
+            .map { place -> PlaceWithMetadata(place, searchOption.location?.let { LocationUtils.calculateDistance(it, place.location) }) }
+            .filter { searchOption.siGunGu == null || it.place.siGunGuId == searchOption.siGunGu.id }
+            .filter { searchOption.eupMyeonDong == null || it.place.eupMyeonDongId == searchOption.eupMyeonDong.id }
+            .filter { searchOption.maxDistance == null || (it.distance ?: Length(0.0)) <= searchOption.maxDistance }
+            .let { result ->
+                if (searchOption.location != null) {
+                    result.sortedBy { it.distance!! }
+                } else {
+                    result
+                }
+            }
             .toList()
     }
 

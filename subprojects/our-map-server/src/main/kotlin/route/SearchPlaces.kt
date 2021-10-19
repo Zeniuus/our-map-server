@@ -12,6 +12,7 @@ import io.ktor.response.respond
 import io.ktor.routing.Route
 import io.ktor.routing.post
 import org.koin.core.context.GlobalContext
+import ourMap.protocol.Common
 import ourMap.protocol.SearchPlacesParams
 import ourMap.protocol.SearchPlacesResult
 
@@ -25,10 +26,14 @@ fun Route.searchPlaces() {
         val params = call.receive<SearchPlacesParams>()
         val results = placeApplicationService.searchPlaces(
             searchText = params.searchText,
-            location = Location(
-                lng = params.currentLocation.lng,
-                lat = params.currentLocation.lat,
-            ),
+            location = if (params.hasCurrentLocation()) {
+                Location(
+                    lng = params.currentLocation.lng,
+                    lat = params.currentLocation.lat,
+                )
+            } else {
+                null
+            },
             maxDistance = params.distanceMetersLimit.takeIf { it > 0 }?.let { Length(it) },
             siGunGuId = if (params.hasSiGunGuId()) {
                 params.siGunGuId.value
@@ -51,6 +56,11 @@ fun Route.searchPlaces() {
                             .setBuilding(BuildingConverter.toProto(result.place.building))
                             .setHasPlaceAccessibility(result.placeAccessibility != null)
                             .setHasBuildingAccessibility(result.buildingAccessibility != null)
+                            .apply {
+                                if (result.distance != null) {
+                                    distanceMeters = Common.Int32Value.newBuilder().setValue(result.distance!!.meters.toInt()).build()
+                                }
+                            }
                             .build()
                     })
             }

@@ -40,7 +40,7 @@ class SearchPlaceServiceTest : DomainTestBase() {
             location = Location(0.0, 0.0),
         ))
         Assert.assertEquals(1, result2.size)
-        Assert.assertEquals(place1.id, result2[0].id)
+        Assert.assertEquals(place1.id, result2[0].place.id)
 
         val result3 = searchPlaceService.searchPlaces(SearchPlaceService.SearchOption(
             searchText = "워타",
@@ -59,14 +59,14 @@ class SearchPlaceServiceTest : DomainTestBase() {
             location = Location(0.0, 0.0),
         )) // 띄워쓰기를 안 하고 검색해도 검색이 잘 돼야 한다.
         Assert.assertEquals(1, result5.size)
-        Assert.assertEquals(place1.id, result5[0].id)
+        Assert.assertEquals(place1.id, result5[0].place.id)
 
         val result6 = searchPlaceService.searchPlaces(SearchPlaceService.SearchOption(
             searchText = "디타워장소",
             location = Location(0.0, 0.0),
         )) // 한글 한 글자는 틀려도 찾아준다.
         Assert.assertEquals(1, result6.size)
-        Assert.assertEquals(place1.id, result6[0].id)
+        Assert.assertEquals(place1.id, result6[0].place.id)
 
         val place2 = testDataGenerator.createBuildingAndPlace(placeName = "D타워장소1")
         val result7 = searchPlaceService.searchPlaces(SearchPlaceService.SearchOption(
@@ -74,7 +74,7 @@ class SearchPlaceServiceTest : DomainTestBase() {
             location = Location(0.0, 0.0),
         )) // 스페이스를 추가해서 검색해도 찾아준다.
         Assert.assertEquals(2, result7.size)
-        Assert.assertEquals(setOf(place1.id, place2.id), result7.map { it.id }.toSet())
+        Assert.assertEquals(setOf(place1.id, place2.id), result7.map { it.place.id }.toSet())
     }
 
     @Test
@@ -99,8 +99,8 @@ class SearchPlaceServiceTest : DomainTestBase() {
             location = Location(0.0, 0.0),
         ))
         Assert.assertEquals(2, result.size)
-        Assert.assertEquals(nearPlace.id, result[0].id)
-        Assert.assertEquals(farPlace.id, result[1].id)
+        Assert.assertEquals(nearPlace.id, result[0].place.id)
+        Assert.assertEquals(farPlace.id, result[1].place.id)
     }
 
     @Test
@@ -172,5 +172,26 @@ class SearchPlaceServiceTest : DomainTestBase() {
             eupMyeonDong = targetEupMyeonDong,
         ))
         Assert.assertEquals(1, result.size)
+    }
+
+    @Test
+    fun `현재 위치를 넣어야만 distance가 존재한다`() = transactionManager.doAndRollback {
+        val place1 = testDataGenerator.createBuildingAndPlace(placeName = "D타워 장소1")
+
+        val result1 = searchPlaceService.searchPlaces(SearchPlaceService.SearchOption(
+            searchText = "타워",
+            location = Location(0.0, 0.0),
+        ))
+        Assert.assertEquals(1, result1.size)
+        Assert.assertEquals(place1.id, result1[0].place.id)
+        Assert.assertNotNull(result1[0].distance)
+
+        val result2 = searchPlaceService.searchPlaces(SearchPlaceService.SearchOption(
+            searchText = "타워",
+            location = null,
+        ))
+        Assert.assertEquals(1, result2.size)
+        Assert.assertEquals(place1.id, result2[0].place.id)
+        Assert.assertNull(result2[0].distance)
     }
 }
