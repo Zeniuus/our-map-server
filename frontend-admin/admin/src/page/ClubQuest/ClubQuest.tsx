@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button, ButtonGroup, Checkbox } from '@blueprintjs/core';
-import apiClient from '../../apiClient';
 import { ClubQuestContentTargetDTO, ClubQuestContentTargetPlaceDTO, ClubQuestDTO, LocationDTO } from '../../type';
 import { determineCenter, determineLevel } from '../../util/kakaoMap';
+import { apiController } from '../../apiController';
 
 import './ClubQuest.scss';
 
@@ -26,62 +26,29 @@ function ClubQuest(props: ClubQuestProps) {
   const [currentLocation, setCurrentLocation] = useState<LocationDTO | null>(null);
   const [map, setMap] = useState<any>(null);
 
+  function withLoading(promise: Promise<any>): Promise<any> {
+    setIsLoading(true);
+    return promise.finally(() => setIsLoading(false));
+  }
+
   useEffect(() => {
-    getClubQuest(props.match.params.id)
-      .then((res) => {
-        const clubQuest: ClubQuestDTO = res.data;
-        setClubQuest(clubQuest);
-        installMap(clubQuest);
-      });
+    withLoading(
+      apiController.getClubQuest(props.match.params.id)
+        .then((clubQuest) => {
+          setClubQuest(clubQuest);
+          installMap(clubQuest);
+        })
+    );
   }, []);
   useEffect(() => {
     const timeout = setTimeout(() => {
-      getClubQuest(props.match.params.id)
-        .then((res) => {
-          const clubQuest: ClubQuestDTO = res.data;
-          setClubQuest(clubQuest);
-        });
+      withLoading(
+        apiController.getClubQuest(props.match.params.id)
+          .then(clubQuest => setClubQuest(clubQuest))
+      );
     }, 10000);
     return () => { clearTimeout(timeout); };
   }, [clubQuest]);
-
-  function getClubQuest(id: string): Promise<any> {
-    setIsLoading(true);
-    return apiClient.get(`/clubQuests/${id}`)
-      .finally(() => {
-        setIsLoading(false);
-      });
-  }
-
-  function setPlaceIsCompleted(id: string, target: ClubQuestContentTargetDTO, place: ClubQuestContentTargetPlaceDTO): Promise<any> {
-    setIsLoading(true);
-    return apiClient.post(`/clubQuests/${id}/setPlaceIsCompleted/${!place.isCompleted}`, {
-      lng: target.lng,
-      lat: target.lat,
-      targetDisplayedName: target.displayedName,
-      placeName: place.name,
-    }).then((res) => {
-      const clubQuest: ClubQuestDTO = res.data;
-      setClubQuest(clubQuest);
-    }).finally(() => {
-      setIsLoading(false);
-    });
-  }
-
-  function setPlaceIsClosed(id: string, target: ClubQuestContentTargetDTO, place: ClubQuestContentTargetPlaceDTO): Promise<any> {
-    setIsLoading(true);
-    return apiClient.post(`/clubQuests/${id}/setPlaceIsClosed/${!place.isClosed}`, {
-      lng: target.lng,
-      lat: target.lat,
-      targetDisplayedName: target.displayedName,
-      placeName: place.name,
-    }).then((res) => {
-      const clubQuest: ClubQuestDTO = res.data;
-      setClubQuest(clubQuest);
-    }).finally(() => {
-      setIsLoading(false);
-    });
-  }
 
   function installMap(clubQuest: ClubQuestDTO) {
     if (clubQuest != null && map == null) {
@@ -155,13 +122,19 @@ function ClubQuest(props: ClubQuestProps) {
 
   const onPlaceIsCompletedChange = (target: ClubQuestContentTargetDTO, place: ClubQuestContentTargetPlaceDTO) => {
     return () => {
-      setPlaceIsCompleted(clubQuest!.id, target, place);
+      withLoading(
+        apiController.setPlaceIsCompleted(clubQuest!.id, target, place)
+          .then((clubQuest) => setClubQuest(clubQuest))
+      );
     };
   }
 
   const onPlaceIsClosedChange = (target: ClubQuestContentTargetDTO, place: ClubQuestContentTargetPlaceDTO) => {
     return () => {
-      setPlaceIsClosed(clubQuest!.id, target, place);
+      withLoading(
+        apiController.setPlaceIsClosed(clubQuest!.id, target, place)
+          .then((clubQuest) => setClubQuest(clubQuest))
+      );
     };
   }
 

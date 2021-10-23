@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Classes } from "@blueprintjs/core";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import apiClient from './apiClient';
 import AppMenu from "./AppMenu";
 import Home from './page/Home';
 import RunSql from './page/RunSql/RunSql';

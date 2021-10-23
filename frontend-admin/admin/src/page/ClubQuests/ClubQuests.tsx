@@ -1,9 +1,9 @@
 import { Button, ButtonGroup, Dialog } from '@blueprintjs/core';
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import apiClient from '../../apiClient';
 import CreateClubQuest from './CreateClubQuest';
 import { ClubQuestDTO } from '../../type';
+import { apiController } from '../../apiController';
 
 import './ClubQuests.scss';
 
@@ -12,35 +12,17 @@ function ClubQuests() {
   const [clubQuests, setClubQuests] = useState<ClubQuestDTO[]>([]);
   const [isCreateDialogOpen, setIsCreateDialogOpen] = useState(false);
 
-  useEffect(() => {
-    listClubQuests();
-  }, []);
-
-  function withLoading(block: () => Promise<any>): Promise<any> {
+  function withLoading(promise: Promise<any>): Promise<any> {
     setIsLoading(true);
-    return block().finally(() => {
-      setIsLoading(false);
-    });
+    return promise.finally(() => setIsLoading(false));
   }
 
-  function listClubQuests(): Promise<any> {
-    return withLoading(() => {
-      return apiClient.get("/clubQuests")
-        .then((res) => {
-          const clubRequests: ClubQuestDTO[] = res.data;
-          setClubQuests(clubRequests)
-        });
-    });
-  }
-
-  function deleteClubQuest(id: string): Promise<any> {
-    return withLoading(() => {
-      return apiClient.get(`/clubQuests/${id}/delete`)
-        .then(() => {
-          return listClubQuests();
-        });
-    });
-  }
+  useEffect(() => {
+    withLoading(
+      apiController.listClubQuests()
+        .then(clubQuests => setClubQuests(clubQuests))
+    );
+  }, []);
 
   function onClubQuestCreateBtnClick() {
     setIsCreateDialogOpen(true);
@@ -48,7 +30,10 @@ function ClubQuests() {
 
   function onClubQuestCreated() {
     setIsCreateDialogOpen(false);
-    listClubQuests();
+    withLoading(
+      apiController.listClubQuests()
+        .then(clubQuests => setClubQuests(clubQuests))
+    );
   }
 
   const history = useHistory();
@@ -64,7 +49,13 @@ function ClubQuests() {
       if (!window.confirm(`정말 ${clubQuest.title} 퀘스트를 삭제하시겠습니까?`)) {
         return;
       }
-      deleteClubQuest(clubQuest.id);
+      withLoading(
+        apiController.deleteClubQuest(clubQuest.id)
+          .then(() => {
+            return apiController.listClubQuests()
+          })
+          .then(clubQuests => setClubQuests(clubQuests))
+      );
     };
   }
 

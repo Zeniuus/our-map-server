@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Button, ButtonGroup, Card, Intent, TextArea } from '@blueprintjs/core';
-import apiClient from '../../apiClient';
-import { downloadAttachment } from '../../util/downloadAttachment';
 import { RunSqlResult } from '../../api';
 
 import './RunSql.scss';
+import { apiController } from '../../apiController';
 
 
 function RunSql() {
@@ -14,48 +13,29 @@ function RunSql() {
   const [tableNames, setTableNames] = useState<string[]>([]);
 
   useEffect(() => {
-    apiClient.post('/runSql', {
-      query: 'show tables;',
-    }).then((res) => {
-      const result: RunSqlResult = res.data;
-      setTableNames(result.rows.map((row) => row[0]));
-      // setTableNames(result.rows.map((row) => row[0]).filter((row) => !row.startsWith('DATABASECHANGELOG')));
-    });
+    apiController.runSql('show tables;')
+      .then((result) => {
+        setTableNames(result.rows.map((row) => row[0]).filter((row) => !row.startsWith('DATABASECHANGELOG')));
+      });
   }, []);
 
-  function withLoading(block: () => Promise<any>) {
+  function withLoading(promise: Promise<any>): Promise<any> {
     setIsLoading(true);
-    block().finally(() => {
-      setIsLoading(false);
-    });
-  }
-
-  function runSql() {
-    withLoading(() => {
-      return apiClient.post('/runSql', {
-        query,
-      }).then((res) => {
-        const result: RunSqlResult = res.data;
-        setQueryResult(result);
-      });
-    });
-  }
-
-  function downloadSqlResultAsTsv() {
-    withLoading(() => {
-      return apiClient.post('/downloadSqlResultAsTsv', {
-        query,
-      }).then((res) => {
-        downloadAttachment(res);
-      });
-    });
+    return promise.finally(() => setIsLoading(false));
   }
 
   function handleKeyPress(e: any) {
     if (e.key === 'Enter' && e.ctrlKey) {
-      runSql();
+      runSqlWithInputQuery();
     }
   }
+
+  const runSqlWithInputQuery = () => {
+    withLoading(
+      apiController.runSql(query)
+        .then((result) => setQueryResult(result))
+    );
+  };
 
   const queryResultElem = queryResult != null
     ? (
@@ -106,8 +86,8 @@ function RunSql() {
         </div>
         <div className="main">
           <ButtonGroup className="button-group" minimal={true}>
-            <Button icon="play" disabled={isLoading} text="실행" onClick={runSql}></Button>
-            <Button icon="download" disabled={isLoading} text="쿼리 결과 다운로드" onClick={downloadSqlResultAsTsv}></Button>
+            <Button icon="play" disabled={isLoading} text="실행" onClick={runSqlWithInputQuery}></Button>
+            <Button icon="download" disabled={isLoading} text="쿼리 결과 다운로드" onClick={() => { apiController.downloadSqlResultAsTsv(query) }}></Button>
           </ButtonGroup>
           <TextArea
             className="bp3-fill"

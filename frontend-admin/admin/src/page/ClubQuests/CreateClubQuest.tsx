@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Button, ButtonGroup, Classes } from '@blueprintjs/core';
-import apiClient from '../../apiClient';
-import { ClubQuestCreateParams } from '../../api';
+import { apiController } from '../../apiController';
 
 import './CreateClubQuest.scss';
 
@@ -14,20 +13,9 @@ function CreateClubQuest(props: CreateClubQuestProps) {
   const [title, setTitle] = useState('');
   const [rawContent, setRawContent] = useState('');
 
-  function withLoading(block: () => Promise<any>) {
+  function withLoading(promise: Promise<any>): Promise<any> {
     setIsLoading(true);
-    block().finally(() => {
-      setIsLoading(false);
-    });
-  }
-
-  function createClubQuest(rows: ClubQuestCreateParams) {
-    withLoading(() => {
-      return apiClient.post("/clubQuests/create", rows)
-        .then(() => {
-          props.onCreate();
-        });
-    });
+    return promise.finally(() => setIsLoading(false));
   }
 
   function onCreateClubQuest() {
@@ -46,10 +34,11 @@ function CreateClubQuest(props: CreateClubQuestProps) {
       alert('입력된 줄 중 유효한 줄이 없습니다. 입력한 값을 다시 확인해주세요.');
       return;
     }
-    createClubQuest({
-      title,
-      rows,
-    });
+
+    withLoading(
+      apiController.createClubQuest({ title, rows })
+        .then(() => props.onCreate())
+    );
   }
 
   function isInputValid(): boolean {
