@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Classes } from "@blueprintjs/core";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import AppMenu from "./AppMenu";
-import Home from './page/Home';
+import Home from './page/Home/Home';
 import RunSql from './page/RunSql/RunSql';
 import ClubQuests from './page/ClubQuests/ClubQuests';
 import ClubQuest from './page/ClubQuest/ClubQuest';
