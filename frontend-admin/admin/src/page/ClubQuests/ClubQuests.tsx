@@ -83,7 +83,7 @@ function ClubQuests() {
           })}
         </tbody>
       </table>
-      <Dialog className="create-dialog" title="퀘스트 생성하기" isOpen={isCreateDialogOpen}>
+      <Dialog className="create-dialog" title="퀘스트 생성하기" isOpen={isCreateDialogOpen} canEscapeKeyClose onClose={() => setIsCreateDialogOpen(false)}>
         <CreateClubQuest onCreate={onClubQuestCreated}></CreateClubQuest>
       </Dialog>
     </div>

@@ -26,8 +26,8 @@ function CreateClubQuest(props: CreateClubQuestProps) {
         return {
           lng: Number(tokens[0]),
           lat: Number(tokens[1]),
-          displayedName: tokens[3],
-          placeName: tokens[2],
+          displayedName: tokens[2],
+          placeName: tokens[3],
         };
       });
     if (rows.length === 0) {
@@ -60,7 +60,7 @@ function CreateClubQuest(props: CreateClubQuestProps) {
         <textarea
           className={`${Classes.INPUT} input bp3-fill`}
           value={rawContent}
-          placeholder="경도<tab>위도<tab>지도 마커 이름; e.g. 127.125902  37.419461  성남시청"
+          placeholder="경도<tab>위도<tab>지도 마커 이름<tab>장소 이름; e.g. 127.125902    37.419461    H조 1호 건물    김가네낙지마을"
           onChange={({ target: { value }}) => setRawContent(value)}
         />
       </div>
