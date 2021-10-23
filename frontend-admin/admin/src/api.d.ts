@@ -1,23 +1,16 @@
-interface RunSqlResult {
+export interface RunSqlResult {
   columns: string[];
   rows: string[][];
 }
 
-interface ClubQuest {
-  id: string;
+export interface ClubQuestCreateParams {
   title: string;
-  content: ClubQuestContent;
+  rows: ClubQuestCreateParamsInputRow[];
 }
 
-interface ClubQuestContent {
-  targets: Array<{
-    lng: number;
-    lat: number;
-    displayedName: string;
-  }>;
-}
-
-interface ClubRequestCreateParams {
-  title: string;
-  content: ClubQuestContent;
+export interface ClubQuestCreateParamsInputRow {
+  lng: number;
+  lat: number;
+  displayedName: string;
+  placeName: string;
 }

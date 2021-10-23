@@ -1,5 +1,11 @@
 package route
 
+import io.ktor.application.call
+import io.ktor.request.receive
+import io.ktor.response.respond
+import io.ktor.routing.Route
+import io.ktor.routing.get
+import io.ktor.routing.post
 import quest.application.ClubQuestApplicationService
 import quest.domain.entity.ClubQuest
 import quest.domain.entity.ClubQuestContent
@@ -20,24 +26,54 @@ data class ClubQuestDTO(
     )
 }
 
-// TODO: handlers layer는 불필요한 계층처럼 보인다. DTO 변환밖에 안 하고 있지 않나? 이걸 어플리케이션 계층에서 해야 하나?
 class ClubQuestRouteHandlers(
     private val clubQuestApplicationService: ClubQuestApplicationService
 ) {
-    fun createClubQuest(params: ClubQuestService.CreateParams): ClubQuestDTO {
-        return ClubQuestDTO(clubQuestApplicationService.create(params))
+    fun createClubQuest(route: Route) {
+        route.post("/api/clubQuests/create") {
+            val params = call.receive<ClubQuestService.CreateParams>()
+            call.respond(ClubQuestDTO(clubQuestApplicationService.create(params)))
+        }
     }
 
-    fun deleteClubQuest(id: String) {
-        clubQuestApplicationService.delete(id)
+    fun deleteClubQuest(route: Route) {
+        route.get("/api/clubQuests/{id}/delete") {
+            val id = call.parameters["id"]!!
+            call.respond(clubQuestApplicationService.delete(id))
+        }
     }
 
-    fun listClubQuests(): List<ClubQuestDTO> {
-        return clubQuestApplicationService.listAll()
-            .map { ClubQuestDTO(it) }
+    fun getClubQuest(route: Route) {
+        route.get("/api/clubQuests/{id}") {
+            val id = call.parameters["id"]!!
+            call.respond(ClubQuestDTO(clubQuestApplicationService.getSingle(id)))
+        }
     }
 
-    fun getClubQuest(id: String): ClubQuestDTO {
-        return ClubQuestDTO(clubQuestApplicationService.getSingle(id))
+    fun listClubQuests(route: Route) {
+        route.get("/api/clubQuests") {
+            call.respond(
+                clubQuestApplicationService.listAll()
+                    .map { ClubQuestDTO(it) }
+            )
+        }
+    }
+
+    fun setPlaceIsCompleted(route: Route) {
+        route.post("/api/clubQuests/{id}/setPlaceIsCompleted/{isCompleted}") {
+            val id = call.parameters["id"]!!
+            val isCompleted = call.parameters["isCompleted"]!!.toBoolean()
+            val targetPlaceInfo = call.receive<ClubQuestService.ClubQuestTargetPlaceInfo>()
+            call.respond(ClubQuestDTO(clubQuestApplicationService.setPlaceIsCompleted(id, targetPlaceInfo, isCompleted)))
+        }
+    }
+
+    fun setPlaceIsClosed(route: Route) {
+        route.post("/api/clubQuests/{id}/setPlaceIsClosed/{isClosed}") {
+            val id = call.parameters["id"]!!
+            val isClosed = call.parameters["isClosed"]!!.toBoolean()
+            val targetPlaceInfo = call.receive<ClubQuestService.ClubQuestTargetPlaceInfo>()
+            call.respond(ClubQuestDTO(clubQuestApplicationService.setPlaceIsClosed(id, targetPlaceInfo, isClosed)))
+        }
     }
 }

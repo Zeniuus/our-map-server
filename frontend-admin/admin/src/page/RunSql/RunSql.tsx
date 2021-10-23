@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, ButtonGroup, Card, Intent, TextArea } from '@blueprintjs/core';
 import apiClient from '../../apiClient';
 import { downloadAttachment } from '../../util/downloadAttachment';
+import { RunSqlResult } from '../../api';
 
 import './RunSql.scss';
-import { useEffect } from 'react';
 
 
 function RunSql() {

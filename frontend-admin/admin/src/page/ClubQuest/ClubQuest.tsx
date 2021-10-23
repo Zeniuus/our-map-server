@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Button, ButtonGroup } from '@blueprintjs/core';
+import { Button, ButtonGroup, Checkbox } from '@blueprintjs/core';
 import apiClient from '../../apiClient';
-import { ClubQuestDTO, LocationDTO } from '../../type';
+import { ClubQuestContentTargetDTO, ClubQuestContentTargetPlaceDTO, ClubQuestDTO, LocationDTO } from '../../type';
 import { determineCenter, determineLevel } from '../../util/kakaoMap';
 
 import './ClubQuest.scss';
@@ -21,25 +21,70 @@ interface ClubQuestProps {
 }
 
 function ClubQuest(props: ClubQuestProps) {
-  const [clubQuest, setClubQuest] = useState<ClubQuest | null>(null);
-  const [currentLocation, setCurrentLocation] = useState<Location | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [clubQuest, setClubQuest] = useState<ClubQuestDTO | null>(null);
+  const [currentLocation, setCurrentLocation] = useState<LocationDTO | null>(null);
   const [map, setMap] = useState<any>(null);
 
   useEffect(() => {
-    getClubQuest(props.match.params.id);
-  }, []);
-
-  function getClubQuest(id: string): Promise<any> {
-    return apiClient.get(`/clubQuests/${id}`)
+    getClubQuest(props.match.params.id)
       .then((res) => {
-        const clubQuest: ClubQuest = res.data;
+        const clubQuest: ClubQuestDTO = res.data;
         setClubQuest(clubQuest);
         installMap(clubQuest);
       });
+  }, []);
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      getClubQuest(props.match.params.id)
+        .then((res) => {
+          const clubQuest: ClubQuestDTO = res.data;
+          setClubQuest(clubQuest);
+        });
+    }, 10000);
+    return () => { clearTimeout(timeout); };
+  }, [clubQuest]);
+
+  function getClubQuest(id: string): Promise<any> {
+    setIsLoading(true);
+    return apiClient.get(`/clubQuests/${id}`)
+      .finally(() => {
+        setIsLoading(false);
+      });
   }
 
-  function installMap(clubQuest: ClubQuest) {
-    if (clubQuest != null) {
+  function setPlaceIsCompleted(id: string, target: ClubQuestContentTargetDTO, place: ClubQuestContentTargetPlaceDTO): Promise<any> {
+    setIsLoading(true);
+    return apiClient.post(`/clubQuests/${id}/setPlaceIsCompleted/${!place.isCompleted}`, {
+      lng: target.lng,
+      lat: target.lat,
+      targetDisplayedName: target.displayedName,
+      placeName: place.name,
+    }).then((res) => {
+      const clubQuest: ClubQuestDTO = res.data;
+      setClubQuest(clubQuest);
+    }).finally(() => {
+      setIsLoading(false);
+    });
+  }
+
+  function setPlaceIsClosed(id: string, target: ClubQuestContentTargetDTO, place: ClubQuestContentTargetPlaceDTO): Promise<any> {
+    setIsLoading(true);
+    return apiClient.post(`/clubQuests/${id}/setPlaceIsClosed/${!place.isClosed}`, {
+      lng: target.lng,
+      lat: target.lat,
+      targetDisplayedName: target.displayedName,
+      placeName: place.name,
+    }).then((res) => {
+      const clubQuest: ClubQuestDTO = res.data;
+      setClubQuest(clubQuest);
+    }).finally(() => {
+      setIsLoading(false);
+    });
+  }
+
+  function installMap(clubQuest: ClubQuestDTO) {
+    if (clubQuest != null && map == null) {
       const container = document.getElementById('map');
       const center = determineCenter(clubQuest.content.targets);
       const options = {
@@ -108,14 +153,60 @@ function ClubQuest(props: ClubQuestProps) {
     }
   }
 
+  const onPlaceIsCompletedChange = (target: ClubQuestContentTargetDTO, place: ClubQuestContentTargetPlaceDTO) => {
+    return () => {
+      setPlaceIsCompleted(clubQuest!.id, target, place);
+    };
+  }
+
+  const onPlaceIsClosedChange = (target: ClubQuestContentTargetDTO, place: ClubQuestContentTargetPlaceDTO) => {
+    return () => {
+      setPlaceIsClosed(clubQuest!.id, target, place);
+    };
+  }
+
   return (
     <div>
       <h1>{clubQuest?.title}</h1>
       <div id="map" style={{ minWidth: '320px', minHeight: '500px' }} />
-      <ButtonGroup className="map-manipulate-button-container">
-        {clubQuest != null ? <Button text="퀘스트 전체 표시하기" onClick={showQuestsOnMap}></Button> : null}
-        {currentLocation != null ? <Button text="현재 위치 표시하기" onClick={showCurrentLocationOnMap}></Button> : null}
-      </ButtonGroup>
+      <div className="map-manipulate-button-div">
+        <ButtonGroup className="map-manipulate-button-container">
+          {clubQuest != null ? <Button text="퀘스트 전체 표시하기" onClick={showQuestsOnMap}></Button> : null}
+          {currentLocation != null ? <Button text="현재 위치 표시하기" onClick={showCurrentLocationOnMap}></Button> : null}
+        </ButtonGroup>
+      </div>
+      {
+        clubQuest
+          ? (
+            <table className="bp3-html-table bp3-html-table-bordered bp3-html-table-condensed bp3-interactive">
+              <thead>
+                <tr>
+                  <th className="title-column">건물 이름</th>
+                  <th>장소 이름</th>
+                  <th>정복</th>
+                  <th>폐업</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  clubQuest.content.targets.flatMap((target) => {
+                    return target.places.map((place, idx) => {
+                      return (
+                        <tr>
+                          <td>{idx === 0 ? target.displayedName : ''}</td>
+                          <td>{place.name}</td>
+                          <td><Checkbox checked={place.isCompleted} disabled={isLoading} large onChange={onPlaceIsCompletedChange(target, place)} /></td>
+                          <td><Checkbox checked={place.isClosed} disabled={isLoading} large onChange={onPlaceIsClosedChange(target, place)} /></td>
+                        </tr>
+                      );
+                    });
+                  })
+                }
+              </tbody>
+            </table>
+          )
+          : null
+      }
     </div>
   );
 }

@@ -1,5 +1,6 @@
 package quest.application
 
+import application.TransactionIsolationLevel
 import application.TransactionManager
 import infra.persistence.repository.EntityNotFoundException
 import quest.domain.entity.ClubQuest
@@ -21,6 +22,16 @@ class ClubQuestApplicationService(
             throw EntityNotFoundException("이미 삭제된 퀘스트입니다.")
         }
         clubQuest
+    }
+
+    fun setPlaceIsCompleted(id: String, targetPlaceInfo: ClubQuestService.ClubQuestTargetPlaceInfo, isCompleted: Boolean): ClubQuest = transactionManager.doInTransaction(TransactionIsolationLevel.SERIALIZABLE) {
+        val clubQuest = clubQuestRepository.findById(id)
+        clubQuestService.setPlaceIsCompleted(clubQuest, targetPlaceInfo, isCompleted)
+    }
+
+    fun setPlaceIsClosed(id: String, targetPlaceInfo: ClubQuestService.ClubQuestTargetPlaceInfo, isClosed: Boolean): ClubQuest = transactionManager.doInTransaction(TransactionIsolationLevel.SERIALIZABLE) {
+        val clubQuest = clubQuestRepository.findById(id)
+        clubQuestService.setPlaceIsClosed(clubQuest, targetPlaceInfo, isClosed)
     }
 
     fun listAll(): List<ClubQuest> = transactionManager.doInTransaction {

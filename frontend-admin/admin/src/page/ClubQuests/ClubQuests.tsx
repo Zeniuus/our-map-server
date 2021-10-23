@@ -3,12 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import apiClient from '../../apiClient';
 import CreateClubQuest from './CreateClubQuest';
+import { ClubQuestDTO } from '../../type';
 
 import './ClubQuests.scss';
 
 function ClubQuests() {
   const [isLoading, setIsLoading] = useState(false);
-  const [clubQuests, setClubQuests] = useState<ClubQuest[]>([]);
+  const [clubQuests, setClubQuests] = useState<ClubQuestDTO[]>([]);
   const [isCreateDialogOpen, setIsCreateDialogOpen] = useState(false);
 
   useEffect(() => {
@@ -26,7 +27,7 @@ function ClubQuests() {
     return withLoading(() => {
       return apiClient.get("/clubQuests")
         .then((res) => {
-          const clubRequests: ClubQuest[] = res.data;
+          const clubRequests: ClubQuestDTO[] = res.data;
           setClubQuests(clubRequests)
         });
     });
@@ -51,13 +52,13 @@ function ClubQuests() {
   }
 
   const history = useHistory();
-  function onClubQuestClick(clubQuest: ClubQuest) {
+  function onClubQuestClick(clubQuest: ClubQuestDTO) {
     return () => {
       history.push(`/clubQuests/${clubQuest.id}`);
     };
   }
 
-  function onClubQuestDeleteBtnClick(clubQuest: ClubQuest) {
+  function onClubQuestDeleteBtnClick(clubQuest: ClubQuestDTO) {
     return (e: React.MouseEvent) => {
       e.stopPropagation();
       if (!window.confirm(`정말 ${clubQuest.title} 퀘스트를 삭제하시겠습니까?`)) {

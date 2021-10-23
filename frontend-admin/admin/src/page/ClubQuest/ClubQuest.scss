@@ -1,3 +1,6 @@
-.map-manipulate-button-container {
-  float: right;
+.map-manipulate-button-div {
+  text-align: right;
+  .map-manipulate-button-container {
+    display: inline-block;
+  }
 }

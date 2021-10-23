@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, ButtonGroup, Classes } from '@blueprintjs/core';
 import apiClient from '../../apiClient';
+import { ClubQuestCreateParams } from '../../api';
 
 import './CreateClubQuest.scss';
 
@@ -20,9 +21,9 @@ function CreateClubQuest(props: CreateClubQuestProps) {
     });
   }
 
-  function createClubQuest(body: { title: string, content: ClubQuestContent }) {
+  function createClubQuest(rows: ClubQuestCreateParams) {
     withLoading(() => {
-      return apiClient.post("/clubQuests/create", body)
+      return apiClient.post("/clubQuests/create", rows)
         .then(() => {
           props.onCreate();
         });
@@ -30,25 +31,24 @@ function CreateClubQuest(props: CreateClubQuestProps) {
   }
 
   function onCreateClubQuest() {
-    const targets: Array<{ lng: number, lat: number, displayedName: string }> = rawContent.split('\n')
+    const rows = rawContent.split('\n')
       .map(it => it.split('\t'))
-      .filter(it => it.length === 3)
+      .filter(it => it.length === 4)
       .map((tokens) => {
         return {
           lng: Number(tokens[0]),
           lat: Number(tokens[1]),
-          displayedName: tokens[2],
+          displayedName: tokens[3],
+          placeName: tokens[2],
         };
       });
-    if (targets.length === 0) {
+    if (rows.length === 0) {
       alert('입력된 줄 중 유효한 줄이 없습니다. 입력한 값을 다시 확인해주세요.');
       return;
     }
     createClubQuest({
       title,
-      content: {
-        targets,
-      },
+      rows,
     });
   }
 
