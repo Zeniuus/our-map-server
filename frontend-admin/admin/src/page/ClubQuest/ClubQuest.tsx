@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button, ButtonGroup } from '@blueprintjs/core';
-import haversine from 'haversine';
 import apiClient from '../../apiClient';
-import { Location } from '../../type';
+import { ClubQuestDTO, LocationDTO } from '../../type';
+import { determineCenter, determineLevel } from '../../util/kakaoMap';
 
 import './ClubQuest.scss';
 
@@ -93,76 +93,6 @@ function ClubQuest(props: ClubQuestProps) {
         setInterval(updateCurrentLocationMarker, 5000);
       }
     }
-  }
-
-  function determineCenter(locations: Location[]): Location {
-    if (locations.length === 0) {
-      return {
-        lng: 137,
-        lat: 37,
-      };
-    }
-    const minLng = min(locations.map(it => it.lng));
-    const maxLng = max(locations.map(it => it.lng));
-    const minLat = min(locations.map(it => it.lat));
-    const maxLat = max(locations.map(it => it.lat));
-    return {
-      lng: (minLng! + maxLng!) / 2,
-      lat: (minLat! + maxLat!) / 2,
-    };
-  }
-
-  function determineLevel(locations: Location[]): number {
-    // 척도
-    // 3: 50m
-    // 4: 100m
-    // 5: 250m
-    // 6: 500m
-    // 7: 1km
-    // 8: 2km
-    // 9: 4km
-    if (locations.length <= 1) {
-      return 3;
-    }
-    const minLng = min(locations.map(it => it.lng))!;
-    const maxLng = max(locations.map(it => it.lng))!;
-    const minLat = min(locations.map(it => it.lat))!;
-    const maxLat = max(locations.map(it => it.lat))!;
-    const maxDistance = haversine({ longitude: minLng, latitude: minLat}, { longitude: maxLng, latitude: maxLat }, { unit: 'meter' });
-    if (maxDistance < 200) return 3;
-    if (maxDistance < 400) return 4;
-    if (maxDistance < 1000) return 5;
-    if (maxDistance < 2000) return 6;
-    if (maxDistance < 4000) return 7;
-    if (maxDistance < 8000) return 8;
-    if (maxDistance < 16000) return 9;
-    return 10;
-  }
-
-  function min<T>(values: Array<T>): T | null {
-    if (values.length == null) {
-      return null;
-    }
-    let min = values[0];
-    for (let i = 1; i < values.length; i += 1) {
-      if (values[i] < min) {
-        min = values[i];
-      }
-    }
-    return min;
-  }
-
-  function max<T>(values: Array<T>): T | null {
-    if (values.length == null) {
-      return null;
-    }
-    let max = values[0];
-    for (let i = 1; i < values.length; i += 1) {
-      if (values[i] > max) {
-        max = values[i];
-      }
-    }
-    return max;
   }
 
   const showQuestsOnMap = () => {
