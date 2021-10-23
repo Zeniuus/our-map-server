@@ -141,7 +141,7 @@ function ClubQuest(props: ClubQuestProps) {
   return (
     <div>
       <h1>{clubQuest?.title}</h1>
-      <div id="map" style={{ minWidth: '320px', minHeight: '500px' }} />
+      <div id="map" style={{ minWidth: '320px', height: 'calc(100vw - 40px)', maxHeight: '500px' }} />
       <div className="map-manipulate-button-div">
         <ButtonGroup className="map-manipulate-button-container">
           {clubQuest != null ? <Button text="퀘스트 전체 표시하기" onClick={showQuestsOnMap}></Button> : null}
