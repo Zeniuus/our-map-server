@@ -24,4 +24,5 @@ export interface ClubQuestContentTargetPlaceDTO {
   name: string;
   isCompleted: boolean;
   isClosed: boolean;
+  isNotAccessible: boolean;
 }

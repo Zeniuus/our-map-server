@@ -68,6 +68,7 @@ fun Application.ourMapServerAdminModule(testing: Boolean = false) {
         apply(clubQuestRouteHandlers::listClubQuests)
         apply(clubQuestRouteHandlers::setPlaceIsCompleted)
         apply(clubQuestRouteHandlers::setPlaceIsClosed)
+        apply(clubQuestRouteHandlers::setPlaceIsNotAccessible)
     }
 }
 

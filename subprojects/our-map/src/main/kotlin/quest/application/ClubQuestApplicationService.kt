@@ -34,6 +34,11 @@ class ClubQuestApplicationService(
         clubQuestService.setPlaceIsClosed(clubQuest, targetPlaceInfo, isClosed)
     }
 
+    fun setPlaceIsNotAccessible(id: String, targetPlaceInfo: ClubQuestService.ClubQuestTargetPlaceInfo, isNotAccessible: Boolean): ClubQuest = transactionManager.doInTransaction(TransactionIsolationLevel.SERIALIZABLE) {
+        val clubQuest = clubQuestRepository.findById(id)
+        clubQuestService.setPlaceIsNotAccessible(clubQuest, targetPlaceInfo, isNotAccessible)
+    }
+
     fun listAll(): List<ClubQuest> = transactionManager.doInTransaction {
         clubQuestRepository.listNotDeleted()
     }

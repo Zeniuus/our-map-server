@@ -138,10 +138,19 @@ function ClubQuest(props: ClubQuestProps) {
     };
   }
 
+  const onPlaceIsNotAccessibleChange = (target: ClubQuestContentTargetDTO, place: ClubQuestContentTargetPlaceDTO) => {
+    return () => {
+      withLoading(
+        apiController.setPlaceIsNotAccessible(clubQuest!.id, target, place)
+          .then((clubQuest) => setClubQuest(clubQuest))
+      );
+    };
+  }
+
   return (
     <div>
       <h1>{clubQuest?.title}</h1>
-      <div id="map" style={{ minWidth: '320px', height: 'calc(100vw - 40px)', maxHeight: '500px' }} />
+      <div id="map" style={{ minWidth: '200px', height: 'calc(100vw - 40px)', maxHeight: '500px' }} />
       <div className="map-manipulate-button-div">
         <ButtonGroup className="map-manipulate-button-container">
           {clubQuest != null ? <Button text="퀘스트 전체 표시하기" onClick={showQuestsOnMap}></Button> : null}
@@ -158,6 +167,7 @@ function ClubQuest(props: ClubQuestProps) {
                   <th>장소 이름</th>
                   <th>정복</th>
                   <th>폐업</th>
+                  <th>접근 불가</th>
                 </tr>
               </thead>
               <tbody>
@@ -170,6 +180,7 @@ function ClubQuest(props: ClubQuestProps) {
                           <td>{place.name}</td>
                           <td><Checkbox checked={place.isCompleted} disabled={isLoading} large onChange={onPlaceIsCompletedChange(target, place)} /></td>
                           <td><Checkbox checked={place.isClosed} disabled={isLoading} large onChange={onPlaceIsClosedChange(target, place)} /></td>
+                          <td><Checkbox checked={place.isNotAccessible} disabled={isLoading} large onChange={onPlaceIsNotAccessibleChange(target, place)} /></td>
                         </tr>
                       );
                     });

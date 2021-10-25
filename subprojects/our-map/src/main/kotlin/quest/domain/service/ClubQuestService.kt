@@ -73,4 +73,10 @@ class ClubQuestService(
         place.isClosed = isClosed
         return clubQuestRepository.add(clubQuest)
     }
+
+    fun setPlaceIsNotAccessible(clubQuest: ClubQuest, targetPlaceInfo: ClubQuestTargetPlaceInfo, isNotAccessible: Boolean): ClubQuest {
+        val place = targetPlaceInfo.findPlace(clubQuest) ?: return clubQuest
+        place.isNotAccessible = isNotAccessible
+        return clubQuestRepository.add(clubQuest)
+    }
 }

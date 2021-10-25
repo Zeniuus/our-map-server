@@ -58,6 +58,15 @@ export const apiController = {
     }).then(res => res.data);
   },
 
+  setPlaceIsNotAccessible(id: string, target: ClubQuestContentTargetDTO, place: ClubQuestContentTargetPlaceDTO): Promise<ClubQuestDTO> {
+    return apiClient.post(`/clubQuests/${id}/setPlaceIsNotAccessible/${!place.isNotAccessible}`, {
+      lng: target.lng,
+      lat: target.lat,
+      targetDisplayedName: target.displayedName,
+      placeName: place.name,
+    }).then(res => res.data);
+  },
+
   deleteClubQuest(id: string): Promise<void> {
     return apiClient.get(`/clubQuests/${id}/delete`);
   },

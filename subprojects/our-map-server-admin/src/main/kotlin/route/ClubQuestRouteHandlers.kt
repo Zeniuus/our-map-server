@@ -76,4 +76,13 @@ class ClubQuestRouteHandlers(
             call.respond(ClubQuestDTO(clubQuestApplicationService.setPlaceIsClosed(id, targetPlaceInfo, isClosed)))
         }
     }
+
+    fun setPlaceIsNotAccessible(route: Route) {
+        route.post("/api/clubQuests/{id}/setPlaceIsNotAccessible/{isNotAccessible}") {
+            val id = call.parameters["id"]!!
+            val isNotAccessible = call.parameters["isNotAccessible"]!!.toBoolean()
+            val targetPlaceInfo = call.receive<ClubQuestService.ClubQuestTargetPlaceInfo>()
+            call.respond(ClubQuestDTO(clubQuestApplicationService.setPlaceIsNotAccessible(id, targetPlaceInfo, isNotAccessible)))
+        }
+    }
 }
