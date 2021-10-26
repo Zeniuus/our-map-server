@@ -1,0 +1,2224 @@
+{
+	"id": "구미동",
+	"eupMyeonDongId": "pWiNdiNgUlLp5DYNBCnT86behT1d3Dm5qXMi",
+	"numberOfBlocks": 116,
+	"paths": [
+		{
+			"type": "path",
+			"props": {
+				"d": "M309.431 17.0487C308.002 16.9093 306.561 17.07 305.198 17.5204C303.835 17.9709 302.582 18.7011 301.518 19.6643C300.454 20.6274 299.603 21.8023 299.02 23.1136C298.437 24.4248 298.134 25.8435 298.131 27.2787C298.047 24.6064 296.927 22.0715 295.008 20.2107C293.088 18.35 290.519 17.3094 287.846 17.3094C285.172 17.3094 282.604 18.35 280.684 20.2107C278.764 22.0715 277.644 24.6064 277.561 27.2787C277.558 25.8435 277.255 24.4248 276.672 23.1136C276.088 21.8023 275.237 20.6274 274.173 19.6643C273.11 18.7011 271.856 17.9709 270.493 17.5204C269.131 17.07 267.689 16.9093 266.261 17.0487C263.687 17.3545 261.318 18.6012 259.609 20.5488C257.899 22.4964 256.97 25.0074 257.001 27.5987C257.001 28.9119 257.259 30.2122 257.762 31.4255C258.264 32.6388 259.001 33.7411 259.93 34.6697C261.805 36.5451 264.349 37.5987 267.001 37.5987H308.731C310.044 37.5987 311.344 37.34 312.558 36.8375C313.771 36.3349 314.873 35.5983 315.802 34.6697C316.73 33.7411 317.467 32.6388 317.97 31.4255C318.472 30.2122 318.731 28.9119 318.731 27.5987C318.76 25.0013 317.826 22.4852 316.108 20.5366C314.39 18.5881 312.011 17.3454 309.431 17.0487Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"id": "구미동_0"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M375 269H0V338H375V269Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M385 80H-8V342H385V80Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_1"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M385 309H-8V342H385V309Z",
+				"fill": "#B9CADE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_2"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M237 277H225V283H237V277Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_3"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M243 288H231V294H243V288Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_4"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M261 283H249V289H261V283Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_5"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M195.865 73.2362C195.115 61.3853 191.249 49.9142 184.624 39.999C177.207 28.8987 166.665 20.2471 154.331 15.1381C141.997 10.0292 128.425 8.69253 115.331 11.297C102.238 13.9015 90.2104 20.3303 80.7704 29.7703C74.2488 36.2919 69.1644 44.0482 65.7852 52.538C62.6579 49.868 59.1277 47.6851 55.3073 46.0829C47.9983 43.0175 39.9556 42.2155 32.1964 43.7782C24.4372 45.3409 17.3099 49.1982 11.7158 54.8622C6.12166 60.5262 2.31202 67.7426 0.76861 75.5989C-0.075211 79.8941 -0.220921 84.275 0.315112 88.5735L-1 88.6767V164H196V73.2257L195.865 73.2362Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_6"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M177.003 77C177.03 75.3562 177.203 73.7106 177.527 72.0831C178.586 66.7612 181.199 61.8726 185.036 58.0357C188.873 54.1988 193.761 51.5858 199.083 50.5272C204.405 49.4686 209.921 50.0119 214.935 52.0884C219.948 54.1649 224.233 57.6814 227.247 62.1932C227.366 62.3705 227.482 62.549 227.596 62.7286C228.669 61.0397 229.928 59.4648 231.357 58.0357C235.194 54.1988 240.082 51.5858 245.404 50.5272C250.726 49.4686 256.243 50.0119 261.256 52.0884C266.269 54.1649 270.554 57.6814 273.569 62.1932C273.839 62.5973 274.097 63.0078 274.345 63.4241C275.505 61.4709 276.909 59.6592 278.533 58.0357C282.37 54.1988 287.258 51.5858 292.58 50.5272C297.902 49.4686 303.419 50.0119 308.432 52.0884C313.445 54.1649 317.73 57.6814 320.744 62.1932C323.759 66.7049 325.368 72.0093 325.368 77.4356C325.367 78.9373 325.242 80.4263 325 81.8891V91H177V77H177.003Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_7"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M374 90.5H-1V96.5H374V90.5Z",
+				"fill": "#1D85FF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_8"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"y": "80",
+				"width": "44",
+				"height": "6",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_9"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"y": "86",
+				"width": "44",
+				"height": "168",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_10"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M24 98H8V118H24V98Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_11"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M36 98H24V118H36V98Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_12"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M24 126H8V146H24V126Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_13"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M36 126H24V146H36V126Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_14"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M24 154H8V174H24V154Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_15"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M36 154H24V174H36V154Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_16"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M24 182H8V202H24V182Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M36 182H24V202H36V182Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M24 210H8V230H24V210Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M36 238H8V254H36V238Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M36 210H24V230H36V210Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "44",
+				"y": "70",
+				"width": "160",
+				"height": "6",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_17"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "44",
+				"y": "76",
+				"width": "160",
+				"height": "178",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_18"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M148 88H132V108H148V88Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_19"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M160 88H148V108H160V88Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_20"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M184 88H168V108H184V88Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_21"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M196 88H184V108H196V88Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_22"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M68 88H52V108H68V88Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_23"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M80 88H68V108H80V88Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_24"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M148 116H132V136H148V116Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_25"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M160 116H148V136H160V116Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_26"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M184 116H168V136H184V116Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_27"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M196 116H184V136H196V116Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_28"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M68 116H52V136H68V116Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_29"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M80 116H68V136H80V116Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_30"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M68 144H52V168H68V144Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_31"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M80 144H68V168H80V144Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_32"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M148 172H132V192H148V172Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M160 172H148V192H160V172Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M184 172H168V192H184V172Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M196 172H184V192H196V172Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M68 172H52V192H68V172Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M80 172H68V192H80V172Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M148 200H132V220H148V200Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M160 200H148V220H160V200Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M184 200H168V220H184V200Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M196 200H184V220H196V200Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M68 200H52V220H68V200Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M80 200H68V220H80V200Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M148 228H132V248H148V228Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M160 228H148V248H160V228Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M184 228H168V248H184V228Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M196 228H184V248H196V228Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M68 228H52V248H68V228Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M80 228H68V248H80V228Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "88",
+				"y": "62",
+				"width": "36",
+				"height": "192",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_33"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M96.6986 97.066L101.361 97.07L101.359 98.456L96.6974 98.452L96.6986 97.066ZM94.4698 100.2L103.584 100.208L103.588 95.322L94.4741 95.314L94.4698 100.2ZM103.395 92.3958C103.69 90.9541 103.691 89.8761 103.692 88.8261L103.693 87.7341L94.5507 87.7261L94.5492 89.5041L101.451 89.5101C101.436 90.3501 101.38 91.26 101.155 92.3938L93.1187 92.3868L93.1171 94.1648L105.003 94.1752L105.005 92.3972L103.395 92.3958ZM106.477 88.0165L106.476 89.7945L110.284 89.7978C109.974 91.3375 108.531 92.6383 105.829 93.3359L106.737 95.1427C110.644 94.0821 112.76 91.634 112.763 88.022L106.477 88.0165ZM112.068 98.6474C110.626 98.6461 109.814 98.3234 109.815 97.6234C109.816 96.9094 110.628 96.5881 112.07 96.5894C113.498 96.5906 114.31 96.9133 114.309 97.6273C114.308 98.3273 113.496 98.6486 112.068 98.6474ZM112.071 94.8534C109.397 94.851 107.576 95.9275 107.575 97.6215C107.574 99.3015 109.393 100.381 112.067 100.383C114.727 100.386 116.548 99.3093 116.549 97.6293C116.55 95.9353 114.731 94.8557 112.071 94.8534ZM116.416 90.1112L116.418 87.2132L114.15 87.2112L114.144 94.6732L116.412 94.6752L116.414 91.9452L118.052 91.9466L118.054 90.1126L116.416 90.1112ZM93.7681 116.009L100.348 116.015L100.35 113.999L98.4738 113.998L98.4812 105.598L96.6472 105.596C95.9188 106.043 95.1905 106.323 94.0703 106.532L94.069 108.072L95.987 108.073L95.9818 113.995L93.7698 113.993L93.7681 116.009ZM105.463 116.216C107.661 116.218 109.161 114.343 109.164 110.759C109.167 107.203 107.671 105.41 105.473 105.408C103.275 105.406 101.789 107.168 101.786 110.752C101.783 114.336 103.265 116.214 105.463 116.216ZM105.465 114.284C104.723 114.283 104.135 113.61 104.138 110.754C104.14 107.912 104.729 107.325 105.471 107.326C106.213 107.326 106.814 107.915 106.812 110.757C106.809 113.613 106.207 114.284 105.465 114.284ZM110.831 116.024L117.411 116.03L117.412 114.014L115.536 114.012L115.544 105.612L113.71 105.611C112.981 106.058 112.253 106.338 111.133 106.547L111.131 108.087L113.049 108.088L113.044 114.01L110.832 114.008L110.831 116.024Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M86 222.488L106 208L126 222.488V254H86V222.488Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M117 228H95V254H117V228Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "94",
+				"y": "50",
+				"width": "24",
+				"height": "12",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_34"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M106 163H114V175H106V163Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M98 163H106V175H98V163Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M106 191H114V203H106V191Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M98 191H106V203H98V191Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M384.788 89.9204H297V41.0708L340.894 17L384.788 41.0708V89.9204Z",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_35"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M384.788 97.0004H297V47.6766L340.894 23.3721L384.788 47.6766V97.0004Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_36"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M376 59H354V97H376V59Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_37"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M354 59H332V97H354V59Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_38"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M5.40724 208.871C-0.0189953 208.871 -5.32339 207.262 -9.83514 204.247C-14.3469 201.233 -17.8634 196.948 -19.9399 191.935C-22.0164 186.922 -22.5597 181.405 -21.5011 176.083C-20.4425 170.761 -17.8295 165.873 -13.9926 162.036C-10.1557 158.199 -5.26715 155.586 0.0548306 154.527C5.3768 153.469 10.8932 154.012 15.9064 156.088C20.9196 158.165 25.2044 161.681 28.2191 166.193C28.3375 166.37 28.4538 166.549 28.5679 166.729C29.6403 165.04 30.8996 163.465 32.3287 162.036C36.1656 158.199 41.0541 155.586 46.3761 154.527C51.6981 153.469 57.2145 154.012 62.2277 156.088C67.2408 158.165 71.5257 161.681 74.5403 166.193C74.8104 166.597 75.0691 167.008 75.3164 167.424C76.4766 165.471 77.881 163.659 79.5045 162.036C83.3414 158.199 88.2299 155.586 93.5519 154.527C98.8739 153.469 104.39 154.012 109.403 156.088C114.417 158.165 118.701 161.681 121.716 166.193C124.731 170.705 126.34 176.009 126.34 181.436C126.332 188.71 123.439 195.683 118.296 200.827C113.152 205.97 106.178 208.863 98.9043 208.871C93.4781 208.871 88.1737 207.262 83.6619 204.247C80.2413 201.962 77.3928 198.946 75.3102 195.437C74.1527 197.385 72.7492 199.198 71.1199 200.827C65.9764 205.97 59.0025 208.863 51.7285 208.871C46.3023 208.871 40.9979 207.262 36.4861 204.247C33.2938 202.114 30.5996 199.345 28.5614 196.132C27.4911 197.817 26.2323 199.393 24.7986 200.827C19.6551 205.97 12.6812 208.863 5.40724 208.871Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_39"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M119.873 199.419C126.243 199.419 132.47 197.53 137.767 193.991C143.064 190.452 147.192 185.421 149.63 179.536C152.068 173.65 152.706 167.174 151.463 160.926C150.22 154.678 147.153 148.939 142.648 144.434C138.143 139.929 132.404 136.862 126.156 135.619C119.908 134.376 113.432 135.014 107.546 137.452C101.661 139.89 96.6305 144.018 93.0913 149.315C89.5521 154.612 87.663 160.839 87.663 167.21C87.6721 175.749 91.0685 183.937 97.107 189.975C103.145 196.014 111.333 199.41 119.873 199.419Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_40"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M134.062 175.431L120.788 188.694",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M106.198 165.003L119.461 178.278",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M120.124 153.923V222.71",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M172.467 199.419C166.097 199.419 159.87 197.53 154.573 193.991C149.276 190.452 145.147 185.421 142.71 179.536C140.272 173.65 139.634 167.174 140.877 160.926C142.12 154.678 145.187 148.939 149.692 144.434C154.196 139.929 159.936 136.862 166.184 135.619C172.432 134.376 178.908 135.014 184.793 137.452C190.679 139.89 195.709 144.018 199.249 149.315C202.788 154.612 204.677 160.839 204.677 167.21C204.668 175.749 201.271 183.937 195.233 189.975C189.194 196.014 181.007 199.41 172.467 199.419Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_41"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M186.142 165.003L172.879 178.278",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M172.216 153.923V222.71",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M231.558 130.315C231.542 130.789 231.302 131.227 230.911 131.497C230.521 131.767 230.026 131.835 229.576 131.683C228.837 131.432 227.879 131.868 227.625 133.029L226.262 140.521C225.989 142.104 224.491 143.269 222.807 142.853C221.142 142.507 220.289 140.85 220.624 139.332L221.987 131.842C221.989 131.831 221.991 131.821 221.993 131.81C222.812 127.796 226.477 124.939 230.455 125.72C231.177 125.862 231.69 126.508 231.665 127.244L231.558 130.315Z",
+				"fill": "#B07A68",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"strokeLinejoin": "round",
+				"id": "구미동_42"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M235.707 132.579L234.026 133.03C233.455 133.183 232.859 133.223 232.272 133.146C231.686 133.069 231.12 132.877 230.608 132.581C230.095 132.285 229.646 131.891 229.286 131.422C228.926 130.952 228.663 130.416 228.51 129.845C228.356 129.274 228.316 128.679 228.393 128.093C228.47 127.507 228.661 126.942 228.957 126.431C229.252 125.919 229.646 125.471 230.115 125.111C230.584 124.752 231.119 124.489 231.69 124.337L236.048 123.169",
+				"fill": "#FFD770",
+				"id": "구미동_43"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M235.707 132.579L234.026 133.03C233.455 133.183 232.859 133.223 232.272 133.146C231.686 133.069 231.12 132.877 230.608 132.581C230.095 132.285 229.646 131.891 229.286 131.422C228.926 130.952 228.663 130.416 228.51 129.845C228.356 129.274 228.316 128.679 228.393 128.093C228.47 127.507 228.661 126.942 228.957 126.431C229.252 125.919 229.646 125.471 230.115 125.111C230.584 124.752 231.119 124.489 231.69 124.337L236.048 123.169",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M237.312 141.578C237.799 141.856 238.351 142.001 238.912 141.998C239.478 142.001 240.034 141.853 240.524 141.57C241.014 141.287 241.421 140.88 241.702 140.388L243.452 137.388L246.862 131.482L238.712 132.55L237.212 135.148L237.032 135.148C236.391 135.147 235.768 135.358 235.259 135.748C234.75 136.137 234.383 136.684 234.217 137.303C234.051 137.922 234.093 138.578 234.338 139.171C234.583 139.763 235.017 140.258 235.572 140.578L237.312 141.578Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_44"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M248.637 139C240.352 139 233.637 132.284 233.637 124C233.637 115.716 240.352 109 248.637 109C256.921 109 263.637 115.716 263.637 124C263.637 128.442 261.705 132.434 258.637 135.181C258.391 135.4 258.138 135.612 257.878 135.816L258.517 136.461C258.919 136.859 259.207 137.358 259.354 137.904C259.5 138.451 259.499 139.026 259.35 139.572C259.207 140.115 258.924 140.61 258.53 141.009L256.932 142.613C256.478 143.066 255.888 143.357 255.253 143.441C254.617 143.524 253.972 143.395 253.417 143.074C252.862 142.753 252.429 142.258 252.184 141.666C251.94 141.073 251.898 140.416 252.065 139.798L252.111 139.624L251.259 138.772C250.408 138.922 249.531 139 248.637 139Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_45"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M242.637 127C243.189 127 243.637 126.552 243.637 126C243.637 125.448 243.189 125 242.637 125C242.084 125 241.637 125.448 241.637 126C241.637 126.552 242.084 127 242.637 127Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M248.637 127C249.189 127 249.637 126.552 249.637 126C249.637 125.448 249.189 125 248.637 125C248.084 125 247.637 125.448 247.637 126C247.637 126.552 248.084 127 248.637 127Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "330",
+				"y": "97",
+				"width": "44",
+				"height": "6",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_46"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "330",
+				"y": "103",
+				"width": "44",
+				"height": "166",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_47"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M354 115H338V135H354V115Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_48"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M366 115H354V135H366V115Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_49"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M354 143H338V163H354V143Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_50"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M366 143H354V163H366V143Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_51"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M354 171H338V191H354V171Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_52"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M366 171H354V191H366V171Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_53"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M354 199H338V219H354V199Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_54"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M366 199H354V219H366V199Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_55"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M354 227H338V247H354V227Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_56"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M366 227H354V247H366V227Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_57"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "288",
+				"y": "66",
+				"width": "33",
+				"height": "20",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_58"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "258",
+				"y": "86",
+				"width": "80",
+				"height": "6",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_59"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "258",
+				"y": "92",
+				"width": "80",
+				"height": "178",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_60"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "282",
+				"y": "78",
+				"width": "56",
+				"height": "192",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_61"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M282 104H266V124H282V104Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_62"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M282 132H266V152H282V132Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_63"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M282 160H266V180H282V160Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_64"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M282 188H266V208H282V188Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_65"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M282 244H266V264H282V244Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M297.508 109.337L292.036 109.332L292.038 107.204L297.51 107.209L297.508 109.337ZM300.055 105.195L289.495 105.186L289.49 111.346L300.05 111.355L300.055 105.195ZM301.601 112.733L288.017 112.721L288.015 114.753L293.455 114.758L293.451 119.526L296.043 119.528L296.047 114.76L301.599 114.765L301.601 112.733ZM308.772 108.019L311.652 108.021L311.654 105.909L303.206 105.902L303.204 108.014L306.148 108.017L306.147 108.289C306.145 110.785 305.247 113.536 302.542 114.702L303.996 116.751C305.741 115.984 306.846 114.529 307.488 112.722C308.142 114.354 309.245 115.667 310.924 116.357L312.318 114.342C309.647 113.236 308.769 110.659 308.771 108.291L308.772 108.019ZM312.695 104.534L312.682 119.526L315.274 119.529L315.287 104.537L312.695 104.534ZM318.004 106.331L318.002 108.363L321.426 108.366C321.136 111.182 319.918 113.069 317.149 114.762L318.651 116.54C322.781 114.079 323.984 110.752 323.988 106.336L318.004 106.331ZM327.926 104.532L327.921 109.988L326.993 109.987L326.997 104.931L324.597 104.929L324.585 118.945L326.985 118.947L326.991 112.035L327.919 112.036L327.912 119.524L330.36 119.526L330.374 104.534L327.926 104.532ZM298.276 126.882L300.532 126.884L300.527 132.948L298.271 132.946L298.276 126.882ZM295.725 134.96L303.069 134.966L303.078 124.87L295.734 124.864L295.725 134.96ZM309.25 129.003L307.234 129.002L307.239 123.53L304.647 123.527L304.634 138.519L307.226 138.522L307.232 131.114L309.248 131.115L309.25 129.003ZM316.868 125.586C318.884 125.588 319.7 125.765 319.699 126.261C319.699 126.773 318.883 126.932 316.867 126.93C314.851 126.928 314.035 126.768 314.035 126.256C314.036 125.76 314.852 125.584 316.868 125.586ZM316.865 128.802C320.337 128.805 322.386 127.911 322.387 126.263C322.389 124.615 320.341 123.717 316.869 123.714C313.397 123.711 311.349 124.605 311.347 126.253C311.346 127.901 313.393 128.799 316.865 128.802ZM314.139 136.064L322.059 136.071L322.062 131.959L311.566 131.949L311.565 133.837L319.501 133.844L319.5 134.308L311.58 134.301L311.576 138.477L322.424 138.487L322.426 136.567L314.138 136.56L314.139 136.064ZM310.064 129.324L310.063 131.324L323.663 131.336L323.664 129.336L310.064 129.324Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M298.091 157.867L299.453 155.516C299.789 154.844 300.11 154.156 300.415 153.485L300.479 153.485C300.446 154.237 300.365 155.373 300.364 156.125L300.363 157.869L298.091 157.867ZM304.347 157.872L303.019 157.871L303.025 151.103L299.521 151.1L295.371 158.056L295.369 160.024L300.361 160.029L300.358 163.005L303.014 163.007L303.017 160.031L304.345 160.032L304.347 157.872ZM309.628 163.237C312.14 163.239 313.854 161.096 313.858 157C313.861 152.936 312.151 150.887 309.639 150.885C307.127 150.883 305.429 152.897 305.426 156.993C305.422 161.089 307.116 163.235 309.628 163.237ZM309.63 161.029C308.782 161.028 308.111 160.259 308.114 156.995C308.116 153.747 308.789 153.076 309.637 153.077C310.485 153.077 311.172 153.75 311.17 156.998C311.167 160.262 310.478 161.029 309.63 161.029ZM315.762 163.018L323.282 163.025L323.284 160.721L321.14 160.719L321.149 151.119L319.053 151.117C318.22 151.628 317.388 151.948 316.108 152.186L316.106 153.946L318.298 153.948L318.292 160.716L315.764 160.714L315.762 163.018Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M175.003 238C175.03 236.356 175.203 234.711 175.527 233.083C176.586 227.761 179.199 222.873 183.036 219.036C186.873 215.199 191.761 212.586 197.083 211.527C202.405 210.469 207.921 211.012 212.935 213.088C217.948 215.165 222.233 218.681 225.247 223.193C225.366 223.37 225.482 223.549 225.596 223.729C226.669 222.04 227.928 220.465 229.357 219.036C233.194 215.199 238.082 212.586 243.404 211.527C248.726 210.469 254.243 211.012 259.256 213.088C264.269 215.165 268.554 218.681 271.569 223.193C271.839 223.597 272.097 224.008 272.345 224.424C273.505 222.471 274.909 220.659 276.533 219.036C280.37 215.199 285.258 212.586 290.58 211.527C295.902 210.469 301.419 211.012 306.432 213.088C311.445 215.165 315.73 218.681 318.744 223.193C321.759 227.705 323.368 233.009 323.368 238.436C323.367 239.937 323.242 241.426 323 242.889V270H175V238H175.003Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_66"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M244 192H123V198H244V192Z",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_67"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M236 158H184V166H236V158Z",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_68"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M242 198H125V270H242V198Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_69"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M153 174H145C141.686 174 139 176.686 139 180C139 183.314 141.686 186 145 186H153C156.314 186 159 183.314 159 180C159 176.686 156.314 174 153 174Z",
+				"fill": "#B9CADE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_70"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M154 181V179C154 176.239 151.761 174 149 174C146.239 174 144 176.239 144 179V181C144 183.761 146.239 186 149 186C151.761 186 154 183.761 154 181Z",
+				"stroke": "black",
+				"strokeWidth": "2"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M149 174L149 186",
+				"stroke": "black",
+				"strokeWidth": "2"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M234 166H186V192H234V166Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_71"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M232 222H217V237H232V222Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_72"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M220 172H208V192H220V172Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_73"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M209 222H194V237H209V222Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_74"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M208 172H196V192H208V172Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_75"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M244 210H123V216H244V210Z",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_76"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M169 188H142V270H169V188Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_77"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M171 186H140V192H171V186Z",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_78"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M171 204H140V210H171V204Z",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_79"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M372.51 259C371.106 259.005 369.761 259.565 368.768 260.558C367.775 261.551 367.215 262.896 367.21 264.3C367.151 262.933 366.566 261.641 365.577 260.695C364.589 259.749 363.273 259.22 361.905 259.22C360.537 259.22 359.221 259.749 358.233 260.695C357.244 261.641 356.659 262.933 356.6 264.3C356.6 263.604 356.463 262.915 356.197 262.272C355.93 261.629 355.54 261.044 355.048 260.552C354.556 260.06 353.971 259.67 353.328 259.403C352.685 259.137 351.996 259 351.3 259C350.604 259 349.915 259.137 349.272 259.403C348.629 259.67 348.044 260.06 347.552 260.552C347.06 261.044 346.67 261.629 346.403 262.272C346.137 262.915 346 263.604 346 264.3V269.61H377.81V264.3C377.805 262.896 377.245 261.551 376.252 260.558C375.259 259.565 373.914 259.005 372.51 259Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_80"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M125 195H0V203H125V195Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_81"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M125 233H0V270H125V233Z",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_82"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M101 216H25V270H101V216Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_83"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M0 203H125L125 233.08C125 236.395 123.683 239.575 121.339 241.919C118.995 244.263 115.815 245.58 112.5 245.58C109.185 245.58 106.005 244.263 103.661 241.919C101.317 239.575 100 236.395 100 233.08C100 236.395 98.6831 239.575 96.3388 241.919C93.9946 244.263 90.8152 245.58 87.5 245.58C84.1848 245.58 81.0054 244.263 78.6612 241.919C76.317 239.575 75 236.395 75 233.08C75 236.395 73.6831 239.575 71.3388 241.919C68.9946 244.263 65.8152 245.58 62.5 245.58C59.1848 245.58 56.0054 244.263 53.6612 241.919C51.317 239.575 50 236.395 50 233.08C50 236.395 48.683 239.575 46.3388 241.919C43.9946 244.263 40.8152 245.58 37.5 245.58C34.1848 245.58 31.0054 244.263 28.6612 241.919C26.317 239.575 25 236.395 25 233.08C25.0027 236.404 23.6895 239.595 21.3473 241.954C19.005 244.313 15.8243 245.649 12.5 245.67C9.17573 245.649 5.99496 244.313 3.65275 241.954C1.31053 239.595 -0.00270559 236.404 4.18526e-06 233.08L0 203Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_84"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M104.668 184C103.256 184.005 101.903 184.586 100.904 185.615C99.9054 186.645 99.342 188.039 99.3367 189.495C99.277 188.077 98.6886 186.739 97.6943 185.757C96.7 184.776 95.3766 184.228 94 184.228C92.6234 184.228 91.3 184.776 90.3057 185.757C89.3114 186.739 88.723 188.077 88.6633 189.495C88.6633 188.773 88.5254 188.059 88.2575 187.392C87.9895 186.725 87.5968 186.12 87.1017 185.609C86.6066 185.099 86.0189 184.694 85.372 184.418C84.7251 184.142 84.0318 184 83.3317 184C82.6315 184 81.9382 184.142 81.2913 184.418C80.6445 184.694 80.0567 185.099 79.5616 185.609C79.0665 186.12 78.6738 186.725 78.4058 187.392C78.1379 188.059 78 188.773 78 189.495V195H110V189.495C109.995 188.039 109.431 186.645 108.433 185.615C107.434 184.586 106.081 184.005 104.668 184Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_85"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M39.1672 217.692L37.3112 217.691C37.681 215.611 37.6823 214.059 37.6836 212.667L37.6847 211.323L27.0607 211.314L27.059 213.346L35.139 213.353C35.1219 214.585 35.0727 215.945 34.7512 217.688L25.5832 217.68L25.5814 219.744L30.9734 219.749L30.9683 225.525L33.5923 225.527L33.5974 219.751L39.1654 219.756L39.1672 217.692ZM40.9791 211.79L40.9701 222.062L48.3461 222.068L48.3551 211.796L40.9791 211.79ZM45.8093 213.81L45.8039 220.05L43.5159 220.048L43.5213 213.808L45.8093 213.81ZM50.2602 210.502L50.247 225.59L52.839 225.592L52.8522 210.504L50.2602 210.502ZM64.3511 214.866L59.1672 214.862L59.1687 213.118L64.3527 213.122L64.3511 214.866ZM66.8984 211.125L56.6264 211.116L56.6214 216.86L66.8934 216.869L66.8984 211.125ZM59.0819 220.926L56.4899 220.923L56.486 225.323L67.11 225.333L67.1118 223.301L59.0798 223.294L59.0819 220.926ZM55.0046 217.818L55.0028 219.834L60.7308 219.839L60.7288 222.095L63.3208 222.097L63.3228 219.841L68.6028 219.846L68.6046 217.83L55.0046 217.818ZM74.8604 216.636L72.6204 216.634L72.6217 215.114L74.8617 215.116L74.8604 216.636ZM77.4248 211.518L74.8648 211.516L74.8634 213.164L72.6234 213.162L72.6248 211.514L70.0648 211.511L70.0586 218.631L77.4186 218.638L77.4248 211.518ZM76.6623 223.613C74.9183 223.612 74.0705 223.323 74.0712 222.587C74.0718 221.867 74.92 221.58 76.664 221.581C78.392 221.583 79.2398 221.871 79.2392 222.591C79.2385 223.327 78.3903 223.615 76.6623 223.613ZM76.6658 219.581C73.5138 219.578 71.4968 220.697 71.4952 222.585C71.4935 224.473 73.5085 225.594 76.6605 225.597C79.7965 225.6 81.8135 224.482 81.8152 222.594C81.8168 220.706 79.8018 219.584 76.6658 219.581ZM81.6467 213.905L81.6497 210.561L79.0577 210.559L79.05 219.295L81.642 219.297L81.6449 216.001L83.5169 216.003L83.5187 213.907L81.6467 213.905ZM98.0422 217.744L96.1862 217.742C96.556 215.662 96.5573 214.11 96.5585 212.718L96.5597 211.374L85.9357 211.365L85.9339 213.397L94.0139 213.404C93.9969 214.636 93.9477 215.996 93.6262 217.74L84.4582 217.732L84.4564 219.796L89.8484 219.801L89.8433 225.577L92.4673 225.579L92.4724 219.803L98.0404 219.808L98.0422 217.744Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M0 232.5H125",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M26.51 259C25.106 259.005 23.761 259.565 22.7682 260.558C21.7754 261.551 21.2153 262.896 21.21 264.3C21.1506 262.933 20.5658 261.641 19.5774 260.695C18.589 259.749 17.2734 259.22 15.905 259.22C14.5366 259.22 13.221 259.749 12.2326 260.695C11.2442 261.641 10.6594 262.933 10.6 264.3C10.6 263.604 10.4629 262.915 10.1966 262.272C9.93021 261.629 9.53982 261.044 9.04767 260.552C8.55552 260.06 7.97125 259.67 7.32822 259.403C6.6852 259.137 5.99601 259 5.3 259C4.60399 259 3.9148 259.137 3.27178 259.403C2.62875 259.67 2.04448 260.06 1.55233 260.552C1.06018 261.044 0.669788 261.629 0.403439 262.272C0.137089 262.915 -1.46672e-08 263.604 0 264.3V269.61H31.81V264.3C31.8047 262.896 31.2446 261.551 30.2518 260.558C29.259 259.565 27.914 259.005 26.51 259Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_86"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M215.431 17.0487C214.002 16.9093 212.561 17.07 211.198 17.5204C209.835 17.9709 208.582 18.7011 207.518 19.6643C206.454 20.6274 205.603 21.8023 205.02 23.1136C204.437 24.4248 204.134 25.8435 204.131 27.2787C204.047 24.6064 202.927 22.0715 201.008 20.2107C199.088 18.35 196.519 17.3094 193.846 17.3094C191.172 17.3094 188.604 18.35 186.684 20.2107C184.764 22.0715 183.644 24.6064 183.561 27.2787C183.558 25.8435 183.255 24.4248 182.672 23.1136C182.088 21.8023 181.237 20.6274 180.173 19.6643C179.11 18.7011 177.856 17.9709 176.493 17.5204C175.131 17.07 173.689 16.9093 172.261 17.0487C169.687 17.3545 167.318 18.6012 165.609 20.5488C163.899 22.4964 162.97 25.0074 163.001 27.5987C163.001 28.9119 163.259 30.2122 163.762 31.4255C164.264 32.6388 165.001 33.7411 165.93 34.6697C167.805 36.5451 170.349 37.5987 173.001 37.5987H214.731C216.044 37.5987 217.344 37.34 218.558 36.8375C219.771 36.3349 220.873 35.5983 221.802 34.6697C222.73 33.7411 223.467 32.6388 223.97 31.4255C224.472 30.2122 224.731 28.9119 224.731 27.5987C224.76 25.0013 223.826 22.4852 222.108 20.5366C220.39 18.5881 218.011 17.3454 215.431 17.0487Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"id": "구미동_87"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M378 303H-3V309H378V303Z",
+				"fill": "#1D85FF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_88"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M209.221 292.07C209.704 292.072 210.179 291.954 210.605 291.726C211.03 291.498 211.391 291.167 211.656 290.763C211.92 290.36 212.079 289.896 212.119 289.415C212.158 288.934 212.076 288.451 211.881 288.01L214.201 285.69C214.482 285.408 214.64 285.027 214.64 284.63C214.64 284.232 214.482 283.851 214.201 283.57L211.881 281.25C211.599 280.969 211.218 280.811 210.821 280.81C210.624 280.809 210.429 280.848 210.247 280.923C210.065 280.999 209.9 281.11 209.761 281.25L205.761 285.25C205.463 285.547 205.227 285.9 205.066 286.289C204.904 286.677 204.821 287.094 204.821 287.515C204.821 287.935 204.904 288.352 205.066 288.741C205.227 289.129 205.463 289.482 205.761 289.78L207.181 291.2C207.447 291.472 207.764 291.689 208.114 291.838C208.464 291.987 208.84 292.066 209.221 292.07Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_89"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M222.061 292.07C222.622 292.072 223.174 291.927 223.661 291.65L225.401 290.65C225.957 290.329 226.39 289.835 226.635 289.242C226.88 288.65 226.923 287.993 226.756 287.374C226.59 286.755 226.224 286.209 225.715 285.819C225.206 285.43 224.582 285.219 223.941 285.22H223.761C226.754 283.3 228.954 280.366 229.958 276.956C230.963 273.546 230.704 269.888 229.23 266.652C227.757 263.417 225.166 260.822 221.933 259.342C218.701 257.862 215.043 257.596 211.631 258.594C208.219 259.592 205.281 261.787 203.356 264.776C201.43 267.764 200.647 271.347 201.149 274.866C201.65 278.386 203.404 281.607 206.088 283.938C208.772 286.27 212.206 287.555 215.761 287.56C216.35 287.562 216.937 287.528 217.521 287.46L219.271 290.46C219.553 290.951 219.959 291.359 220.449 291.642C220.939 291.924 221.496 292.072 222.061 292.07Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_90"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M221.541 271.63C220.989 271.63 220.541 271.182 220.541 270.63C220.541 270.078 220.989 269.63 221.541 269.63C222.093 269.63 222.541 270.078 222.541 270.63C222.541 271.182 222.093 271.63 221.541 271.63Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M215.541 271.63C214.989 271.63 214.541 271.182 214.541 270.63C214.541 270.078 214.989 269.63 215.541 269.63C216.093 269.63 216.541 270.078 216.541 270.63C216.541 271.182 216.093 271.63 215.541 271.63Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M41.91 302.64C40.4045 302.642 38.9322 302.197 37.6794 301.362C36.4267 300.527 35.4497 299.339 34.8722 297.949C34.2947 296.559 34.1425 295.028 34.4351 293.551C34.7276 292.075 35.4515 290.718 36.5154 289.652C37.5793 288.587 38.9353 287.861 40.4117 287.567C41.8882 287.272 43.4188 287.423 44.8099 287.998C46.2011 288.574 47.3902 289.549 48.2268 290.801C49.0635 292.053 49.51 293.524 49.51 295.03C49.51 297.046 48.7097 298.981 47.2847 300.407C45.8597 301.834 43.9266 302.637 41.91 302.64Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_91"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M17.61 302.64C16.1049 302.64 14.6336 302.194 13.3821 301.357C12.1307 300.521 11.1553 299.333 10.5793 297.942C10.0033 296.552 9.85259 295.021 10.1462 293.545C10.4399 292.069 11.1646 290.713 12.2289 289.649C13.2932 288.585 14.6492 287.86 16.1254 287.566C17.6016 287.273 19.1317 287.423 20.5222 287.999C21.9128 288.575 23.1013 289.551 23.9375 290.802C24.7737 292.054 25.22 293.525 25.22 295.03C25.2174 297.047 24.4147 298.982 22.9882 300.408C21.5616 301.835 19.6275 302.637 17.61 302.64Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_92"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M17.6104 295L22.1104 285H36.1104",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M22.1104 285L19.1104 280",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M41.9104 295L31.1104 274",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M15.1104 280H24.1104",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M27.1104 274H31.1104",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M41.9099 297.06C43.031 297.06 43.9399 296.151 43.9399 295.03C43.9399 293.909 43.031 293 41.9099 293C40.7887 293 39.8799 293.909 39.8799 295.03C39.8799 296.151 40.7887 297.06 41.9099 297.06Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M17.6101 297.06C18.7312 297.06 19.6401 296.151 19.6401 295.03C19.6401 293.909 18.7312 293 17.6101 293C16.4889 293 15.5801 293.909 15.5801 295.03C15.5801 296.151 16.4889 297.06 17.6101 297.06Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M173.34 281.07C172.857 281.072 172.381 280.954 171.956 280.726C171.531 280.498 171.169 280.167 170.905 279.763C170.64 279.36 170.481 278.896 170.442 278.415C170.402 277.934 170.484 277.451 170.68 277.01L168.36 274.69C168.079 274.408 167.921 274.027 167.921 273.63C167.921 273.232 168.079 272.851 168.36 272.57L170.68 270.25C170.961 269.969 171.342 269.811 171.74 269.81C171.937 269.809 172.132 269.848 172.314 269.923C172.496 269.999 172.661 270.11 172.8 270.25L176.8 274.25C177.097 274.547 177.334 274.9 177.495 275.289C177.656 275.677 177.739 276.094 177.739 276.515C177.739 276.935 177.656 277.352 177.495 277.741C177.334 278.129 177.097 278.482 176.8 278.78L175.38 280.2C175.114 280.472 174.796 280.689 174.446 280.838C174.096 280.987 173.72 281.066 173.34 281.07Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_93"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M160.499 281.07C159.938 281.072 159.387 280.927 158.899 280.65L157.159 279.65C156.604 279.329 156.17 278.835 155.925 278.242C155.68 277.65 155.638 276.993 155.804 276.374C155.971 275.755 156.337 275.209 156.846 274.819C157.355 274.43 157.978 274.219 158.619 274.22H158.799C155.807 272.3 153.607 269.366 152.602 265.956C151.598 262.546 151.856 258.888 153.33 255.652C154.804 252.417 157.395 249.822 160.627 248.342C163.86 246.862 167.517 246.596 170.929 247.594C174.341 248.592 177.28 250.787 179.205 253.776C181.13 256.764 181.914 260.347 181.412 263.866C180.91 267.386 179.156 270.607 176.473 272.938C173.789 275.27 170.354 276.555 166.799 276.56C166.211 276.562 165.623 276.528 165.039 276.46L163.289 279.46C163.008 279.951 162.602 280.359 162.111 280.642C161.621 280.924 161.065 281.072 160.499 281.07Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_94"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M93.17 280.34C87.5985 280.34 82.1521 278.688 77.5196 275.593C72.8871 272.497 69.2764 268.098 67.1443 262.95C65.0122 257.803 64.4543 252.139 65.5413 246.674C66.6282 241.21 69.3112 236.19 73.2508 232.251C77.1905 228.311 82.2099 225.628 87.6743 224.541C93.1388 223.454 98.8028 224.012 103.95 226.144C109.098 228.276 113.497 231.887 116.593 236.52C119.688 241.152 121.34 246.599 121.34 252.17C121.332 259.639 118.362 266.799 113.08 272.08C107.799 277.362 100.639 280.332 93.17 280.34Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_95"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M80.7598 259.359L92.3698 270.959",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M105.13 250.24L93.5303 261.85",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M92.9502 240.55V300.71",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M133.17 280.34C127.599 280.34 122.152 278.688 117.52 275.593C112.887 272.497 109.276 268.098 107.144 262.95C105.012 257.803 104.454 252.139 105.541 246.674C106.628 241.21 109.311 236.19 113.251 232.251C117.19 228.311 122.21 225.628 127.674 224.541C133.139 223.454 138.803 224.012 143.95 226.144C149.098 228.276 153.497 231.887 156.593 236.52C159.688 241.152 161.34 246.599 161.34 252.17C161.332 259.639 158.362 266.799 153.08 272.08C147.799 277.362 140.639 280.332 133.17 280.34Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_96"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M120.76 259.359L132.37 270.959",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M145.13 250.24L133.53 261.85",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M132.95 240.55V300.71",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M143.668 293C142.256 293.005 140.903 293.533 139.904 294.469C138.905 295.404 138.342 296.672 138.337 297.995C138.277 296.707 137.689 295.49 136.694 294.598C135.7 293.706 134.377 293.208 133 293.208C131.623 293.208 130.3 293.706 129.306 294.598C128.311 295.49 127.723 296.707 127.663 297.995C127.663 297.339 127.525 296.69 127.257 296.084C126.99 295.478 126.597 294.927 126.102 294.463C125.607 293.999 125.019 293.631 124.372 293.38C123.725 293.129 123.032 293 122.332 293C121.631 293 120.938 293.129 120.291 293.38C119.644 293.631 119.057 293.999 118.562 294.463C118.067 294.927 117.674 295.478 117.406 296.084C117.138 296.69 117 297.339 117 297.995V303H149V297.995C148.995 296.672 148.431 295.404 147.433 294.469C146.434 293.533 145.081 293.005 143.668 293Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_97"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M331.756 53.0934C334.451 54.7546 336.584 57.1878 337.879 60.0769C339.174 62.966 339.571 66.1777 339.018 69.2951C340.16 70.1629 340.94 71.4248 341.203 72.8353C341.467 74.2458 341.197 75.7041 340.445 76.9264C339.694 78.1486 338.514 79.0476 337.136 79.4483C335.758 79.849 334.281 79.7229 332.991 79.0944C330.703 80.8179 327.988 81.8849 325.139 82.1806C322.29 82.4763 319.414 81.9893 316.821 80.7723C314.228 79.5553 312.017 77.6542 310.424 75.2736C308.831 72.893 307.917 70.1231 307.781 67.262C307.645 64.4008 308.292 61.5568 309.652 59.036C311.012 56.5151 313.034 54.4129 315.5 52.9556C317.966 51.4983 320.783 50.741 323.647 50.7653C326.511 50.7896 329.315 51.5945 331.756 53.0934Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_98"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M320.32 61.4062C319.768 61.4062 319.32 60.9585 319.32 60.4062C319.32 59.854 319.768 59.4062 320.32 59.4062C320.873 59.4062 321.32 59.854 321.32 60.4062C321.32 60.9585 320.873 61.4062 320.32 61.4062Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M315.32 61.4062C314.768 61.4062 314.32 60.9585 314.32 60.4062C314.32 59.854 314.768 59.4062 315.32 59.4062C315.873 59.4062 316.32 59.854 316.32 60.4062C316.32 60.9585 315.873 61.4062 315.32 61.4062Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M320.5 64.9863C319.802 65.6837 318.856 66.0755 317.87 66.0755C316.884 66.0755 315.938 65.6837 315.24 64.9863",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M321.569 84.1149C319.272 84.1149 317.409 82.2524 317.409 79.9549C317.409 77.6574 319.272 75.7949 321.569 75.7949C323.867 75.7949 325.729 77.6574 325.729 79.9549C325.729 82.2524 323.867 84.1149 321.569 84.1149Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_99"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M313.159 84.1149C310.862 84.1149 308.999 82.2524 308.999 79.9549C308.999 77.6574 310.862 75.7949 313.159 75.7949C315.457 75.7949 317.319 77.6574 317.319 79.9549C317.319 82.2524 315.457 84.1149 313.159 84.1149Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_100"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M353.53 252.891H357.98C359.096 252.891 360 253.795 360 254.911V257.921C360 259.036 359.096 259.941 357.98 259.941H353.53C352.414 259.941 351.51 259.036 351.51 257.921V254.911C351.51 253.795 352.414 252.891 353.53 252.891Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M317.93 273.991C318.439 273.993 318.943 273.895 319.413 273.701C319.884 273.507 320.311 273.221 320.67 272.861L326.31 267.221C326.45 267.082 326.562 266.917 326.638 266.735C326.714 266.553 326.753 266.358 326.753 266.161C326.753 265.963 326.714 265.768 326.638 265.586C326.562 265.404 326.45 265.239 326.31 265.101L323.06 261.841C322.78 261.557 322.399 261.395 322 261.391C321.803 261.39 321.608 261.429 321.426 261.504C321.244 261.58 321.079 261.691 320.94 261.831L317.39 265.391C316.847 265.094 316.239 264.936 315.62 264.931C314.934 264.934 314.265 265.14 313.697 265.524C313.128 265.907 312.686 266.45 312.426 267.085C312.166 267.719 312.1 268.416 312.236 269.088C312.372 269.76 312.704 270.377 313.19 270.861L315.19 272.861C315.549 273.221 315.976 273.507 316.447 273.701C316.917 273.895 317.421 273.993 317.93 273.991Z",
+				"fill": "#FFD770",
+				"id": "구미동_101"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M322 262.9L317.48 267.39L317.11 267.02C316.915 266.823 316.683 266.667 316.427 266.561C316.171 266.454 315.897 266.4 315.62 266.4C315.126 266.398 314.651 266.584 314.29 266.92C314.101 267.106 313.951 267.328 313.848 267.573C313.746 267.818 313.693 268.08 313.693 268.345C313.693 268.611 313.746 268.873 313.848 269.118C313.951 269.362 314.101 269.584 314.29 269.77L314.72 270.2L316.29 271.77C316.737 272.213 317.341 272.46 317.97 272.46C318.599 272.46 319.202 272.213 319.65 271.77L325.29 266.13L322 262.9ZM322 259.9C322.795 259.901 323.558 260.218 324.12 260.78L327.37 264.04C327.932 264.603 328.247 265.365 328.247 266.16C328.247 266.955 327.932 267.718 327.37 268.28L321.74 273.92C320.728 274.925 319.36 275.489 317.935 275.489C316.509 275.489 315.141 274.925 314.13 273.92L312.56 272.39L312.13 271.96C311.658 271.488 311.287 270.926 311.036 270.308C310.785 269.69 310.661 269.028 310.67 268.36C310.698 267.053 311.238 265.81 312.173 264.896C313.107 263.982 314.362 263.47 315.67 263.47C316.147 263.472 316.621 263.539 317.08 263.67L319.93 260.82C320.492 260.258 321.254 259.941 322.05 259.94L322 259.9Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M329.44 239C332.584 238.997 335.655 239.942 338.252 241.711C340.85 243.481 342.853 245.994 344 248.92C345.404 249.076 346.702 249.744 347.644 250.797C348.586 251.849 349.107 253.212 349.107 254.625C349.107 256.038 348.586 257.401 347.644 258.453C346.702 259.506 345.404 260.174 344 260.33C342.962 262.974 341.222 265.284 338.969 267.013C336.715 268.742 334.033 269.824 331.21 270.142C328.388 270.46 325.532 270.002 322.95 268.818C320.368 267.634 318.158 265.769 316.558 263.422C314.957 261.076 314.027 258.337 313.866 255.501C313.706 252.666 314.322 249.84 315.648 247.328C316.974 244.816 318.96 242.713 321.392 241.246C323.824 239.778 326.61 239.002 329.45 239H329.44Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_102"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M327 252.391C326.448 252.391 326 251.943 326 251.391C326 250.838 326.448 250.391 327 250.391C327.552 250.391 328 250.838 328 251.391C328 251.943 327.552 252.391 327 252.391Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M321 252.391C320.448 252.391 320 251.943 320 251.391C320 250.838 320.448 250.391 321 250.391C321.552 250.391 322 250.838 322 251.391C322 251.943 321.552 252.391 321 252.391Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M319.85 281.751C320.108 281.746 320.36 281.676 320.583 281.549C320.807 281.421 320.995 281.24 321.13 281.021L326.07 272.851H337.68C337.931 272.851 338.179 272.79 338.4 272.671L340.32 271.601C340.58 271.458 340.792 271.242 340.93 270.981L346.53 260.141C346.692 259.837 346.935 259.583 347.231 259.407C347.527 259.23 347.866 259.138 348.21 259.141H351.41C351.808 259.141 352.19 258.983 352.471 258.701C352.752 258.42 352.91 258.038 352.91 257.641V255.391C352.91 254.993 352.752 254.611 352.471 254.33C352.19 254.049 351.808 253.891 351.41 253.891H348.09C346.828 253.895 345.592 254.248 344.518 254.909C343.443 255.571 342.572 256.516 342 257.641L339.71 262.081H326.92C326.254 262.081 325.593 262.212 324.978 262.467C324.362 262.723 323.803 263.097 323.332 263.569C322.861 264.041 322.487 264.601 322.233 265.217C321.979 265.834 321.849 266.494 321.85 267.161V269.791L316.69 278.391C316.503 278.726 316.452 279.12 316.546 279.492C316.641 279.864 316.875 280.186 317.2 280.391L319.07 281.521C319.305 281.665 319.574 281.744 319.85 281.751ZM327 267.651V267.281H337L336.81 267.661L327 267.651Z",
+				"fill": "#B07A68",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_103"
+			}
+		},
+		{
+			"type": "circle",
+			"props": {
+				"cx": "341.169",
+				"cy": "274.5",
+				"r": "8.5",
+				"fill": "#F7F6EC",
+				"id": "구미동_104"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M341.169 277C339.788 277 338.669 275.881 338.669 274.5C338.669 273.119 339.788 272 341.169 272C342.55 272 343.669 273.119 343.669 274.5C343.669 275.881 342.55 277 341.169 277Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M319.28 283.98C316.756 283.98 314.71 281.934 314.71 279.41C314.71 276.886 316.756 274.84 319.28 274.84C321.804 274.84 323.85 276.886 323.85 279.41C323.85 281.934 321.804 283.98 319.28 283.98Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M319.28 281.47C318.142 281.47 317.22 280.547 317.22 279.41C317.22 278.272 318.142 277.35 319.28 277.35C320.418 277.35 321.34 278.272 321.34 279.41C321.34 280.547 320.418 281.47 319.28 281.47Z",
+				"fill": "#F7F6EC",
+				"id": "구미동_105"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M341.19 264C343.266 264.004 345.294 264.624 347.018 265.78C348.742 266.936 350.084 268.578 350.876 270.497C351.667 272.416 351.872 274.526 351.465 276.562C351.057 278.597 350.055 280.466 348.586 281.932C347.117 283.399 345.246 284.396 343.209 284.8C341.173 285.203 339.063 284.994 337.146 284.199C335.228 283.403 333.59 282.058 332.437 280.331C331.284 278.605 330.669 276.576 330.669 274.5C330.669 273.119 330.941 271.752 331.47 270.477C331.999 269.202 332.775 268.043 333.752 267.068C334.729 266.092 335.889 265.319 337.166 264.793C338.442 264.267 339.81 263.997 341.19 264ZM341.19 283.072C342.894 283.072 344.56 282.567 345.977 281.62C347.394 280.674 348.498 279.328 349.15 277.754C349.802 276.18 349.973 274.447 349.64 272.776C349.308 271.105 348.487 269.57 347.282 268.365C346.078 267.16 344.542 266.34 342.871 266.007C341.2 265.675 339.468 265.845 337.894 266.497C336.319 267.149 334.974 268.254 334.027 269.67C333.08 271.087 332.575 272.753 332.575 274.457C332.575 276.742 333.483 278.933 335.098 280.549C336.714 282.165 338.906 283.072 341.19 283.072Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_106"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M334.24 260.791L337.47 264.021C337.888 264.439 338.384 264.772 338.931 264.998C339.477 265.225 340.063 265.342 340.655 265.342C341.247 265.342 341.832 265.225 342.379 264.998C342.926 264.772 343.422 264.439 343.84 264.021C344.258 263.604 344.59 263.108 344.817 262.562C345.044 262.017 345.16 261.432 345.16 260.841C345.16 260.25 345.044 259.665 344.817 259.119C344.59 258.573 344.258 258.078 343.84 257.661L341.65 255.471",
+				"fill": "#FFD770",
+				"id": "구미동_107"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M334.24 260.791L337.47 264.021C337.888 264.439 338.384 264.772 338.931 264.998C339.477 265.225 340.063 265.342 340.655 265.342C341.247 265.342 341.832 265.225 342.379 264.998C342.926 264.772 343.422 264.439 343.84 264.021V264.021C344.258 263.604 344.59 263.108 344.817 262.562C345.044 262.017 345.16 261.432 345.16 260.841C345.16 260.25 345.044 259.665 344.817 259.119C344.59 258.573 344.258 258.078 343.84 257.661L341.65 255.471",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M56.5003 299C56.5001 299.03 56.5 299.06 56.5 299.09V311.8H121V307.5C121 305.219 120.094 303.032 118.481 301.419C117.18 300.118 115.505 299.276 113.708 299H56.5003Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_108"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M56.5 298C56.5 291.373 61.8726 286 68.5 286H97.5C104.127 286 109.5 291.373 109.5 298V299H56.5V298Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_109"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M88.3203 298.899V286.859",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M68.5 299L68.5 286",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M68.1801 316.71C64.8056 316.71 62.07 313.975 62.07 310.6C62.07 307.226 64.8056 304.49 68.1801 304.49C71.5545 304.49 74.29 307.226 74.29 310.6C74.29 313.975 71.5545 316.71 68.1801 316.71Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M68.1797 314.35C66.1086 314.35 64.4297 312.671 64.4297 310.6C64.4297 308.529 66.1086 306.85 68.1797 306.85C70.2508 306.85 71.9297 308.529 71.9297 310.6C71.9297 312.671 70.2508 314.35 68.1797 314.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_110"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M108.39 316.71C105.016 316.71 102.28 313.975 102.28 310.6C102.28 307.226 105.016 304.49 108.39 304.49C111.764 304.49 114.5 307.226 114.5 310.6C114.5 313.975 111.764 316.71 108.39 316.71Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M108.39 314.35C106.319 314.35 104.64 312.671 104.64 310.6C104.64 308.529 106.319 306.85 108.39 306.85C110.461 306.85 112.14 308.529 112.14 310.6C112.14 312.671 110.461 314.35 108.39 314.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_111"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M278.5 299C278.5 299.03 278.5 299.06 278.5 299.09V311.8H343V307.5C343 305.219 342.094 303.032 340.481 301.419C339.18 300.118 337.505 299.276 335.708 299H278.5Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_112"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M278.5 298C278.5 291.373 283.873 286 290.5 286H319.5C326.127 286 331.5 291.373 331.5 298V299H278.5V298Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_113"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M310.32 298.899V286.859",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M290.5 299L290.5 286",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M290.18 316.71C286.806 316.71 284.07 313.975 284.07 310.6C284.07 307.226 286.806 304.49 290.18 304.49C293.555 304.49 296.29 307.226 296.29 310.6C296.29 313.975 293.555 316.71 290.18 316.71Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M290.18 314.35C288.109 314.35 286.43 312.671 286.43 310.6C286.43 308.529 288.109 306.85 290.18 306.85C292.251 306.85 293.93 308.529 293.93 310.6C293.93 312.671 292.251 314.35 290.18 314.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_114"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M330.39 316.71C327.016 316.71 324.28 313.975 324.28 310.6C324.28 307.226 327.016 304.49 330.39 304.49C333.764 304.49 336.5 307.226 336.5 310.6C336.5 313.975 333.764 316.71 330.39 316.71Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M330.39 314.35C328.319 314.35 326.64 312.671 326.64 310.6C326.64 308.529 328.319 306.85 330.39 306.85C332.461 306.85 334.14 308.529 334.14 310.6C334.14 312.671 332.461 314.35 330.39 314.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "구미동_115"
+			}
+		}
+	]
+}

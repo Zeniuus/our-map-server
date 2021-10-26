@@ -12,6 +12,7 @@ import domain.user.entity.User
 import io.ktor.application.Application
 import io.ktor.http.ContentType
 import io.ktor.http.HttpMethod
+import io.ktor.http.isSuccess
 import io.ktor.server.testing.TestApplicationCall
 import io.ktor.server.testing.TestApplicationEngine
 import io.ktor.server.testing.handleRequest
@@ -22,6 +23,7 @@ import org.koin.dsl.binds
 import org.koin.dsl.module
 import org.koin.test.KoinTest
 import org.koin.test.inject
+import ourMap.protocol.Model
 import ourMapModule
 import java.time.Clock
 import kotlin.reflect.KClass
@@ -64,9 +66,18 @@ open class OurMapServerRouteTestBase : KoinTest {
 
     @Suppress("UNCHECKED_CAST")
     fun <T : MessageOrBuilder> TestApplicationCall.getResult(kClass: KClass<T>): T {
+        assert(response.status()?.isSuccess() == true)
         val builder = kClass.javaObjectType.getMethod("newBuilder").invoke(null) as Message.Builder
         ProtobufJsonConverter.deserializer.merge(response.content!!, builder)
         return builder.build() as T
+    }
+
+    @Suppress("UNCHECKED_CAST")
+    fun TestApplicationCall.getError(): Model.OurMapError {
+        assert(response.status()?.isSuccess() == false)
+        val builder = Model.OurMapError.newBuilder()
+        ProtobufJsonConverter.deserializer.merge(response.content!!, builder)
+        return builder.build()
     }
 
     fun runRouteTest(block: TestApplicationEngine.() -> Any) {

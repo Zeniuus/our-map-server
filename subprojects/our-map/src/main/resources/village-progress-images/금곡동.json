@@ -1,0 +1,3257 @@
+{
+	"id": "금곡동",
+	"eupMyeonDongId": "XRBzoD//CJwimRXb1TfJh8bhb9J0PPSeD4RP",
+	"numberOfBlocks": 143,
+	"paths": [
+		{
+			"type": "path",
+			"props": {
+				"d": "M97.4307 37.0487C96.0024 36.9093 94.5606 37.07 93.198 37.5204C91.8354 37.9709 90.5819 38.7011 89.518 39.6643C88.4541 40.6274 87.6032 41.8023 87.0199 43.1136C86.4366 44.4248 86.1337 45.8435 86.1307 47.2787C86.0474 44.6064 84.9273 42.0715 83.0076 40.2107C81.0878 38.35 78.5193 37.3094 75.8457 37.3094C73.1722 37.3094 70.6036 38.35 68.6839 40.2107C66.7642 42.0715 65.6441 44.6064 65.5607 47.2787C65.5578 45.8435 65.2549 44.4248 64.6716 43.1136C64.0883 41.8023 63.2374 40.6274 62.1735 39.6643C61.1095 38.7011 59.8561 37.9709 58.4934 37.5204C57.1308 37.07 55.6891 36.9093 54.2607 37.0487C51.6874 37.3545 49.3181 38.6012 47.6086 40.5488C45.8991 42.4964 44.9703 45.0074 45.0007 47.5987C45.0007 48.9119 45.2594 50.2122 45.7619 51.4255C46.2645 52.6388 47.0011 53.7411 47.9297 54.6697C49.805 56.5451 52.3486 57.5987 55.0007 57.5987H96.7307C98.0439 57.5987 99.3443 57.34 100.558 56.8375C101.771 56.3349 102.873 55.5983 103.802 54.6697C104.73 53.7411 105.467 52.6388 105.97 51.4255C106.472 50.2122 106.731 48.9119 106.731 47.5987C106.76 45.0013 105.826 42.4852 104.108 40.5366C102.39 38.5881 100.011 37.3454 97.4307 37.0487Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"id": "금곡동_0"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M177.003 76C177.03 74.3562 177.203 72.7106 177.527 71.0831C178.586 65.7612 181.199 60.8726 185.036 57.0357C188.873 53.1988 193.761 50.5858 199.083 49.5272C204.405 48.4686 209.921 49.0119 214.935 51.0884C219.948 53.1649 224.233 56.6814 227.247 61.1932C227.366 61.3705 227.482 61.549 227.596 61.7286C228.669 60.0397 229.928 58.4648 231.357 57.0357C235.194 53.1988 240.082 50.5858 245.404 49.5272C250.726 48.4686 256.243 49.0119 261.256 51.0884C266.269 53.1649 270.554 56.6814 273.569 61.1932C273.839 61.5973 274.097 62.0078 274.345 62.4241C275.505 60.4709 276.909 58.6592 278.533 57.0357C282.37 53.1988 287.258 50.5858 292.58 49.5272C297.902 48.4686 303.419 49.0119 308.432 51.0884C313.445 53.1649 317.73 56.6814 320.744 61.1932C323.759 65.7049 325.368 71.0093 325.368 76.4356C325.367 77.9373 325.242 79.4263 325 80.8891V123H177V76H177.003Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_1"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"width": "121",
+				"height": "6",
+				"transform": "matrix(-1 0 0 1 358 74)",
+				"fill": "#B4DCCE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_2"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"width": "120.784",
+				"height": "134.373",
+				"transform": "matrix(-1 0 0 1 357.784 79.6279)",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_3"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M279.275 88.6865H291.353V103.785H279.275V88.6865Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_4"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M270.216 88.6865H279.275V103.785H270.216V88.6865Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_5"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M252.098 88.6865H264.176V103.785H252.098V88.6865Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_6"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M243.039 88.6865H252.098V103.785H243.039V88.6865Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_7"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M339.667 88.6865H351.745V103.785H339.667V88.6865Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M330.608 88.6865H339.667V103.785H330.608V88.6865Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M279.275 109.823H291.353V124.921H279.275V109.823Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_8"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M270.216 109.823H279.275V124.921H270.216V109.823Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_9"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M252.098 109.823H264.176V124.921H252.098V109.823Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_10"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M243.039 109.823H252.098V124.921H243.039V109.823Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_11"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M339.667 109.823H351.745V124.921H339.667V109.823Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M330.608 109.823H339.667V124.921H330.608V109.823Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M279.275 130.961H291.353V146.059H279.275V130.961Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M270.216 130.961H279.275V146.059H270.216V130.961Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M252.098 130.961H264.176V146.059H252.098V130.961Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M243.039 130.961H252.098V146.059H243.039V130.961Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M339.667 130.961H351.745V146.059H339.667V130.961Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M330.608 130.961H339.667V146.059H330.608V130.961Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M279.275 152.098H291.353V167.196H279.275V152.098Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M270.216 152.098H279.275V167.196H270.216V152.098Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M252.098 152.098H264.176V167.196H252.098V152.098Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M243.039 152.098H252.098V167.196H243.039V152.098Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M339.667 152.098H351.745V167.196H339.667V152.098Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M330.608 152.098H339.667V167.196H330.608V152.098Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M279.275 173.235H291.353V188.333H279.275V173.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M270.216 173.235H279.275V188.333H270.216V173.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M252.098 173.235H264.176V188.333H252.098V173.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M243.039 173.235H252.098V188.333H243.039V173.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M339.667 173.235H351.745V188.333H339.667V173.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M330.608 173.235H339.667V188.333H330.608V173.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M279.275 194.372H291.353V209.47H279.275V194.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M270.216 194.372H279.275V209.47H270.216V194.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M252.098 194.372H264.176V209.47H252.098V194.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M243.039 194.372H252.098V209.47H243.039V194.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M339.667 194.372H351.745V209.47H339.667V194.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M330.608 194.372H339.667V209.47H330.608V194.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"width": "27.1765",
+				"height": "144.941",
+				"transform": "matrix(-1 0 0 1 324.568 69.0586)",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M326.078 190.212L310.98 179.274L295.882 190.212V214H326.078V190.212Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M302.676 194.372H319.284V214H302.676V194.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"width": "18.1176",
+				"height": "9.05882",
+				"transform": "matrix(-1 0 0 1 320.039 60)",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M310.98 81.8926H304.941V90.9514H310.98V81.8926Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M317.019 81.8926H310.98V90.9514H317.019V81.8926Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M310.98 103.029H304.941V112.088H310.98V103.029Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M317.019 103.029H310.98V112.088H317.019V103.029Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M310.98 124.167H304.941V133.226H310.98V124.167Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M317.019 124.167H310.98V133.226H317.019V124.167Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M310.98 145.304H304.941V154.363H310.98V145.304Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M317.019 145.304H310.98V154.363H317.019V145.304Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M310.98 166.441H304.941V175.5H310.98V166.441Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M317.019 166.441H310.98V175.5H317.019V166.441Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"width": "121",
+				"height": "6",
+				"transform": "matrix(-1 0 0 1 418 41)",
+				"fill": "#B4DCCE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_12"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"width": "120.784",
+				"height": "134.373",
+				"transform": "matrix(-1 0 0 1 417.784 46.6279)",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_13"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M339.275 55.6865H351.353V70.7846H339.275V55.6865Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_14"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M330.216 55.6865H339.275V70.7846H330.216V55.6865Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_15"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M312.098 55.6865H324.176V70.7846H312.098V55.6865Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_16"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M303.039 55.6865H312.098V70.7846H303.039V55.6865Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_17"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M339.275 97.9609H351.353V113.059H339.275V97.9609Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M330.216 97.9609H339.275V113.059H330.216V97.9609Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M339.275 119.098H351.353V134.196H339.275V119.098Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M330.216 119.098H339.275V134.196H330.216V119.098Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M339.275 140.235H351.353V155.333H339.275V140.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M330.216 140.235H339.275V155.333H330.216V140.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M312.098 140.235H324.176V155.333H312.098V140.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M303.039 140.235H312.098V155.333H303.039V140.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M339.275 161.372H351.353V176.47H339.275V161.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M330.216 161.372H339.275V176.47H330.216V161.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M312.098 161.372H324.176V176.47H312.098V161.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M303.039 161.372H312.098V176.47H303.039V161.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"width": "27.1765",
+				"height": "144.941",
+				"transform": "matrix(-1 0 0 1 384.568 36.0586)",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_18"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M386.078 157.212L370.98 146.274L355.882 157.212V181H386.078V157.212Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M362.676 161.372H379.284V181H362.676V161.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"width": "18.1176",
+				"height": "9.05882",
+				"transform": "matrix(-1 0 0 1 380.039 27)",
+				"fill": "#B4DCCE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_19"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M370.98 48.8926H364.941V57.9514H370.98V48.8926Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_20"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M377.019 48.8926H370.98V57.9514H377.019V48.8926Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_21"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M370.98 91.167H364.941V100.226H370.98V91.167Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M377.019 91.167H370.98V100.226H377.019V91.167Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M370.98 112.304H364.941V121.363H370.98V112.304Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M377.019 112.304H370.98V121.363H377.019V112.304Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M370.98 133.441H364.941V142.5H370.98V133.441Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M377.019 133.441H370.98V142.5H377.019V133.441Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "80",
+				"y": "32",
+				"width": "121",
+				"height": "6",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_22"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "80",
+				"y": "38",
+				"width": "121",
+				"height": "135",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_23"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M158.51 47.6865H146.431V62.7846H158.51V47.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_24"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M167.568 47.6865H158.509V62.7846H167.568V47.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_25"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M185.686 47.6865H173.608V62.7846H185.686V47.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_26"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M194.745 47.6865H185.687V62.7846H194.745V47.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_27"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M98.1175 47.6865H86.0391V62.7846H98.1175V47.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_28"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M107.176 47.6865H98.1177V62.7846H107.176V47.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_29"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M158.51 68.8232H146.431V83.9213H158.51V68.8232Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_30"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M167.568 68.8232H158.509V83.9213H167.568V68.8232Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_31"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M185.686 68.8232H173.608V83.9213H185.686V68.8232Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_32"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M194.745 68.8232H185.687V83.9213H194.745V68.8232Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_33"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M98.1175 68.8232H86.0391V83.9213H98.1175V68.8232Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_34"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M107.176 68.8232H98.1177V83.9213H107.176V68.8232Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_35"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M98.1175 90H86.0391V105.098H98.1175V90Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_36"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M107.176 90H98.1177V105.098H107.176V90Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_37"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M158.51 89.9609H146.431V105.059H158.51V89.9609Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_38"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M167.568 89.9609H158.509V105.059H167.568V89.9609Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_39"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M185.686 89.9609H173.608V105.059H185.686V89.9609Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_40"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M194.745 89.9609H185.687V105.059H194.745V89.9609Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_41"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M98.1175 111.098H86.0391V126.196H98.1175V111.098Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M158.51 132.235H146.431V147.333H158.51V132.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M167.568 132.235H158.509V147.333H167.568V132.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M185.686 132.235H173.608V147.333H185.686V132.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M194.745 132.235H185.687V147.333H194.745V132.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M98.1175 132.235H86.0391V147.333H98.1175V132.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M107.176 132.235H98.1177V147.333H107.176V132.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M158.51 153.372H146.431V168.47H158.51V153.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M167.568 153.372H158.509V168.47H167.568V153.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M185.686 153.372H173.608V168.47H185.686V153.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M194.745 153.372H185.687V168.47H194.745V153.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M98.1175 153.372H86.0391V168.47H98.1175V153.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M107.176 153.372H98.1177V168.47H107.176V153.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "113.216",
+				"y": "28.0586",
+				"width": "27.1765",
+				"height": "144.941",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_42"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M111.706 149.212L126.804 138.274L141.902 149.212V173H111.706V149.212Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M135.108 153.372H118.5V173H135.108V153.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "117.745",
+				"y": "19",
+				"width": "18.1176",
+				"height": "9.05882",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_43"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M126.804 40.8926H132.843V49.9514H126.804V40.8926Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_44"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M120.765 40.8926H126.804V49.9514H120.765V40.8926Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_45"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M126.804 62.0293H132.843V71.0881H126.804V62.0293Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_46"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M120.765 62.0293H126.804V71.0881H120.765V62.0293Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_47"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M126.804 83.167H132.843V92.2258H126.804V83.167Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_48"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M120.765 83.167H126.804V92.2258H120.765V83.167Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_49"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M126.804 104.304H132.843V113.363H126.804V104.304Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_50"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M120.765 104.304H126.804V113.363H120.765V104.304Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_51"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M126.804 125.441H132.843V134.5H126.804V125.441Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M120.765 125.441H126.804V134.5H120.765V125.441Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M397.33 123.5H22.3301V192.5H397.33V123.5Z",
+				"fill": "#B9CADE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_52"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M161.33 154H136.33V162H161.33V154Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_53"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M121.33 154H96.3301V162H121.33V154Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_54"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M81.3301 154H56.3301V162H81.3301V154Z",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M41.3301 154H16.3301V162H41.3301V154Z",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M321.83 154H296.83V162H321.83V154Z",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M281.33 154H256.33V162H281.33V154Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_55"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M362.33 154H337.33V162H362.33V154Z",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M241.33 154H216.33V162H241.33V154Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_56"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M201.33 154H176.33V162H201.33V154Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_57"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M397 123H22V129H397V123Z",
+				"fill": "#1D85FF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_58"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M272 162C272 162.03 272 162.06 272 162.09V174.8H336.5V170.5C336.5 168.219 335.594 166.032 333.981 164.419C332.68 163.118 331.005 162.276 329.208 162H272Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_59"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M272 161C272 154.373 277.373 149 284 149H313C319.627 149 325 154.373 325 161V162H272V161Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_60"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M303.82 161.899V149.859",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M284 162L284 149",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M283.68 179.71C280.306 179.71 277.57 176.975 277.57 173.6C277.57 170.226 280.306 167.49 283.68 167.49C287.055 167.49 289.79 170.226 289.79 173.6C289.79 176.975 287.055 179.71 283.68 179.71Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M283.68 177.35C281.609 177.35 279.93 175.671 279.93 173.6C279.93 171.529 281.609 169.85 283.68 169.85C285.751 169.85 287.43 171.529 287.43 173.6C287.43 175.671 285.751 177.35 283.68 177.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_61"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M323.89 179.71C320.516 179.71 317.78 176.975 317.78 173.6C317.78 170.226 320.516 167.49 323.89 167.49C327.264 167.49 330 170.226 330 173.6C330 176.975 327.264 179.71 323.89 179.71Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M323.89 177.35C321.819 177.35 320.14 175.671 320.14 173.6C320.14 171.529 321.819 169.85 323.89 169.85C325.961 169.85 327.64 171.529 327.64 173.6C327.64 175.671 325.961 177.35 323.89 177.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_62"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M128.5 129C128.5 129.03 128.5 129.06 128.5 129.09V141.8H64V137.5C64 135.219 64.9061 133.032 66.5189 131.419C67.8201 130.118 69.4954 129.276 71.2921 129H128.5Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_63"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M128.5 128C128.5 121.373 123.127 116 116.5 116H87.5C80.8726 116 75.5 121.373 75.5 128V129H128.5V128Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_64"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M96.6797 128.899V116.859",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M116.5 129L116.5 116",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M116.82 146.71C120.194 146.71 122.93 143.975 122.93 140.6C122.93 137.226 120.194 134.49 116.82 134.49C113.445 134.49 110.71 137.226 110.71 140.6C110.71 143.975 113.445 146.71 116.82 146.71Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M116.82 144.35C118.891 144.35 120.57 142.671 120.57 140.6C120.57 138.529 118.891 136.85 116.82 136.85C114.749 136.85 113.07 138.529 113.07 140.6C113.07 142.671 114.749 144.35 116.82 144.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_65"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M76.61 146.71C79.9845 146.71 82.72 143.975 82.72 140.6C82.72 137.226 79.9845 134.49 76.61 134.49C73.2356 134.49 70.5 137.226 70.5 140.6C70.5 143.975 73.2356 146.71 76.61 146.71Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M76.6104 144.35C78.6814 144.35 80.3604 142.671 80.3604 140.6C80.3604 138.529 78.6814 136.85 76.6104 136.85C74.5393 136.85 72.8604 138.529 72.8604 140.6C72.8604 142.671 74.5393 144.35 76.6104 144.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_66"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M222.5 129C222.5 129.03 222.5 129.06 222.5 129.09V141.8H158V137.5C158 135.219 158.906 133.032 160.519 131.419C161.82 130.118 163.495 129.276 165.292 129H222.5Z",
+				"fill": "#003472",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_67"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M222.5 128C222.5 121.373 217.127 116 210.5 116H181.5C174.873 116 169.5 121.373 169.5 128V129H222.5V128Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_68"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M190.68 128.899V116.859",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M210.5 129L210.5 116",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M210.82 146.71C214.194 146.71 216.93 143.975 216.93 140.6C216.93 137.226 214.194 134.49 210.82 134.49C207.445 134.49 204.71 137.226 204.71 140.6C204.71 143.975 207.445 146.71 210.82 146.71Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M210.82 144.35C212.891 144.35 214.57 142.671 214.57 140.6C214.57 138.529 212.891 136.85 210.82 136.85C208.749 136.85 207.07 138.529 207.07 140.6C207.07 142.671 208.749 144.35 210.82 144.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_69"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M170.61 146.71C173.984 146.71 176.72 143.975 176.72 140.6C176.72 137.226 173.984 134.49 170.61 134.49C167.236 134.49 164.5 137.226 164.5 140.6C164.5 143.975 167.236 146.71 170.61 146.71Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M170.61 144.35C172.681 144.35 174.36 142.671 174.36 140.6C174.36 138.529 172.681 136.85 170.61 136.85C168.539 136.85 166.86 138.529 166.86 140.6C166.86 142.671 168.539 144.35 170.61 144.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_70"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M375 192H2V338H375V192Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_71"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "56",
+				"y": "103",
+				"width": "44",
+				"height": "6",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_72"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "56",
+				"y": "109",
+				"width": "44",
+				"height": "166",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_73"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M80 121H64V141H80V121Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M92 121H80V141H92V121Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_74"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M80 149H64V169H80V149Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M92 149H80V169H92V149Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_75"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M80 177H64V197H80V177Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M92 177H80V197H92V177Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_76"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M80 205H64V225H80V205Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M92 205H80V225H92V205Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M80 233H64V253H80V233Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M391 269H-16V338H391V269Z",
+				"fill": "#B9CADE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_77"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M386 269H-11V303H386V269Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_78"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M237 277H225V283H237V277Z",
+				"fill": "#B9CADE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_79"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M243 288H231V294H243V288Z",
+				"fill": "#B9CADE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_80"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M261 283H249V289H261V283Z",
+				"fill": "#B9CADE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_81"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M375 303H0V309H375V303Z",
+				"fill": "#1D85FF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_82"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M258.431 9.04866C257.002 8.90932 255.561 9.07002 254.198 9.52045C252.835 9.97087 251.582 10.7011 250.518 11.6643C249.454 12.6274 248.603 13.8023 248.02 15.1136C247.437 16.4248 247.134 17.8435 247.131 19.2787C247.047 16.6064 245.927 14.0715 244.008 12.2107C242.088 10.35 239.519 9.3094 236.846 9.3094C234.172 9.3094 231.604 10.35 229.684 12.2107C227.764 14.0715 226.644 16.6064 226.561 19.2787C226.558 17.8435 226.255 16.4248 225.672 15.1136C225.088 13.8023 224.237 12.6274 223.173 11.6643C222.11 10.7011 220.856 9.97087 219.493 9.52045C218.131 9.07002 216.689 8.90932 215.261 9.04866C212.687 9.35452 210.318 10.6012 208.609 12.5488C206.899 14.4964 205.97 17.0074 206.001 19.5987C206.001 20.9119 206.259 22.2122 206.762 23.4255C207.264 24.6388 208.001 25.7411 208.93 26.6697C210.805 28.5451 213.349 29.5987 216.001 29.5987H257.731C259.044 29.5987 260.344 29.34 261.558 28.8375C262.771 28.3349 263.873 27.5983 264.802 26.6697C265.73 25.7411 266.467 24.6388 266.97 23.4255C267.472 22.2122 267.731 20.9119 267.731 19.5987C267.76 17.0013 266.826 14.4852 265.108 12.5366C263.39 10.5881 261.011 9.34536 258.431 9.04866Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"id": "금곡동_83"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M336.431 9.04866C335.002 8.90932 333.561 9.07002 332.198 9.52045C330.835 9.97087 329.582 10.7011 328.518 11.6643C327.454 12.6274 326.603 13.8023 326.02 15.1136C325.437 16.4248 325.134 17.8435 325.131 19.2787C325.047 16.6064 323.927 14.0715 322.008 12.2107C320.088 10.35 317.519 9.3094 314.846 9.3094C312.172 9.3094 309.604 10.35 307.684 12.2107C305.764 14.0715 304.644 16.6064 304.561 19.2787C304.558 17.8435 304.255 16.4248 303.672 15.1136C303.088 13.8023 302.237 12.6274 301.173 11.6643C300.11 10.7011 298.856 9.97087 297.493 9.52045C296.131 9.07002 294.689 8.90932 293.261 9.04866C290.687 9.35452 288.318 10.6012 286.609 12.5488C284.899 14.4964 283.97 17.0074 284.001 19.5987C284.001 20.9119 284.259 22.2122 284.762 23.4255C285.264 24.6388 286.001 25.7411 286.93 26.6697C288.805 28.5451 291.349 29.5987 294.001 29.5987H335.731C337.044 29.5987 338.344 29.34 339.558 28.8375C340.771 28.3349 341.873 27.5983 342.802 26.6697C343.73 25.7411 344.467 24.6388 344.97 23.4255C345.472 22.2122 345.731 20.9119 345.731 19.5987C345.76 17.0013 344.826 14.4852 343.108 12.5366C341.39 10.5881 339.011 9.34536 336.431 9.04866Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"id": "금곡동_84"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "30",
+				"y": "65",
+				"width": "33",
+				"height": "20",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_85"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"y": "85",
+				"width": "80",
+				"height": "6",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_86"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"y": "91",
+				"width": "80",
+				"height": "178",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_87"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "24",
+				"y": "77",
+				"width": "56",
+				"height": "192",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_88"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M24 103H8V123H24V103Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_89"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M24 131H8V151H24V131Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_90"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M24 159H8V179H24V159Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_91"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M24 187H8V207H24V187Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_92"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M24 215H8V235H24V215Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_93"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M24 243H8V263H24V243Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_94"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M44.992 107.366L44.9902 109.43L46.9582 109.431L46.9555 112.567L49.5475 112.57L49.5554 103.53L46.9634 103.527L46.96 107.367L44.992 107.366ZM45.9496 110.183C43.5821 109.604 42.7193 108.228 42.6244 106.932L45.3764 106.934L45.3781 104.934L42.6101 104.932L42.6114 103.476L40.0194 103.473L40.0181 104.929L37.2661 104.927L37.2644 106.927L40.0004 106.929C39.9191 108.369 39.0698 109.889 36.6693 110.526L37.8835 112.527C39.6119 112.081 40.7168 111.106 41.3738 109.875C42.0609 110.947 43.1642 111.78 44.7958 112.182L45.9496 110.183ZM44.392 116.597C42.584 116.596 41.7522 116.323 41.7528 115.635C41.7534 114.963 42.5856 114.692 44.3936 114.693C46.1856 114.695 47.0174 114.967 47.0168 115.639C47.0162 116.327 46.184 116.599 44.392 116.597ZM44.3953 112.741C41.1793 112.738 39.1624 113.793 39.1608 115.633C39.1592 117.473 41.1743 118.546 44.3903 118.549C47.5903 118.552 49.6072 117.482 49.6088 115.642C49.6104 113.802 47.5953 112.744 44.3953 112.741ZM64.4951 106.983C60.6554 106.627 59.6807 105.187 59.6819 103.811L59.682 103.667L57.026 103.664L57.0259 103.808C57.0247 105.184 56.0474 106.623 52.2071 106.972L53.0694 108.925C55.6937 108.623 57.4224 107.793 58.3515 106.593C59.2784 107.794 61.0057 108.628 63.6294 108.934L64.4951 106.983ZM55.6552 116.047L63.5752 116.054L63.5788 111.942L53.0828 111.933L53.0811 113.821L61.0171 113.828L61.0167 114.292L53.0967 114.285L53.0931 118.477L63.9411 118.486L63.9428 116.566L55.6548 116.559L55.6552 116.047ZM59.645 109.41L59.6462 108.018L57.0542 108.016L57.053 109.408L51.581 109.403L51.5793 111.403L65.1792 111.415L65.181 109.415L59.645 109.41ZM39.7759 125.881L42.0319 125.883L42.0266 131.947L39.7706 131.945L39.7759 125.881ZM37.2248 133.959L44.5688 133.965L44.5776 123.869L37.2336 123.863L37.2248 133.959ZM50.75 128.003L48.734 128.001L48.7388 122.529L46.1468 122.527L46.1337 137.519L48.7257 137.521L48.7322 130.113L50.7482 130.115L50.75 128.003ZM58.3678 124.585C60.3838 124.587 61.1996 124.764 61.1992 125.26C61.1987 125.772 60.3826 125.931 58.3666 125.929C56.3506 125.928 55.5347 125.767 55.5352 125.255C55.5356 124.759 56.3518 124.584 58.3678 124.585ZM58.3649 127.801C61.8369 127.804 63.8857 126.91 63.8872 125.262C63.8886 123.614 61.8414 122.716 58.3694 122.713C54.8974 122.71 52.8486 123.605 52.8472 125.253C52.8457 126.901 54.8929 127.798 58.3649 127.801ZM55.6386 135.063L63.5586 135.07L63.5622 130.958L53.0662 130.949L53.0645 132.837L61.0005 132.844L61.0001 133.308L53.0801 133.301L53.0765 137.477L63.9245 137.486L63.9262 135.566L55.6382 135.559L55.6386 135.063ZM51.5645 128.323L51.5627 130.323L65.1627 130.335L65.1645 128.335L51.5645 128.323Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M40.0908 156.867L41.4529 154.516C41.7895 153.844 42.1101 153.156 42.4147 152.485L42.4787 152.485C42.446 153.237 42.365 154.373 42.3644 155.125L42.3628 156.869L40.0908 156.867ZM46.3468 156.872L45.0188 156.871L45.0247 150.103L41.5207 150.1L37.3707 157.056L37.369 159.024L42.361 159.029L42.3584 162.005L45.0144 162.007L45.017 159.031L46.345 159.032L46.3468 156.872ZM51.6282 162.237C54.1402 162.239 55.854 160.096 55.8576 156C55.8611 151.936 54.1509 149.887 51.6389 149.885C49.1269 149.883 47.4292 151.897 47.4256 155.993C47.422 160.089 49.1162 162.235 51.6282 162.237ZM51.6301 160.029C50.7821 160.028 50.1108 159.259 50.1136 155.995C50.1164 152.747 50.789 152.076 51.637 152.077C52.485 152.077 53.1724 152.75 53.1696 155.998C53.1668 159.262 52.4781 160.029 51.6301 160.029ZM57.7624 162.018L65.2823 162.025L65.2844 159.721L63.1404 159.719L63.1487 150.119L61.0527 150.117C60.2203 150.628 59.388 150.948 58.1078 151.186L58.1063 152.946L60.2983 152.948L60.2924 159.716L57.7644 159.714L57.7624 162.018Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M80.17 248.34C74.5985 248.34 69.1521 246.688 64.5196 243.593C59.8871 240.497 56.2764 236.098 54.1443 230.95C52.0122 225.803 51.4543 220.139 52.5413 214.674C53.6282 209.21 56.3112 204.19 60.2508 200.251C64.1905 196.311 69.2099 193.628 74.6743 192.541C80.1388 191.454 85.8028 192.012 90.9502 194.144C96.0976 196.276 100.497 199.887 103.593 204.52C106.688 209.152 108.34 214.599 108.34 220.17C108.332 227.639 105.362 234.799 100.08 240.08C94.7993 245.362 87.6387 248.332 80.17 248.34Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_95"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M67.7598 227.359L79.3698 238.959",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M92.1303 218.24L80.5303 229.85",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M79.9502 208.55V268.71",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M36.51 258C35.106 258.005 33.761 258.565 32.7682 259.558C31.7754 260.551 31.2153 261.896 31.21 263.3C31.1506 261.933 30.5658 260.641 29.5774 259.695C28.589 258.749 27.2734 258.22 25.905 258.22C24.5366 258.22 23.221 258.749 22.2326 259.695C21.2442 260.641 20.6594 261.933 20.6 263.3C20.6 262.604 20.4629 261.915 20.1966 261.272C19.9302 260.629 19.5398 260.044 19.0477 259.552C18.5555 259.06 17.9712 258.67 17.3282 258.403C16.6852 258.137 15.996 258 15.3 258C14.604 258 13.9148 258.137 13.2718 258.403C12.6288 258.67 12.0445 259.06 11.5523 259.552C11.0602 260.044 10.6698 260.629 10.4034 261.272C10.1371 261.915 10 262.604 10 263.3V268.61H41.81V263.3C41.8047 261.896 41.2446 260.551 40.2518 259.558C39.259 258.565 37.914 258.005 36.51 258Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_96"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M278 177H220V269H331.01V239.507L331.01 239.5L331.01 239H331.008C330.926 226.813 327.852 214.916 322.16 204.777C316.39 194.499 308.189 186.488 298.594 181.758C292.037 178.525 285.031 176.923 278 177.003V177Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_97"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M254 177H220V192.383C219.097 193.319 218.22 194.294 217.37 195.306C210.026 204.047 205.025 215.183 202.999 227.307C202.352 231.177 202.018 235.092 201.991 239H201.99V269H307.01V239.507L307.01 239.5L307.01 239H307.008C306.926 226.813 303.852 214.916 298.16 204.777C292.39 194.499 284.189 186.488 274.594 181.758C268.037 178.525 261.03 176.923 254 177.003V177Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_98"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "284",
+				"y": "237",
+				"width": "47",
+				"height": "32",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_99"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M284 239.507V269H157V239H157.002C157.034 235.092 157.438 231.177 158.22 227.307C160.67 215.183 166.718 204.047 175.599 195.306C184.479 186.565 195.794 180.613 208.112 178.201C220.43 175.789 233.197 177.027 244.8 181.758C256.404 186.488 266.321 194.499 273.298 204.777C280.182 214.916 283.899 226.813 283.998 239H284V239.469C284 239.479 284 239.49 284 239.5C284 239.502 284 239.505 284 239.507Z",
+				"fill": "#B4DCCE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_100"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "180",
+				"y": "237",
+				"width": "81",
+				"height": "26",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_101"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M191.8 229.56V223H178V229.56V267.97H231.2V263.4H224.64V255.84H218.07V249.27H211.5V242.7H204.93V236.13H198.37V229.56H191.8Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_102"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M225.34 262.07C224.857 262.072 224.381 261.954 223.956 261.726C223.531 261.498 223.169 261.167 222.905 260.763C222.64 260.36 222.481 259.896 222.442 259.415C222.402 258.934 222.484 258.451 222.68 258.01L220.36 255.69C220.079 255.408 219.921 255.027 219.921 254.63C219.921 254.232 220.079 253.851 220.36 253.57L222.68 251.25C222.961 250.969 223.342 250.811 223.74 250.81C223.937 250.809 224.132 250.848 224.314 250.923C224.496 250.999 224.661 251.11 224.8 251.25L228.8 255.25C229.097 255.547 229.334 255.9 229.495 256.289C229.656 256.677 229.739 257.094 229.739 257.515C229.739 257.935 229.656 258.352 229.495 258.741C229.334 259.129 229.097 259.482 228.8 259.78L227.38 261.2C227.114 261.472 226.796 261.689 226.446 261.838C226.096 261.987 225.72 262.066 225.34 262.07Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_103"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M212.499 262.07C211.938 262.072 211.387 261.927 210.899 261.65L209.159 260.65C208.604 260.329 208.17 259.835 207.925 259.242C207.68 258.65 207.638 257.993 207.804 257.374C207.971 256.755 208.337 256.209 208.846 255.819C209.355 255.43 209.978 255.219 210.619 255.22H210.799C207.807 253.3 205.607 250.366 204.602 246.956C203.598 243.546 203.856 239.888 205.33 236.652C206.804 233.417 209.395 230.822 212.627 229.342C215.86 227.862 219.517 227.596 222.929 228.594C226.341 229.592 229.28 231.787 231.205 234.776C233.13 237.764 233.914 241.347 233.412 244.866C232.91 248.386 231.156 251.607 228.473 253.938C225.789 256.27 222.354 257.555 218.799 257.56C218.211 257.562 217.623 257.528 217.039 257.46L215.289 260.46C215.008 260.951 214.602 261.359 214.111 261.642C213.621 261.924 213.065 262.072 212.499 262.07Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_104"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M213.02 246.63C213.572 246.63 214.02 246.182 214.02 245.63C214.02 245.078 213.572 244.63 213.02 244.63C212.467 244.63 212.02 245.078 212.02 245.63C212.02 246.182 212.467 246.63 213.02 246.63Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M219.02 246.63C219.572 246.63 220.02 246.182 220.02 245.63C220.02 245.078 219.572 244.63 219.02 244.63C218.467 244.63 218.02 245.078 218.02 245.63C218.02 246.182 218.467 246.63 219.02 246.63Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M270.23 257.652C271.703 260.888 271.962 264.546 270.957 267.956C270.957 268.391 251.508 266.744 242.148 265.866C241.646 262.347 242.429 258.764 244.355 255.776C246.28 252.787 249.218 250.592 252.63 249.594C256.042 248.596 259.7 248.862 262.932 250.342C266.165 251.822 268.756 254.417 270.23 257.652Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_105"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M273 269V241.049H272.998C272.916 230.818 269.843 220.831 264.152 212.319C258.383 203.69 250.184 196.965 240.591 192.994C230.998 189.023 220.442 187.984 210.258 190.008C200.074 192.033 190.719 197.03 183.377 204.368C176.035 211.706 171.035 221.055 169.009 231.233C168.362 234.482 168.028 237.768 168.002 241.049H168V269H180V242.068H180.001C180.022 239.511 180.279 236.949 180.778 234.417C182.341 226.484 186.198 219.197 191.862 213.478C197.526 207.759 204.743 203.864 212.599 202.286C220.455 200.708 228.598 201.518 235.999 204.613C243.399 207.708 249.724 212.95 254.175 219.675C258.565 226.309 260.936 234.094 260.999 242.068H261L261 242.395L261 242.4V269H273Z",
+				"fill": "#B4DCCE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_106"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "126",
+				"y": "263",
+				"width": "163",
+				"height": "6",
+				"fill": "#8CA4C0",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_107"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "135",
+				"y": "193",
+				"width": "6",
+				"height": "70",
+				"fill": "#8CA4C0",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_108"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "126",
+				"y": "162",
+				"width": "24",
+				"height": "79",
+				"fill": "#1D85FF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_109"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M132.65 189.304L132.642 198.292L139.096 198.298L139.104 189.31L132.65 189.304ZM136.876 191.072L136.871 196.532L134.869 196.53L134.874 191.07L136.876 191.072ZM140.771 188.177L140.759 201.379L143.027 201.381L143.039 188.179L140.771 188.177ZM135.623 215.057L140.285 215.061L140.284 216.447L135.622 216.443L135.623 215.057ZM133.394 218.191L142.508 218.199L142.513 213.313L133.399 213.305L133.394 218.191ZM142.319 210.386C142.615 208.945 142.615 207.867 142.616 206.817L142.617 205.725L133.475 205.717L133.474 207.495L140.376 207.501C140.361 208.341 140.304 209.251 140.079 210.385L132.043 210.378L132.042 212.156L143.928 212.166L143.929 210.388L142.319 210.386ZM134.04 232.279L140.844 232.285L140.841 235.351L143.109 235.353L143.114 230.523L134.042 230.515L134.04 232.279ZM139.141 226.67C139.169 226.502 139.183 226.32 139.184 226.152C139.184 225.984 139.17 225.816 139.142 225.648L140.85 225.649L140.849 226.671L139.141 226.67ZM135.668 227.549C134.884 227.548 134.297 227.085 134.298 226.147C134.298 225.223 134.887 224.762 135.671 224.763C136.455 224.763 137.042 225.226 137.042 226.15C137.041 227.088 136.452 227.549 135.668 227.549ZM140.853 222.205L140.852 223.871L138.262 223.869C137.618 223.224 136.708 222.846 135.672 222.845C133.698 222.843 132.157 224.242 132.156 226.146C132.154 228.064 133.693 229.465 135.667 229.467C136.703 229.468 137.599 229.076 138.244 228.447L140.848 228.449L140.846 230.003L143.114 230.005L143.121 222.193L140.853 222.205Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "126",
+				"y": "158",
+				"width": "24",
+				"height": "24",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_110"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M138.233 174.103C137.481 174.102 136.745 173.509 136.507 171.525C136.988 170.741 137.596 170.454 138.188 170.454C138.972 170.455 139.612 170.888 139.61 172.2C139.609 173.544 138.985 174.103 138.233 174.103ZM142.064 165.306C141.313 164.537 140.162 163.88 138.594 163.879C136.13 163.877 133.856 165.843 133.852 170.147C133.848 174.483 136.055 176.229 138.295 176.231C140.423 176.232 142.216 174.73 142.218 172.202C142.221 169.61 140.718 168.457 138.734 168.455C138.062 168.454 137.053 168.869 136.461 169.621C136.575 167.029 137.552 166.15 138.784 166.151C139.44 166.152 140.175 166.568 140.559 166.985L142.064 165.306Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M94.2205 269.07C94.7031 269.072 95.1788 268.954 95.6041 268.726C96.0294 268.498 96.3908 268.167 96.6553 267.763C96.9198 267.36 97.079 266.896 97.1183 266.415C97.1577 265.934 97.0759 265.451 96.8805 265.01L99.2005 262.69C99.4814 262.408 99.6392 262.027 99.6392 261.63C99.6392 261.232 99.4814 260.851 99.2005 260.57L96.8805 258.25C96.5988 257.969 96.218 257.811 95.8205 257.81C95.6235 257.809 95.4284 257.848 95.2464 257.923C95.0645 257.999 94.8993 258.11 94.7605 258.25L90.7605 262.25C90.4627 262.547 90.2264 262.9 90.0652 263.289C89.9039 263.677 89.821 264.094 89.821 264.515C89.821 264.935 89.9039 265.352 90.0652 265.741C90.2264 266.129 90.4627 266.482 90.7605 266.78L92.1805 268.2C92.4465 268.472 92.7636 268.689 93.1137 268.838C93.4638 268.987 93.8399 269.066 94.2205 269.07Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_111"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M107.061 269.07C107.622 269.072 108.173 268.927 108.661 268.65L110.401 267.65C110.956 267.329 111.39 266.835 111.635 266.242C111.88 265.65 111.922 264.993 111.756 264.374C111.59 263.755 111.223 263.209 110.714 262.819C110.205 262.43 109.582 262.219 108.941 262.22H108.761C111.753 260.3 113.953 257.366 114.958 253.956C115.962 250.546 115.704 246.888 114.23 243.652C112.756 240.417 110.165 237.822 106.933 236.342C103.701 234.862 100.043 234.596 96.6308 235.594C93.2186 236.592 90.2805 238.787 88.3551 241.776C86.4298 244.764 85.6462 248.347 86.1481 251.866C86.6499 255.386 88.4036 258.607 91.0875 260.938C93.7715 263.27 97.2058 264.555 100.761 264.56C101.349 264.562 101.937 264.528 102.521 264.46L104.271 267.46C104.552 267.951 104.958 268.359 105.449 268.642C105.939 268.924 106.495 269.072 107.061 269.07Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_112"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M106.541 248.63C105.988 248.63 105.541 248.182 105.541 247.63C105.541 247.078 105.988 246.63 106.541 246.63C107.093 246.63 107.541 247.078 107.541 247.63C107.541 248.182 107.093 248.63 106.541 248.63Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M100.541 248.63C99.9883 248.63 99.5405 248.182 99.5405 247.63C99.5405 247.078 99.9883 246.63 100.541 246.63C101.093 246.63 101.541 247.078 101.541 247.63C101.541 248.182 101.093 248.63 100.541 248.63Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M377 75H326V81H377V75Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_113"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M377 81H316V269H377V81Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_114"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M377 227H316V269H377V227Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_115"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M377 198H316V227H377V198Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_116"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M336.75 169H316V198H336.75V169Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_117"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M357.5 169H336.75V198H357.5V169Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_118"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M377.31 169H357.31V198H377.31V169Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_119"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M377 140H316V169H377V140Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_120"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M323.334 89.6969L323.332 91.7289L328.004 91.733C327.665 94.8847 326.191 96.9794 322.462 98.7681L323.804 100.785C329.31 98.1661 330.642 94.4393 330.646 89.7033L323.334 89.6969ZM332.535 88.1849L332.522 103.177L335.114 103.179L335.127 88.1872L332.535 88.1849ZM347.339 101.03L342.299 101.025L342.299 100.001L347.339 100.006L347.339 101.03ZM347.341 98.0539L342.301 98.0495L342.302 96.8815L339.742 96.8792L339.737 103.055L349.897 103.064L349.902 96.8881L347.342 96.8859L347.341 98.0539ZM341.393 93.9367C340.497 93.9359 339.841 93.4073 339.842 92.4153C339.843 91.4233 340.499 90.9119 341.395 90.9127C342.291 90.9134 342.947 91.426 342.946 92.418C342.945 93.41 342.289 93.9374 341.393 93.9367ZM347.318 88.2138L347.315 91.3658L345.251 91.364C344.772 89.8276 343.269 88.7863 341.397 88.7847C339.125 88.7827 337.38 90.3172 337.378 92.4132C337.376 94.5252 339.119 96.0627 341.391 96.0647C343.295 96.0663 344.816 94.9956 345.265 93.428L347.313 93.4298L347.311 96.2938L349.903 96.2961L349.91 88.2161L347.318 88.2138ZM358.738 90.6398C360.562 90.6414 361.586 90.9943 361.585 91.7623C361.585 92.5463 360.56 92.8814 358.736 92.8798C356.912 92.8782 355.889 92.5413 355.889 91.7573C355.89 90.9893 356.914 90.6382 358.738 90.6398ZM358.735 94.9118C362.031 94.9147 364.256 93.7166 364.257 91.7646C364.259 89.8286 362.036 88.6267 358.74 88.6238C355.444 88.6209 353.219 89.819 353.217 91.755C353.216 93.707 355.439 94.9089 358.735 94.9118ZM356.107 98.6055L353.515 98.6032L353.512 103.003L363.992 103.012L363.993 100.98L356.105 100.974L356.107 98.6055ZM351.934 95.7379L351.932 97.7699L365.532 97.7817L365.534 95.7497L351.934 95.7379ZM376.43 93.7912L377.086 93.7918L377.083 97.5678L379.531 97.5699L379.539 88.2259L377.091 88.2238L377.088 91.7278L376.432 91.7272L376.435 88.5112L374.035 88.5091L374.027 97.1171L376.427 97.1192L376.43 93.7912ZM373.714 89.6289L371.426 89.6269L371.427 88.4109L368.883 88.4086L368.882 89.6246L366.594 89.6227L366.592 91.5907L373.712 91.5969L373.714 89.6289ZM369.198 94.5689C369.198 94.0089 369.598 93.7373 370.174 93.7378C370.75 93.7383 371.15 94.0106 371.15 94.5706C371.149 95.1146 370.749 95.3863 370.173 95.3858C369.597 95.3853 369.197 95.1129 369.198 94.5689ZM373.438 94.5726C373.439 93.0206 372.064 91.9154 370.176 91.9138C368.288 91.9121 366.911 93.0149 366.91 94.5669C366.908 96.1029 368.283 97.2081 370.171 97.2098C372.059 97.2114 373.436 96.1086 373.438 94.5726ZM374.36 101.357C372.52 101.356 371.688 101.115 371.689 100.475C371.689 99.8191 372.521 99.5798 374.361 99.5814C376.185 99.583 377.017 99.8238 377.017 100.48C377.016 101.12 376.184 101.359 374.36 101.357ZM374.363 97.6614C371.099 97.6586 369.098 98.6808 369.097 100.473C369.095 102.249 371.094 103.275 374.358 103.277C377.606 103.28 379.607 102.258 379.609 100.482C379.61 98.69 377.611 97.6643 374.363 97.6614Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M323.569 206.457L323.56 216.729L330.936 216.735L330.945 206.463L323.569 206.457ZM328.399 208.477L328.394 214.717L326.106 214.715L326.111 208.475L328.399 208.477ZM332.85 205.169L332.837 220.257L335.429 220.259L335.442 205.171L332.85 205.169ZM341.703 216.473L347.031 216.477L347.029 218.061L341.701 218.057L341.703 216.473ZM339.156 220.054L349.572 220.063L349.577 214.479L339.161 214.47L339.156 220.054ZM349.355 211.135C349.693 209.488 349.694 208.256 349.695 207.056L349.696 205.808L339.248 205.798L339.246 207.83L347.134 207.837C347.118 208.797 347.053 209.837 346.795 211.133L337.612 211.125L337.61 213.157L351.194 213.169L351.195 211.137L349.355 211.135ZM354.859 209.732C354.86 208.676 355.565 208.165 356.493 208.166C357.437 208.166 358.14 208.679 358.139 209.735C358.139 210.775 357.434 211.302 356.49 211.302C355.562 211.301 354.859 210.772 354.859 209.732ZM360.667 209.737C360.669 207.577 358.847 205.992 356.495 205.99C354.159 205.987 352.333 207.57 352.331 209.73C352.33 211.89 354.152 213.459 356.488 213.462C358.84 213.464 360.666 211.897 360.667 209.737ZM354.069 216.627L361.637 216.634L361.634 220.234L364.226 220.236L364.231 214.604L354.071 214.595L354.069 216.627ZM366.028 209.086L366.03 207.006L364.238 207.004L364.239 205.228L361.647 205.226L361.64 214.042L364.232 214.044L364.233 212.348L366.025 212.35L366.027 210.27L364.235 210.268L364.236 209.084L366.028 209.086ZM380.631 212.955L380.633 210.923L378.857 210.921C379.131 209.417 379.132 208.185 379.133 207.081L379.134 205.833L368.686 205.824L368.684 207.856L376.572 207.863C376.555 208.759 376.506 209.735 376.281 210.919L367.049 210.911L367.047 212.943L372.535 212.948L372.534 214.724L368.39 214.72L368.388 216.736L376.516 216.743L376.513 220.247L379.105 220.249L379.11 214.729L375.126 214.726L375.127 212.95L380.631 212.955Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M316 193H377",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M336.75 111H316V140H336.75V111Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_121"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M357.5 111H336.75V140H357.5V111Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_122"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M377.31 111H357.31V140H377.31V111Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_123"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M316 135H377",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M328.698 122.344C328.17 122.488 327.673 122.535 326.809 122.551L326.812 119.271L328.476 119.272L328.478 117.256L324.27 117.252L324.264 124.612L325.128 124.613C327.288 124.615 328.024 124.6 328.872 124.376L328.698 122.344ZM323.674 122.356C323.146 122.451 322.666 122.499 322.153 122.53L322.156 119.266L323.628 119.268L323.63 117.252L319.614 117.248L319.608 124.608L320.424 124.609C321.864 124.61 322.728 124.611 323.848 124.404L323.674 122.356ZM321.541 127.538L329.765 127.545L329.762 131.209L332.322 131.211L332.327 125.515L321.543 125.506L321.541 127.538ZM329.743 116.201L329.74 119.801L328.076 119.8L328.074 121.832L329.738 121.833L329.735 124.953L332.327 124.955L332.335 116.203L329.743 116.201Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M354.096 123.916L354.098 121.884L352.322 121.882C352.595 120.379 352.596 119.147 352.597 118.043L352.598 116.795L342.15 116.786L342.149 118.818L350.037 118.824C350.02 119.72 349.971 120.696 349.746 121.88L340.514 121.872L340.512 123.904L346 123.909L345.999 125.685L341.855 125.681L341.853 127.697L349.981 127.704L349.978 131.208L352.57 131.211L352.575 125.691L348.591 125.687L348.592 123.911L354.096 123.916Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M330.04 159.88C333.455 159.883 335.605 157.651 335.608 154.057C335.611 150.463 333.465 148.219 330.051 148.216C326.637 148.213 324.478 150.454 324.475 154.047C324.472 157.641 326.619 159.877 330.04 159.88ZM330.042 157.552C328.433 157.551 327.395 156.191 327.397 154.05C327.399 151.901 328.447 150.543 330.049 150.544C331.65 150.546 332.696 151.906 332.694 154.055C332.692 156.195 331.644 157.554 330.042 157.552ZM341.861 159.891C344.79 159.893 346.714 158.231 346.716 155.7L346.721 149.746C346.722 148.793 346.199 148.254 345.285 148.253C344.379 148.252 343.855 148.791 343.854 149.744L343.849 155.392C343.848 156.705 343.136 157.486 341.863 157.484C340.582 157.483 339.871 156.701 339.872 155.389L339.877 149.74C339.878 148.787 339.355 148.248 338.449 148.247C337.543 148.246 337.011 148.785 337.01 149.738L337.005 155.691C337.003 158.222 338.923 159.888 341.861 159.891ZM352.47 159.876C353.376 159.877 353.9 159.339 353.901 158.386L353.908 150.745L355.892 150.747C356.65 150.747 357.166 150.326 357.167 149.591C357.167 148.857 356.668 148.435 355.894 148.434L349.074 148.428C348.293 148.427 347.792 148.849 347.792 149.583C347.791 150.318 348.306 150.74 349.072 150.741L351.048 150.742L351.042 158.383C351.041 159.336 351.564 159.876 352.47 159.876ZM359.658 159.711L363.603 159.714C366.017 159.716 367.542 158.444 367.543 156.468C367.545 154.968 366.343 153.834 364.819 153.762L364.819 153.7C366.069 153.529 367.023 152.522 367.025 151.256C367.026 149.514 365.691 148.443 363.472 148.441L359.668 148.437C358.761 148.437 358.23 148.983 358.229 149.936L358.222 158.21C358.221 159.163 358.752 159.71 359.658 159.711ZM361.093 153.032L361.096 150.47L362.713 150.471C363.674 150.472 364.236 150.941 364.235 151.73C364.234 152.543 363.609 153.035 362.57 153.034L361.093 153.032ZM361.089 157.681L361.092 154.775L362.779 154.776C363.959 154.777 364.63 155.293 364.63 156.215C364.629 157.168 363.972 157.683 362.792 157.682L361.089 157.681ZM369.876 159.892C370.642 159.892 371.072 159.502 371.346 158.549L371.73 157.346L375.59 157.35L375.971 158.6C376.22 159.522 376.65 159.898 377.478 159.898C378.314 159.899 378.916 159.329 378.917 158.525C378.917 158.228 378.862 157.962 378.73 157.595L375.932 149.952C375.503 148.779 374.816 148.279 373.637 148.278C372.519 148.277 371.824 148.8 371.409 149.948L368.621 157.586C368.495 157.93 368.417 158.281 368.417 158.523C368.416 159.375 368.97 159.891 369.876 159.892ZM372.302 155.183L373.587 150.84L373.65 150.84L374.966 155.185L372.302 155.183ZM384.853 159.928C387.017 159.93 388.815 158.9 389.496 157.299C389.613 157.026 389.676 156.745 389.676 156.471C389.677 155.714 389.146 155.205 388.334 155.205C387.732 155.204 387.38 155.454 387.083 156.071C386.598 157.133 385.839 157.632 384.8 157.631C383.222 157.63 382.239 156.293 382.241 154.082C382.243 151.895 383.236 150.56 384.799 150.561C385.791 150.562 386.548 151.07 387.055 152.118C387.367 152.743 387.757 153.001 388.39 153.002C389.14 153.002 389.641 152.526 389.641 151.792C389.642 151.448 389.54 151.088 389.353 150.745C388.511 149.142 386.902 148.266 384.769 148.264C381.441 148.261 379.322 150.408 379.319 154.087C379.316 157.775 381.384 159.925 384.853 159.928ZM392.689 159.912C393.595 159.912 394.119 159.374 394.12 158.421L394.122 156.553L395.169 155.461L398.088 159.112C398.548 159.698 398.962 159.925 399.564 159.925C400.345 159.926 400.939 159.325 400.94 158.544C400.94 158.145 400.745 157.715 400.277 157.137L397.398 153.603L400.095 150.762C400.478 150.348 400.627 150.036 400.628 149.614C400.628 148.879 400.027 148.293 399.277 148.292C398.793 148.292 398.433 148.479 398.027 148.932L394.187 153.178L394.124 153.178L394.127 149.788C394.128 148.835 393.605 148.295 392.699 148.294C391.793 148.294 391.261 148.832 391.26 149.785L391.253 158.418C391.252 159.371 391.783 159.911 392.689 159.912Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M41.91 302.64C40.4045 302.642 38.9322 302.197 37.6794 301.362C36.4267 300.527 35.4497 299.339 34.8722 297.949C34.2947 296.559 34.1425 295.028 34.4351 293.551C34.7276 292.075 35.4515 290.718 36.5154 289.652C37.5793 288.587 38.9353 287.861 40.4117 287.567C41.8882 287.272 43.4188 287.423 44.8099 287.998C46.2011 288.574 47.3902 289.549 48.2268 290.801C49.0635 292.053 49.51 293.524 49.51 295.03C49.51 297.046 48.7097 298.981 47.2847 300.407C45.8597 301.834 43.9266 302.637 41.91 302.64Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_124"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M17.61 302.64C16.1049 302.64 14.6336 302.194 13.3821 301.357C12.1307 300.521 11.1553 299.333 10.5793 297.942C10.0033 296.552 9.85259 295.021 10.1462 293.545C10.4399 292.069 11.1646 290.713 12.2289 289.649C13.2932 288.585 14.6492 287.86 16.1254 287.566C17.6016 287.273 19.1317 287.423 20.5222 287.999C21.9128 288.575 23.1013 289.551 23.9375 290.802C24.7737 292.054 25.22 293.525 25.22 295.03C25.2174 297.047 24.4147 298.982 22.9882 300.408C21.5616 301.835 19.6275 302.637 17.61 302.64Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_125"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M17.6104 295L22.1104 285H36.1104",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M22.1104 285L19.1104 280",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M41.9104 295L31.1104 274",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M15.1104 280H24.1104",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M27.1104 274H31.1104",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M41.9099 297.06C43.031 297.06 43.9399 296.151 43.9399 295.03C43.9399 293.909 43.031 293 41.9099 293C40.7887 293 39.8799 293.909 39.8799 295.03C39.8799 296.151 40.7887 297.06 41.9099 297.06Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M17.6101 297.06C18.7312 297.06 19.6401 296.151 19.6401 295.03C19.6401 293.909 18.7312 293 17.6101 293C16.4889 293 15.5801 293.909 15.5801 295.03C15.5801 296.151 16.4889 297.06 17.6101 297.06Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M96.3115 302.586H55V293.632H55.0024C55.174 287.745 64.3551 283 75.6557 283C86.9564 283 96.1375 287.745 96.309 293.632H96.3115V302.586Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_126"
+			}
+		},
+		{
+			"type": "line",
+			"props": {
+				"x1": "56",
+				"y1": "293.7",
+				"x2": "95.3115",
+				"y2": "293.7",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M327.311 302.586H286V293.632H286.002C286.174 287.745 295.355 283 306.656 283C317.956 283 327.137 287.745 327.309 293.632H327.311V302.586Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_127"
+			}
+		},
+		{
+			"type": "line",
+			"props": {
+				"x1": "287",
+				"y1": "293.7",
+				"x2": "326.311",
+				"y2": "293.7",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M143.311 302.586H102V293.632H102.002C102.174 287.745 111.355 283 122.656 283C133.956 283 143.137 287.745 143.309 293.632H143.311V302.586Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_128"
+			}
+		},
+		{
+			"type": "line",
+			"props": {
+				"x1": "103",
+				"y1": "293.7",
+				"x2": "142.311",
+				"y2": "293.7",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M374.311 302.586H333V293.632H333.002C333.174 287.745 342.355 283 353.656 283C364.956 283 374.137 287.745 374.309 293.632H374.311V302.586Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_129"
+			}
+		},
+		{
+			"type": "line",
+			"props": {
+				"x1": "334",
+				"y1": "293.7",
+				"x2": "373.311",
+				"y2": "293.7",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M146.5 305C146.5 305.03 146.5 305.06 146.5 305.09V317.8H211V313.5C211 311.219 210.094 309.032 208.481 307.419C207.18 306.118 205.505 305.276 203.708 305H146.5Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_130"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M146.5 304C146.5 297.373 151.873 292 158.5 292H187.5C194.127 292 199.5 297.373 199.5 304V305H146.5V304Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_131"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M178.32 304.899V292.859",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M158.5 305L158.5 292",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M158.18 322.71C154.806 322.71 152.07 319.975 152.07 316.6C152.07 313.226 154.806 310.49 158.18 310.49C161.555 310.49 164.29 313.226 164.29 316.6C164.29 319.975 161.555 322.71 158.18 322.71Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M158.18 320.35C156.109 320.35 154.43 318.671 154.43 316.6C154.43 314.529 156.109 312.85 158.18 312.85C160.251 312.85 161.93 314.529 161.93 316.6C161.93 318.671 160.251 320.35 158.18 320.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_132"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M198.39 322.71C195.016 322.71 192.28 319.975 192.28 316.6C192.28 313.226 195.016 310.49 198.39 310.49C201.764 310.49 204.5 313.226 204.5 316.6C204.5 319.975 201.764 322.71 198.39 322.71Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M198.39 320.35C196.319 320.35 194.64 318.671 194.64 316.6C194.64 314.529 196.319 312.85 198.39 312.85C200.461 312.85 202.14 314.529 202.14 316.6C202.14 318.671 200.461 320.35 198.39 320.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_133"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M310.804 267.567C310.681 268.026 310.348 268.399 309.907 268.573C309.466 268.748 308.968 268.704 308.565 268.454C307.901 268.043 306.869 268.253 306.36 269.327L303.346 276.319C302.723 277.8 301.001 278.598 299.455 277.814C297.91 277.101 297.452 275.295 298.12 273.892L301.134 266.9C301.138 266.891 301.143 266.881 301.147 266.871C302.849 263.144 307.063 261.186 310.763 262.842C311.435 263.143 311.789 263.888 311.599 264.599L310.804 267.567Z",
+				"fill": "#B07A68",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"strokeLinejoin": "round",
+				"id": "금곡동_134"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M316.234 266.735L315.004 267.965C314.586 268.384 314.089 268.716 313.543 268.943C312.996 269.169 312.41 269.286 311.819 269.286C311.227 269.286 310.641 269.169 310.095 268.943C309.548 268.716 309.052 268.384 308.634 267.965C308.215 267.548 307.883 267.052 307.657 266.507C307.43 265.961 307.313 265.376 307.313 264.785C307.313 264.194 307.43 263.609 307.657 263.063C307.883 262.518 308.215 262.022 308.634 261.605L311.824 258.415",
+				"fill": "#FFD770",
+				"id": "금곡동_135"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M316.234 266.735L315.004 267.965C314.586 268.384 314.089 268.716 313.543 268.943C312.996 269.169 312.41 269.286 311.819 269.286C311.227 269.286 310.641 269.169 310.095 268.943C309.548 268.716 309.052 268.384 308.634 267.965C308.215 267.548 307.883 267.052 307.657 266.507C307.43 265.961 307.313 265.376 307.313 264.785C307.313 264.194 307.43 263.609 307.657 263.063C307.883 262.518 308.215 262.022 308.634 261.605L311.824 258.415",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M318.799 278.578C319.287 278.856 319.838 279.001 320.399 278.998C320.965 279.001 321.521 278.853 322.012 278.57C322.502 278.287 322.908 277.88 323.189 277.388L324.939 274.388L328.349 268.482L320.199 269.55L318.699 272.148L318.519 272.148C317.878 272.147 317.255 272.358 316.746 272.748C316.237 273.137 315.871 273.684 315.704 274.303C315.538 274.922 315.58 275.578 315.825 276.171C316.07 276.763 316.504 277.258 317.059 277.578L318.799 278.578Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_136"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M327.124 275C318.84 275 312.124 268.284 312.124 260C312.124 251.716 318.84 245 327.124 245C335.408 245 342.124 251.716 342.124 260C342.124 264.442 340.193 268.434 337.124 271.181C336.878 271.4 336.625 271.612 336.365 271.816L337.004 272.461C337.406 272.859 337.694 273.358 337.841 273.904C337.987 274.451 337.986 275.026 337.837 275.572C337.694 276.115 337.412 276.61 337.017 277.009L335.419 278.613C334.966 279.066 334.375 279.357 333.74 279.441C333.104 279.524 332.459 279.395 331.904 279.074C331.349 278.753 330.916 278.258 330.672 277.666C330.427 277.073 330.385 276.416 330.552 275.798L330.598 275.624L329.746 274.772C328.895 274.922 328.019 275 327.124 275Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_137"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M320.124 259C320.676 259 321.124 258.552 321.124 258C321.124 257.448 320.676 257 320.124 257C319.572 257 319.124 257.448 319.124 258C319.124 258.552 319.572 259 320.124 259Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M326.124 259C326.676 259 327.124 258.552 327.124 258C327.124 257.448 326.676 257 326.124 257C325.572 257 325.124 257.448 325.124 258C325.124 258.552 325.572 259 326.124 259Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M248.5 305C248.5 305.03 248.5 305.06 248.5 305.09V317.8H313V313.5C313 311.219 312.094 309.032 310.481 307.419C309.18 306.118 307.505 305.276 305.708 305H248.5Z",
+				"fill": "#003472",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_138"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M248.5 304C248.5 297.373 253.873 292 260.5 292H289.5C296.127 292 301.5 297.373 301.5 304V305H248.5V304Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_139"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M280.32 304.899V292.859",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M260.5 305L260.5 292",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M260.18 322.71C256.806 322.71 254.07 319.975 254.07 316.6C254.07 313.226 256.806 310.49 260.18 310.49C263.555 310.49 266.29 313.226 266.29 316.6C266.29 319.975 263.555 322.71 260.18 322.71Z",
+				"fill": "#003472",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_140"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M260.18 320.35C258.109 320.35 256.43 318.671 256.43 316.6C256.43 314.529 258.109 312.85 260.18 312.85C262.251 312.85 263.93 314.529 263.93 316.6C263.93 318.671 262.251 320.35 260.18 320.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_141"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M300.39 322.71C297.016 322.71 294.28 319.975 294.28 316.6C294.28 313.226 297.016 310.49 300.39 310.49C303.764 310.49 306.5 313.226 306.5 316.6C306.5 319.975 303.764 322.71 300.39 322.71Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M300.39 320.35C298.319 320.35 296.64 318.671 296.64 316.6C296.64 314.529 298.319 312.85 300.39 312.85C302.461 312.85 304.14 314.529 304.14 316.6C304.14 318.671 302.461 320.35 300.39 320.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "금곡동_142"
+			}
+		}
+	]
+}
