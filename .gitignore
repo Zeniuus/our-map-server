@@ -11,3 +11,4 @@ deploy/**/application.properties
 config.js
 
 *.sql
+!subprojects/database-migrator/src/main/resources/liquibase/*.sql
