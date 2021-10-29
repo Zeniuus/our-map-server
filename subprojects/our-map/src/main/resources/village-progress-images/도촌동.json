@@ -1,0 +1,3083 @@
+{
+	"id": "도촌동",
+	"eupMyeonDongId": "nBFkB5TjCBPQpsZL5mo6J/lOb6dt3iZHFEtj",
+	"numberOfBlocks": 119,
+	"paths": [
+		{
+			"type": "path",
+			"props": {
+				"d": "M254.431 39.0487C253.002 38.9093 251.561 39.07 250.198 39.5204C248.835 39.9709 247.582 40.7011 246.518 41.6643C245.454 42.6274 244.603 43.8023 244.02 45.1136C243.437 46.4248 243.134 47.8435 243.131 49.2787C243.047 46.6064 241.927 44.0715 240.008 42.2107C238.088 40.35 235.519 39.3094 232.846 39.3094C230.172 39.3094 227.604 40.35 225.684 42.2107C223.764 44.0715 222.644 46.6064 222.561 49.2787C222.558 47.8435 222.255 46.4248 221.672 45.1136C221.088 43.8023 220.237 42.6274 219.173 41.6643C218.11 40.7011 216.856 39.9709 215.493 39.5204C214.131 39.07 212.689 38.9093 211.261 39.0487C208.687 39.3545 206.318 40.6012 204.609 42.5488C202.899 44.4964 201.97 47.0074 202.001 49.5987C202.001 50.9119 202.259 52.2122 202.762 53.4255C203.264 54.6388 204.001 55.7411 204.93 56.6697C206.805 58.5451 209.349 59.5987 212.001 59.5987H253.731C255.044 59.5987 256.344 59.34 257.558 58.8375C258.771 58.3349 259.873 57.5983 260.802 56.6697C261.73 55.7411 262.467 54.6388 262.97 53.4255C263.472 52.2122 263.731 50.9119 263.731 49.5987C263.76 47.0013 262.826 44.4852 261.108 42.5366C259.39 40.5881 257.011 39.3454 254.431 39.0487Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"id": "도촌동_0"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M193.913 74.0162C193.623 73.9262 193.323 73.8462 193.023 73.7762C194.497 72.1299 195.383 70.0419 195.545 67.8384C195.706 65.635 195.133 63.4401 193.916 61.5965C192.698 59.7529 190.904 58.3645 188.814 57.6481C186.724 56.9316 184.456 56.9274 182.363 57.6362C182.063 57.7362 181.783 57.8462 181.503 57.9662C181.654 56.2419 181.358 54.5079 180.643 52.9314C179.928 51.3549 178.82 49.9893 177.423 48.9662C175.268 47.4163 172.588 46.78 169.967 47.1958C167.345 47.6115 164.993 49.0456 163.423 51.1862C163.238 51.4361 163.068 51.6966 162.913 51.9662C161.802 50.0584 160.09 48.5721 158.045 47.739C156.001 46.906 153.738 46.7731 151.61 47.3611C149.481 47.9491 147.608 49.2249 146.28 50.9896C144.953 52.7542 144.248 54.9084 144.273 57.1162C144.273 57.4262 144.273 57.7362 144.323 58.0362C142.729 57.3527 140.985 57.093 139.261 57.2822C137.537 57.4714 135.891 58.1032 134.483 59.1162C132.345 60.6877 130.912 63.0391 130.497 65.6601C130.081 68.2811 130.716 70.9603 132.263 73.1162C132.453 73.3762 132.643 73.6062 132.843 73.8362C131.143 74.2206 129.572 75.0389 128.282 76.2114C126.992 77.3838 126.028 78.8704 125.483 80.5262C124.669 83.0605 124.89 85.8141 126.098 88.1859C127.307 90.5577 129.404 92.3553 131.933 93.1862C132.233 93.2762 132.523 93.3562 132.823 93.4262C131.678 94.7292 130.892 96.3077 130.541 98.0066C130.19 99.7054 130.288 101.466 130.823 103.116C131.654 105.645 133.452 107.743 135.824 108.951C138.195 110.159 140.949 110.381 143.483 109.566C143.783 109.466 144.073 109.356 144.353 109.236C144.196 110.961 144.489 112.698 145.204 114.275C145.919 115.853 147.032 117.218 148.433 118.236C150.592 119.802 153.283 120.447 155.917 120.031C158.551 119.615 160.913 118.171 162.483 116.016C162.663 115.756 162.823 115.496 162.983 115.236C164.095 117.144 165.806 118.63 167.851 119.463C169.896 120.296 172.159 120.429 174.287 119.841C176.415 119.253 178.289 117.978 179.616 116.213C180.943 114.448 181.649 112.294 181.623 110.086C181.623 109.776 181.623 109.466 181.623 109.166C183.217 109.851 184.96 110.11 186.684 109.917C188.407 109.724 190.051 109.086 191.453 108.066C193.594 106.496 195.028 104.145 195.444 101.523C195.86 98.9012 195.223 96.2213 193.673 94.0662C193.493 93.8162 193.293 93.5762 193.093 93.3462C194.785 92.965 196.348 92.1507 197.629 90.9831C198.911 89.8155 199.867 88.3348 200.403 86.6862C201.222 84.1455 200.998 81.3837 199.781 79.0079C198.564 76.6321 196.453 74.8367 193.913 74.0162Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_1"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M150.733 84.8965L162.343 96.4965",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M175.104 75.7764L163.504 87.3864",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M162.483 66.0166L162.483 144.017",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"width": "120.784",
+				"height": "4.52941",
+				"transform": "matrix(-1 0 0 1 343.785 54.0977)",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_2"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"width": "120.784",
+				"height": "134.373",
+				"transform": "matrix(-1 0 0 1 343.785 58.6279)",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_3"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M265.275 67.6865H277.354V82.7846H265.275V67.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_4"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M256.217 67.6865H265.275V82.7846H256.217V67.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_5"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M238.099 67.6865H250.178V82.7846H238.099V67.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_6"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M229.04 67.6865H238.099V82.7846H229.04V67.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_7"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M325.668 67.6865H337.746V82.7846H325.668V67.6865Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M316.609 67.6865H325.668V82.7846H316.609V67.6865Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M325.668 88.8232H337.746V103.921H325.668V88.8232Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M316.609 88.8232H325.668V103.921H316.609V88.8232Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M325.668 109.961H337.746V125.059H325.668V109.961Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M316.609 109.961H325.668V125.059H316.609V109.961Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M325.668 131.098H337.746V146.196H325.668V131.098Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M316.609 131.098H325.668V146.196H316.609V131.098Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M265.275 152.235H277.354V167.333H265.275V152.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M256.217 152.235H265.275V167.333H256.217V152.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M238.099 152.235H250.178V167.333H238.099V152.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M229.04 152.235H238.099V167.333H229.04V152.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M325.668 152.235H337.746V167.333H325.668V152.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M316.609 152.235H325.668V167.333H316.609V152.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M265.275 173.372H277.354V188.47H265.275V173.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M256.217 173.372H265.275V188.47H256.217V173.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M238.099 173.372H250.178V188.47H238.099V173.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M229.04 173.372H238.099V188.47H229.04V173.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M325.668 173.372H337.746V188.47H325.668V173.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M316.609 173.372H325.668V188.47H316.609V173.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"width": "27.1765",
+				"height": "144.941",
+				"transform": "matrix(-1 0 0 1 310.569 48.0586)",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M312.079 169.212L296.981 158.274L281.883 169.212V193H312.079V169.212Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M288.677 173.372H305.285V193H288.677V173.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"width": "18.1176",
+				"height": "9.05882",
+				"transform": "matrix(-1 0 0 1 306.04 39)",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M296.982 60.8926H290.942V69.9514H296.982V60.8926Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M303.021 60.8926H296.981V69.9514H303.021V60.8926Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M296.982 103.167H290.942V112.226H296.982V103.167Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M303.021 103.167H296.981V112.226H303.021V103.167Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M296.982 124.304H290.942V133.363H296.982V124.304Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M303.021 124.304H296.981V133.363H303.021V124.304Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M296.982 145.441H290.942V154.5H296.982V145.441Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M303.021 145.441H296.981V154.5H303.021V145.441Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "283",
+				"y": "28.0977",
+				"width": "120.784",
+				"height": "4.52941",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_8"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "283",
+				"y": "32.6279",
+				"width": "120.784",
+				"height": "134.373",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_9"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M361.51 41.6865H349.432V56.7846H361.51V41.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_10"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M370.569 41.6865H361.51V56.7846H370.569V41.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_11"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M301.117 41.6865H289.039V56.7846H301.117V41.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_12"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M310.176 41.6865H301.117V56.7846H310.176V41.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_13"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M361.51 62.8232H349.432V77.9213H361.51V62.8232Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_14"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M370.569 62.8232H361.51V77.9213H370.569V62.8232Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_15"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M301.117 62.8232H289.039V77.9213H301.117V62.8232Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_16"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M310.176 62.8232H301.117V77.9213H310.176V62.8232Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_17"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M361.51 83.9609H349.432V99.059H361.51V83.9609Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_18"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M370.569 83.9609H361.51V99.059H370.569V83.9609Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M361.51 105H349.432V120.098H361.51V105Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M370.569 105H361.51V120.098H370.569V105Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M361.51 147.372H349.432V162.47H361.51V147.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M370.569 147.372H361.51V162.47H370.569V147.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "316.216",
+				"y": "22.0586",
+				"width": "27.1765",
+				"height": "144.941",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_19"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "320.745",
+				"y": "13",
+				"width": "18.1176",
+				"height": "9.05882",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_20"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M329.804 34.8926H335.843V43.9514H329.804V34.8926Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_21"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M323.764 34.8926H329.804V43.9514H323.764V34.8926Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_22"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M329.804 56.0293H335.843V65.0881H329.804V56.0293Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_23"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M323.764 56.0293H329.804V65.0881H323.764V56.0293Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_24"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M329.804 77.167H335.843V86.2258H329.804V77.167Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_25"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M323.764 77.167H329.804V86.2258H323.764V77.167Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_26"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M329.804 98.3037H335.843V107.363H329.804V98.3037Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M323.764 98.3037H329.804V107.363H323.764V98.3037Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M153.62 64.6611H61V193.882H153.62V64.6611Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M76.4367 150.778H61V172.44H76.4367V150.778Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M91.8733 150.777H76.4365V172.439H91.8733V150.777Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M107.31 150.777H91.873V172.439H107.31V150.777Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M122.747 150.777H107.311V172.439H122.747V150.777Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M138.184 150.777H122.747V172.439H138.184V150.777Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M153.62 150.777H138.184V172.439H153.62V150.777Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M61 169.077H153.248",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M76.4367 172.221H61V193.882H76.4367V172.221Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M91.8733 172.22H76.4365V193.881H91.8733V172.22Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M107.31 172.22H91.873V193.881H107.31V172.22Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M122.747 172.22H107.311V193.881H122.747V172.22Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M138.184 172.22H122.747V193.881H138.184V172.22Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M153.62 172.22H138.184V193.881H153.62V172.22Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M61 190.52H153.248",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M74.4447 199.11H65.4814V226H74.4447V199.11Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M149.139 199.11H140.176V226H149.139V199.11Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M111.791 199.11H102.828V226H111.791V199.11Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M102.829 199.11H74.4453V226H102.829V199.11Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M140.176 199.11H111.792V226H140.176V199.11Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M150.632 194.629H63.9873V199.111H150.632V194.629Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M153.62 43H61V64.6612H153.62V43Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"id": "도촌동_27"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M76.4367 86.541H61V108.202H76.4367V86.541Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_28"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M91.8733 86.542H76.4365V108.203H91.8733V86.542Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_29"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M107.31 86.542H91.873V108.203H107.31V86.542Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_30"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M122.747 86.542H107.311V108.203H122.747V86.542Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_31"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M138.184 86.542H122.747V108.203H138.184V86.542Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_32"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M153.62 86.542H138.184V108.203H153.62V86.542Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_33"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M61 104.842H153.248",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M76.4367 64.6611H61V86.3224H76.4367V64.6611Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_34"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M91.8733 64.6611H76.4365V86.3224H91.8733V64.6611Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_35"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M107.31 64.6611H91.873V86.3224H107.31V64.6611Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_36"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M122.747 64.6611H107.311V86.3224H122.747V64.6611Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_37"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M138.184 64.6611H122.747V86.3224H138.184V64.6611Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_38"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M153.62 64.6611H138.184V86.3224H153.62V64.6611Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_39"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M61 82.9609H153.248",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M76.4367 129.116H61V150.777H76.4367V129.116Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M91.8733 129.116H76.4365V150.777H91.8733V129.116Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M107.31 129.116H91.873V150.777H107.31V129.116Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M122.747 129.116H107.311V150.777H122.747V129.116Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M138.184 129.116H122.747V150.777H138.184V129.116Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M153.62 129.116H138.184V150.777H153.62V129.116Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M61 147.416H153.248",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M76.4367 108.203H61V129.864H76.4367V108.203Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M91.8733 108.203H76.4365V129.864H91.8733V108.203Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M107.31 108.203H91.873V129.864H107.31V108.203Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M122.747 108.203H107.311V129.864H122.747V108.203Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M138.184 108.203H122.747V129.864H138.184V108.203Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M153.62 108.203H138.184V129.864H153.62V108.203Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M61 126.13H153.248",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M159.977 217.783C158.928 217.787 157.924 218.205 157.182 218.947C156.441 219.689 156.022 220.693 156.018 221.742C155.974 220.721 155.537 219.756 154.799 219.049C154.061 218.342 153.078 217.948 152.056 217.948C151.034 217.948 150.051 218.342 149.313 219.049C148.575 219.756 148.138 220.721 148.093 221.742C148.093 221.222 147.991 220.707 147.792 220.227C147.593 219.747 147.301 219.31 146.934 218.943C146.566 218.575 146.13 218.283 145.65 218.085C145.169 217.886 144.654 217.783 144.135 217.783C143.615 217.783 143.1 217.886 142.62 218.085C142.139 218.283 141.703 218.575 141.335 218.943C140.968 219.31 140.676 219.747 140.477 220.227C140.278 220.707 140.176 221.222 140.176 221.742V226H163.936V221.742C163.932 220.693 163.514 219.689 162.772 218.947C162.03 218.205 161.026 217.787 159.977 217.783Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"width": "60",
+				"height": "5",
+				"transform": "matrix(-1 0 0 1 61 61)",
+				"fill": "#B4DCCE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_40"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"width": "60",
+				"height": "134",
+				"transform": "matrix(-1 0 0 1 61 66)",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_41"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M43.2741 74.6865H55.3525V89.7846H43.2741V74.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_42"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M34.2156 74.6865H43.2744V89.7846H34.2156V74.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_43"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M16.0983 74.6865H28.1768V89.7846H16.0983V74.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_44"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M7.03883 74.6865H16.0977V89.7846H7.03883V74.6865Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_45"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M43.2741 95.8232H55.3525V110.921H43.2741V95.8232Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_46"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M34.2156 95.8232H43.2744V110.921H34.2156V95.8232Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_47"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M16.0983 95.8232H28.1768V110.921H16.0983V95.8232Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_48"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M7.03883 95.8232H16.0977V110.921H7.03883V95.8232Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_49"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M43.2741 116.961H55.3525V132.059H43.2741V116.961Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M34.2156 116.961H43.2744V132.059H34.2156V116.961Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M16.0983 116.961H28.1768V132.059H16.0983V116.961Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M7.03883 116.961H16.0977V132.059H7.03883V116.961Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_50"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M43.2741 138.098H55.3525V153.196H43.2741V138.098Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M34.2156 138.098H43.2744V153.196H34.2156V138.098Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M16.0983 138.098H28.1768V153.196H16.0983V138.098Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M7.03883 138.098H16.0977V153.196H7.03883V138.098Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M43.2741 159.235H55.3525V174.333H43.2741V159.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M34.2156 159.235H43.2744V174.333H34.2156V159.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M16.0983 159.235H28.1768V174.333H16.0983V159.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M7.03883 159.235H16.0977V174.333H7.03883V159.235Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M43.2741 180.372H55.3525V195.47H43.2741V180.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M34.2156 180.372H43.2744V195.47H34.2156V180.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M16.0983 180.372H28.1768V195.47H16.0983V180.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M7.03883 180.372H16.0977V195.47H7.03883V180.372Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M251.003 108C251.03 106.356 251.203 104.711 251.527 103.083C252.586 97.7612 255.199 92.8726 259.036 89.0357C262.873 85.1988 267.761 82.5858 273.083 81.5272C278.405 80.4686 283.921 81.0119 288.935 83.0884C293.948 85.1649 298.233 88.6814 301.247 93.1932C301.366 93.3705 301.482 93.549 301.596 93.7286C302.669 92.0397 303.928 90.4648 305.357 89.0357C309.194 85.1988 314.082 82.5858 319.404 81.5272C324.726 80.4686 330.243 81.0119 335.256 83.0884C340.269 85.1649 344.554 88.6814 347.569 93.1932C347.839 93.5973 348.097 94.0078 348.345 94.4241C349.505 92.4709 350.909 90.6592 352.533 89.0357C356.37 85.1988 361.258 82.5858 366.58 81.5272C371.902 80.4686 377.419 81.0119 382.432 83.0884C387.445 85.1649 391.73 88.6814 394.744 93.1932C397.759 97.7049 399.368 103.009 399.368 108.436C399.367 109.937 399.242 111.426 399 112.889V201H251V108H251.003Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_51"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M316.317 135C320.46 135 323.817 131.642 323.817 127.5C323.817 123.358 320.46 120 316.317 120C312.175 120 308.817 123.358 308.817 127.5C308.817 131.642 312.175 135 316.317 135Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_52"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M306.906 132.971V131.498H323.174V132.971C323.174 137.453 319.522 141.105 315.04 141.105C310.559 141.105 306.906 137.453 306.906 132.971Z",
+				"fill": "white"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M306.906 131.498V129.998H305.406V131.498H306.906ZM323.174 131.498H324.674V129.998H323.174V131.498ZM308.406 132.971V131.498H305.406V132.971H308.406ZM306.906 132.998H323.174V129.998H306.906V132.998ZM321.674 131.498V132.971H324.674V131.498H321.674ZM321.674 132.971C321.674 136.624 318.693 139.605 315.04 139.605V142.605C320.35 142.605 324.674 138.281 324.674 132.971H321.674ZM315.04 139.605C311.387 139.605 308.406 136.624 308.406 132.971H305.406C305.406 138.281 309.73 142.605 315.04 142.605V139.605Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M301.812 129.853C301.812 123.323 306.752 118 312.812 118V131H322.812V132.534C322.812 137.198 318.097 141 312.312 141C306.528 141 301.812 137.198 301.812 132.534V129.853Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_53"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M300.459 130.637L300.717 130.65L300.964 130.575C301.715 130.349 302.662 130.823 302.871 132.003L303.973 138.542C304.2 140.124 305.651 141.33 307.342 140.974C309.025 140.684 309.935 139.046 309.642 137.512L308.539 130.966C308.539 130.966 308.539 130.966 308.539 130.965C307.859 126.925 304.296 123.943 300.294 124.586C299.991 124.634 299.689 124.703 299.388 124.794C296.166 125.723 296.713 130.456 300.071 130.618L300.459 130.637Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"id": "도촌동_54"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M307.312 143C309.245 143 310.812 141.433 310.812 139.5C310.812 137.567 309.245 136 307.312 136C305.379 136 303.812 137.567 303.812 139.5C303.812 141.433 305.379 143 307.312 143Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_55"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M319.312 143C321.245 143 322.812 141.433 322.812 139.5C322.812 137.567 321.245 136 319.312 136C317.379 136 315.812 137.567 315.812 139.5C315.812 141.433 317.379 143 319.312 143Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_56"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M290.701 130.735L291.931 131.965C292.349 132.384 292.845 132.716 293.392 132.943C293.938 133.169 294.524 133.286 295.116 133.286C295.708 133.286 296.293 133.169 296.84 132.943C297.386 132.716 297.883 132.384 298.301 131.965C298.719 131.548 299.051 131.052 299.278 130.507C299.504 129.961 299.621 129.376 299.621 128.785C299.621 128.194 299.504 127.609 299.278 127.063C299.051 126.518 298.719 126.022 298.301 125.605L295.111 122.415",
+				"fill": "#FFF2AD",
+				"id": "도촌동_57"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M290.701 130.735L291.931 131.965C292.349 132.384 292.845 132.716 293.392 132.943C293.938 133.169 294.524 133.286 295.116 133.286C295.708 133.286 296.293 133.169 296.84 132.943C297.386 132.716 297.883 132.384 298.301 131.965C298.719 131.548 299.051 131.052 299.278 130.507C299.504 129.961 299.621 129.376 299.621 128.785C299.621 128.194 299.504 127.609 299.278 127.063C299.051 126.518 298.719 126.022 298.301 125.605L295.111 122.415",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M274.22 143.07C274.703 143.072 275.178 142.954 275.604 142.726C276.029 142.498 276.39 142.167 276.655 141.763C276.919 141.36 277.078 140.896 277.118 140.415C277.157 139.934 277.075 139.451 276.88 139.01L279.2 136.69C279.481 136.408 279.639 136.027 279.639 135.63C279.639 135.232 279.481 134.851 279.2 134.57L276.88 132.25C276.598 131.969 276.217 131.811 275.82 131.81C275.623 131.809 275.428 131.848 275.246 131.923C275.064 131.999 274.899 132.11 274.76 132.25L270.76 136.25C270.462 136.547 270.226 136.9 270.065 137.289C269.903 137.677 269.82 138.094 269.82 138.515C269.82 138.935 269.903 139.352 270.065 139.741C270.226 140.129 270.462 140.482 270.76 140.78L272.18 142.2C272.446 142.472 272.763 142.689 273.113 142.838C273.463 142.987 273.839 143.066 274.22 143.07Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M287.06 143.07C287.621 143.072 288.173 142.927 288.66 142.65L290.4 141.65C290.956 141.329 291.389 140.835 291.634 140.242C291.879 139.65 291.922 138.993 291.755 138.374C291.589 137.755 291.223 137.209 290.714 136.819C290.205 136.43 289.581 136.219 288.94 136.22H288.76C291.753 134.3 293.953 131.366 294.957 127.956C295.962 124.546 295.703 120.888 294.23 117.652C292.756 114.417 290.165 111.822 286.932 110.342C283.7 108.862 280.042 108.596 276.63 109.594C273.218 110.592 270.28 112.787 268.355 115.776C266.429 118.764 265.646 122.347 266.148 125.866C266.649 129.386 268.403 132.607 271.087 134.938C273.771 137.27 277.205 138.555 280.76 138.56C281.349 138.562 281.936 138.528 282.52 138.46L284.27 141.46C284.552 141.951 284.958 142.359 285.448 142.642C285.938 142.924 286.495 143.072 287.06 143.07Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_58"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M15.0035 125C15.0295 123.356 15.2035 121.711 15.5272 120.083C16.5858 114.761 19.1988 109.873 23.0357 106.036C26.8726 102.199 31.7612 99.5858 37.0832 98.5272C42.4051 97.4686 47.9215 98.0119 52.9347 100.088C57.9479 102.165 62.2327 105.681 65.2474 110.193C65.3658 110.37 65.4821 110.549 65.5962 110.729C66.6686 109.04 67.9279 107.465 69.357 106.036C73.1939 102.199 78.0825 99.5858 83.4044 98.5272C88.7264 97.4686 94.2428 98.0119 99.256 100.088C104.269 102.165 108.554 105.681 111.569 110.193C111.839 110.597 112.097 111.008 112.345 111.424C113.505 109.471 114.909 107.659 116.533 106.036C120.37 102.199 125.258 99.5858 130.58 98.5272C135.902 97.4686 141.419 98.0119 146.432 100.088C151.445 102.165 155.73 105.681 158.744 110.193C161.759 114.705 163.368 120.009 163.368 125.436C163.367 126.937 163.242 128.426 163 129.889V172H15V125H15.0035Z",
+				"fill": "#B4DCCE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_59"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M112.91 142.64C111.405 142.642 109.932 142.197 108.679 141.362C107.427 140.527 106.45 139.339 105.872 137.949C105.295 136.559 105.143 135.028 105.435 133.551C105.728 132.075 106.452 130.718 107.515 129.652C108.579 128.587 109.935 127.861 111.412 127.567C112.888 127.272 114.419 127.423 115.81 127.998C117.201 128.574 118.39 129.549 119.227 130.801C120.063 132.053 120.51 133.524 120.51 135.03C120.51 137.046 119.71 138.981 118.285 140.407C116.86 141.834 114.927 142.637 112.91 142.64Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_60"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M88.61 142.64C87.1049 142.64 85.6336 142.194 84.3821 141.357C83.1307 140.521 82.1553 139.333 81.5793 137.942C81.0033 136.552 80.8526 135.021 81.1462 133.545C81.4399 132.069 82.1646 130.713 83.2289 129.649C84.2932 128.585 85.6492 127.86 87.1254 127.566C88.6016 127.273 90.1317 127.423 91.5222 127.999C92.9128 128.575 94.1013 129.551 94.9375 130.802C95.7737 132.054 96.22 133.525 96.22 135.03C96.2174 137.047 95.4147 138.982 93.9882 140.408C92.5616 141.835 90.6275 142.637 88.61 142.64Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_61"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M88.6104 135L93.1104 125H107.11",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M93.1104 125L90.1104 120",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M112.91 135L102.11 114",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M86.1104 120H95.1104",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M98.1104 114H102.11",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M112.91 137.06C114.031 137.06 114.94 136.151 114.94 135.03C114.94 133.909 114.031 133 112.91 133C111.789 133 110.88 133.909 110.88 135.03C110.88 136.151 111.789 137.06 112.91 137.06Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M88.6101 137.06C89.7312 137.06 90.6401 136.151 90.6401 135.03C90.6401 133.909 89.7312 133 88.6101 133C87.4889 133 86.5801 133.909 86.5801 135.03C86.5801 136.151 87.4889 137.06 88.6101 137.06Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M374 144H1V150H374V144Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_62"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M374 150H2V330H374V150Z",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_63"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M203.17 162.34C197.599 162.34 192.152 160.688 187.52 157.593C182.887 154.497 179.276 150.098 177.144 144.95C175.012 139.803 174.454 134.139 175.541 128.674C176.628 123.21 179.311 118.19 183.251 114.251C187.19 110.311 192.21 107.628 197.674 106.541C203.139 105.454 208.803 106.012 213.95 108.144C219.098 110.276 223.497 113.887 226.593 118.52C229.688 123.152 231.34 128.599 231.34 134.17C231.332 141.639 228.362 148.799 223.08 154.08C217.799 159.362 210.639 162.332 203.17 162.34Z",
+				"fill": "#B4DCCE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_64"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M190.76 141.359L202.37 152.959",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M215.13 132.24L203.53 143.85",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M202.95 122.55V182.71",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M1 135V230.5H374V224L1 135Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_65"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M249.17 173.34C243.599 173.34 238.152 171.688 233.52 168.593C228.887 165.497 225.276 161.098 223.144 155.95C221.012 150.803 220.454 145.139 221.541 139.674C222.628 134.21 225.311 129.19 229.251 125.251C233.19 121.311 238.21 118.628 243.674 117.541C249.139 116.454 254.803 117.012 259.95 119.144C265.098 121.276 269.497 124.887 272.593 129.52C275.688 134.152 277.34 139.599 277.34 145.17C277.332 152.639 274.362 159.799 269.08 165.08C263.799 170.362 256.639 173.332 249.17 173.34Z",
+				"fill": "#B4DCCE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_66"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M236.76 152.359L248.37 163.959",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M261.13 143.24L249.53 154.85",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M248.95 133.55V193.71",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M262 192.25C262 195.149 258.866 197 255 197C251.134 197 248 195.149 248 192.25C248 189.351 251.134 187 255 187C258.866 187 262 189.351 262 192.25Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"strokeLinejoin": "round",
+				"id": "도촌동_67"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M1 231H374L1 142V231Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_68"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M290 198.25C290 201.149 286.866 203 283 203C279.134 203 276 201.149 276 198.25C276 195.351 279.134 193 283 193C286.866 193 290 195.351 290 198.25Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"strokeLinejoin": "round",
+				"id": "도촌동_69"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M282 194.35C282 198.409 276.851 201 270.5 201C264.149 201 259 198.409 259 194.35C259 190.291 264.149 187 270.5 187C276.851 187 282 190.291 282 194.35Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"strokeLinejoin": "round",
+				"id": "도촌동_70"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M86.9133 149.016C86.6233 148.926 86.3233 148.846 86.0233 148.776C87.4966 147.13 88.3833 145.042 88.5447 142.838C88.7062 140.635 88.1334 138.44 86.9157 136.597C85.6981 134.753 83.9042 133.365 81.8143 132.648C79.7243 131.932 77.4559 131.927 75.3633 132.636C75.0633 132.736 74.7833 132.846 74.5033 132.966C74.654 131.242 74.3578 129.508 73.6431 127.931C72.9285 126.355 71.8195 124.989 70.4233 123.966C68.2682 122.416 65.5883 121.78 62.9665 122.196C60.3447 122.611 57.9932 124.046 56.4233 126.186C56.2383 126.436 56.068 126.697 55.9133 126.966C54.8019 125.058 53.0903 123.572 51.0455 122.739C49.0007 121.906 46.7377 121.773 44.6095 122.361C42.4813 122.949 40.6075 124.225 39.2804 125.99C37.9534 127.754 37.2476 129.908 37.2733 132.116C37.2733 132.426 37.2733 132.736 37.3233 133.036C35.7292 132.353 33.9854 132.093 32.2613 132.282C30.5371 132.471 28.8912 133.103 27.4833 134.116C25.3449 135.688 23.9124 138.039 23.4968 140.66C23.0812 143.281 23.7159 145.96 25.2633 148.116C25.4533 148.376 25.6433 148.606 25.8433 148.836C24.1431 149.221 22.5715 150.039 21.2817 151.211C19.9918 152.384 19.0277 153.87 18.4833 155.526C17.6689 158.061 17.8901 160.814 19.0985 163.186C20.3069 165.558 22.4044 167.355 24.9333 168.186C25.2333 168.276 25.5233 168.356 25.8233 168.426C24.6781 169.729 23.8915 171.308 23.5409 173.007C23.1902 174.705 23.2876 176.466 23.8233 178.116C24.6543 180.645 26.4518 182.743 28.8237 183.951C31.1955 185.159 33.949 185.381 36.4833 184.566C36.7833 184.466 37.0733 184.356 37.3533 184.236C37.1956 185.961 37.4887 187.698 38.204 189.275C38.9192 190.853 40.032 192.218 41.4333 193.236C43.5919 194.802 46.2834 195.447 48.9173 195.031C51.5513 194.615 53.9126 193.171 55.4833 191.016C55.6633 190.756 55.8233 190.496 55.9833 190.236C57.0947 192.144 58.8063 193.63 60.8511 194.463C62.8959 195.296 65.1588 195.429 67.2871 194.841C69.4153 194.253 71.2891 192.978 72.6161 191.213C73.9432 189.448 74.649 187.294 74.6233 185.086C74.6233 184.776 74.6233 184.466 74.6233 184.166C76.2165 184.851 77.9604 185.11 79.6838 184.917C81.4072 184.724 83.0508 184.086 84.4533 183.066C86.5939 181.496 88.028 179.145 88.4438 176.523C88.8595 173.901 88.2232 171.221 86.6733 169.066C86.4933 168.816 86.2933 168.576 86.0933 168.346C87.7845 167.965 89.3476 167.151 90.6292 165.983C91.9107 164.815 92.8667 163.335 93.4033 161.686C94.2217 159.145 93.9978 156.384 92.7809 154.008C91.5639 151.632 89.4534 149.837 86.9133 149.016Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_71"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M43.7334 159.896L55.3434 171.496",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M68.1039 150.776L56.5039 162.386",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M55.4834 141.017L55.4834 219.017",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M185.91 232.64C184.405 232.642 182.932 232.197 181.679 231.362C180.427 230.527 179.45 229.339 178.872 227.949C178.295 226.559 178.143 225.028 178.435 223.551C178.728 222.075 179.452 220.718 180.515 219.652C181.579 218.587 182.935 217.861 184.412 217.567C185.888 217.272 187.419 217.423 188.81 217.998C190.201 218.574 191.39 219.549 192.227 220.801C193.063 222.053 193.51 223.524 193.51 225.03C193.51 227.046 192.71 228.981 191.285 230.407C189.86 231.834 187.927 232.637 185.91 232.64Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_72"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M161.61 232.64C160.105 232.64 158.634 232.194 157.382 231.357C156.131 230.521 155.155 229.333 154.579 227.942C154.003 226.552 153.853 225.021 154.146 223.545C154.44 222.069 155.165 220.713 156.229 219.649C157.293 218.585 158.649 217.86 160.125 217.566C161.602 217.273 163.132 217.423 164.522 217.999C165.913 218.575 167.101 219.551 167.937 220.802C168.774 222.054 169.22 223.525 169.22 225.03C169.217 227.047 168.415 228.982 166.988 230.408C165.562 231.835 163.627 232.637 161.61 232.64Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_73"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M161.61 225L166.11 215H180.11",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M166.11 215L163.11 210",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M185.91 225L175.11 204",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M159.11 210H168.11",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M171.11 204H175.11",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M185.91 227.06C187.031 227.06 187.94 226.151 187.94 225.03C187.94 223.909 187.031 223 185.91 223C184.789 223 183.88 223.909 183.88 225.03C183.88 226.151 184.789 227.06 185.91 227.06Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M161.61 227.06C162.731 227.06 163.64 226.151 163.64 225.03C163.64 223.909 162.731 223 161.61 223C160.489 223 159.58 223.909 159.58 225.03C159.58 226.151 160.489 227.06 161.61 227.06Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M-19.9965 234C-19.9705 232.356 -19.7965 230.711 -19.4728 229.083C-18.4142 223.761 -15.8012 218.873 -11.9643 215.036C-8.12736 211.199 -3.23882 208.586 2.08315 207.527C7.40512 206.469 12.9215 207.012 17.9347 209.088C22.9479 211.165 27.2327 214.681 30.2474 219.193C30.3658 219.37 30.4821 219.549 30.5962 219.729C31.6686 218.04 32.9279 216.465 34.357 215.036C38.1939 211.199 43.0825 208.586 48.4044 207.527C53.7264 206.469 59.2428 207.012 64.256 209.088C69.2692 211.165 73.554 214.681 76.5687 219.193C76.8387 219.597 77.0974 220.008 77.3447 220.424C78.5049 218.471 79.9093 216.659 81.5328 215.036C85.3697 211.199 90.2582 208.586 95.5802 207.527C100.902 206.469 106.419 207.012 111.432 209.088C116.445 211.165 120.73 214.681 123.744 219.193C126.759 223.705 128.368 229.009 128.368 234.436C128.367 235.937 128.242 237.426 128 238.889V281H-20V234H-19.9965Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_74"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M387 267H-12V297H387V267Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_75"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M32 272H20V278H32V272Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_76"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M108 181H96V187H108V181Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_77"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M38 283H26V289H38V283Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_78"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M114 192H102V198H114V192Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_79"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M56 278H44V284H56V278Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_80"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M132 187H120V193H132V187Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_81"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M387 261H-12V267H387V261Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_82"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M226 291H178V297H226V291Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_83"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M226 285H178V291H226V285Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_84"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M226 279H178V285H226V279Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_85"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M226 273H178V279H226V273Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_86"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M226 267H178V273H226V267Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_87"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M226 261H178V267H226V261Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_88"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M226 255H178V261H226V255Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_89"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M227.557 229.315C227.541 229.789 227.301 230.227 226.91 230.497C226.52 230.767 226.025 230.835 225.575 230.683C224.836 230.432 223.878 230.868 223.624 232.029L222.261 239.521C221.988 241.104 220.49 242.269 218.806 241.853C217.141 241.507 216.288 239.85 216.623 238.332L217.986 230.842C217.988 230.831 217.99 230.821 217.992 230.81C218.811 226.796 222.476 223.939 226.454 224.72C227.176 224.862 227.689 225.508 227.664 226.244L227.557 229.315Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"strokeLinejoin": "round",
+				"id": "도촌동_90"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M231.706 231.579L230.026 232.03C229.454 232.183 228.858 232.223 228.271 232.146C227.685 232.069 227.119 231.877 226.607 231.581C226.094 231.285 225.645 230.891 225.285 230.422C224.925 229.952 224.662 229.416 224.509 228.845C224.355 228.274 224.315 227.679 224.392 227.093C224.469 226.507 224.66 225.942 224.956 225.431C225.251 224.919 225.645 224.471 226.114 224.111C226.583 223.752 227.118 223.489 227.689 223.337L232.047 222.169",
+				"fill": "#FFD770",
+				"id": "도촌동_91"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M231.706 231.579L230.026 232.03C229.454 232.183 228.858 232.223 228.271 232.146C227.685 232.069 227.119 231.877 226.607 231.581C226.094 231.285 225.645 230.891 225.285 230.422C224.925 229.952 224.662 229.416 224.509 228.845C224.355 228.274 224.315 227.679 224.392 227.093C224.469 226.507 224.66 225.942 224.956 225.431C225.251 224.919 225.645 224.471 226.114 224.111C226.583 223.752 227.118 223.489 227.689 223.337L232.047 222.169",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M233.311 240.578C233.798 240.856 234.35 241.001 234.911 240.998C235.477 241.001 236.033 240.853 236.523 240.57C237.013 240.287 237.42 239.88 237.701 239.388L239.451 236.388L242.861 230.482L234.711 231.55L233.211 234.148L233.031 234.148C232.39 234.147 231.767 234.358 231.258 234.748C230.749 235.137 230.382 235.684 230.216 236.303C230.05 236.922 230.092 237.578 230.337 238.171C230.582 238.763 231.016 239.258 231.571 239.578L233.311 240.578Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_92"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M244.636 238C236.351 238 229.636 231.284 229.636 223C229.636 214.716 236.351 208 244.636 208C252.92 208 259.636 214.716 259.636 223C259.636 227.442 257.704 231.434 254.636 234.181C254.39 234.4 254.137 234.612 253.877 234.816L254.516 235.461C254.918 235.859 255.206 236.358 255.353 236.904C255.499 237.451 255.498 238.026 255.349 238.572C255.206 239.115 254.923 239.61 254.529 240.009L252.931 241.613C252.477 242.066 251.887 242.357 251.252 242.441C250.616 242.524 249.971 242.395 249.416 242.074C248.861 241.753 248.428 241.258 248.183 240.666C247.939 240.073 247.897 239.416 248.064 238.798L248.11 238.624L247.258 237.772C246.407 237.922 245.53 238 244.636 238Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_93"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M238.636 226C239.188 226 239.636 225.552 239.636 225C239.636 224.448 239.188 224 238.636 224C238.083 224 237.636 224.448 237.636 225C237.636 225.552 238.083 226 238.636 226Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M244.636 226C245.188 226 245.636 225.552 245.636 225C245.636 224.448 245.188 224 244.636 224C244.083 224 243.636 224.448 243.636 225C243.636 225.552 244.083 226 244.636 226Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M385.913 195.016C385.623 194.926 385.323 194.846 385.023 194.776C386.497 193.13 387.383 191.042 387.545 188.838C387.706 186.635 387.133 184.44 385.916 182.597C384.698 180.753 382.904 179.365 380.814 178.648C378.724 177.932 376.456 177.927 374.363 178.636C374.063 178.736 373.783 178.846 373.503 178.966C373.654 177.242 373.358 175.508 372.643 173.931C371.928 172.355 370.82 170.989 369.423 169.966C367.268 168.416 364.588 167.78 361.967 168.196C359.345 168.611 356.993 170.046 355.423 172.186C355.238 172.436 355.068 172.697 354.913 172.966C353.802 171.058 352.09 169.572 350.045 168.739C348.001 167.906 345.738 167.773 343.61 168.361C341.481 168.949 339.608 170.225 338.28 171.99C336.953 173.754 336.248 175.908 336.273 178.116C336.273 178.426 336.273 178.736 336.323 179.036C334.729 178.353 332.985 178.093 331.261 178.282C329.537 178.471 327.891 179.103 326.483 180.116C324.345 181.688 322.912 184.039 322.497 186.66C322.081 189.281 322.716 191.96 324.263 194.116C324.453 194.376 324.643 194.606 324.843 194.836C323.143 195.221 321.572 196.039 320.282 197.211C318.992 198.384 318.028 199.87 317.483 201.526C316.669 204.061 316.89 206.814 318.098 209.186C319.307 211.558 321.404 213.355 323.933 214.186C324.233 214.276 324.523 214.356 324.823 214.426C323.678 215.729 322.892 217.308 322.541 219.007C322.19 220.705 322.288 222.466 322.823 224.116C323.654 226.645 325.452 228.743 327.824 229.951C330.195 231.159 332.949 231.381 335.483 230.566C335.783 230.466 336.073 230.356 336.353 230.236C336.196 231.961 336.489 233.698 337.204 235.275C337.919 236.853 339.032 238.218 340.433 239.236C342.592 240.802 345.283 241.447 347.917 241.031C350.551 240.615 352.913 239.171 354.483 237.016C354.663 236.756 354.823 236.496 354.983 236.236C356.095 238.144 357.806 239.63 359.851 240.463C361.896 241.296 364.159 241.429 366.287 240.841C368.415 240.253 370.289 238.978 371.616 237.213C372.943 235.448 373.649 233.294 373.623 231.086C373.623 230.776 373.623 230.466 373.623 230.166C375.217 230.851 376.96 231.11 378.684 230.917C380.407 230.724 382.051 230.086 383.453 229.066C385.594 227.496 387.028 225.145 387.444 222.523C387.86 219.901 387.223 217.221 385.673 215.066C385.493 214.816 385.293 214.576 385.093 214.346C386.785 213.965 388.348 213.151 389.629 211.983C390.911 210.815 391.867 209.335 392.403 207.686C393.222 205.145 392.998 202.384 391.781 200.008C390.564 197.632 388.453 195.837 385.913 195.016Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_94"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M342.733 205.896L354.343 217.496",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M367.104 196.776L355.504 208.386",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M354.483 187.017L354.483 265.017",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M226.003 274C226.03 272.356 226.203 270.711 226.527 269.083C227.586 263.761 230.199 258.873 234.036 255.036C237.873 251.199 242.761 248.586 248.083 247.527C253.405 246.469 258.921 247.012 263.935 249.088C268.948 251.165 273.233 254.681 276.247 259.193C276.366 259.37 276.482 259.549 276.596 259.729C277.669 258.04 278.928 256.465 280.357 255.036C284.194 251.199 289.082 248.586 294.404 247.527C299.726 246.469 305.243 247.012 310.256 249.088C315.269 251.165 319.554 254.681 322.569 259.193C322.839 259.597 323.097 260.008 323.345 260.424C324.505 258.471 325.909 256.659 327.533 255.036C331.37 251.199 336.258 248.586 341.58 247.527C346.902 246.469 352.419 247.012 357.432 249.088C362.445 251.165 366.73 254.681 369.744 259.193C372.759 263.705 374.368 269.009 374.368 274.436C374.367 275.937 374.242 277.426 374 278.889V321H226V274H226.003Z",
+				"fill": "#B4DCCE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_95"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M328.51 286C327.106 286.005 325.761 286.565 324.768 287.558C323.775 288.551 323.215 289.896 323.21 291.3C323.151 289.933 322.566 288.641 321.577 287.695C320.589 286.749 319.273 286.22 317.905 286.22C316.537 286.22 315.221 286.749 314.233 287.695C313.244 288.641 312.659 289.933 312.6 291.3C312.6 290.604 312.463 289.915 312.197 289.272C311.93 288.629 311.54 288.044 311.048 287.552C310.556 287.06 309.971 286.67 309.328 286.403C308.685 286.137 307.996 286 307.3 286C306.604 286 305.915 286.137 305.272 286.403C304.629 286.67 304.044 287.06 303.552 287.552C303.06 288.044 302.67 288.629 302.403 289.272C302.137 289.915 302 290.604 302 291.3V297H333.81V291.3C333.805 289.896 333.245 288.551 332.252 287.558C331.259 286.565 329.914 286.005 328.51 286Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_96"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M398 297H-23V339H398V297Z",
+				"fill": "#1D85FF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_97"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M58.8301 306.02L62.8301 306",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M38.8301 306.02L42.8301 306",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M52.8301 312.02L56.8301 312",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M42.8301 312.02L46.8301 312",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M32.8301 312.02L36.8301 312",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M301.82 326.1L305.82 326.08",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M291.82 326.1L295.82 326.08",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M281.82 326.1L285.82 326.08",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M285.82 332.1L289.82 332.08",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M121.82 306.1L125.82 306.08",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M111.82 306.1L115.82 306.08",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M338.83 306.02L342.83 306",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M308.83 306.02L312.83 306",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M332.83 312.02L336.83 312",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M312.83 312.02L316.83 312",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M302.83 312.02L306.83 312",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M106.17 276.34C100.599 276.34 95.1521 274.688 90.5196 271.593C85.8871 268.497 82.2764 264.098 80.1443 258.95C78.0122 253.803 77.4543 248.139 78.5413 242.674C79.6282 237.21 82.3112 232.19 86.2508 228.251C90.1905 224.311 95.2099 221.628 100.674 220.541C106.139 219.454 111.803 220.012 116.95 222.144C122.098 224.276 126.497 227.887 129.593 232.52C132.688 237.152 134.34 242.599 134.34 248.17C134.332 255.639 131.362 262.799 126.08 268.08C120.799 273.362 113.639 276.332 106.17 276.34Z",
+				"fill": "#B4DCCE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_98"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M93.7598 255.359L105.37 266.959",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M118.13 246.24L106.53 257.85",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M105.95 236.55V296.71",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M146.17 276.34C140.599 276.34 135.152 274.688 130.52 271.593C125.887 268.497 122.276 264.098 120.144 258.95C118.012 253.803 117.454 248.139 118.541 242.674C119.628 237.21 122.311 232.19 126.251 228.251C130.19 224.311 135.21 221.628 140.674 220.541C146.139 219.454 151.803 220.012 156.95 222.144C162.098 224.276 166.497 227.887 169.593 232.52C172.688 237.152 174.34 242.599 174.34 248.17C174.332 255.639 171.362 262.799 166.08 268.08C160.799 273.362 153.639 276.332 146.17 276.34Z",
+				"fill": "#B4DCCE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_99"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M133.76 255.359L145.37 266.959",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M158.13 246.24L146.53 257.85",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M145.95 236.55V296.71",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M116.51 286C115.106 286.005 113.761 286.565 112.768 287.558C111.775 288.551 111.215 289.896 111.21 291.3C111.151 289.933 110.566 288.641 109.577 287.695C108.589 286.749 107.273 286.22 105.905 286.22C104.537 286.22 103.221 286.749 102.233 287.695C101.244 288.641 100.659 289.933 100.6 291.3C100.6 290.604 100.463 289.915 100.197 289.272C99.9302 288.629 99.5398 288.044 99.0477 287.552C98.5555 287.06 97.9712 286.67 97.3282 286.403C96.6852 286.137 95.996 286 95.3 286C94.604 286 93.9148 286.137 93.2718 286.403C92.6288 286.67 92.0445 287.06 91.5523 287.552C91.0602 288.044 90.6698 288.629 90.4034 289.272C90.1371 289.915 90 290.604 90 291.3V297H121.81V291.3C121.805 289.896 121.245 288.551 120.252 287.558C119.259 286.565 117.914 286.005 116.51 286Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_100"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M28.22 260.07C28.7026 260.072 29.1783 259.954 29.6036 259.726C30.0289 259.498 30.3903 259.167 30.6548 258.763C30.9193 258.36 31.0785 257.896 31.1178 257.415C31.1572 256.934 31.0754 256.451 30.88 256.01L33.2 253.69C33.4809 253.408 33.6387 253.027 33.6387 252.63C33.6387 252.232 33.4809 251.851 33.2 251.57L30.88 249.25C30.5983 248.969 30.2175 248.811 29.82 248.81C29.623 248.809 29.4279 248.848 29.2459 248.923C29.064 248.999 28.8988 249.11 28.76 249.25L24.76 253.25C24.4622 253.547 24.2259 253.9 24.0647 254.289C23.9035 254.677 23.8205 255.094 23.8205 255.515C23.8205 255.935 23.9035 256.352 24.0647 256.741C24.2259 257.129 24.4622 257.482 24.76 257.78L26.18 259.2C26.446 259.472 26.7631 259.689 27.1132 259.838C27.4633 259.987 27.8394 260.066 28.22 260.07Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_101"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M41.0605 260.07C41.6214 260.072 42.173 259.927 42.6605 259.65L44.4005 258.65C44.9556 258.329 45.3893 257.835 45.6343 257.242C45.8793 256.65 45.9219 255.993 45.7554 255.374C45.589 254.755 45.2229 254.209 44.7139 253.819C44.2048 253.43 43.5815 253.219 42.9405 253.22H42.7605C45.7528 251.3 47.9528 248.366 48.9573 244.956C49.9618 241.546 49.7034 237.888 48.2295 234.652C46.7556 231.417 44.1649 228.822 40.9325 227.342C37.7 225.862 34.0424 225.596 30.6303 226.594C27.2181 227.592 24.28 229.787 22.3546 232.776C20.4293 235.764 19.6457 239.347 20.1476 242.866C20.6494 246.386 22.4031 249.607 25.087 251.938C27.771 254.27 31.2053 255.555 34.7605 255.56C35.3486 255.562 35.9363 255.528 36.5205 255.46L38.2705 258.46C38.5516 258.951 38.958 259.359 39.4481 259.642C39.9383 259.924 40.4946 260.072 41.0605 260.07Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_102"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M42.5401 240.63C41.9878 240.63 41.54 240.182 41.54 239.63C41.54 239.078 41.9878 238.63 42.5401 238.63C43.0923 238.63 43.54 239.078 43.54 239.63C43.54 240.182 43.0923 240.63 42.5401 240.63Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M36.5401 240.63C35.9878 240.63 35.54 240.182 35.54 239.63C35.54 239.078 35.9878 238.63 36.5401 238.63C37.0923 238.63 37.54 239.078 37.54 239.63C37.54 240.182 37.0923 240.63 36.5401 240.63Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M202 300.5C202 306.299 194.613 310 185.5 310C176.387 310 169 306.299 169 300.5C169 294.701 176.387 290 185.5 290C194.613 290 202 294.701 202 300.5Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_103"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M183 309.35C183 313.409 177.851 316 171.5 316C165.149 316 160 313.409 160 309.35C160 305.291 165.149 302 171.5 302C177.851 302 183 305.291 183 309.35Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_104"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M250 295.35C250 299.409 244.851 302 238.5 302C232.149 302 227 299.409 227 295.35C227 291.291 232.149 288 238.5 288C244.851 288 250 291.291 250 295.35Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_105"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M88 295.35C88 299.409 82.8513 302 76.5 302C70.1487 302 65 299.409 65 295.35C65 291.291 70.1487 288 76.5 288C82.8513 288 88 291.291 88 295.35Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_106"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M270 295.25C270 298.149 266.866 300 263 300C259.134 300 256 298.149 256 295.25C256 292.351 259.134 290 263 290C266.866 290 270 292.351 270 295.25Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_107"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M260 298.25C260 301.149 256.866 303 253 303C249.134 303 246 301.149 246 298.25C246 295.351 249.134 293 253 293C256.866 293 260 295.351 260 298.25Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_108"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M98 298.25C98 301.149 94.866 303 91 303C87.134 303 84 301.149 84 298.25C84 295.351 87.134 293 91 293C94.866 293 98 295.351 98 298.25Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_109"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M270 184.25C270 187.149 266.866 189 263 189C259.134 189 256 187.149 256 184.25C256 181.351 259.134 179 263 179C266.866 179 270 181.351 270 184.25Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"strokeLinejoin": "round",
+				"id": "도촌동_110"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M178.431 4.04866C177.002 3.90932 175.561 4.07002 174.198 4.52045C172.835 4.97087 171.582 5.70109 170.518 6.66426C169.454 7.62744 168.603 8.80233 168.02 10.1136C167.437 11.4248 167.134 12.8435 167.131 14.2787C167.047 11.6064 165.927 9.07153 164.008 7.21075C162.088 5.34996 159.519 4.3094 156.846 4.3094C154.172 4.3094 151.604 5.34996 149.684 7.21075C147.764 9.07153 146.644 11.6064 146.561 14.2787C146.558 12.8435 146.255 11.4248 145.672 10.1136C145.088 8.80233 144.237 7.62744 143.173 6.66426C142.11 5.70109 140.856 4.97087 139.493 4.52045C138.131 4.07002 136.689 3.90932 135.261 4.04866C132.687 4.35452 130.318 5.60118 128.609 7.5488C126.899 9.49642 125.97 12.0074 126.001 14.5987C126.001 15.9119 126.259 17.2122 126.762 18.4255C127.264 19.6388 128.001 20.7411 128.93 21.6697C130.805 23.5451 133.349 24.5987 136.001 24.5987H177.731C179.044 24.5987 180.344 24.34 181.558 23.8375C182.771 23.3349 183.873 22.5983 184.802 21.6697C185.73 20.7411 186.467 19.6388 186.97 18.4255C187.472 17.2122 187.731 15.9119 187.731 14.5987C187.76 12.0013 186.826 9.48518 185.108 7.53662C183.39 5.58806 181.011 4.34536 178.431 4.04866Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"id": "도촌동_111"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M141.994 168.047C142.463 168.163 142.953 168.159 143.42 168.036C143.886 167.914 144.315 167.676 144.667 167.346C145.018 167.015 145.281 166.601 145.431 166.143C145.582 165.684 145.615 165.195 145.528 164.72L148.326 163.006C148.665 162.798 148.907 162.464 149 162.078C149.093 161.691 149.028 161.284 148.821 160.945L147.106 158.147C146.898 157.809 146.565 157.566 146.178 157.472C145.987 157.425 145.788 157.418 145.594 157.449C145.399 157.479 145.213 157.549 145.045 157.652L140.222 160.608C139.863 160.827 139.551 161.116 139.303 161.456C139.056 161.796 138.878 162.182 138.779 162.591C138.681 163 138.665 163.425 138.731 163.84C138.797 164.256 138.944 164.654 139.164 165.013L140.214 166.725C140.409 167.052 140.666 167.337 140.972 167.564C141.277 167.791 141.625 167.955 141.994 168.047Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_112"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M154.48 171.045C155.024 171.178 155.595 171.166 156.133 171.01L158.059 170.444C158.673 170.262 159.211 169.882 159.587 169.363C159.964 168.844 160.158 168.216 160.141 167.575C160.124 166.934 159.895 166.317 159.491 165.82C159.087 165.322 158.53 164.972 157.907 164.823L157.732 164.781C161.089 163.613 163.914 161.274 165.686 158.192C167.459 155.11 168.062 151.493 167.384 148.003C166.706 144.513 164.793 141.385 161.995 139.191C159.198 136.997 155.703 135.885 152.152 136.059C148.601 136.233 145.232 137.681 142.662 140.138C140.092 142.595 138.494 145.895 138.161 149.435C137.827 152.974 138.78 156.515 140.846 159.409C142.911 162.302 145.951 164.354 149.406 165.189C149.978 165.328 150.557 165.433 151.141 165.502L152.142 168.828C152.301 169.371 152.601 169.863 153.012 170.252C153.422 170.641 153.929 170.915 154.48 171.045Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_113"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M160.456 152.488C159.919 152.359 159.588 151.819 159.717 151.282C159.846 150.745 160.386 150.414 160.923 150.543C161.46 150.672 161.791 151.212 161.662 151.749C161.533 152.286 160.993 152.617 160.456 152.488Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M154.622 151.086C154.085 150.957 153.754 150.418 153.883 149.88C154.012 149.343 154.552 149.013 155.089 149.142C155.626 149.27 155.957 149.81 155.828 150.347C155.699 150.884 155.159 151.215 154.622 151.086Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M73.4307 28.0487C72.0024 27.9093 70.5606 28.07 69.198 28.5204C67.8354 28.9709 66.5819 29.7011 65.518 30.6643C64.4541 31.6274 63.6032 32.8023 63.0199 34.1136C62.4366 35.4248 62.1337 36.8435 62.1307 38.2787C62.0474 35.6064 60.9273 33.0715 59.0076 31.2107C57.0878 29.35 54.5193 28.3094 51.8457 28.3094C49.1722 28.3094 46.6036 29.35 44.6839 31.2107C42.7642 33.0715 41.6441 35.6064 41.5607 38.2787C41.5578 36.8435 41.2549 35.4248 40.6716 34.1136C40.0883 32.8023 39.2374 31.6274 38.1735 30.6643C37.1095 29.7011 35.8561 28.9709 34.4934 28.5204C33.1308 28.07 31.6891 27.9093 30.2607 28.0487C27.6874 28.3545 25.3181 29.6012 23.6086 31.5488C21.8991 33.4964 20.9703 36.0074 21.0007 38.5987C21.0007 39.9119 21.2594 41.2122 21.7619 42.4255C22.2645 43.6388 23.0011 44.7411 23.9297 45.6697C25.805 47.5451 28.3486 48.5987 31.0007 48.5987H72.7307C74.0439 48.5987 75.3443 48.34 76.5576 47.8375C77.7708 47.3349 78.8732 46.5983 79.8018 45.6697C80.7304 44.7411 81.467 43.6388 81.9695 42.4255C82.4721 41.2122 82.7307 39.9119 82.7307 38.5987C82.7601 36.0013 81.8256 33.4852 80.108 31.5366C78.3903 29.5881 76.0113 28.3454 73.4307 28.0487Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"id": "도촌동_114"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M275.757 28.0934C278.452 29.7546 280.585 32.1878 281.88 35.0769C283.175 37.966 283.572 41.1777 283.019 44.2951C284.161 45.1629 284.941 46.4248 285.204 47.8353C285.468 49.2458 285.198 50.7041 284.446 51.9264C283.695 53.1486 282.515 54.0476 281.137 54.4483C279.759 54.849 278.282 54.7229 276.991 54.0944C274.704 55.8179 271.989 56.8849 269.14 57.1806C266.291 57.4763 263.415 56.9893 260.822 55.7723C258.229 54.5553 256.017 52.6542 254.425 50.2736C252.832 47.893 251.918 45.1231 251.782 42.262C251.646 39.4008 252.293 36.5568 253.653 34.036C255.013 31.5151 257.035 29.4129 259.501 27.9556C261.967 26.4983 264.784 25.741 267.648 25.7653C270.512 25.7896 273.316 26.5945 275.757 28.0934Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_115"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M267.087 41.7949C266.535 41.7949 266.087 41.3472 266.087 40.7949C266.087 40.2426 266.535 39.7949 267.087 39.7949C267.639 39.7949 268.087 40.2426 268.087 40.7949C268.087 41.3472 267.639 41.7949 267.087 41.7949Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M261.087 41.7949C260.535 41.7949 260.087 41.3472 260.087 40.7949C260.087 40.2426 260.535 39.7949 261.087 39.7949C261.639 39.7949 262.087 40.2426 262.087 40.7949C262.087 41.3472 261.639 41.7949 261.087 41.7949Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M265.57 59.1149C263.273 59.1149 261.41 57.2524 261.41 54.9549C261.41 52.6574 263.273 50.7949 265.57 50.7949C267.868 50.7949 269.73 52.6574 269.73 54.9549C269.73 57.2524 267.868 59.1149 265.57 59.1149Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_116"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M257.16 59.1149C254.863 59.1149 253 57.2524 253 54.9549C253 52.6574 254.863 50.7949 257.16 50.7949C259.458 50.7949 261.32 52.6574 261.32 54.9549C261.32 57.2524 259.458 59.1149 257.16 59.1149Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_117"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M203 320.5C203 326.299 195.613 330 186.5 330C177.387 330 170 326.299 170 320.5C170 314.701 177.387 310 186.5 310C195.613 310 203 314.701 203 320.5Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "도촌동_118"
+			}
+		}
+	]
+}

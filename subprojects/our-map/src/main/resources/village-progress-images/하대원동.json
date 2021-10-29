@@ -1,0 +1,2070 @@
+{
+	"id": "하대원동",
+	"eupMyeonDongId": "HKhT+udgFZvKuTmRwroSqsK68o62bsLQlwru",
+	"numberOfBlocks": 105,
+	"paths": [
+		{
+			"type": "path",
+			"props": {
+				"d": "M61.4307 53.0487C60.0024 52.9093 58.5606 53.07 57.198 53.5204C55.8354 53.9709 54.5819 54.7011 53.518 55.6643C52.4541 56.6274 51.6032 57.8023 51.0199 59.1136C50.4366 60.4248 50.1337 61.8435 50.1307 63.2787C50.0474 60.6064 48.9273 58.0715 47.0076 56.2107C45.0878 54.35 42.5193 53.3094 39.8457 53.3094C37.1722 53.3094 34.6036 54.35 32.6839 56.2107C30.7642 58.0715 29.6441 60.6064 29.5607 63.2787C29.5578 61.8435 29.2549 60.4248 28.6716 59.1136C28.0883 57.8023 27.2374 56.6274 26.1735 55.6643C25.1095 54.7011 23.8561 53.9709 22.4934 53.5204C21.1308 53.07 19.6891 52.9093 18.2607 53.0487C15.6874 53.3545 13.3181 54.6012 11.6086 56.5488C9.89914 58.4964 8.97027 61.0074 9.00073 63.5987C9.00073 64.9119 9.25938 66.2122 9.76193 67.4255C10.2645 68.6388 11.0011 69.7411 11.9297 70.6697C13.805 72.5451 16.3486 73.5987 19.0007 73.5987H60.7307C62.0439 73.5987 63.3443 73.34 64.5576 72.8375C65.7708 72.3349 66.8732 71.5983 67.8018 70.6697C68.7304 69.7411 69.467 68.6388 69.9695 67.4255C70.4721 66.2122 70.7307 64.9119 70.7307 63.5987C70.7601 61.0013 69.8256 58.4852 68.108 56.5366C66.3903 54.5881 64.0113 53.3454 61.4307 53.0487Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"id": "하대원동_0"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M225.851 93.0116C225.066 81.2404 221.207 69.8515 214.624 59.999C207.207 48.8987 196.665 40.2471 184.331 35.1381C171.997 30.0292 158.425 28.6925 145.331 31.297C132.238 33.9015 120.21 40.3303 110.77 49.7703C104.54 56.001 99.6208 63.3589 96.2475 71.4065C93.177 68.9575 89.7827 66.9281 86.1467 65.3874C78.1982 62.0193 69.4518 61.138 61.0136 62.8551C52.5754 64.5721 44.8245 68.8103 38.7409 75.0338C32.6573 81.2572 28.5143 89.1863 26.8359 97.8185C26.1497 101.347 25.888 104.929 26.0434 108.486L26 108.489V184H226V93L225.851 93.0116Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_1"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M341.431 11.0487C340.002 10.9093 338.561 11.07 337.198 11.5204C335.835 11.9709 334.582 12.7011 333.518 13.6643C332.454 14.6274 331.603 15.8023 331.02 17.1136C330.437 18.4248 330.134 19.8435 330.131 21.2787C330.047 18.6064 328.927 16.0715 327.008 14.2107C325.088 12.35 322.519 11.3094 319.846 11.3094C317.172 11.3094 314.604 12.35 312.684 14.2107C310.764 16.0715 309.644 18.6064 309.561 21.2787C309.558 19.8435 309.255 18.4248 308.672 17.1136C308.088 15.8023 307.237 14.6274 306.173 13.6643C305.11 12.7011 303.856 11.9709 302.493 11.5204C301.131 11.07 299.689 10.9093 298.261 11.0487C295.687 11.3545 293.318 12.6012 291.609 14.5488C289.899 16.4964 288.97 19.0074 289.001 21.5987C289.001 22.9119 289.259 24.2122 289.762 25.4255C290.264 26.6388 291.001 27.7411 291.93 28.6697C293.805 30.5451 296.349 31.5987 299.001 31.5987H340.731C342.044 31.5987 343.344 31.34 344.558 30.8375C345.771 30.3349 346.873 29.5983 347.802 28.6697C348.73 27.7411 349.467 26.6388 349.97 25.4255C350.472 24.2122 350.731 22.9119 350.731 21.5987C350.76 19.0013 349.826 16.4852 348.108 14.5366C346.39 12.5881 344.011 11.3454 341.431 11.0487Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"id": "하대원동_2"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M115.24 11.0487C113.812 10.9093 112.37 11.07 111.007 11.5204C109.645 11.9709 108.391 12.7011 107.327 13.6643C106.263 14.6274 105.412 15.8023 104.829 17.1136C104.246 18.4248 103.943 19.8435 103.94 21.2787C103.857 18.6064 102.736 16.0715 100.817 14.2107C98.897 12.35 96.3284 11.3094 93.6549 11.3094C90.9814 11.3094 88.4128 12.35 86.4931 14.2107C84.5734 16.0715 83.4532 18.6064 83.3699 21.2787C83.3669 19.8435 83.0641 18.4248 82.4808 17.1136C81.8975 15.8023 81.0466 14.6274 79.9826 13.6643C78.9187 12.7011 77.6653 11.9709 76.3026 11.5204C74.94 11.07 73.4983 10.9093 72.0699 11.0487C69.5035 11.3538 67.1398 12.5947 65.4312 14.5339C63.7227 16.4731 62.7894 18.9743 62.8099 21.5587C62.8099 24.2108 63.8635 26.7544 65.7388 28.6297C67.6142 30.5051 70.1577 31.5587 72.8099 31.5587H114.58C117.232 31.5587 119.776 30.5051 121.651 28.6297C123.526 26.7544 124.58 24.2108 124.58 21.5587C124.598 18.962 123.654 16.4506 121.929 14.5095C120.204 12.5685 117.821 11.3355 115.24 11.0487Z",
+				"fill": "#DAEAFD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeMiterlimit": "10",
+				"id": "하대원동_3"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M-24.9965 138C-24.9705 136.356 -24.7965 134.711 -24.4728 133.083C-23.4142 127.761 -20.8012 122.873 -16.9643 119.036C-13.1274 115.199 -8.23882 112.586 -2.91685 111.527C2.40512 110.469 7.92149 111.012 12.9347 113.088C17.9479 115.165 22.2327 118.681 25.2474 123.193C25.3658 123.37 25.4821 123.549 25.5962 123.729C26.6686 122.04 27.9279 120.465 29.357 119.036C33.1939 115.199 38.0825 112.586 43.4044 111.527C48.7264 110.469 54.2428 111.012 59.256 113.088C64.2692 115.165 68.554 118.681 71.5687 123.193C71.8387 123.597 72.0974 124.008 72.3447 124.424C73.5049 122.471 74.9093 120.659 76.5328 119.036C80.3697 115.199 85.2582 112.586 90.5802 111.527C95.9022 110.469 101.419 111.012 106.432 113.088C111.445 115.165 115.73 118.681 118.744 123.193C121.759 127.705 123.368 133.009 123.368 138.436C123.367 139.937 123.242 141.426 123 142.889V195H-25V138H-24.9965Z",
+				"fill": "#B4DCCE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_4"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M374 202H2V234H374V202Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M374 196H2V202H374V196Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M393 234H-4V339H393V234Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_5"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M381 310H-5V339H381V310Z",
+				"fill": "#B9CADE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_6"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M381 185H-5V304H381V185Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_7"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M237.003 101C237.03 99.3562 237.203 97.7106 237.527 96.0831C238.586 90.7612 241.199 85.8726 245.036 82.0357C248.873 78.1988 253.761 75.5858 259.083 74.5272C264.405 73.4686 269.921 74.0119 274.935 76.0884C279.948 78.1649 284.233 81.6814 287.247 86.1932C287.366 86.3705 287.482 86.549 287.596 86.7286C288.669 85.0397 289.928 83.4648 291.357 82.0357C295.194 78.1988 300.082 75.5858 305.404 74.5272C310.726 73.4686 316.243 74.0119 321.256 76.0884C326.269 78.1649 330.554 81.6814 333.569 86.1932C333.839 86.5973 334.097 87.0078 334.345 87.4241C335.505 85.4709 336.909 83.6592 338.533 82.0357C342.37 78.1988 347.258 75.5858 352.58 74.5272C357.902 73.4686 363.419 74.0119 368.432 76.0884C373.445 78.1649 377.73 81.6814 380.744 86.1932C383.759 90.7049 385.368 96.0093 385.368 101.436C385.367 102.937 385.242 104.426 385 105.889V148H237V101H237.003Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_8"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M119 165C112.473 165 106.093 163.065 100.666 159.439C95.2394 155.812 91.0097 150.659 88.512 144.629C86.0143 138.599 85.3608 131.963 86.6341 125.562C87.9074 119.161 91.0504 113.281 95.6655 108.665C100.281 104.05 106.161 100.907 112.562 99.6341C118.963 98.3608 125.599 99.0143 131.629 101.512C137.659 104.01 142.812 108.239 146.438 113.666C150.065 119.093 152 125.473 152 132C151.991 140.749 148.511 149.138 142.324 155.324C136.138 161.511 127.749 164.991 119 165Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_9"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M106.76 139.359L118.37 150.959",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M131.13 130.24L119.53 141.85",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M118.95 120.55V180.71",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M168 165C161.473 165 155.093 163.065 149.666 159.439C144.239 155.812 140.01 150.659 137.512 144.629C135.014 138.599 134.361 131.963 135.634 125.562C136.907 119.161 140.05 113.281 144.666 108.665C149.281 104.05 155.161 100.907 161.562 99.6341C167.963 98.3608 174.599 99.0143 180.629 101.512C186.659 104.01 191.812 108.239 195.438 113.666C199.065 119.093 201 125.473 201 132C200.991 140.749 197.511 149.138 191.324 155.324C185.138 161.511 176.749 164.991 168 165Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_10"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M155.76 139.359L167.37 150.959",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M180.13 130.24L168.53 141.85",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M167.95 120.55V180.71",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M213 165C206.473 165 200.093 163.065 194.666 159.439C189.239 155.812 185.01 150.659 182.512 144.629C180.014 138.599 179.361 131.963 180.634 125.562C181.907 119.161 185.05 113.281 189.666 108.665C194.281 104.05 200.161 100.907 206.562 99.6341C212.963 98.3608 219.599 99.0143 225.629 101.512C231.659 104.01 236.812 108.239 240.438 113.666C244.065 119.093 246 125.473 246 132C245.991 140.749 242.511 149.138 236.324 155.324C230.138 161.511 221.749 164.991 213 165Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_11"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M200.76 139.359L212.37 150.959",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M225.13 130.24L213.53 141.85",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M212.95 120.55V180.71",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M412 152H143V224H412V152Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_12"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M350.014 158H329.414V187H350.014V158Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_13"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M246.999 158H226.399V187H246.999V158Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_14"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M267.615 158H247.015V187H267.615V158Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_15"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M164.6 158H144V187H164.6V158Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_16"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M370.615 158H350.015V187H370.615V158Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_17"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M288.215 158H267.615V187H288.215V158Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_18"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M185.201 158H164.601V187H185.201V158Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_19"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M391.215 158H370.615V187H391.215V158Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_20"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M308.815 158H288.215V187H308.815V158Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_21"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M205.8 158H185.2V187H205.8V158Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_22"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M329.414 158H308.814V187H329.414V158Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_23"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M226.4 158H205.8V187H226.4V158Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_24"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M144 181L453 181",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M350.014 187H329.414V216H350.014V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M246.999 187H226.399V216H246.999V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M267.615 187H247.015V216H267.615V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M164.6 187H144V216H164.6V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M370.615 187H350.015V216H370.615V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M288.215 187H267.615V216H288.215V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M185.201 187H164.601V216H185.201V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M391.215 187H370.615V216H391.215V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M308.815 187H288.215V216H308.815V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M205.8 187H185.2V216H205.8V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M329.414 187H308.814V216H329.414V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M226.4 187H205.8V216H226.4V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M144 211L453 211",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M350.014 187H329.414V216H350.014V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M246.999 187H226.399V216H246.999V187Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_25"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M267.615 187H247.015V216H267.615V187Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_26"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M164.6 187H144V216H164.6V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M370.615 187H350.015V216H370.615V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M288.215 187H267.615V216H288.215V187Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_27"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M185.201 187H164.601V216H185.201V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M391.215 187H370.615V216H391.215V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M308.815 187H288.215V216H308.815V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M205.8 187H185.2V216H205.8V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M329.414 187H308.814V216H329.414V187Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M226.4 187H205.8V216H226.4V187Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_28"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M144 210L453 210",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M453 152H140V158H453V152Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_29"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "72",
+				"y": "170",
+				"width": "134",
+				"height": "94",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_30"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M89 154H91C98.732 154 105 160.268 105 168V170H89V154Z",
+				"fill": "#1D85FF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_31"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M111 154H113C120.732 154 127 160.268 127 168V170H111V154Z",
+				"fill": "#1D85FF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_32"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M133 154H135C142.732 154 149 160.268 149 168V170H133V154Z",
+				"fill": "#1D85FF",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_33"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M81.6 237H61V266H81.6V237Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M102.201 237H81.6006V266H102.201V237Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M122.8 237H102.2V266H122.8V237Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_34"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M143.4 237H122.8V266H143.4V237Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_35"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M163.999 237H143.399V266H163.999V237Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_36"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M61 261L164 261",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M81.6 208H61V237H81.6V208Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_37"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M102.201 208H81.6006V237H102.201V208Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M122.799 208H101.951V237H122.799V208Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_38"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M143.648 208H122.8V237H143.648V208Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_39"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M163.999 208H143.399V237H163.999V208Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_40"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M61 232L164 232",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M165 202H60V208H165V202Z",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_41"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M195 224H247V280H159V272H165V264H171V256H177V248H183V240H189V232H195V224Z",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_42"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "195",
+				"y": "224",
+				"width": "52",
+				"height": "8",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_43"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "189",
+				"y": "232",
+				"width": "52",
+				"height": "8",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_44"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "177",
+				"y": "248",
+				"width": "52",
+				"height": "8",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_45"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "165",
+				"y": "264",
+				"width": "52",
+				"height": "8",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_46"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "183",
+				"y": "240",
+				"width": "52",
+				"height": "8",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_47"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "171",
+				"y": "256",
+				"width": "52",
+				"height": "8",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_48"
+			}
+		},
+		{
+			"type": "rect",
+			"props": {
+				"x": "159",
+				"y": "272",
+				"width": "52",
+				"height": "8",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_49"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M82.0524 185.764C85.0285 185.542 86.7254 184.52 87.4946 183.208C88.2614 184.521 89.9565 185.547 92.9323 185.773L93.8141 183.774C91.1423 183.564 89.9429 182.811 89.5116 182.074L93.0796 182.077L93.0813 180.061L81.9293 180.052L81.9276 182.068L85.4796 182.071C85.0309 182.806 83.8303 183.557 81.1741 183.763L82.0524 185.764ZM90.0791 191.755C90.0786 192.347 89.2624 192.57 87.4544 192.568C85.6304 192.567 84.8146 192.342 84.8151 191.75C84.8157 191.142 85.6318 190.935 87.4558 190.936C89.2638 190.938 90.0797 191.147 90.0791 191.755ZM94.2902 188.206L94.292 186.19L80.692 186.179L80.6902 188.195L86.1942 188.199L86.1935 189.031C83.6813 189.269 82.1925 190.228 82.1911 191.748C82.1896 193.508 84.1887 194.518 87.4527 194.52C90.7007 194.523 92.7016 193.517 92.7031 191.757C92.7044 190.253 91.2493 189.308 88.7855 189.05L88.7862 188.202L94.2902 188.206ZM102.961 188.118L102.96 189.862L105.648 189.864L105.647 190.84L108.239 190.843L108.249 179.483L105.657 179.48L105.649 188.12L102.961 188.118ZM100.167 181.812C100.967 181.812 101.494 182.069 101.494 182.645C101.493 183.237 100.965 183.492 100.165 183.492C99.3971 183.491 98.8533 183.234 98.8538 182.642C98.8543 182.066 99.3986 181.811 100.167 181.812ZM100.163 185.364C102.371 185.365 103.94 184.263 103.942 182.647C103.943 181.063 102.376 179.941 100.168 179.94C97.9762 179.938 96.4072 181.056 96.4058 182.64C96.4044 184.256 97.9715 185.362 100.163 185.364ZM99.6935 192.243L99.695 190.515L101.695 190.517L101.697 187.749C102.801 187.654 103.922 187.527 105.01 187.336L104.835 185.512C101.715 185.925 98.0989 185.954 95.3789 185.967L95.6812 187.984C96.7372 187.985 97.9212 187.97 99.1372 187.907L99.1356 189.763L97.1356 189.761L97.1317 194.273L108.556 194.283L108.557 192.251L99.6935 192.243ZM118.26 183.347L118.258 185.411L120.226 185.413L120.223 188.549L122.815 188.551L122.823 179.511L120.231 179.509L120.228 183.349L118.26 183.347ZM119.218 186.164C116.85 185.586 115.987 184.209 115.892 182.913L118.644 182.916L118.646 180.916L115.878 180.913L115.879 179.457L113.287 179.455L113.286 180.911L110.534 180.909L110.532 182.909L113.268 182.911C113.187 184.351 112.338 185.87 109.937 186.508L111.151 188.509C112.88 188.063 113.985 187.088 114.642 185.856C115.329 186.929 116.432 187.762 118.064 188.163L119.218 186.164ZM117.66 192.579C115.852 192.577 115.02 192.304 115.021 191.616C115.021 190.944 115.854 190.673 117.662 190.675C119.454 190.676 120.285 190.949 120.285 191.621C120.284 192.309 119.452 192.58 117.66 192.579ZM117.663 188.723C114.447 188.72 112.43 189.774 112.429 191.614C112.427 193.454 114.442 194.528 117.658 194.531C120.858 194.534 122.875 193.463 122.877 191.623C122.878 189.783 120.863 188.726 117.663 188.723ZM138.096 186.101C134.225 185.505 132.963 183.216 132.965 181.296L132.965 180.24L130.197 180.238L130.197 181.294C130.195 183.15 128.897 185.501 125.072 186.089L126.11 188.234C128.847 187.773 130.608 186.462 131.569 184.767C132.528 186.464 134.287 187.777 137.038 188.244L138.096 186.101ZM132.876 190.784L132.879 187.6L130.287 187.598L130.284 190.782L124.86 190.777L124.858 192.841L138.458 192.853L138.46 190.789L132.876 190.784ZM149.659 190.511L152.251 190.513L152.261 179.521L149.669 179.519L149.668 181.039L146.372 181.036L146.37 183.036L149.666 183.039L149.665 183.791L146.369 183.788L146.367 185.788L149.663 185.791L149.659 190.511ZM147.727 186.237C146.111 186.508 144.607 186.618 142.943 186.649L142.948 180.393L140.372 180.391L140.365 188.759L141.613 188.76C143.901 188.762 145.853 188.683 147.949 188.317L147.727 186.237ZM144.746 192.282L144.748 189.514L142.156 189.512L142.152 194.312L152.568 194.321L152.57 192.289L144.746 192.282ZM167.503 184.67C163.664 184.155 162.481 182.122 162.483 180.57L162.483 179.93L159.731 179.927L159.731 180.567C159.729 182.119 158.544 184.15 154.703 184.659L155.693 186.724C158.398 186.342 160.143 185.192 161.104 183.689C162.063 185.194 163.806 186.347 166.509 186.733L167.503 184.67ZM167.885 187.551L154.301 187.539L154.299 189.603L159.739 189.607L159.734 194.567L162.326 194.57L162.331 189.61L167.899 189.615L167.885 187.551ZM179.097 190.68L181.689 190.683L181.698 179.563L179.106 179.56L179.104 181.672L176.992 181.671L176.991 183.703L179.103 183.704L179.101 185.08L176.989 185.079L176.988 187.111L179.1 187.112L179.097 190.68ZM176.54 186.502C175.084 186.757 173.788 186.852 172.108 186.866L172.109 185.634L176.205 185.638L176.209 180.566L169.537 180.56L169.536 182.592L173.648 182.596L173.647 183.748L169.551 183.744L169.546 188.928L170.746 188.929C173.226 188.931 174.938 188.869 176.794 188.534L176.54 186.502ZM174.055 192.308L174.057 189.764L171.465 189.762L171.461 194.338L182.021 194.347L182.023 192.315L174.055 192.308ZM191.819 186.019C192.157 184.196 192.158 182.724 192.159 181.636L192.16 180.628L184.32 180.621L184.318 182.653L189.598 182.658C189.582 183.506 189.517 184.497 189.308 185.713L191.819 186.019ZM192.587 186.468C191.291 186.643 189.883 186.754 188.491 186.833L188.493 184.193L185.949 184.19L185.947 186.91C185.051 186.926 184.203 186.925 183.451 186.924L183.673 188.94C186.233 188.927 189.657 188.866 192.745 188.276L192.587 186.468ZM188.168 189.76L185.576 189.758L185.572 194.35L196.34 194.359L196.342 192.327L188.166 192.32L188.168 189.76ZM195.885 183.975L195.889 179.559L193.297 179.557L193.287 190.757L195.879 190.759L195.883 186.071L197.483 186.072L197.485 183.976L195.885 183.975Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M432 216H246V280H432V216Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_50"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M264.22 227.07C264.703 227.072 265.178 226.954 265.604 226.726C266.029 226.498 266.39 226.167 266.655 225.763C266.919 225.36 267.078 224.896 267.118 224.415C267.157 223.934 267.075 223.451 266.88 223.01L269.2 220.69C269.481 220.408 269.639 220.027 269.639 219.63C269.639 219.232 269.481 218.851 269.2 218.57L266.88 216.25C266.598 215.969 266.217 215.811 265.82 215.81C265.623 215.809 265.428 215.848 265.246 215.923C265.064 215.999 264.899 216.11 264.76 216.25L260.76 220.25C260.462 220.547 260.226 220.9 260.065 221.289C259.903 221.677 259.82 222.094 259.82 222.515C259.82 222.935 259.903 223.352 260.065 223.741C260.226 224.129 260.462 224.482 260.76 224.78L262.18 226.2C262.446 226.472 262.763 226.689 263.113 226.838C263.463 226.987 263.839 227.066 264.22 227.07Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M277.06 227.07C277.621 227.072 278.173 226.927 278.66 226.65L280.4 225.65C280.956 225.329 281.389 224.835 281.634 224.242C281.879 223.65 281.922 222.993 281.755 222.374C281.589 221.755 281.223 221.209 280.714 220.819C280.205 220.43 279.581 220.219 278.94 220.22H278.76C281.753 218.3 283.953 215.366 284.957 211.956C285.962 208.546 285.703 204.888 284.23 201.652C282.756 198.417 280.165 195.822 276.932 194.342C273.7 192.862 270.042 192.596 266.63 193.594C263.218 194.592 260.28 196.787 258.355 199.776C256.429 202.764 255.646 206.347 256.148 209.866C256.649 213.386 258.403 216.607 261.087 218.938C263.771 221.27 267.205 222.555 270.76 222.56C271.349 222.562 271.936 222.528 272.52 222.46L274.27 225.46C274.552 225.951 274.958 226.359 275.448 226.642C275.938 226.924 276.495 227.072 277.06 227.07Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_51"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M270.54 203.63C269.988 203.63 269.54 203.182 269.54 202.63C269.54 202.078 269.988 201.63 270.54 201.63C271.092 201.63 271.54 202.078 271.54 202.63C271.54 203.182 271.092 203.63 270.54 203.63Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M264.54 203.63C263.988 203.63 263.54 203.182 263.54 202.63C263.54 202.078 263.988 201.63 264.54 201.63C265.092 201.63 265.54 202.078 265.54 202.63C265.54 203.182 265.092 203.63 264.54 203.63Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M447 210H241V254H447V210Z",
+				"fill": "#EBE9D3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_52"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M308.767 232H288.184V248H308.767V232Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_53"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M329.351 232H308.768V248H329.351V232Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_54"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M349.935 232H329.352V248H349.935V232Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_55"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M267.6 232H247.017V248H267.6V232Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_56"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M370.519 232H349.936V248H370.519V232Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_57"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M288.183 232H267.6V248H288.183V232Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_58"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M391.103 232H370.52V248H391.103V232Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_59"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M308.767 216H288.184V232H308.767V216Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_60"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M329.351 216H308.768V232H329.351V216Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_61"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M349.935 216H329.352V232H349.935V216Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_62"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M267.6 216H247.017V232H267.6V216Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_63"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M370.519 216H349.936V232H370.519V216Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_64"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M288.183 216H267.6V232H288.183V216Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_65"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M391.103 216H370.52V232H391.103V216Z",
+				"fill": "#67AEFF",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_66"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M391 181H279V210H391V181Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_67"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M385 123H212V152H385V123Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_68"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M314.668 171C313.256 171.005 311.903 171.533 310.904 172.469C309.905 173.404 309.342 174.672 309.337 175.995C309.277 174.707 308.689 173.49 307.694 172.598C306.7 171.706 305.377 171.208 304 171.208C302.623 171.208 301.3 171.706 300.306 172.598C299.311 173.49 298.723 174.707 298.663 175.995C298.663 175.339 298.525 174.69 298.257 174.084C297.99 173.478 297.597 172.927 297.102 172.463C296.607 171.999 296.019 171.631 295.372 171.38C294.725 171.129 294.032 171 293.332 171C292.631 171 291.938 171.129 291.291 171.38C290.644 171.631 290.057 171.999 289.562 172.463C289.067 172.927 288.674 173.478 288.406 174.084C288.138 174.69 288 175.339 288 175.995V181H320V175.995C319.995 174.672 319.431 173.404 318.433 172.469C317.434 171.533 316.081 171.005 314.668 171Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_69"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M282.668 113C281.256 113.005 279.903 113.533 278.904 114.469C277.905 115.404 277.342 116.672 277.337 117.995C277.277 116.707 276.689 115.49 275.694 114.598C274.7 113.706 273.377 113.208 272 113.208C270.623 113.208 269.3 113.706 268.306 114.598C267.311 115.49 266.723 116.707 266.663 117.995C266.663 117.339 266.525 116.69 266.257 116.084C265.99 115.478 265.597 114.927 265.102 114.463C264.607 113.999 264.019 113.631 263.372 113.38C262.725 113.129 262.032 113 261.332 113C260.631 113 259.938 113.129 259.291 113.38C258.644 113.631 258.057 113.999 257.562 114.463C257.067 114.927 256.674 115.478 256.406 116.084C256.138 116.69 256 117.339 256 117.995V123H288V117.995C287.995 116.672 287.431 115.404 286.433 114.469C285.434 113.533 284.081 113.005 282.668 113Z",
+				"fill": "#B4DCCE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_70"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M371.015 140H309.015V152H371.015V140Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_71"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M159.842 80.0934C157.147 81.7546 155.013 84.1878 153.718 87.0769C152.423 89.966 152.027 93.1777 152.58 96.2951C151.437 97.1629 150.658 98.4248 150.394 99.8353C150.13 101.246 150.401 102.704 151.152 103.926C151.904 105.149 153.084 106.048 154.462 106.448C155.839 106.849 157.317 106.723 158.607 106.094C160.895 107.818 163.609 108.885 166.458 109.181C169.308 109.476 172.183 108.989 174.776 107.772C177.369 106.555 179.581 104.654 181.174 102.274C182.767 99.893 183.681 97.1231 183.816 94.262C183.952 91.4008 183.305 88.5568 181.945 86.036C180.585 83.5151 178.563 81.4129 176.097 79.9556C173.632 78.4983 170.815 77.741 167.951 77.7653C165.086 77.7896 162.283 78.5945 159.842 80.0934Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_72"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M171.193 94.2012C171.745 94.2012 172.193 93.7535 172.193 93.2012C172.193 92.6489 171.745 92.2012 171.193 92.2012C170.641 92.2012 170.193 92.6489 170.193 93.2012C170.193 93.7535 170.641 94.2012 171.193 94.2012Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M176.193 94.2012C176.745 94.2012 177.193 93.7535 177.193 93.2012C177.193 92.6489 176.745 92.2012 176.193 92.2012C175.641 92.2012 175.193 92.6489 175.193 93.2012C175.193 93.7535 175.641 94.2012 176.193 94.2012Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M171.013 97.7812C171.711 98.4786 172.657 98.8704 173.643 98.8704C174.63 98.8704 175.576 98.4786 176.273 97.7812",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M167.442 112.912C169.74 112.912 171.602 111.049 171.602 108.752C171.602 106.454 169.74 104.592 167.442 104.592C165.145 104.592 163.282 106.454 163.282 108.752C163.282 111.049 165.145 112.912 167.442 112.912Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_73"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M175.852 112.912C178.15 112.912 180.012 111.049 180.012 108.752C180.012 106.454 178.15 104.592 175.852 104.592C173.555 104.592 171.692 106.454 171.692 108.752C171.692 111.049 173.555 112.912 175.852 112.912Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_74"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M328.78 132.595C325.587 132.595 323 130.007 323 126.815C323 123.623 325.587 121.035 328.78 121.035C331.972 121.035 334.56 123.623 334.56 126.815C334.56 130.007 331.972 132.595 328.78 132.595Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_75"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M343.579 111.006C346.744 111.097 349.808 112.137 352.374 113.992C354.94 115.846 356.89 118.429 357.969 121.406C359.393 121.586 360.698 122.289 361.632 123.379C362.566 124.468 363.061 125.866 363.021 127.301C362.981 128.735 362.409 130.104 361.416 131.14C360.423 132.175 359.081 132.805 357.649 132.906C356.53 135.542 354.712 137.824 352.393 139.504C350.073 141.185 347.339 142.201 344.485 142.443C341.631 142.686 338.765 142.146 336.195 140.88C333.625 139.615 331.449 137.673 329.901 135.263C328.353 132.853 327.491 130.067 327.409 127.204C327.326 124.341 328.026 121.509 329.433 119.014C330.84 116.519 332.9 114.455 335.393 113.044C337.886 111.633 340.716 110.928 343.579 111.006Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_76"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M343.319 124.406C342.767 124.406 342.319 123.959 342.319 123.406C342.319 122.854 342.767 122.406 343.319 122.406C343.872 122.406 344.319 122.854 344.319 123.406C344.319 123.959 343.872 124.406 343.319 124.406Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M338 124.406C337.448 124.406 337 123.959 337 123.406C337 122.854 337.448 122.406 338 122.406C338.552 122.406 339 122.854 339 123.406C339 123.959 338.552 124.406 338 124.406Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M346.069 147.116C343.772 147.116 341.909 145.253 341.909 142.956C341.909 140.658 343.772 138.796 346.069 138.796C348.367 138.796 350.229 140.658 350.229 142.956C350.229 145.253 348.367 147.116 346.069 147.116Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_77"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M337.659 147.116C335.362 147.116 333.499 145.253 333.499 142.956C333.499 140.658 335.362 138.796 337.659 138.796C339.957 138.796 341.819 140.658 341.819 142.956C341.819 145.253 339.957 147.116 337.659 147.116Z",
+				"fill": "#FFF2AD",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_78"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M119 277H107V283H119V277Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_79"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M125 288H113V294H125V288Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_80"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M71 283H59V289H71V283Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_81"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M53 278H41V284H53V278Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_82"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M201.51 293C200.106 293.005 198.761 293.565 197.768 294.558C196.775 295.551 196.215 296.896 196.21 298.3C196.151 296.933 195.566 295.641 194.577 294.695C193.589 293.749 192.273 293.22 190.905 293.22C189.537 293.22 188.221 293.749 187.233 294.695C186.244 295.641 185.659 296.933 185.6 298.3C185.6 297.604 185.463 296.915 185.197 296.272C184.93 295.629 184.54 295.044 184.048 294.552C183.556 294.06 182.971 293.67 182.328 293.403C181.685 293.137 180.996 293 180.3 293C179.604 293 178.915 293.137 178.272 293.403C177.629 293.67 177.044 294.06 176.552 294.552C176.06 295.044 175.67 295.629 175.403 296.272C175.137 296.915 175 297.604 175 298.3V304H206.81V298.3C206.805 296.896 206.245 295.551 205.252 294.558C204.259 293.565 202.914 293.005 201.51 293Z",
+				"fill": "#37B788",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_83"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M88 215H76V221H88V215Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M14.1399 170.891H9.68992C8.57431 170.891 7.66992 171.795 7.66992 172.911V175.921C7.66992 177.036 8.57431 177.941 9.68992 177.941H14.1399C15.2555 177.941 16.1599 177.036 16.1599 175.921V172.911C16.1599 171.795 15.2555 170.891 14.1399 170.891Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M49.5235 191.991C49.0147 191.993 48.5105 191.895 48.0401 191.701C47.5698 191.507 47.1426 191.221 46.7835 190.861L41.1435 185.221C41.0033 185.082 40.8919 184.917 40.8158 184.735C40.7398 184.553 40.7007 184.358 40.7007 184.161C40.7007 183.963 40.7398 183.768 40.8158 183.586C40.8919 183.404 41.0033 183.239 41.1435 183.101L44.3935 179.841C44.6736 179.557 45.0546 179.395 45.4535 179.391C45.6505 179.39 45.8457 179.429 46.0276 179.504C46.2096 179.58 46.3747 179.691 46.5135 179.831L50.0635 183.391C50.6067 183.094 51.2147 182.936 51.8335 182.931C52.5191 182.934 53.1884 183.14 53.7567 183.524C54.3251 183.907 54.7672 184.45 55.0272 185.085C55.2871 185.719 55.3533 186.416 55.2174 187.088C55.0815 187.76 54.7496 188.377 54.2635 188.861L52.2635 190.861C51.9045 191.221 51.4773 191.507 51.007 191.701C50.5366 191.895 50.0323 191.993 49.5235 191.991Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_84"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M38.2296 157C35.0863 156.997 32.0152 157.942 29.4175 159.711C26.8199 161.481 24.8166 163.994 23.6696 166.92C22.2654 167.076 20.9681 167.744 20.0258 168.797C19.0835 169.849 18.5625 171.212 18.5625 172.625C18.5625 174.038 19.0835 175.401 20.0258 176.453C20.9681 177.506 22.2654 178.174 23.6696 178.33C24.7079 180.974 26.4475 183.284 28.7011 185.013C30.9547 186.742 33.6371 187.824 36.4596 188.142C39.2821 188.46 42.1379 188.002 44.7197 186.818C47.3015 185.634 49.5117 183.769 51.1123 181.422C52.7129 179.076 53.6434 176.337 53.8036 173.501C53.9639 170.666 53.3479 167.84 52.0219 165.328C50.6958 162.816 48.71 160.713 46.278 159.246C43.846 157.778 41.06 157.002 38.2196 157H38.2296Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_85"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M47.8198 199.751C47.5624 199.746 47.3104 199.676 47.0868 199.549C46.8632 199.421 46.6751 199.24 46.5398 199.021L41.5998 190.851H29.9898C29.7385 190.851 29.4911 190.79 29.2698 190.671L27.3498 189.601C27.0904 189.458 26.8784 189.242 26.7398 188.981L21.1398 178.141C20.9775 177.837 20.7352 177.583 20.4391 177.407C20.143 177.23 19.8044 177.138 19.4598 177.141H16.2598C15.8619 177.141 15.4804 176.983 15.1991 176.701C14.9178 176.42 14.7598 176.038 14.7598 175.641V173.391C14.7598 172.993 14.9178 172.611 15.1991 172.33C15.4804 172.049 15.8619 171.891 16.2598 171.891H19.5798C20.8416 171.895 22.0777 172.248 23.1521 172.909C24.2266 173.571 25.0977 174.516 25.6698 175.641L27.9598 180.081H40.7498C41.4164 180.081 42.0765 180.212 42.6923 180.467C43.3081 180.723 43.8674 181.097 44.3383 181.569C44.8093 182.041 45.1825 182.601 45.4367 183.217C45.6909 183.834 45.8211 184.494 45.8198 185.161V187.791L50.9798 196.391C51.1669 196.726 51.2183 197.12 51.1234 197.492C51.0286 197.864 50.7946 198.186 50.4698 198.391L48.5998 199.521C48.3647 199.665 48.0955 199.744 47.8198 199.751ZM40.6698 185.651V185.281H30.6698L30.8598 185.661L40.6698 185.651Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_86"
+			}
+		},
+		{
+			"type": "circle",
+			"props": {
+				"r": "8.5",
+				"transform": "matrix(-1 0 0 1 26.501 192.5)",
+				"fill": "#F7F6EC",
+				"id": "하대원동_87"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M26.501 195C27.8817 195 29.001 193.881 29.001 192.5C29.001 191.119 27.8817 190 26.501 190C25.1203 190 24.001 191.119 24.001 192.5C24.001 193.881 25.1203 195 26.501 195Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M48.3903 201.98C50.9143 201.98 52.9603 199.934 52.9603 197.41C52.9603 194.886 50.9143 192.84 48.3903 192.84C45.8664 192.84 43.8203 194.886 43.8203 197.41C43.8203 199.934 45.8664 201.98 48.3903 201.98Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M48.3901 199.47C49.5278 199.47 50.4501 198.547 50.4501 197.41C50.4501 196.272 49.5278 195.35 48.3901 195.35C47.2524 195.35 46.3301 196.272 46.3301 197.41C46.3301 198.547 47.2524 199.47 48.3901 199.47Z",
+				"fill": "#F7F6EC",
+				"id": "하대원동_88"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M26.4794 182C24.4037 182.004 22.3757 182.624 20.6518 183.78C18.928 184.936 17.5855 186.578 16.7941 188.497C16.0027 190.416 15.7978 192.526 16.2054 194.562C16.6129 196.597 17.6147 198.466 19.084 199.932C20.5533 201.399 22.4242 202.396 24.4604 202.8C26.4967 203.203 28.6067 202.994 30.5241 202.199C32.4415 201.403 34.0801 200.058 35.2329 198.331C36.3857 196.605 37.001 194.576 37.001 192.5C37.001 191.119 36.7287 189.752 36.1997 188.477C35.6706 187.202 34.8953 186.043 33.918 185.068C32.9407 184.092 31.7806 183.319 30.5042 182.793C29.2278 182.267 27.8601 181.997 26.4794 182ZM26.4794 201.072C24.7755 201.072 23.1098 200.567 21.693 199.62C20.2762 198.674 19.1719 197.328 18.5199 195.754C17.8678 194.18 17.6972 192.447 18.0296 190.776C18.362 189.105 19.1826 187.57 20.3874 186.365C21.5923 185.16 23.1274 184.34 24.7987 184.007C26.4699 183.675 28.2021 183.845 29.7764 184.497C31.3507 185.149 32.6962 186.254 33.6429 187.67C34.5895 189.087 35.0948 190.753 35.0948 192.457C35.0948 194.742 34.1871 196.933 32.5714 198.549C30.9557 200.165 28.7644 201.072 26.4794 201.072Z",
+				"fill": "#F7F6EC",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_89"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M43.43 178.791L40.2 182.021C39.782 182.439 39.2855 182.772 38.739 182.998C38.1925 183.225 37.6066 183.342 37.015 183.342C36.4233 183.342 35.8374 183.225 35.2909 182.998C34.7444 182.772 34.2479 182.439 33.83 182.021C33.4115 181.604 33.0795 181.108 32.8529 180.562C32.6264 180.017 32.5098 179.432 32.5098 178.841C32.5098 178.25 32.6264 177.665 32.8529 177.119C33.0795 176.573 33.4115 176.078 33.83 175.661L36.02 173.471",
+				"fill": "#FFD770",
+				"id": "하대원동_90"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M43.43 178.791L40.2 182.021C39.782 182.439 39.2855 182.772 38.739 182.998C38.1925 183.225 37.6066 183.342 37.015 183.342C36.4233 183.342 35.8374 183.225 35.2909 182.998C34.7444 182.772 34.2479 182.439 33.83 182.021V182.021C33.4115 181.604 33.0795 181.108 32.8529 180.562C32.6264 180.017 32.5098 179.432 32.5098 178.841C32.5098 178.25 32.6264 177.665 32.8529 177.119C33.0795 176.573 33.4115 176.078 33.83 175.661L36.02 173.471",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M114.913 234.016C114.623 233.926 114.323 233.846 114.023 233.776C115.497 232.13 116.383 230.042 116.545 227.838C116.706 225.635 116.133 223.44 114.916 221.597C113.698 219.753 111.904 218.365 109.814 217.648C107.724 216.932 105.456 216.927 103.363 217.636C103.063 217.736 102.783 217.846 102.503 217.966C102.654 216.242 102.358 214.508 101.643 212.931C100.928 211.355 99.8195 209.989 98.4233 208.966C96.2682 207.416 93.5883 206.78 90.9665 207.196C88.3447 207.611 85.9932 209.046 84.4233 211.186C84.2383 211.436 84.068 211.697 83.9133 211.966C82.8019 210.058 81.0903 208.572 79.0455 207.739C77.0007 206.906 74.7377 206.773 72.6095 207.361C70.4813 207.949 68.6075 209.225 67.2804 210.99C65.9534 212.754 65.2476 214.908 65.2733 217.116C65.2733 217.426 65.2733 217.736 65.3233 218.036C63.7292 217.353 61.9854 217.093 60.2613 217.282C58.5371 217.471 56.8912 218.103 55.4833 219.116C53.3449 220.688 51.9124 223.039 51.4968 225.66C51.0812 228.281 51.7159 230.96 53.2633 233.116C53.4533 233.376 53.6433 233.606 53.8433 233.836C52.1431 234.221 50.5715 235.039 49.2817 236.211C47.9918 237.384 47.0277 238.87 46.4833 240.526C45.6689 243.061 45.8901 245.814 47.0985 248.186C48.3069 250.558 50.4044 252.355 52.9333 253.186C53.2333 253.276 53.5233 253.356 53.8233 253.426C52.6781 254.729 51.8915 256.308 51.5409 258.007C51.1902 259.705 51.2876 261.466 51.8233 263.116C52.6543 265.645 54.4518 267.743 56.8237 268.951C59.1955 270.159 61.949 270.381 64.4833 269.566C64.7833 269.466 65.0733 269.356 65.3533 269.236C65.1956 270.961 65.4887 272.698 66.204 274.275C66.9192 275.853 68.032 277.218 69.4333 278.236C71.5919 279.802 74.2834 280.447 76.9173 280.031C79.5513 279.615 81.9126 278.171 83.4833 276.016C83.6633 275.756 83.8233 275.496 83.9833 275.236C85.0947 277.144 86.8063 278.63 88.8511 279.463C90.8959 280.296 93.1588 280.429 95.2871 279.841C97.4153 279.253 99.2891 277.978 100.616 276.213C101.943 274.448 102.649 272.294 102.623 270.086C102.623 269.776 102.623 269.466 102.623 269.166C104.217 269.851 105.96 270.11 107.684 269.917C109.407 269.724 111.051 269.086 112.453 268.066C114.594 266.496 116.028 264.145 116.444 261.523C116.86 258.901 116.223 256.221 114.673 254.066C114.493 253.816 114.293 253.576 114.093 253.346C115.785 252.965 117.348 252.151 118.629 250.983C119.911 249.815 120.867 248.335 121.403 246.686C122.222 244.145 121.998 241.384 120.781 239.008C119.564 236.632 117.453 234.837 114.913 234.016Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_91"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M71.7334 244.896L83.3434 256.496",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M96.1039 235.776L84.5039 247.386",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M83.4834 226.017L83.4834 304.017",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M58.9133 234.016C58.6233 233.926 58.3233 233.846 58.0233 233.776C59.4966 232.13 60.3833 230.042 60.5447 227.838C60.7062 225.635 60.1334 223.44 58.9157 221.597C57.6981 219.753 55.9042 218.365 53.8143 217.648C51.7243 216.932 49.4559 216.927 47.3633 217.636C47.0633 217.736 46.7833 217.846 46.5033 217.966C46.654 216.242 46.3578 214.508 45.6431 212.931C44.9285 211.355 43.8195 209.989 42.4233 208.966C40.2682 207.416 37.5883 206.78 34.9665 207.196C32.3447 207.611 29.9932 209.046 28.4233 211.186C28.2383 211.436 28.068 211.697 27.9133 211.966C26.8019 210.058 25.0903 208.572 23.0455 207.739C21.0007 206.906 18.7377 206.773 16.6095 207.361C14.4813 207.949 12.6075 209.225 11.2804 210.99C9.95337 212.754 9.24764 214.908 9.2733 217.116C9.2733 217.426 9.27329 217.736 9.32329 218.036C7.72917 217.353 5.98541 217.093 4.26128 217.282C2.53715 217.471 0.891212 218.103 -0.516705 219.116C-2.65512 220.688 -4.08757 223.039 -4.50318 225.66C-4.9188 228.281 -4.28406 230.96 -2.73671 233.116C-2.54671 233.376 -2.35672 233.606 -2.15672 233.836C-3.85688 234.221 -5.42845 235.039 -6.7183 236.211C-8.00815 237.384 -8.97226 238.87 -9.5167 240.526C-10.3311 243.061 -10.1099 245.814 -8.9015 248.186C-7.69311 250.558 -5.59558 252.355 -3.06669 253.186C-2.76669 253.276 -2.47671 253.356 -2.17671 253.426C-3.3219 254.729 -4.10847 256.308 -4.45912 258.007C-4.80977 259.705 -4.71244 261.466 -4.17671 263.116C-3.34573 265.645 -1.54817 267.743 0.823658 268.951C3.19549 270.159 5.94901 270.381 8.4833 269.566C8.78329 269.466 9.07329 269.356 9.35329 269.236C9.19561 270.961 9.48875 272.698 10.204 274.275C10.9192 275.853 12.032 277.218 13.4333 278.236C15.5919 279.802 18.2834 280.447 20.9173 280.031C23.5513 279.615 25.9126 278.171 27.4833 276.016C27.6633 275.756 27.8233 275.496 27.9833 275.236C29.0947 277.144 30.8063 278.63 32.8511 279.463C34.8959 280.296 37.1588 280.429 39.2871 279.841C41.4153 279.253 43.2891 277.978 44.6161 276.213C45.9432 274.448 46.649 272.294 46.6233 270.086C46.6233 269.776 46.6233 269.466 46.6233 269.166C48.2165 269.851 49.9604 270.11 51.6838 269.917C53.4072 269.724 55.0508 269.086 56.4533 268.066C58.5939 266.496 60.028 264.145 60.4438 261.523C60.8595 258.901 60.2232 256.221 58.6733 254.066C58.4933 253.816 58.2933 253.576 58.0933 253.346C59.7845 252.965 61.3476 252.151 62.6292 250.983C63.9107 249.815 64.8667 248.335 65.4033 246.686C66.2217 244.145 65.9978 241.384 64.7809 239.008C63.5639 236.632 61.4534 234.837 58.9133 234.016Z",
+				"fill": "#68D6AE",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_92"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M15.7334 244.896L27.3434 256.496",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M40.1039 235.776L28.5039 247.386",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M27.4834 226.017L27.4834 304.017",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M127.22 316.07C127.703 316.072 128.178 315.954 128.604 315.726C129.029 315.498 129.39 315.167 129.655 314.763C129.919 314.36 130.078 313.896 130.118 313.415C130.157 312.934 130.075 312.451 129.88 312.01L132.2 309.69C132.481 309.408 132.639 309.027 132.639 308.63C132.639 308.232 132.481 307.851 132.2 307.57L129.88 305.25C129.598 304.969 129.217 304.811 128.82 304.81C128.623 304.809 128.428 304.848 128.246 304.923C128.064 304.999 127.899 305.11 127.76 305.25L123.76 309.25C123.462 309.547 123.226 309.9 123.065 310.289C122.903 310.677 122.82 311.094 122.82 311.515C122.82 311.935 122.903 312.352 123.065 312.741C123.226 313.129 123.462 313.482 123.76 313.78L125.18 315.2C125.446 315.472 125.763 315.689 126.113 315.838C126.463 315.987 126.839 316.066 127.22 316.07Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_93"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M140.06 316.07C140.621 316.072 141.173 315.927 141.66 315.65L143.4 314.65C143.956 314.329 144.389 313.835 144.634 313.242C144.879 312.65 144.922 311.993 144.755 311.374C144.589 310.755 144.223 310.209 143.714 309.819C143.205 309.43 142.581 309.219 141.94 309.22H141.76C144.753 307.3 146.953 304.366 147.957 300.956C148.962 297.546 148.703 293.888 147.23 290.652C145.756 287.417 143.165 284.822 139.932 283.342C136.7 281.862 133.042 281.596 129.63 282.594C126.218 283.592 123.28 285.787 121.355 288.776C119.429 291.764 118.646 295.347 119.148 298.866C119.649 302.386 121.403 305.607 124.087 307.938C126.771 310.27 130.205 311.555 133.76 311.56C134.349 311.562 134.936 311.528 135.52 311.46L137.27 314.46C137.552 314.951 137.958 315.359 138.448 315.642C138.938 315.924 139.495 316.072 140.06 316.07Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_94"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M139.54 295.63C138.988 295.63 138.54 295.182 138.54 294.63C138.54 294.078 138.988 293.63 139.54 293.63C140.092 293.63 140.54 294.078 140.54 294.63C140.54 295.182 140.092 295.63 139.54 295.63Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M133.54 295.63C132.988 295.63 132.54 295.182 132.54 294.63C132.54 294.078 132.988 293.63 133.54 293.63C134.092 293.63 134.54 294.078 134.54 294.63C134.54 295.182 134.092 295.63 133.54 295.63Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "2",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M344.5 299C344.5 299.03 344.5 299.06 344.5 299.09V311.8H280V307.5C280 305.219 280.906 303.032 282.519 301.419C283.82 300.118 285.495 299.276 287.292 299H344.5Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_95"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M344.5 298C344.5 291.373 339.127 286 332.5 286H303.5C296.873 286 291.5 291.373 291.5 298V299H344.5V298Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_96"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M312.68 298.899V286.859",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M332.5 299L332.5 286",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M332.82 316.71C336.194 316.71 338.93 313.975 338.93 310.6C338.93 307.226 336.194 304.49 332.82 304.49C329.445 304.49 326.71 307.226 326.71 310.6C326.71 313.975 329.445 316.71 332.82 316.71Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M332.82 314.35C334.891 314.35 336.57 312.671 336.57 310.6C336.57 308.529 334.891 306.85 332.82 306.85C330.749 306.85 329.07 308.529 329.07 310.6C329.07 312.671 330.749 314.35 332.82 314.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_97"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M292.61 316.71C295.984 316.71 298.72 313.975 298.72 310.6C298.72 307.226 295.984 304.49 292.61 304.49C289.236 304.49 286.5 307.226 286.5 310.6C286.5 313.975 289.236 316.71 292.61 316.71Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M292.61 314.35C294.681 314.35 296.36 312.671 296.36 310.6C296.36 308.529 294.681 306.85 292.61 306.85C290.539 306.85 288.86 308.529 288.86 310.6C288.86 312.671 290.539 314.35 292.61 314.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_98"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M263.5 299C263.5 299.03 263.5 299.06 263.5 299.09V311.8H199V307.5C199 305.219 199.906 303.032 201.519 301.419C202.82 300.118 204.495 299.276 206.292 299H263.5Z",
+				"fill": "#FFD770",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_99"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M263.5 298C263.5 291.373 258.127 286 251.5 286H222.5C215.873 286 210.5 291.373 210.5 298V299H263.5V298Z",
+				"fill": "#A8CBF2",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_100"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M231.68 298.899V286.859",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M251.5 299L251.5 286",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M251.82 316.71C255.194 316.71 257.93 313.975 257.93 310.6C257.93 307.226 255.194 304.49 251.82 304.49C248.445 304.49 245.71 307.226 245.71 310.6C245.71 313.975 248.445 316.71 251.82 316.71Z",
+				"fill": "black",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M251.82 314.35C253.891 314.35 255.57 312.671 255.57 310.6C255.57 308.529 253.891 306.85 251.82 306.85C249.749 306.85 248.07 308.529 248.07 310.6C248.07 312.671 249.749 314.35 251.82 314.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_101"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M211.61 316.71C214.984 316.71 217.72 313.975 217.72 310.6C217.72 307.226 214.984 304.49 211.61 304.49C208.236 304.49 205.5 307.226 205.5 310.6C205.5 313.975 208.236 316.71 211.61 316.71Z",
+				"fill": "white",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M211.61 314.35C213.681 314.35 215.36 312.671 215.36 310.6C215.36 308.529 213.681 306.85 211.61 306.85C209.539 306.85 207.86 308.529 207.86 310.6C207.86 312.671 209.539 314.35 211.61 314.35Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_102"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M27.6002 321.64C29.1058 321.642 30.578 321.197 31.8308 320.362C33.0836 319.527 34.0606 318.339 34.6381 316.949C35.2156 315.559 35.3677 314.028 35.0752 312.551C34.7827 311.075 34.0587 309.718 32.9948 308.652C31.931 307.587 30.575 306.861 29.0985 306.567C27.6221 306.272 26.0914 306.423 24.7003 306.998C23.3092 307.574 22.1201 308.549 21.2834 309.801C20.4468 311.053 20.0002 312.524 20.0002 314.03C20.0002 316.046 20.8006 317.981 22.2256 319.407C23.6506 320.834 25.5836 321.637 27.6002 321.64Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_103"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M51.9003 321.64C53.4054 321.64 54.8767 321.194 56.1281 320.357C57.3796 319.521 58.355 318.333 58.931 316.942C59.507 315.552 59.6577 314.021 59.364 312.545C59.0704 311.069 58.3456 309.713 57.2813 308.649C56.2171 307.585 54.8611 306.86 53.3849 306.566C51.9087 306.273 50.3786 306.423 48.988 306.999C47.5975 307.575 46.409 308.551 45.5728 309.802C44.7366 311.054 44.2902 312.525 44.2902 314.03C44.2929 316.047 45.0955 317.982 46.5221 319.408C47.9487 320.835 49.8828 321.637 51.9003 321.64Z",
+				"fill": "#FFEEB3",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round",
+				"id": "하대원동_104"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M51.8999 314L47.3999 304H33.3999",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M47.3999 304L50.3999 299",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M27.5999 314L38.3999 293",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M54.3999 299H45.3999",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M42.3999 293H38.3999",
+				"stroke": "black",
+				"strokeWidth": "3",
+				"strokeLinecap": "round",
+				"strokeLinejoin": "round"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M27.6004 316.06C26.4792 316.06 25.5704 315.151 25.5704 314.03C25.5704 312.909 26.4792 312 27.6004 312C28.7215 312 29.6304 312.909 29.6304 314.03C29.6304 315.151 28.7215 316.06 27.6004 316.06Z",
+				"fill": "black"
+			}
+		},
+		{
+			"type": "path",
+			"props": {
+				"d": "M51.9002 316.06C50.779 316.06 49.8702 315.151 49.8702 314.03C49.8702 312.909 50.779 312 51.9002 312C53.0213 312 53.9302 312.909 53.9302 314.03C53.9302 315.151 53.0213 316.06 51.9002 316.06Z",
+				"fill": "black"
+			}
+		}
+	]
+}
