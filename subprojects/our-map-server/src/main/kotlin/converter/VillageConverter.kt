@@ -27,17 +27,19 @@ class VillageConverter(
         .setProgressRank(progressRank)
         .setProgressPercentage(getProgressPercentage(village))
         .also { builder ->
-            VillageProgressImages.getImage(village.eupMyeonDongId)?.let { image ->
-                builder.progressImage = Model.VillageRankingEntry.VillageProgressImage.newBuilder()
-                    .setId(image.id)
-                    .setNumberOfBlocks(image.numberOfBlocks)
-                    .addAllPaths(image.paths.map { path ->
-                        Model.VillageRankingEntry.VillageProgressImage.Path.newBuilder()
-                            .setType(path.type)
-                            .putAllProps(path.props)
-                            .build()
-                    })
-                    .build()
+            if (progressRank <= 3) {
+                VillageProgressImages.getImage(village.eupMyeonDongId)?.let { image ->
+                    builder.progressImage = Model.VillageRankingEntry.VillageProgressImage.newBuilder()
+                        .setId(image.id)
+                        .setNumberOfBlocks(image.numberOfBlocks)
+                        .addAllPaths(image.paths.map { path ->
+                            Model.VillageRankingEntry.VillageProgressImage.Path.newBuilder()
+                                .setType(path.type)
+                                .putAllProps(path.props)
+                                .build()
+                        })
+                        .build()
+                }
             }
         }
         .build()!!
