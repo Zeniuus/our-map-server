@@ -81,7 +81,7 @@ function deploy_server {
     -p "$PUBLISHING_PORT:$CONTAINER_PORT" \
     -v "$(pwd)/deploy/$1":/app/conf \
     -e OUR_MAP_OVERRIDING_PROPERTIES_FILENAME=/app/conf/application.properties \
-    -e JAVA_OPTS="-Xmx150m" \
+    -e JAVA_OPTS="-Xmx120m" \
     "563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-$2" &> "nohup-$1-$2.out" &
 }
 
