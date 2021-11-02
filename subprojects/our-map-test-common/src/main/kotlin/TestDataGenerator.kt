@@ -81,6 +81,30 @@ class TestDataGenerator {
         ))
     }
 
+    fun createBuilding(
+        location: Location = Location(127.5, 37.5),
+        eupMyeonDongId: String = eupMyeonDongRepository.listAll()[0].id,
+        siGunGuId: String = siGunGuRepository.listAll()[0].id
+    ): Building {
+        return buildingRepository.add(Building(
+            id = EntityIdGenerator.generateRandom(),
+            name = "건물건물",
+            lng = location.lng,
+            lat = location.lat,
+            address = BuildingAddress(
+                siDo = "서울특별시",
+                siGunGu = "성동구",
+                eupMyeonDong = "성수동",
+                li = "",
+                roadName = "왕십리로",
+                mainBuildingNumber = "83",
+                subBuildingNumber = "21",
+            ),
+            siGunGuId = siGunGuId,
+            eupMyeonDongId = eupMyeonDongId,
+        ))
+    }
+
     fun createBuildingAndPlace(
         placeName: String = "장소장소",
         location: Location = Location(127.5, 37.5),
@@ -108,8 +132,8 @@ class TestDataGenerator {
         return createPlace(placeName, buildingToUse)
     }
 
-    fun registerBuildingAndPlaceAccessibility(place: Place, user: User? = null): Pair<PlaceAccessibility, BuildingAccessibility> {
-        val placeAccessibility = placeAccessibilityService.create(
+    fun registerPlaceAccessibility(place: Place, user: User? = null): PlaceAccessibility {
+        return placeAccessibilityService.create(
             PlaceAccessibilityService.CreateParams(
                 placeId = place.id,
                 isFirstFloor = true,
@@ -118,9 +142,12 @@ class TestDataGenerator {
                 userId = user?.id,
             )
         )
-        val buildingAccessibility = buildingAccessibilityService.create(
+    }
+
+    fun registerBuildingAccessibility(building: Building, user: User? = null): BuildingAccessibility {
+        return buildingAccessibilityService.create(
             BuildingAccessibilityService.CreateParams(
-                buildingId = place.building.id,
+                buildingId = building.id,
                 entranceStairInfo = StairInfo.NONE,
                 hasSlope = true,
                 hasElevator = true,
@@ -128,7 +155,13 @@ class TestDataGenerator {
                 userId = user?.id,
             )
         )
-        return Pair(placeAccessibility, buildingAccessibility)
+    }
+
+    fun registerBuildingAndPlaceAccessibility(place: Place, user: User? = null): Pair<PlaceAccessibility, BuildingAccessibility> {
+        return Pair(
+            registerPlaceAccessibility(place, user),
+            registerBuildingAccessibility(place.building, user),
+        )
     }
 
     fun registerBuildingAccessibilityComment(building: Building, comment: String, user: User? = null): BuildingAccessibilityComment {

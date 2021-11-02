@@ -7,7 +7,6 @@ import converter.BuildingAccessibilityCommentConverter
 import converter.BuildingAccessibilityConverter
 import converter.PlaceAccessibilityCommentConverter
 import converter.PlaceAccessibilityConverter
-import domain.place.repository.PlaceRepository
 import domain.user.repository.UserRepository
 import io.ktor.application.call
 import io.ktor.request.receive
@@ -23,7 +22,6 @@ fun Route.getAccessibility() {
     val transactionManager = koin.get<TransactionManager>()
     val userAuthenticator = koin.get<UserAuthenticator>()
     val userRepository = koin.get<UserRepository>()
-    val placeRepository = koin.get<PlaceRepository>()
     val placeAccessibilityApplicationService = koin.get<AccessibilityApplicationService>()
     val placeAccessibilityConverter = koin.get<PlaceAccessibilityConverter>()
     val buildingAccessibilityConverter = koin.get<BuildingAccessibilityConverter>()

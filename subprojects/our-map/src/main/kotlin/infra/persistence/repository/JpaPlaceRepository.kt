@@ -31,6 +31,18 @@ class JpaPlaceRepository(
         return places
     }
 
+    override fun findByBuildingId(buildingId: String): List<Place> {
+        val em = EntityManagerHolder.get()!!
+        val query = em.createQuery("""
+            SELECT p
+            FROM Place p
+            JOIN FETCH p.building b
+            WHERE p.building.id = :buildingId
+        """.trimIndent(), Place::class.java)
+        query.setParameter("buildingId", buildingId)
+        return query.resultList
+    }
+
     override fun countByEupMyeonDong(eupMyeonDong: EupMyeonDong): Int {
         val em = EntityManagerHolder.get()!!
         val query = em.createQuery("""

@@ -84,7 +84,6 @@ class GetAccessibilityTest : OurMapServerRouteTestBase() {
             val result = getResult(GetAccessibilityResult::class)
             Assert.assertTrue(result.hasOtherPlacesToRegisterInBuilding)
         }
-
     }
 
     // TODO: 유저 없는 경우도 테스트?

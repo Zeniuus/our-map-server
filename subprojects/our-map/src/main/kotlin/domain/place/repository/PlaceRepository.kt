@@ -6,5 +6,10 @@ import domain.village.entity.EupMyeonDong
 
 interface PlaceRepository : EntityRepository<Place, String> {
     fun findByNameContains(searchTextRegex: String): List<Place>
+    /**
+     * fetch join:
+     * - building
+     */
+    fun findByBuildingId(buildingId: String): List<Place>
     fun countByEupMyeonDong(eupMyeonDong: EupMyeonDong): Int
 }

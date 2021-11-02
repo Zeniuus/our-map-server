@@ -3,11 +3,14 @@ package application.place
 import application.TransactionManager
 import domain.accessibility.entity.BuildingAccessibility
 import domain.accessibility.entity.PlaceAccessibility
+import domain.accessibility.repository.BuildingAccessibilityRepository
+import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.accessibility.service.SearchAccessibilityService
 import domain.logging.OurMapEvent
 import domain.logging.OurMapEventLogger
 import domain.logging.SearchPlacesEvent
 import domain.place.entity.Place
+import domain.place.repository.PlaceRepository
 import domain.place.service.SearchPlaceService
 import domain.util.Length
 import domain.util.Location
@@ -18,6 +21,9 @@ class PlaceApplicationService(
     private val transactionManager: TransactionManager,
     private val siGunGuRepository: SiGunGuRepository,
     private val eupMyeonDongRepository: EupMyeonDongRepository,
+    private val placeRepository: PlaceRepository,
+    private val placeAccessibilityRepository: PlaceAccessibilityRepository,
+    private val buildingAccessibilityRepository: BuildingAccessibilityRepository,
     private val searchPlaceService: SearchPlaceService,
     private val searchAccessibilityService: SearchAccessibilityService,
     private val eventLogger: OurMapEventLogger,
@@ -51,7 +57,7 @@ class PlaceApplicationService(
                 place = placeWithMetadata.place,
                 placeAccessibility = placeAccessibility,
                 buildingAccessibility = buildingAccessibility,
-                distance = placeWithMetadata.distance
+                distance = placeWithMetadata.distance,
             )
         }
 
@@ -62,5 +68,20 @@ class PlaceApplicationService(
         ))
 
         result
+    }
+
+    fun listPlacesInBuilding(buildingId: String): List<SearchPlaceResult> = transactionManager.doInTransaction {
+        val places = placeRepository.findByBuildingId(buildingId)
+        val buildingAccessibility = buildingAccessibilityRepository.findByBuildingId(buildingId)
+        val placeAccessibilityByPlaceId = placeAccessibilityRepository.findByPlaceIds(places.map { it.id })
+            .associateBy { it.placeId }
+        places.map { place ->
+            SearchPlaceResult(
+                place = place,
+                placeAccessibility = placeAccessibilityByPlaceId[place.id],
+                buildingAccessibility = buildingAccessibility,
+                distance = null,
+            )
+        }
     }
 }
