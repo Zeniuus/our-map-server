@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "common.proto";
+import "model.proto";
+import "SearchPlaces.proto";
+
+option java_multiple_files = true;
+option java_package = "ourMap.protocol";
+option java_outer_classname = "ListPlacesInBuildingProto";
+
+// 특정 건물에 있는 장소 목록을 조회하기 위한 API.
+// '이 건물에 다른 점포 등록하기'를 눌렀을 때 호출된다.
+
+message ListPlacesInBuildingParams {
+    string place_id = 1;
+}
+
+message ListPlacesInBuildingResult {
+    repeated SearchPlacesResult.Item items = 1;
+}
