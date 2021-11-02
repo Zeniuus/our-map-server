@@ -73,7 +73,18 @@ class GetAccessibilityTest : OurMapServerRouteTestBase() {
             Assert.assertTrue(result.placeAccessibilityCommentsList[0].hasUser())
             Assert.assertEquals(placeAccessibilityComment.comment, result.placeAccessibilityCommentsList[0].comment)
             Assert.assertEquals(placeAccessibilityComment.createdAt.toEpochMilli(), result.placeAccessibilityCommentsList[0].createdAt.value)
+
+            Assert.assertFalse(result.hasOtherPlacesToRegisterInBuilding)
         }
+
+        transactionManager.doInTransaction {
+            testDataGenerator.createPlace(placeName = "장소장소 2", building = place.building)
+        }
+        testClient.request("/getAccessibility", params).apply {
+            val result = getResult(GetAccessibilityResult::class)
+            Assert.assertTrue(result.hasOtherPlacesToRegisterInBuilding)
+        }
+
     }
 
     // TODO: 유저 없는 경우도 테스트?

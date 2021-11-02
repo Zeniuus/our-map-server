@@ -34,6 +34,7 @@ class AccessibilityApplicationService(
         val buildingAccessibilityComments: List<BuildingAccessibilityComment>,
         val placeAccessibility: PlaceAccessibility?,
         val placeAccessibilityComments: List<PlaceAccessibilityComment>,
+        val hasOtherPlacesToRegisterInSameBuilding: Boolean,
     )
 
     fun getAccessibility(placeId: String): GetAccessibilityResult = transactionManager.doInTransaction {
@@ -42,7 +43,8 @@ class AccessibilityApplicationService(
             buildingAccessibility = buildingAccessibilityRepository.findByBuildingId(place.building.id),
             buildingAccessibilityComments = buildingAccessibilityCommentRepository.findByBuildingId(place.building.id),
             placeAccessibility = placeAccessibilityRepository.findByPlaceId(placeId),
-            placeAccessibilityComments = placeAccessibilityCommentRepository.findByPlaceId(placeId)
+            placeAccessibilityComments = placeAccessibilityCommentRepository.findByPlaceId(placeId),
+            hasOtherPlacesToRegisterInSameBuilding = placeAccessibilityRepository.hasAccessibilityNotRegisteredPlaceInBuilding(place.building.id)
         )
     }
 

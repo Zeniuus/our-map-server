@@ -7,6 +7,7 @@ import converter.BuildingAccessibilityCommentConverter
 import converter.BuildingAccessibilityConverter
 import converter.PlaceAccessibilityCommentConverter
 import converter.PlaceAccessibilityConverter
+import domain.place.repository.PlaceRepository
 import domain.user.repository.UserRepository
 import io.ktor.application.call
 import io.ktor.request.receive
@@ -22,6 +23,7 @@ fun Route.getAccessibility() {
     val transactionManager = koin.get<TransactionManager>()
     val userAuthenticator = koin.get<UserAuthenticator>()
     val userRepository = koin.get<UserRepository>()
+    val placeRepository = koin.get<PlaceRepository>()
     val placeAccessibilityApplicationService = koin.get<AccessibilityApplicationService>()
     val placeAccessibilityConverter = koin.get<PlaceAccessibilityConverter>()
     val buildingAccessibilityConverter = koin.get<BuildingAccessibilityConverter>()
@@ -36,7 +38,6 @@ fun Route.getAccessibility() {
             transactionManager.doInTransaction {
                 val user = userId?.let { userRepository.findById(it) }
                 val commentedUserIds = (result.buildingAccessibilityComments.mapNotNull { it.userId } + result.placeAccessibilityComments.mapNotNull { it.userId })
-                    .filterNotNull()
                 val commentedUserCache = userRepository.findByIdIn(commentedUserIds)
                     .associateBy { it.id }
                 GetAccessibilityResult.newBuilder()
@@ -52,6 +53,7 @@ fun Route.getAccessibility() {
                         }
                     }
                     .addAllBuildingAccessibilityComments(result.buildingAccessibilityComments.map { BuildingAccessibilityCommentConverter.toProto(it, commentedUserCache) })
+                    .setHasOtherPlacesToRegisterInBuilding(result.hasOtherPlacesToRegisterInSameBuilding)
                     .build()
             }
         )

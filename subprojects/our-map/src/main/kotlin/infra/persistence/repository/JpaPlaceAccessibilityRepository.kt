@@ -43,6 +43,19 @@ class JpaPlaceAccessibilityRepository :
         return (query.singleResult as BigInteger).toInt()
     }
 
+    override fun hasAccessibilityNotRegisteredPlaceInBuilding(buildingId: String): Boolean {
+        val em = EntityManagerHolder.get()!!
+        val query = em.createQuery("""
+            SELECT count(p.id) > 0
+            FROM Place p
+            INNER JOIN Building b ON b.id = :buildingId
+            LEFT OUTER JOIN PlaceAccessibility pa ON p.id = pa.placeId
+            WHERE pa.id IS NULL
+        """.trimIndent())
+        query.setParameter("buildingId", buildingId)
+        return query.singleResult as Boolean
+    }
+
     override fun countAll(): Int {
         val em = EntityManagerHolder.get()!!
         val query = em.createNativeQuery("""

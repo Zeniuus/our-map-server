@@ -66,6 +66,21 @@ class TestDataGenerator {
         )
     }
 
+    fun createPlace(
+        placeName: String = "장소장소",
+        building: Building,
+    ): Place {
+        return placeRepository.add(Place(
+            id = EntityIdGenerator.generateRandom(),
+            name = placeName,
+            lng = building.location.lng,
+            lat = building.location.lat,
+            building = building,
+            siGunGuId = building.siGunGuId,
+            eupMyeonDongId = building.eupMyeonDongId,
+        ))
+    }
+
     fun createBuildingAndPlace(
         placeName: String = "장소장소",
         location: Location = Location(127.5, 37.5),
@@ -90,15 +105,7 @@ class TestDataGenerator {
             siGunGuId = siGunGuId,
             eupMyeonDongId = eupMyeonDongId,
         ))
-        return placeRepository.add(Place(
-            id = EntityIdGenerator.generateRandom(),
-            name = placeName,
-            lng = location.lng,
-            lat = location.lat,
-            building = buildingToUse,
-            siGunGuId = siGunGuId,
-            eupMyeonDongId = eupMyeonDongId,
-        ))
+        return createPlace(placeName, buildingToUse)
     }
 
     fun registerBuildingAndPlaceAccessibility(place: Place, user: User? = null): Pair<PlaceAccessibility, BuildingAccessibility> {
