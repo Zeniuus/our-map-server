@@ -12,7 +12,7 @@ option java_outer_classname = "ListPlacesInBuildingProto";
 // '이 건물에 다른 점포 등록하기'를 눌렀을 때 호출된다.
 
 message ListPlacesInBuildingParams {
-    string place_id = 1;
+    string building_id = 1;
 }
 
 message ListPlacesInBuildingResult {
