@@ -48,7 +48,7 @@ class JpaPlaceAccessibilityRepository :
         val query = em.createQuery("""
             SELECT count(p.id) > 0
             FROM Place p
-            INNER JOIN Building b ON b.id = :buildingId
+            INNER JOIN Building b ON b.id = :buildingId AND b.id = p.building.id
             LEFT OUTER JOIN PlaceAccessibility pa ON p.id = pa.placeId
             WHERE pa.id IS NULL
         """.trimIndent())
