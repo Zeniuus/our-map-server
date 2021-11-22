@@ -10,7 +10,9 @@ object MySQLContainer {
         if (mysql == null) {
             try {
                 val password = "password"
-                mysql = GenericContainer<Nothing>(DockerImageName.parse("mysql:5.7.34"))
+                // MySQL 도커 이미지 중 apple silicon을 지원하는 게 없어서 MariaDB로 대체한다.
+                // refs: https://docs.docker.com/desktop/mac/apple-silicon/#known-issues
+                mysql = GenericContainer<Nothing>(DockerImageName.parse("mariadb:10.6"))
                     .apply {
                         withExposedPorts(3306)
                         withEnv("MYSQL_ROOT_PASSWORD", password)
