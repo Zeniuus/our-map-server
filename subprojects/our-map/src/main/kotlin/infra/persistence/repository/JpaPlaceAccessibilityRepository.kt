@@ -43,6 +43,17 @@ class JpaPlaceAccessibilityRepository :
         return (query.singleResult as BigInteger).toInt()
     }
 
+    override fun countByUserId(userId: String): Int {
+        val em = EntityManagerHolder.get()!!
+        val query = em.createNativeQuery("""
+            SELECT COUNT(*)
+            FROM place_accessibility pa
+            WHERE pa.user_id = :userId
+        """.trimIndent())
+        query.setParameter("userId", userId)
+        return (query.singleResult as BigInteger).toInt()
+    }
+
     override fun hasAccessibilityNotRegisteredPlaceInBuilding(buildingId: String): Boolean {
         val em = EntityManagerHolder.get()!!
         val query = em.createQuery("""
@@ -63,5 +74,19 @@ class JpaPlaceAccessibilityRepository :
             FROM place_accessibility pa
         """.trimIndent())
         return (query.singleResult as BigInteger).toInt()
+    }
+
+    override fun listConquerRankingEntries(): List<Pair<String, Int>> {
+        val em = EntityManagerHolder.get()!!
+        val query = em.createNativeQuery("""
+            SELECT user_id, COUNT(*) as count
+            FROM place_accessibility pa
+            GROUP BY user_id
+            ORDER BY count DESC
+        """.trimIndent())
+        return query.resultList.map {
+            val row = it as Array<Object>
+            (row[0] as String) to (row[1] as BigInteger).toInt()
+        }
     }
 }
