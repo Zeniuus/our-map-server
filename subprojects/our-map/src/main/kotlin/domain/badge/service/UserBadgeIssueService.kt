@@ -24,7 +24,7 @@ class UserBadgeIssueService(
 
     private fun createUserMetadata(user: User): Badge.UserMetadata {
         return Badge.UserMetadata(
-            buildingAccessibilityCount = buildingAccessibilityRepository.countByUser(user),
+            buildingAccessibilityCount = buildingAccessibilityRepository.countByUserId(user.id),
         )
     }
 

@@ -4,6 +4,7 @@ import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.place.repository.BuildingRepository
 import domain.place.repository.PlaceRepository
+import domain.user.entity.User
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
@@ -26,7 +27,7 @@ class GetMyPageViewDataTest : OurMapServerRouteTestBase() {
     }
 
     @Test
-    fun getMyPageViewDataTest() = runRouteTest {
+    fun `favoriteVillages가 제대로 내려온다`() = runRouteTest {
         val (user, favoriteVillage) = transactionManager.doInTransaction {
             val user = testDataGenerator.createUser()
             val place = testDataGenerator.createBuildingAndPlace()
@@ -42,6 +43,42 @@ class GetMyPageViewDataTest : OurMapServerRouteTestBase() {
             Assert.assertEquals(user.id, result.user.id)
             Assert.assertEquals(1, result.favoriteVillagesList.size)
             Assert.assertEquals(favoriteVillage.id, result.favoriteVillagesList[0].id)
+        }
+    }
+
+    @Test
+    fun `정복 통계 데이터가 제대로 내려온다`() = runRouteTest {
+        fun createUserWithRegisteredCount(registeredCount: Int): User {
+            return transactionManager.doInTransaction {
+                val user = testDataGenerator.createUser()
+                repeat(registeredCount) {
+                    val place = testDataGenerator.createBuildingAndPlace()
+                    testDataGenerator.registerPlaceAccessibility(place, user)
+                }
+                user
+            }
+        }
+
+        listOf(
+            Pair(20, createUserWithRegisteredCount(20)),
+            Pair(7, createUserWithRegisteredCount(7)),
+            Pair(3, createUserWithRegisteredCount(3)),
+            Pair(1, createUserWithRegisteredCount(1)),
+            Pair(0, createUserWithRegisteredCount(0)),
+        ).forEachIndexed { idx, (expectedRegisteredCount, user) ->
+            val expectedRank = idx + 1
+            val expectedConquerLevelInfo = getConquerLevelInfo(expectedRegisteredCount, 0)
+            getTestClient(user).request("/getMyPageViewData", GetMyPageViewDataParams.getDefaultInstance()).apply {
+                val result = getResult(GetMyPageViewDataResult::class)
+                Assert.assertEquals(user.id, result.user.id)
+                Assert.assertEquals(expectedConquerLevelInfo.level, result.conquerLevelInfo.level)
+                Assert.assertEquals(expectedConquerLevelInfo.description, result.conquerLevelInfo.description)
+                Assert.assertEquals(expectedRegisteredCount > 0, result.hasConquerRank())
+                if (result.hasConquerRank()) {
+                    Assert.assertEquals(expectedRank, result.conquerRank.value)
+                }
+                Assert.assertEquals(expectedRegisteredCount, result.placeAccessibilityCount)
+            }
         }
     }
 }
