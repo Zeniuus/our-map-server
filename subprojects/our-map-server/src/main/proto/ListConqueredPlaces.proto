@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "common.proto";
+import "SearchPlaces.proto";
+
+option java_multiple_files = true;
+option java_package = "ourMap.protocol";
+option java_outer_classname = "ListConqueredPlacesProto";
+
+// 내가 정복한 장소 목록을 조회하기 위한 API.
+
+message ListConqueredPlacesParams {
+    string building_id = 1;
+}
+
+message ListConqueredPlacesResult {
+    repeated SearchPlacesResult.Item items = 1;
+}
