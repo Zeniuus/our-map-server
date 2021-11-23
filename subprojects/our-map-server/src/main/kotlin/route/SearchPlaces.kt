@@ -1,9 +1,7 @@
 package route
 
-import application.TransactionManager
 import application.place.PlaceApplicationService
-import converter.BuildingConverter
-import converter.PlaceConverter
+import converter.SearchPlacesConverter
 import domain.util.Length
 import domain.util.Location
 import io.ktor.application.call
@@ -12,14 +10,12 @@ import io.ktor.response.respond
 import io.ktor.routing.Route
 import io.ktor.routing.post
 import org.koin.core.context.GlobalContext
-import ourMap.protocol.Common
 import ourMap.protocol.SearchPlacesParams
 import ourMap.protocol.SearchPlacesResult
 
 fun Route.searchPlaces() {
     val koin = GlobalContext.get()
 
-    val transactionManager = koin.get<TransactionManager>()
     val placeApplicationService = koin.get<PlaceApplicationService>()
 
     post("/searchPlaces") {
@@ -48,22 +44,9 @@ fun Route.searchPlaces() {
         )
 
         call.respond(
-            transactionManager.doInTransaction {
-                SearchPlacesResult.newBuilder()
-                    .addAllItems(results.map { result ->
-                        SearchPlacesResult.Item.newBuilder()
-                            .setPlace(PlaceConverter.toProto(result.place))
-                            .setBuilding(BuildingConverter.toProto(result.place.building))
-                            .setHasPlaceAccessibility(result.placeAccessibility != null)
-                            .setHasBuildingAccessibility(result.buildingAccessibility != null)
-                            .apply {
-                                if (result.distance != null) {
-                                    distanceMeters = Common.Int32Value.newBuilder().setValue(result.distance!!.meters.toInt()).build()
-                                }
-                            }
-                            .build()
-                    })
-            }
+            SearchPlacesResult.newBuilder()
+                .addAllItems(results.map { SearchPlacesConverter.convertItem(it) })
+                .build()
         )
     }
 }

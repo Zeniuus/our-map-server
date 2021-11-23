@@ -30,6 +30,7 @@ import route.getVillageStatistics
 import route.giveBuildingAccessibilityUpvote
 import route.health
 import route.listAdministrativeAreas
+import route.listConqueredPlaces
 import route.listPlacesInBuilding
 import route.listVillageDropdownItems
 import route.login
@@ -99,6 +100,7 @@ fun Application.ourMapModule(testing: Boolean = false) {
         registerFavoriteVillage()
         unregisterFavoriteVillage()
         getMyPageViewData()
+        listConqueredPlaces()
         updateUserInfo()
 
         upsertAllVillages()

@@ -31,6 +31,22 @@ class JpaBuildingAccessibilityRepository :
         return getSingularResultOrThrow(query.resultList)
     }
 
+    override fun findByPlaceIds(placeIds: Collection<String>): List<BuildingAccessibility> {
+        val em = EntityManagerHolder.get()!!
+        val query = em.createNativeQuery("""
+            SELECT ba.*
+            FROM building_accessibility ba
+            LEFT OUTER JOIN building b ON b.id = ba.building_id
+            WHERE b.id IN (
+                SELECT building_id
+                FROM place p
+                WHERE p.id in :placeIds
+            )
+        """.trimIndent(), BuildingAccessibility::class.java)
+        query.setParameter("placeIds", placeIds)
+        return query.resultList.map { it as BuildingAccessibility }
+    }
+
     override fun findByEupMyeonDong(eupMyeonDong: EupMyeonDong): List<BuildingAccessibility> {
         val em = EntityManagerHolder.get()!!
         val query = em.createNativeQuery("""

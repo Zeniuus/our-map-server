@@ -1,27 +1,27 @@
 package route
 
 import application.place.PlaceApplicationService
+import auth.UserAuthenticator
 import converter.SearchPlacesConverter
 import io.ktor.application.call
-import io.ktor.request.receive
 import io.ktor.response.respond
 import io.ktor.routing.Route
 import io.ktor.routing.post
 import org.koin.core.context.GlobalContext
-import ourMap.protocol.ListPlacesInBuildingParams
-import ourMap.protocol.ListPlacesInBuildingResult
+import ourMap.protocol.ListConqueredPlacesResult
 
-fun Route.listPlacesInBuilding() {
+fun Route.listConqueredPlaces() {
     val koin = GlobalContext.get()
 
+    val userAuthenticator = koin.get<UserAuthenticator>()
     val placeApplicationService = koin.get<PlaceApplicationService>()
 
-    post("/listPlacesInBuilding") {
-        val params = call.receive<ListPlacesInBuildingParams>()
-        val results = placeApplicationService.listPlacesInBuilding(params.buildingId)
+    post("/listConqueredPlaces") {
+        val userId = userAuthenticator.checkAuth(call.request)
+        val results = placeApplicationService.listConqueredPlaces(userId)
 
         call.respond(
-            ListPlacesInBuildingResult.newBuilder()
+            ListConqueredPlacesResult.newBuilder()
                 .addAllItems(results.map { SearchPlacesConverter.convertItem(it) })
                 .build()
         )

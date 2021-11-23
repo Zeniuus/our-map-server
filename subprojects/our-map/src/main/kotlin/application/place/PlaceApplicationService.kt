@@ -84,4 +84,22 @@ class PlaceApplicationService(
             )
         }
     }
+
+    fun listConqueredPlaces(userId: String): List<SearchPlaceResult> = transactionManager.doInTransaction {
+        val placeAccessibilityByPlaceId = placeAccessibilityRepository.findByUserId(userId)
+            .associateBy { it.placeId }
+        val placeById = placeRepository.findByIdIn(placeAccessibilityByPlaceId.keys)
+            .associateBy { it.id }
+        val buildingAccessibilityByBuildingId = buildingAccessibilityRepository.findByPlaceIds(placeAccessibilityByPlaceId.keys)
+            .associateBy { it.buildingId }
+        placeAccessibilityByPlaceId.map { (placeId, placeAccessibility) ->
+            val place = placeById[placeId]!!
+            SearchPlaceResult(
+                place = place,
+                placeAccessibility = placeAccessibility,
+                buildingAccessibility = buildingAccessibilityByBuildingId[place.building.id],
+                distance = null,
+            )
+        }
+    }
 }

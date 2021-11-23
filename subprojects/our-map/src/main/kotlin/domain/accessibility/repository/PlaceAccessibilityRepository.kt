@@ -7,6 +7,7 @@ import domain.village.entity.EupMyeonDong
 interface PlaceAccessibilityRepository : EntityRepository<PlaceAccessibility, String> {
     fun findByPlaceIds(placeIds: Collection<String>): List<PlaceAccessibility>
     fun findByPlaceId(placeId: String): PlaceAccessibility?
+    fun findByUserId(userId: String): List<PlaceAccessibility>
     fun countByEupMyeonDong(eupMyeonDong: EupMyeonDong): Int
     fun countByUserId(userId: String): Int
     fun hasAccessibilityNotRegisteredPlaceInBuilding(buildingId: String): Boolean

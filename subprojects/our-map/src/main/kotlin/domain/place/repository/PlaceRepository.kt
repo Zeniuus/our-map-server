@@ -11,5 +11,10 @@ interface PlaceRepository : EntityRepository<Place, String> {
      * - building
      */
     fun findByBuildingId(buildingId: String): List<Place>
+    /**
+     * fetch join:
+     * - building
+     */
+    fun findByIdIn(ids: Collection<String>): List<Place>
     fun countByEupMyeonDong(eupMyeonDong: EupMyeonDong): Int
 }

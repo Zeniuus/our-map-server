@@ -31,6 +31,17 @@ class JpaPlaceAccessibilityRepository :
         return getSingularResultOrThrow(query.resultList)
     }
 
+    override fun findByUserId(userId: String): List<PlaceAccessibility> {
+        val em = EntityManagerHolder.get()!!
+        val query = em.createQuery("""
+            SELECT pa
+            FROM PlaceAccessibility pa
+            WHERE pa.userId = :userId
+        """.trimIndent(), PlaceAccessibility::class.java)
+        query.setParameter("userId", userId)
+        return query.resultList
+    }
+
     override fun countByEupMyeonDong(eupMyeonDong: EupMyeonDong): Int {
         val em = EntityManagerHolder.get()!!
         val query = em.createNativeQuery("""
