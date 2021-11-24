@@ -157,14 +157,17 @@ function ClubQuest(props: ClubQuestProps) {
           {currentLocation != null ? <Button text="현재 위치 표시하기" onClick={showCurrentLocationOnMap}></Button> : null}
         </ButtonGroup>
       </div>
+      <p>
+        ※ 폐업 여부는 '네이버 지도'로 검색해 확인하시면 편리합니다
+      </p>
       {
         clubQuest
           ? (
             <table className="bp3-html-table bp3-html-table-bordered bp3-html-table-condensed bp3-interactive">
               <thead>
                 <tr>
-                  <th className="title-column">건물 이름</th>
-                  <th>장소 이름</th>
+                  <th className="title-column">건물</th>
+                  <th>점포 또는 매장</th>
                   <th>정복</th>
                   <th>폐업</th>
                   <th>접근 불가</th>
