@@ -8,6 +8,7 @@ import domain.accessibility.repository.BuildingAccessibilityRepository
 import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.accessibility.service.ConquerRankingService
 import domain.user.repository.UserRepository
+import domain.village.repository.EupMyeonDongRepository
 import domain.village.repository.UserFavoriteVillageRepository
 import io.ktor.application.call
 import io.ktor.response.respond
@@ -26,6 +27,7 @@ fun Route.getMyPageViewData() {
     val placeAccessibilityRepository = koin.get<PlaceAccessibilityRepository>()
     val buildingAccessibilityRepository = koin.get<BuildingAccessibilityRepository>()
     val userFavoriteVillageRepository = koin.get<UserFavoriteVillageRepository>()
+    val eupMyeonDongRepository = koin.get<EupMyeonDongRepository>()
     val conquerRankingService = koin.get<ConquerRankingService>()
     val villageConverter = koin.get<VillageConverter>()
 
@@ -36,8 +38,10 @@ fun Route.getMyPageViewData() {
             transactionManager.doInTransaction {
                 val user = userRepository.findById(userId)
                 val favoriteVillages = userFavoriteVillageRepository.findByUserAndNotDeleted(user)
-                val registeredPlaceAccessibilityCount = placeAccessibilityRepository.countByUserId(userId)
                 val registeredBuildingAccessibilityCount = buildingAccessibilityRepository.countByUserId(userId)
+                val registeredPlaceAccessibilityCountByEupMyeonDongId = placeAccessibilityRepository.countByUserIdGroupByEupMyeonDongId(userId)
+                val registeredPlaceAccessibilityCount = registeredPlaceAccessibilityCountByEupMyeonDongId.values.sum()
+                val eupMyeonDongById = eupMyeonDongRepository.listAll().associateBy { it.id }
                 GetMyPageViewDataResult.newBuilder()
                     .setUser(UserConverter.toProto(user))
                     .addAllFavoriteVillages(
@@ -50,7 +54,14 @@ fun Route.getMyPageViewData() {
                         }
                     }
                     .setPlaceAccessibilityCount(registeredPlaceAccessibilityCount)
-                    // TODO: 읍면동별 숫자 필요
+                    .addAllPlaceAccessibilityCountDetailEntries(
+                        registeredPlaceAccessibilityCountByEupMyeonDongId.map { (eupMyeonDongId, registeredCount) ->
+                            GetMyPageViewDataResult.PlaceAccessibilityCountDetailEntry.newBuilder()
+                                .setEupMyeonDongName(eupMyeonDongById[eupMyeonDongId]!!.name)
+                                .setCount(registeredCount)
+                                .build()
+                        }
+                    )
                     .build()
             }
         )

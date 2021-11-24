@@ -5,6 +5,7 @@ import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.place.repository.BuildingRepository
 import domain.place.repository.PlaceRepository
 import domain.user.entity.User
+import domain.village.repository.EupMyeonDongRepository
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
@@ -17,6 +18,7 @@ class GetMyPageViewDataTest : OurMapServerRouteTestBase() {
     private val buildingRepository by inject<BuildingRepository>()
     private val placeAccessibilityRepository by inject<PlaceAccessibilityRepository>()
     private val buildingAccessibilityRepository by inject<BuildingAccessibilityRepository>()
+    private val eupMyeonDongRepository by inject<EupMyeonDongRepository>()
 
     @Before
     fun setUp() = transactionManager.doInTransaction {
@@ -48,11 +50,17 @@ class GetMyPageViewDataTest : OurMapServerRouteTestBase() {
 
     @Test
     fun `정복 통계 데이터가 제대로 내려온다`() = runRouteTest {
+        val (eupMyeonDong1, eupMyeonDong2) = eupMyeonDongRepository.listAll()
         fun createUserWithRegisteredCount(registeredCount: Int): User {
             return transactionManager.doInTransaction {
                 val user = testDataGenerator.createUser()
                 repeat(registeredCount) {
-                    val place = testDataGenerator.createBuildingAndPlace()
+                    val eupMyeonDong = if (it % 2 == 0) {
+                        eupMyeonDong1
+                    } else {
+                        eupMyeonDong2
+                    }
+                    val place = testDataGenerator.createBuildingAndPlace(eupMyeonDongId = eupMyeonDong.id)
                     testDataGenerator.registerPlaceAccessibility(place, user)
                 }
                 user
@@ -78,6 +86,10 @@ class GetMyPageViewDataTest : OurMapServerRouteTestBase() {
                     Assert.assertEquals(expectedRank, result.conquerRank.value)
                 }
                 Assert.assertEquals(expectedRegisteredCount, result.placeAccessibilityCount)
+                val expectedEupMyeonDong1RegisteredCount = expectedRegisteredCount - expectedRegisteredCount / 2 // 짝수면 절반, 홀수면 절반의 올림. e.g. 20 -> 10, 7 -> 4
+                val expectedEupMyeonDong2RegisteredCount = expectedRegisteredCount / 2 // 짝수면 절반, 홀수면 절반의 내림. e.g. 20 -> 10, 7 -> 3
+                Assert.assertEquals(expectedEupMyeonDong1RegisteredCount, result.placeAccessibilityCountDetailEntriesList.find { it.eupMyeonDongName == eupMyeonDong1.name }?.count ?: 0)
+                Assert.assertEquals(expectedEupMyeonDong2RegisteredCount, result.placeAccessibilityCountDetailEntriesList.find { it.eupMyeonDongName == eupMyeonDong2.name }?.count ?: 0)
             }
         }
     }
