@@ -4,7 +4,6 @@ import application.TransactionManager
 import auth.UserAuthenticator
 import converter.UserConverter
 import converter.VillageConverter
-import domain.accessibility.repository.BuildingAccessibilityUpvoteRepository
 import domain.user.repository.UserRepository
 import domain.village.repository.UserFavoriteVillageRepository
 import io.ktor.application.call
@@ -21,7 +20,6 @@ fun Route.getMyPageViewData() {
     val userAuthenticator = koin.get<UserAuthenticator>()
     val userRepository = koin.get<UserRepository>()
     val userFavoriteVillageRepository = koin.get<UserFavoriteVillageRepository>()
-    val buildingAccessibilityUpvoteRepository = koin.get<BuildingAccessibilityUpvoteRepository>()
     val villageConverter = koin.get<VillageConverter>()
 
     post("/getMyPageViewData") {
@@ -36,7 +34,6 @@ fun Route.getMyPageViewData() {
                     .addAllFavoriteVillages(
                         favoriteVillages.map { villageConverter.toProto(it.village, user) }
                     )
-                    .setTotalUpvoteCount(buildingAccessibilityUpvoteRepository.getTotalUpvoteCount(user))
                     .build()
             }
         )

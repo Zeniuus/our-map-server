@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "model.proto";
+import "common.proto";
 
 option java_multiple_files = true;
 option java_package = "ourMap.protocol";
@@ -14,5 +15,17 @@ message GetMyPageViewDataParams {
 message GetMyPageViewDataResult {
     User user = 1;
     repeated Village favorite_villages = 2;
-    int32 total_upvote_count = 4;
+    message ConquerLevelInfo {
+        string level = 1; // 정복 레벨. 1, 2, 3, 4, Max 등과 같은 값이 들어갈 수 있다.
+        string description = 2; // 정복 레벨 칭호. 예비 정복자, 새내기 정복자, 전설의 정복자 등과 같은 값이 들어갈 수 있다.
+    }
+    ConquerLevelInfo conquer_level_info = 3; // 정복 레벨 정보.
+    Int32Value conquer_rank = 4; // 정복 순위. 순위가 없으면 채워지지 않고 내려간다.
+    int32 place_accessibility_count = 5; // 정복한 계단 수.
+
+    message PlaceAccessibilityCountDetailEntry {
+        string eup_myeon_dong_name = 1;
+        int32 count = 2;
+    }
+    repeated PlaceAccessibilityCountDetailEntry place_accessibility_count_detail_entries = 6;
 }
