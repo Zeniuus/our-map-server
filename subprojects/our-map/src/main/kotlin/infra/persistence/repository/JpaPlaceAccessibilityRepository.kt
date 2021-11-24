@@ -108,6 +108,7 @@ class JpaPlaceAccessibilityRepository :
         val query = em.createNativeQuery("""
             SELECT user_id, COUNT(*) as count
             FROM place_accessibility pa
+            WHERE user_id IS NOT NULL
             GROUP BY user_id
             ORDER BY count DESC
         """.trimIndent())
