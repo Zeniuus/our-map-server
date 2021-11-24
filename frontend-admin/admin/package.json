@@ -14,7 +14,6 @@
     "@types/react-router-dom": "^5.1.8",
     "axios": "^0.21.1",
     "haversine": "^1.1.1",
-    "node-sass": "5.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -48,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "@types/haversine": "^1.1.5"
+    "@types/haversine": "^1.1.5",
+    "sass": "^1.43.4"
   }
 }
