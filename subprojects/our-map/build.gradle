@@ -14,7 +14,12 @@ dependencies {
 
     implementation 'org.hibernate:hibernate-core:5.4.32.Final'
     implementation 'com.zaxxer:HikariCP:4.0.3'
-    implementation 'mysql:mysql-connector-java:8.0.25' // mysql connector 8은 mysql 5.6, 5.7, 8.0을 지원한다.
+    // MySQL 도커 이미지가 apple silicon을 지원하지 않아서 MySQLContainer.kt에서 MariaDB를 사용하게 바꿨는데,
+    // MariaDB + MySQL Connector/J 조합으로는 milliseconds 단위가 저장되지 않는 듯하다.
+    // 따라서 MariaDB Connector/J를 사용하도록 변경한다.
+    // refs: https://stackoverflow.com/a/44147911
+    implementation 'org.mariadb.jdbc:mariadb-java-client:2.7.3'
+//    implementation 'mysql:mysql-connector-java:8.0.25' // mysql connector 8은 mysql 5.6, 5.7, 8.0을 지원한다.
 
     implementation('org.geotools:gt-referencing:23.0') {
         exclude(group: 'javax.media', module: 'jai_core') // jai_core 1.1.3이 다운이 안 된다.
