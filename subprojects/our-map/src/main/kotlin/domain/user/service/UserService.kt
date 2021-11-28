@@ -31,17 +31,17 @@ class UserService(
     }
 
     fun updateUserInfo(user: User, nickname: String, instagramId: String?): User {
-        user.nickname = normalizeAndValidateNickname(nickname)
+        user.nickname = normalizeAndValidateNickname(nickname, userId = user.id)
         user.instagramId = instagramId?.trim()?.takeIf { it.isNotEmpty() }
         return userRepository.add(user)
     }
 
-    private fun normalizeAndValidateNickname(nickname: String): String {
+    private fun normalizeAndValidateNickname(nickname: String, userId: String? = null): String {
         val normalizedNickname = nickname.trim()
         if (normalizedNickname.length < 2) {
             throw DomainException("최소 2자 이상의 닉네임을 설정해주세요.")
         }
-        if (userRepository.findByNickname(normalizedNickname) != null) {
+        if (userRepository.findByNickname(normalizedNickname)?.takeIf { it.id != userId } != null) {
             throw DomainException("${normalizedNickname}은 이미 사용 중인 닉네임입니다.")
         }
 

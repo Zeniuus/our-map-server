@@ -58,4 +58,13 @@ class UserServiceTest : DomainTestBase() {
         )
         userService.updateUserInfo(user, nickname = "newNickname", instagramId = null)
     }
+
+    @Test
+    fun `updateUserInfo() - 닉네임은 유지하고 인스타그램 아이디만 바꾸는 건 허용한다`() = transactionManager.doAndRollback {
+        val user = testDataGenerator.createUser(
+            nickname = "nickname",
+        )
+        userService.updateUserInfo(user, nickname = user.nickname, instagramId = "instagramId")
+        Assert.assertEquals("instagramId", user.instagramId)
+    }
 }
