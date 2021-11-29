@@ -13,7 +13,7 @@ data class ClubQuestContent(
             val name: String,
             var isCompleted: Boolean = false,
             var isClosed: Boolean = false,
-            var isNotAccessible: Boolean = false
+            var isNotAccessible: Boolean = false,
         )
     }
 }

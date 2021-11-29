@@ -15,6 +15,7 @@ import infra.logging.jpa.OurMapEventEntity
 import org.hibernate.dialect.MySQL57Dialect
 import org.hibernate.jpa.HibernatePersistenceProvider
 import quest.domain.entity.ClubQuest
+import quest.domain.entity.ClubQuestResult
 import java.net.URL
 import java.util.Properties
 import javax.persistence.EntityManagerFactory
@@ -94,6 +95,7 @@ object HibernateJpaConfiguration {
                 UserBadgeIssue::class.qualifiedName!!,
                 OurMapEventEntity::class.qualifiedName!!,
                 ClubQuest::class.qualifiedName!!,
+                ClubQuestResult::class.qualifiedName!!,
             )
         }
 

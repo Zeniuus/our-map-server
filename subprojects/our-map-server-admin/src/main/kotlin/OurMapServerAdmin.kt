@@ -10,6 +10,8 @@ import io.ktor.http.HttpMethod
 import io.ktor.jackson.jackson
 import io.ktor.response.respond
 import io.ktor.routing.routing
+import job.OurMapServerAdminJobRunner
+import job.ourMapServerAdminJobModule
 import org.koin.core.context.GlobalContext
 import org.koin.core.error.KoinAppAlreadyStartedException
 import org.koin.dsl.module
@@ -27,6 +29,9 @@ import util.utilModule
 fun main(args: Array<String>) {
     configOurMapServerAdminIoCContainerOnce()
     io.ktor.server.netty.EngineMain.main(args)
+
+    val jobRunner = GlobalContext.get().get<OurMapServerAdminJobRunner>()
+    jobRunner.startJobs()
 }
 
 fun Application.ourMapServerAdminModule(testing: Boolean = false) {
@@ -79,6 +84,7 @@ fun configOurMapServerAdminIoCContainerOnce() {
             modules(module {
                 single { ClubQuestRouteHandlers(get()) }
             })
+            modules(ourMapServerAdminJobModule)
             modules(
                 clubQuestDomainModule,
                 clubQuestApplicationModule,

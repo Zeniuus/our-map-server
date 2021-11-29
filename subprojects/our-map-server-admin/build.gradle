@@ -7,6 +7,7 @@ plugins {
 dependencies {
     implementation project(':our-map')
     implementation project(':our-map-server')
+    testImplementation project(':our-map-test-common')
 
     implementation "io.ktor:ktor-server-core:$ktorVersion"
     implementation "io.ktor:ktor-server-netty:$ktorVersion"

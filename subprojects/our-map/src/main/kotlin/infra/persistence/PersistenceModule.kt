@@ -18,6 +18,7 @@ import infra.persistence.repository.JpaBuildingAccessibilityRepository
 import infra.persistence.repository.JpaBuildingAccessibilityUpvoteRepository
 import infra.persistence.repository.JpaBuildingRepository
 import infra.persistence.repository.JpaClubQuestRepository
+import infra.persistence.repository.JpaClubQuestResultRepository
 import infra.persistence.repository.JpaPlaceAccessibilityCommentRepository
 import infra.persistence.repository.JpaPlaceAccessibilityRepository
 import infra.persistence.repository.JpaPlaceRepository
@@ -29,6 +30,7 @@ import infra.persistence.transaction.JpaTransactionManager
 import org.koin.dsl.bind
 import org.koin.dsl.module
 import quest.domain.repository.ClubQuestRepository
+import quest.domain.repository.ClubQuestResultRepository
 
 val persistenceModule = module {
     single { HibernateJpaConfiguration.createEntityManagerFactory() }
@@ -45,5 +47,6 @@ val persistenceModule = module {
     single<UserFavoriteVillageRepository> { JpaUserFavoriteVillageRepository() }
     single<UserBadgeIssueRepository> { JpaUserBadgeIssueRepository() }
     single<ClubQuestRepository> { JpaClubQuestRepository() }
+    single<ClubQuestResultRepository> { JpaClubQuestResultRepository() }
     single { JpaTransactionManager(get()) } bind TransactionManager::class
 }
