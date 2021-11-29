@@ -28,10 +28,11 @@ import util.utilModule
 //       일단은 EngineMain 방식을 사용하여 문제를 우회한다.
 fun main(args: Array<String>) {
     configOurMapServerAdminIoCContainerOnce()
-    io.ktor.server.netty.EngineMain.main(args)
 
     val jobRunner = GlobalContext.get().get<OurMapServerAdminJobRunner>()
     jobRunner.startJobs()
+
+    io.ktor.server.netty.EngineMain.main(args)
 }
 
 fun Application.ourMapServerAdminModule(testing: Boolean = false) {
