@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Button } from '@blueprintjs/core';
 import { Redirect } from 'react-router-dom';
 
-interface LoginProps {
+interface LoginPageProps {
   login: (userId: string, password: string) => Promise<any>;
   isAuthenticated: boolean;
 }
 
-function Login(props: LoginProps) {
+function LoginPage(props: LoginPageProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [userId, setUserId] = useState('');
   const [password, setPassword] = useState('');
@@ -39,4 +39,4 @@ function Login(props: LoginProps) {
   );
 }
 
-export default Login;
+export default LoginPage;

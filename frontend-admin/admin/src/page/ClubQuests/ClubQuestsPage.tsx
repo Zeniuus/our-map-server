@@ -1,13 +1,13 @@
 import { Button, ButtonGroup, Dialog } from '@blueprintjs/core';
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import CreateClubQuest from './CreateClubQuest';
+import CreateClubQuestComponent from './CreateClubQuestComponent';
 import { ClubQuestDTO } from '../../type';
 import { apiController } from '../../apiController';
 
-import './ClubQuests.scss';
+import './ClubQuestsPage.scss';
 
-function ClubQuests() {
+function ClubQuestsPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [clubQuests, setClubQuests] = useState<ClubQuestDTO[]>([]);
   const [isCreateDialogOpen, setIsCreateDialogOpen] = useState(false);
@@ -84,10 +84,10 @@ function ClubQuests() {
         </tbody>
       </table>
       <Dialog className="create-dialog" title="퀘스트 생성하기" isOpen={isCreateDialogOpen} canEscapeKeyClose onClose={() => setIsCreateDialogOpen(false)}>
-        <CreateClubQuest onCreate={onClubQuestCreated}></CreateClubQuest>
+        <CreateClubQuestComponent onCreate={onClubQuestCreated}></CreateClubQuestComponent>
       </Dialog>
     </div>
   );
 }
 
-export default ClubQuests;
+export default ClubQuestsPage;

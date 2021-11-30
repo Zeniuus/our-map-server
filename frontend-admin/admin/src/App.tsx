@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { Classes } from "@blueprintjs/core";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import AppMenu from "./AppMenu";
-import Home from './page/Home/Home';
-import RunSql from './page/RunSql/RunSql';
-import ClubQuests from './page/ClubQuests/ClubQuests';
-import ClubQuest from './page/ClubQuest/ClubQuest';
+import HomePage from './page/Home/HomePage';
+import RunSqlPage from './page/RunSql/RunSqlPage';
+import ClubQuestsPage from './page/ClubQuests/ClubQuestsPage';
+import ClubQuestPage from './page/ClubQuest/ClubQuestPage';
 import AuthRoute from './AuthRoute';
-import Login from './page/Login/Login';
+import LoginPage from './page/Login/LoginPage';
 
 import "./App.scss";
-import Dashboard from './page/Dashboard/Dashboard';
+import DashboardPage from './page/Dashboard/DashboardPage';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -46,16 +46,16 @@ function App() {
     <div className={Classes.RUNNING_TEXT}>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/login" component={AppBody(Login, { login, isAuthenticated })} />
-          <Route exact path="/clubQuests/:id" component={AppBody(ClubQuest, {})} />
+          <Route exact path="/login" component={AppBody(LoginPage, { login, isAuthenticated })} />
+          <Route exact path="/clubQuests/:id" component={AppBody(ClubQuestPage, {})} />
           <Route>
             <AppMenu />
             <div className="app-body">
               <Switch>
-                <AuthRoute isAuthenticated={isAuthenticated} path="/dashboard" component={Dashboard} />
-                <AuthRoute isAuthenticated={isAuthenticated} path="/runSql" component={RunSql} />
-                <AuthRoute isAuthenticated={isAuthenticated} path="/clubQuests" component={ClubQuests} />
-                <AuthRoute isAuthenticated={isAuthenticated} path="/" component={Home} />
+                <AuthRoute isAuthenticated={isAuthenticated} path="/dashboard" component={DashboardPage} />
+                <AuthRoute isAuthenticated={isAuthenticated} path="/runSql" component={RunSqlPage} />
+                <AuthRoute isAuthenticated={isAuthenticated} path="/clubQuests" component={ClubQuestsPage} />
+                <AuthRoute isAuthenticated={isAuthenticated} path="/" component={HomePage} />
               </Switch>
             </div>
           </Route>

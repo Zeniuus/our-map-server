@@ -2,13 +2,13 @@ import React from 'react';
 import { Card } from '@blueprintjs/core';
 import { RunSqlResult } from '../../api';
 
-import './SqlQueryResult.scss';
+import './SqlQueryResultComponent.scss';
 
-interface SqlQueryResultProps {
+interface SqlQueryResultComponentProps {
   queryResult: RunSqlResult;
 }
 
-function SqlQueryResult(props: SqlQueryResultProps) {
+function SqlQueryResultComponent(props: SqlQueryResultComponentProps) {
   const { queryResult } = props;
   return queryResult != null
     ? (
@@ -39,4 +39,4 @@ function SqlQueryResult(props: SqlQueryResultProps) {
     : null;
 }
 
-export default SqlQueryResult;
+export default SqlQueryResultComponent;

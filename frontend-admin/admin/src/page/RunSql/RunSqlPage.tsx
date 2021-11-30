@@ -2,12 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Button, ButtonGroup, Intent, TextArea } from '@blueprintjs/core';
 import { RunSqlResult } from '../../api';
 import { apiController } from '../../apiController';
-import SqlQueryResult from '../../component/SqlQueryResult/SqlQueryResult';
+import SqlQueryResultComponent from '../../component/SqlQueryResult/SqlQueryResultComponent';
 
-import './RunSql.scss';
+import './RunSqlPage.scss';
 
-
-function RunSql() {
+function RunSqlPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [query, setQuery] = useState('');
   const [queryResult, setQueryResult] = useState<RunSqlResult | null>(null);
@@ -72,11 +71,11 @@ function RunSql() {
             onKeyPress={handleKeyPress}
             value={query}
           />
-          {queryResult ? <SqlQueryResult queryResult={queryResult} /> : null}
+          {queryResult ? <SqlQueryResultComponent queryResult={queryResult} /> : null}
         </div>
       </div>
     </div>
   );
 }
 
-export default RunSql;
+export default RunSqlPage;

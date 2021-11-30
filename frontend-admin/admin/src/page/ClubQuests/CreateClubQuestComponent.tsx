@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Button, ButtonGroup, Classes } from '@blueprintjs/core';
 import { apiController } from '../../apiController';
 
-import './CreateClubQuest.scss';
+import './CreateClubQuestComponent.scss';
 
-interface CreateClubQuestProps {
+interface CreateClubQuestComponentProps {
   onCreate: () => void;
 }
 
-function CreateClubQuest(props: CreateClubQuestProps) {
+function CreateClubQuestComponent(props: CreateClubQuestComponentProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [title, setTitle] = useState('');
   const [rawContent, setRawContent] = useState('');
@@ -71,4 +71,4 @@ function CreateClubQuest(props: CreateClubQuestProps) {
   );
 }
 
-export default CreateClubQuest;
+export default CreateClubQuestComponent;

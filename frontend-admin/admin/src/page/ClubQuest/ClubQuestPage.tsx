@@ -4,7 +4,7 @@ import { ClubQuestContentTargetDTO, ClubQuestContentTargetPlaceDTO, ClubQuestDTO
 import { determineCenter, determineLevel } from '../../util/kakaoMap';
 import { apiController } from '../../apiController';
 
-import './ClubQuest.scss';
+import './ClubQuestPage.scss';
 
 declare global {
   interface Window {
@@ -12,7 +12,7 @@ declare global {
   }
 }
 
-interface ClubQuestProps {
+interface ClubQuestPageProps {
   match: {
     params: {
       id: string;
@@ -20,7 +20,7 @@ interface ClubQuestProps {
   }
 }
 
-function ClubQuest(props: ClubQuestProps) {
+function ClubQuestPage(props: ClubQuestPageProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [clubQuest, setClubQuest] = useState<ClubQuestDTO | null>(null);
   const [currentLocation, setCurrentLocation] = useState<LocationDTO | null>(null);
@@ -198,4 +198,4 @@ function ClubQuest(props: ClubQuestProps) {
   );
 }
 
-export default ClubQuest;
+export default ClubQuestPage;

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { RunSqlResult } from '../../api';
 import { apiController } from '../../apiController';
-import SqlQueryResult from '../../component/SqlQueryResult/SqlQueryResult';
+import SqlQueryResultComponent from '../../component/SqlQueryResult/SqlQueryResultComponent';
 
-import './Dashboard.scss';
+import './DashboardPage.scss';
 
-function Dashboard() {
+function DashboardPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [queryResult, setQueryResult] = useState<RunSqlResult | null>(null);
 
@@ -25,13 +25,13 @@ function Dashboard() {
     <div>
       <h1>대시보드</h1>
       <div className="body">
-        {queryResult ? <SqlQueryResult queryResult={queryResult} /> : null}
+        {queryResult ? <SqlQueryResultComponent queryResult={queryResult} /> : null}
       </div>
     </div>
   );
 }
 
-export default Dashboard;
+export default DashboardPage;
 
 const dashboardQuery = `
 select *
