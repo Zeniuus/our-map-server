@@ -10,6 +10,7 @@ import AuthRoute from './AuthRoute';
 import Login from './page/Login/Login';
 
 import "./App.scss";
+import Dashboard from './page/Dashboard/Dashboard';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -51,6 +52,7 @@ function App() {
             <AppMenu />
             <div className="app-body">
               <Switch>
+                <AuthRoute isAuthenticated={isAuthenticated} path="/dashboard" component={Dashboard} />
                 <AuthRoute isAuthenticated={isAuthenticated} path="/runSql" component={RunSql} />
                 <AuthRoute isAuthenticated={isAuthenticated} path="/clubQuests" component={ClubQuests} />
                 <AuthRoute isAuthenticated={isAuthenticated} path="/" component={Home} />

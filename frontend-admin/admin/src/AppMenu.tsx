@@ -9,6 +9,9 @@ const AppMenu = () => (
         <Button minimal={true} text="계단정복지도 어드민"></Button>
       </Link>
       <NavbarDivider></NavbarDivider>
+      <Link to="/dashboard">
+        <Button minimal={true} text="대시보드"></Button>
+      </Link>
       <Link to="/runSql">
         <Button minimal={true} text="SQL 실행"></Button>
       </Link>
