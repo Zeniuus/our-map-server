@@ -2,6 +2,7 @@ package job
 
 import application.TransactionManager
 import domain.util.EntityIdGenerator
+import infra.monitoring.ErrorReporter
 import quest.domain.entity.ClubQuestResult
 import quest.domain.repository.ClubQuestRepository
 import quest.domain.repository.ClubQuestResultRepository
@@ -24,47 +25,55 @@ class EtlClubQuestResultJob(
             clubQuestRepository.listNotDeleted()
         }
         clubQuests.forEach { clubQuest ->
-            transactionManager.doInTransaction {
-                val existingResultByPlaceKey = clubQuestResultRepository.findByQuestId(clubQuest.id)
-                    .associateBy { ClubQuestPlaceKey(
-                        questId = it.questId,
-                        displayedName = it.questTargetDisplayedName,
-                        placeName = it.questTargetPlaceName,
-                    ) }
-                clubQuest.content.targets.forEach { questTarget ->
-                    questTarget.places.forEach { questTargetPlace ->
-                        val placeKey = ClubQuestPlaceKey(
-                            questId = clubQuest.id,
-                            displayedName = questTarget.displayedName,
-                            placeName = questTargetPlace.name,
-                        )
-                        val existingResult = existingResultByPlaceKey[placeKey]
-                        if (existingResult != null) {
-                            if (existingResult.isCompleted != questTargetPlace.isCompleted ||
-                                existingResult.isClosed != questTargetPlace.isClosed ||
-                                existingResult.isNotAccessible != questTargetPlace.isNotAccessible
-                            ) {
-                                existingResult.isCompleted = questTargetPlace.isCompleted
-                                existingResult.isClosed = questTargetPlace.isClosed
-                                existingResult.isNotAccessible = questTargetPlace.isNotAccessible
-                                clubQuestResultRepository.add(existingResult)
-                            }
-                        } else {
-                            clubQuestResultRepository.add(ClubQuestResult(
-                                id = EntityIdGenerator.generateRandom(),
+            try {
+                transactionManager.doInTransaction {
+                    val existingResultByPlaceKey = clubQuestResultRepository.findByQuestId(clubQuest.id)
+                        .associateBy {
+                            ClubQuestPlaceKey(
+                                questId = it.questId,
+                                displayedName = it.questTargetDisplayedName,
+                                placeName = it.questTargetPlaceName,
+                            )
+                        }
+                    clubQuest.content.targets.forEach { questTarget ->
+                        questTarget.places.forEach { questTargetPlace ->
+                            val placeKey = ClubQuestPlaceKey(
                                 questId = clubQuest.id,
-                                questTitle = clubQuest.title,
-                                questTargetLng = questTarget.lng,
-                                questTargetLat = questTarget.lat,
-                                questTargetDisplayedName = questTarget.displayedName,
-                                questTargetPlaceName = questTargetPlace.name,
-                                isCompleted = questTargetPlace.isCompleted,
-                                isClosed = questTargetPlace.isClosed,
-                                isNotAccessible = questTargetPlace.isNotAccessible,
-                            ))
+                                displayedName = questTarget.displayedName,
+                                placeName = questTargetPlace.name,
+                            )
+                            val existingResult = existingResultByPlaceKey[placeKey]
+                            if (existingResult != null) {
+                                if (existingResult.isCompleted != questTargetPlace.isCompleted ||
+                                    existingResult.isClosed != questTargetPlace.isClosed ||
+                                    existingResult.isNotAccessible != questTargetPlace.isNotAccessible
+                                ) {
+                                    existingResult.isCompleted = questTargetPlace.isCompleted
+                                    existingResult.isClosed = questTargetPlace.isClosed
+                                    existingResult.isNotAccessible = questTargetPlace.isNotAccessible
+                                    clubQuestResultRepository.add(existingResult)
+                                }
+                            } else {
+                                clubQuestResultRepository.add(
+                                    ClubQuestResult(
+                                        id = EntityIdGenerator.generateRandom(),
+                                        questId = clubQuest.id,
+                                        questTitle = clubQuest.title,
+                                        questTargetLng = questTarget.lng,
+                                        questTargetLat = questTarget.lat,
+                                        questTargetDisplayedName = questTarget.displayedName,
+                                        questTargetPlaceName = questTargetPlace.name,
+                                        isCompleted = questTargetPlace.isCompleted,
+                                        isClosed = questTargetPlace.isClosed,
+                                        isNotAccessible = questTargetPlace.isNotAccessible,
+                                    )
+                                )
+                            }
                         }
                     }
                 }
+            } catch (t: Throwable) {
+                ErrorReporter.report(t)
             }
         }
     }
