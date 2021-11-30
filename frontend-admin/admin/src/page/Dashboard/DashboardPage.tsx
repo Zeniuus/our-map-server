@@ -1,3 +1,4 @@
+import { Spinner } from '@blueprintjs/core';
 import React, { useState, useEffect } from 'react';
 import { RunSqlResult } from '../../api';
 import { apiController } from '../../apiController';
@@ -6,26 +7,47 @@ import SqlQueryResultComponent from '../../component/SqlQueryResult/SqlQueryResu
 import './DashboardPage.scss';
 
 function DashboardPage() {
-  const [isLoading, setIsLoading] = useState(false);
-  const [queryResult, setQueryResult] = useState<RunSqlResult | null>(null);
-
+  const loadingTextBase = '시간이 좀 걸릴 수 있습니다';
+  const [loadingTextSpinner, setLoadingTextSpinner] = useState('.');
+  const [loadingText, setLoadingText] = useState(`${loadingTextBase}${loadingTextSpinner}`);
+  const [loadingTextUpdater, setLoadingTextUpdater] = useState<any>();
   useEffect(() => {
-    withLoading(
-      apiController.runSql(dashboardQuery)
-        .then((result) => setQueryResult(result))
-    );
-  }, []);
+    const localLoadingTextUpdater = setTimeout(() => {
+      const nextSpinnerLength = (loadingTextSpinner.length % 3) + 1;
+      const nextLoadingTextSpinner = '.'.repeat(nextSpinnerLength);
+      setLoadingTextSpinner(nextLoadingTextSpinner);
+      setLoadingText(`${loadingTextBase}${nextLoadingTextSpinner}`);
+    }, 400);
+    setLoadingTextUpdater(localLoadingTextUpdater);
 
-  function withLoading(promise: Promise<any>): Promise<any> {
-    setIsLoading(true);
-    return promise.finally(() => setIsLoading(false));
-  }
+    return () => {
+      clearTimeout(localLoadingTextUpdater);
+    }
+  }, [loadingText]);
+
+  const [queryResult, setQueryResult] = useState<RunSqlResult | null>(null);
+  useEffect(() => {
+    apiController.runSql(dashboardQuery)
+      .then((result) => {
+        setQueryResult(result);
+        clearInterval(loadingTextUpdater);
+      });
+  }, []);
 
   return (
     <div>
       <h1>대시보드</h1>
       <div className="body">
-        {queryResult ? <SqlQueryResultComponent queryResult={queryResult} /> : null}
+        {
+          queryResult
+            ? <SqlQueryResultComponent queryResult={queryResult} />
+            : (
+              <div className="loading-container">
+                <Spinner />
+                <div className="loading-text">{loadingText}</div>
+              </div>
+            )
+        }
       </div>
     </div>
   );
