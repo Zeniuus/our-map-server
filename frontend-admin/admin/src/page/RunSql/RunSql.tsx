@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Button, ButtonGroup, Card, Intent, TextArea } from '@blueprintjs/core';
+import { Button, ButtonGroup, Intent, TextArea } from '@blueprintjs/core';
 import { RunSqlResult } from '../../api';
+import { apiController } from '../../apiController';
+import SqlQueryResult from '../../component/SqlQueryResult/SqlQueryResult';
 
 import './RunSql.scss';
-import { apiController } from '../../apiController';
 
 
 function RunSql() {
@@ -36,34 +37,6 @@ function RunSql() {
         .then((result) => setQueryResult(result))
     );
   };
-
-  const queryResultElem = queryResult != null
-    ? (
-      <Card className="query-result-container">
-        <h4>결과</h4>
-        <table className="bp3-html-table bp3-html-table-bordered bp3-html-table-condensed bp3-interactive">
-          <thead>
-            <tr>
-            {queryResult.columns.map((column) => {
-              return <th>{column}</th>;
-            })}
-            </tr>
-          </thead>
-          <tbody>
-            {queryResult.rows.map((row) => {
-              return (
-                <tr>
-                  {queryResult.columns.map((column, columnIdx) => {
-                    return <td>{row[columnIdx]}</td>;
-                  })}
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </Card>
-    )
-    : null;
 
   return (
     <div>
@@ -99,7 +72,7 @@ function RunSql() {
             onKeyPress={handleKeyPress}
             value={query}
           />
-          {queryResultElem}
+          {queryResult ? <SqlQueryResult queryResult={queryResult} /> : null}
         </div>
       </div>
     </div>
