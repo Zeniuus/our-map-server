@@ -1,6 +1,7 @@
 package route
 
 import domain.accessibility.repository.BuildingAccessibilityRepository
+import domain.accessibility.repository.BuildingAccessibilityUpvoteRepository
 import domain.accessibility.repository.PlaceAccessibilityRepository
 import domain.place.repository.BuildingRepository
 import domain.place.repository.PlaceRepository
@@ -18,10 +19,12 @@ class GetMyPageViewDataTest : OurMapServerRouteTestBase() {
     private val buildingRepository by inject<BuildingRepository>()
     private val placeAccessibilityRepository by inject<PlaceAccessibilityRepository>()
     private val buildingAccessibilityRepository by inject<BuildingAccessibilityRepository>()
+    private val buildingAccessibilityUpvoteRepository by inject<BuildingAccessibilityUpvoteRepository>()
     private val eupMyeonDongRepository by inject<EupMyeonDongRepository>()
 
     @Before
     fun setUp() = transactionManager.doInTransaction {
+        buildingAccessibilityUpvoteRepository.removeAll()
         placeAccessibilityRepository.removeAll()
         buildingAccessibilityRepository.removeAll()
         placeRepository.removeAll()
