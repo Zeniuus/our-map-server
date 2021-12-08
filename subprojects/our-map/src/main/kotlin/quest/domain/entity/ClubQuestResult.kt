@@ -1,5 +1,6 @@
 package quest.domain.entity
 
+import java.time.Instant
 import javax.persistence.Column
 import javax.persistence.Entity
 import javax.persistence.Id
@@ -13,6 +14,8 @@ data class ClubQuestResult(
     val questId: String,
     @Column(nullable = false, length = 128)
     val questTitle: String,
+    @Column(nullable = false)
+    val questCreatedAt: Instant,
     @Column(nullable = false)
     val questTargetLng: Double,
     @Column(nullable = false)

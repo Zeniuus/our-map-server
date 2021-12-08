@@ -59,6 +59,7 @@ class EtlClubQuestResultJob(
                                         id = EntityIdGenerator.generateRandom(),
                                         questId = clubQuest.id,
                                         questTitle = clubQuest.title,
+                                        questCreatedAt = clubQuest.createdAt,
                                         questTargetLng = questTarget.lng,
                                         questTargetLat = questTarget.lat,
                                         questTargetDisplayedName = questTarget.displayedName,

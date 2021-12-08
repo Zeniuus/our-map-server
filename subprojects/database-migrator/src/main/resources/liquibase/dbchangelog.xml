@@ -21,4 +21,5 @@
     <include file="liquibase/16_club_quest.xml" />
     <include file="liquibase/17_remove_eup_myeon_dong.sql" />
     <include file="liquibase/18_club_quest_result.xml" />
+    <include file="liquibase/19_add_created_at_to_club_quest_result.xml" />
 </databaseChangeLog>
