@@ -13,10 +13,10 @@ class EtlClubQuestResultJob(
     private val transactionManager: TransactionManager,
     private val clubQuestRepository: ClubQuestRepository,
     private val clubQuestResultRepository: ClubQuestResultRepository,
-) {
+) : OurMapServerAdminJob {
     private val executor = Executors.newSingleThreadScheduledExecutor()
 
-    fun start() {
+    override fun start() {
         executor.scheduleAtFixedRate(::run, 0L, 1L, TimeUnit.HOURS)
     }
 

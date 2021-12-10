@@ -25,7 +25,7 @@ fun Route.runSql() {
     post("/api/runSql") {
         val params = call.receive<RunSqlParams>()
 
-        val result = runSqlService.runSql(params.query)
+        val result = runSqlService.runSelectQuery(params.query)
         call.respond(RunSqlResult(
             columns = result.columns,
             rows = result.rows.map { row -> row.map { it ?: "" } },
