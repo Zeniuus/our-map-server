@@ -150,50 +150,54 @@ function ClubQuestPage(props: ClubQuestPageProps) {
   return (
     <div>
       <h1>{clubQuest?.title}</h1>
-      <div id="map" style={{ minWidth: '200px', height: 'calc(100vw - 40px)', maxHeight: '500px' }} />
-      <div className="map-manipulate-button-div">
-        <ButtonGroup className="map-manipulate-button-container">
-          {clubQuest != null ? <Button text="퀘스트 전체 표시하기" onClick={showQuestsOnMap}></Button> : null}
-          {currentLocation != null ? <Button text="현재 위치 표시하기" onClick={showCurrentLocationOnMap}></Button> : null}
-        </ButtonGroup>
+      <div className="club-quest-page-body">
+        <div id="map" className="body-item-fixed-height" />
+        <div className="map-manipulate-button-div body-item-fixed-height">
+          <ButtonGroup className="map-manipulate-button-container">
+            {clubQuest != null ? <Button text="퀘스트 전체 표시하기" onClick={showQuestsOnMap}></Button> : null}
+            {currentLocation != null ? <Button text="현재 위치 표시하기" onClick={showCurrentLocationOnMap}></Button> : null}
+          </ButtonGroup>
+        </div>
+        <p className="body-item-fixed-height">
+          ※ 폐업 여부는 '네이버 지도'로 검색해 확인하시면 편리합니다
+        </p>
+        <div className="place-list">
+          {
+            clubQuest
+              ? (
+                <table className="bp3-html-table bp3-html-table-bordered bp3-html-table-condensed bp3-interactive">
+                  <thead>
+                    <tr>
+                      <th className="title-column">건물</th>
+                      <th>점포 또는 매장</th>
+                      <th>정복</th>
+                      <th>폐업</th>
+                      <th>접근 불가</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {
+                      clubQuest.content.targets.flatMap((target) => {
+                        return target.places.map((place, idx) => {
+                          return (
+                            <tr>
+                              <td>{idx === 0 ? target.displayedName : ''}</td>
+                              <td>{place.name}</td>
+                              <td><Checkbox checked={place.isCompleted} disabled={isLoading} large onChange={onPlaceIsCompletedChange(target, place)} /></td>
+                              <td><Checkbox checked={place.isClosed} disabled={isLoading} large onChange={onPlaceIsClosedChange(target, place)} /></td>
+                              <td><Checkbox checked={place.isNotAccessible} disabled={isLoading} large onChange={onPlaceIsNotAccessibleChange(target, place)} /></td>
+                            </tr>
+                          );
+                        });
+                      })
+                    }
+                  </tbody>
+                </table>
+              )
+              : null
+          }
+        </div>
       </div>
-      <p>
-        ※ 폐업 여부는 '네이버 지도'로 검색해 확인하시면 편리합니다
-      </p>
-      {
-        clubQuest
-          ? (
-            <table className="bp3-html-table bp3-html-table-bordered bp3-html-table-condensed bp3-interactive">
-              <thead>
-                <tr>
-                  <th className="title-column">건물</th>
-                  <th>점포 또는 매장</th>
-                  <th>정복</th>
-                  <th>폐업</th>
-                  <th>접근 불가</th>
-                </tr>
-              </thead>
-              <tbody>
-                {
-                  clubQuest.content.targets.flatMap((target) => {
-                    return target.places.map((place, idx) => {
-                      return (
-                        <tr>
-                          <td>{idx === 0 ? target.displayedName : ''}</td>
-                          <td>{place.name}</td>
-                          <td><Checkbox checked={place.isCompleted} disabled={isLoading} large onChange={onPlaceIsCompletedChange(target, place)} /></td>
-                          <td><Checkbox checked={place.isClosed} disabled={isLoading} large onChange={onPlaceIsClosedChange(target, place)} /></td>
-                          <td><Checkbox checked={place.isNotAccessible} disabled={isLoading} large onChange={onPlaceIsNotAccessibleChange(target, place)} /></td>
-                        </tr>
-                      );
-                    });
-                  })
-                }
-              </tbody>
-            </table>
-          )
-          : null
-      }
     </div>
   );
 }
