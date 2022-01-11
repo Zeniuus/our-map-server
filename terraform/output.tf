@@ -9,7 +9,3 @@ output "server_lb_domain_name" {
 output "server_lb_cert_domain_validation_options" {
   value = aws_acm_certificate.server_lb.domain_validation_options
 }
-
-output "db_password" {
-  value = random_password.main_db_password.result
-}
