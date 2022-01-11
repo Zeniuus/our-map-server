@@ -1,0 +1,13 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: our-map-prod
+  labels:
+    name: our-map-prod
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: our-map-test
+  labels:
+    name: our-map-test
