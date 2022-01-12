@@ -24,11 +24,16 @@ ingress:
     alb.ingress.kubernetes.io/scheme: internet-facing # https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.2/guide/ingress/annotations/#scheme
     alb.ingress.kubernetes.io/group.name: api.suhwan.dev # https://docs.aws.amazon.com/eks/latest/userguide/alb-ingress.html
     alb.ingress.kubernetes.io/healthcheck-path: /health
+    alb.ingress.kubernetes.io/success-codes: 200-300
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:563057296362:certificate/213c491d-9171-4fe0-abf3-5215e3038b85
     # https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.2/guide/tasks/ssl_redirect/
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
     alb.ingress.kubernetes.io/actions.ssl-redirect: '{"Type": "redirect", "RedirectConfig": { "Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301"}}'
   hosts:
+    # FIXME: 현재 AWS Load Balancer Controller가 listener rule을 만들 때 사용할 priority를 지정하는 방법이 없어서,
+    # server-admin의 admin.staircrusher.club/api/* listener rule과 frontend-admin의 admin.staircrusher.club/*의 listener rule의 priority가
+    # 랜덤하게 정해지고, 후자의 rule이 더 먼저 evaluate 되어 server-admin으로 가야 하는 트래픽이 모두 frontend-admin으로 가는 경우가 발생한다.
+    # 현재는 AWS console에서 수기로 priority를 조정해주었는데, 수기로 조정하지 않아도 되는 방법이 필요할 것 같다.
     - host: admin.staircrusher.club
       paths:
         - path: /api

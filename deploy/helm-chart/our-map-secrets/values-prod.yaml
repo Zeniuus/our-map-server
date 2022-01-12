@@ -2,3 +2,5 @@ namespace: our-map-prod
 
 applicationPropertiesPath: config/prod/application.properties
 configJsPath: config/prod/config.js
+
+fullnameOverride: our-map-secrets

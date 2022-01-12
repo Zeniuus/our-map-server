@@ -25,7 +25,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
-              containerPort: 8080
+              containerPort: 8081
               protocol: TCP
           livenessProbe:
             httpGet:
@@ -42,8 +42,10 @@ spec:
             mountPath: /app/conf
             readOnly: true
           env:
-            - name: OUR_MAP_OVERRIDING_PROPERTIES_FILENAME
-              value: /app/conf/application.properties
+          - name: OUR_MAP_OVERRIDING_PROPERTIES_FILENAME
+            value: /app/conf/application.properties
+          - name: JAVA_OPTS
+            value: -Xmx120m
       volumes:
         - name: secret
           secret:

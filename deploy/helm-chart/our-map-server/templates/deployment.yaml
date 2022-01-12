@@ -44,6 +44,8 @@ spec:
           env:
           - name: OUR_MAP_OVERRIDING_PROPERTIES_FILENAME
             value: /app/conf/application.properties
+          - name: JAVA_OPTS
+            value: -Xmx120m
       volumes:
       - name: secret
         secret:
