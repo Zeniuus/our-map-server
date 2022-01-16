@@ -23,6 +23,7 @@ ingress:
     kubernetes.io/ingress.class: alb # https://docs.aws.amazon.com/eks/latest/userguide/alb-ingress.html
     alb.ingress.kubernetes.io/scheme: internet-facing # https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.2/guide/ingress/annotations/#scheme
     alb.ingress.kubernetes.io/group.name: api.suhwan.dev # https://docs.aws.amazon.com/eks/latest/userguide/alb-ingress.html
+    alb.ingress.kubernetes.io/group.order: "101" # our-map-server-admin보다 뒤로 가도록
     alb.ingress.kubernetes.io/healthcheck-path: /health
     alb.ingress.kubernetes.io/success-codes: 200-300
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:563057296362:certificate/213c491d-9171-4fe0-abf3-5215e3038b85
