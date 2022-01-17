@@ -1,6 +1,5 @@
 namespace: our-map-prod
 
-applicationPropertiesPath: config/prod/application.properties
-configJsPath: config/prod/config.js
+secretPropertiesPath: config/prod/secret.properties
 
 fullnameOverride: our-map-secrets

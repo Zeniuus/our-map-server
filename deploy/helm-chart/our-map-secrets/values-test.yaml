@@ -1,6 +1,5 @@
 namespace: our-map-test
 
-applicationPropertiesPath: config/test/application.properties
-configJsPath: config/test/config.js
+secretPropertiesPath: config/test/secret.properties
 
 fullnameOverride: our-map-secrets

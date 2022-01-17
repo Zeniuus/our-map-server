@@ -38,7 +38,7 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
-          - name: secret
+          - name: config
             mountPath: /app/conf
             readOnly: true
           lifecycle:
@@ -49,6 +49,6 @@ spec:
                   - -c
                   - cp /app/conf/config.js /app/build/config.js
       volumes:
-        - name: secret
-          secret:
-            secretName: our-map-secrets-frontend
+      - name: config
+        configMap:
+          name: our-map-config-map-frontend

@@ -38,15 +38,21 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
+          - name: config
+            mountPath: /app/config
+            readOnly: true
           - name: secret
-            mountPath: /app/conf
+            mountPath: /app/secret
             readOnly: true
           env:
           - name: OUR_MAP_OVERRIDING_PROPERTIES_FILENAME
-            value: /app/conf/application.properties
+            value: /app/conf/application.properties,/app/secret/secret.properties
           - name: JAVA_OPTS
             value: -Xmx120m
       volumes:
+      - name: config
+        configMap:
+          name: our-map-config-map-server
       - name: secret
         secret:
           secretName: our-map-secrets-server
