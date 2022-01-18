@@ -7,4 +7,4 @@ metadata:
   namespace: {{ .Values.namespace }}
 data:
   application.properties: |-
-    {{ .Files.Get .Values.applicationPropertiesPath | b64enc }}
+    {{ .Files.Get .Values.applicationPropertiesPath }}
