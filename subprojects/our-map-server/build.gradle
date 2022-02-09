@@ -42,6 +42,7 @@ jar {
 
 docker {
     name 'our-map-server:latest'
+    files '../../deploy/run-server.sh'
     copySpec.from('build/install/our-map-server')
     tag 'local', 'our-map-server:latest'
     tag 'ourMap', '563057296362.dkr.ecr.ap-northeast-2.amazonaws.com/our-map-server:latest'
