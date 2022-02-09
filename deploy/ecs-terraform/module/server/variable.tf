@@ -12,14 +12,20 @@ variable "lb_security_group_id" {}
 
 variable "lb_listener_arn" {}
 
-variable "lb_listener_rule_priority" {
-  default = 100
-}
+variable "lb_listener_rule_priority" {}
 
 variable "lb_listener_rule_host_header" {}
 
 variable "lb_listener_rule_path_pattern" {
   default = "/*"
+}
+
+variable "ecs_task_definition_environment" {
+  default = "[]"
+}
+
+variable "ecs_task_definition_secrets" {
+  default = "[]"
 }
 
 variable "image_name" {}
@@ -30,6 +36,6 @@ variable "cpu" {}
 
 variable "memory" {}
 
-variable "server_secretsmanager_secret_arn" {}
+variable "secretsmanager_secret_arn" {}
 
 variable "db_security_group_id" {}

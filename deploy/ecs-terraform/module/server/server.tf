@@ -35,7 +35,7 @@ resource "aws_iam_role_policy" ecs_task_execution_role_secretsmanager {
         "secretsmanager:GetSecretValue"
       ],
       "Resource": [
-        "${var.server_secretsmanager_secret_arn}"
+        "${var.secretsmanager_secret_arn}"
       ]
     }
   ]
@@ -92,18 +92,8 @@ resource "aws_ecs_task_definition" server {
         "awslogs-stream-prefix": "ecs"
       }
     },
-    "environment": [
-      {
-        "name": "OUR_MAP_OVERRIDING_PROPERTIES_FILENAMES",
-        "value": "/app/conf/secret.properties"
-      }
-    ],
-    "secrets": [
-      {
-        "name": "BASE64_ENC_SECRET_PROPS_FILE",
-        "valueFrom": "${var.server_secretsmanager_secret_arn}"
-      }
-    ]
+    "environment": ${var.ecs_task_definition_environment},
+    "secrets": ${var.ecs_task_definition_secrets}
   }
 ]
 EOT
