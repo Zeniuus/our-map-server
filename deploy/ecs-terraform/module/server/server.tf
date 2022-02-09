@@ -178,13 +178,3 @@ resource "aws_lb_listener_rule" server {
     }
   }
 }
-
-// TODO: state 이전 필요
-#resource "aws_ecr_repository" server {
-#  name                 = ${var.server_name}
-#  image_tag_mutability = "MUTABLE"
-#
-#  image_scanning_configuration {
-#    scan_on_push = true
-#  }
-#}
