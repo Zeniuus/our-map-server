@@ -29,7 +29,7 @@ resource "aws_lb_listener" https {
   load_balancer_arn = aws_lb.our_map.arn
   port              = 443
   protocol          = "HTTPS"
-  certificate_arn   = data.aws_acm_certificate.star_staircrusher_club.arn
+  certificate_arn   = aws_acm_certificate.star_staircrusher_club.arn
   ssl_policy        = "ELBSecurityPolicy-2016-08"
 
   default_action {
@@ -73,6 +73,12 @@ resource "aws_security_group_rule" "our_map_lb_egress_all" {
   cidr_blocks       = ["0.0.0.0/0"]
 }
 
-data aws_acm_certificate star_staircrusher_club {
-  domain = "*.staircrusher.club"
+resource "aws_acm_certificate" "star_staircrusher_club" {
+  domain_name       = "*.staircrusher.club"
+  subject_alternative_names = ["*.test.staircrusher.club"]
+  validation_method = "DNS"
+
+  lifecycle {
+    create_before_destroy = true
+  }
 }
