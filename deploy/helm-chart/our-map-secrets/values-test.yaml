@@ -1,5 +1,0 @@
-namespace: our-map-test
-
-secretPropertiesPath: config/test/secret.properties
-
-fullnameOverride: our-map-secrets

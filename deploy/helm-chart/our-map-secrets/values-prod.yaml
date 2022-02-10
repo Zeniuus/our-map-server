@@ -1,5 +1,0 @@
-namespace: our-map-prod
-
-secretPropertiesPath: config/prod/secret.properties
-
-fullnameOverride: our-map-secrets
